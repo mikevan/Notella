@@ -1,0 +1,6 @@
+{
+  "recordedIterations": 742,
+  "appliedOptimizerUpdates": 742,
+  "skippedOptimizerUpdates": 0,
+  "note": "Mixed-precision loss scaling may skip updates after overflow. Requested iterations are not proof of applied updates."
+}

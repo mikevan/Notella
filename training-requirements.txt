@@ -1,0 +1,8 @@
+# Install a matching CUDA build of torch for your machine; this is the tested environment.
+torch==2.8.0
+transformers==4.57.1
+peft==0.17.1
+datasets==4.3.0
+accelerate==1.11.0
+bitsandbytes==0.48.1
+sentencepiece==0.2.1

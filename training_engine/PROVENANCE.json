@@ -1,0 +1,6 @@
+{
+  "origin": "LayerTime local LoRA engine; project-owned code reused by Notella",
+  "adaptation": "domain_training_profile.py replaced with Notella manifest verifier; evaluate_local_model.py adds a Notella prompt branch; train_lora.py unchanged",
+  "trainerSha256": "9a7435c07e1cbc10cf94ce73a1c32ee0c83ae32f4f1a137ca3bef42853540475",
+  "notellaPromptAdapterSha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254"
+}

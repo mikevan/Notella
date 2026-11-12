@@ -1,0 +1,20 @@
+{
+  "jobId": "b589dd10dd3d4a109448e289e1075f73",
+  "status": "completed",
+  "exitCode": 0,
+  "httpRoundtrip": true,
+  "probeOnly": true,
+  "modelQualityMeasured": false,
+  "optimizer": {
+    "recordedIterations": 2,
+    "appliedOptimizerUpdates": 2,
+    "skippedOptimizerUpdates": 0,
+    "note": "Mixed-precision loss scaling may skip updates after overflow. Requested iterations are not proof of applied updates."
+  },
+  "weights": {
+    "tensors": 144,
+    "allWeightsFinite": true,
+    "nonfiniteTensors": [],
+    "nonzeroLoraBTensors": 72
+  }
+}

@@ -1,0 +1,905 @@
+{
+  "checkpoint": "notella-foundation-2026-11-12",
+  "targetRepository": "mikevan/Notella",
+  "defaultRemoteVisibility": "private",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "b87f189e1ec1e27fc8cf1c2d9cec051fab3a6eb42a4fd110ffa34344edc954e3",
+      "bytes": 72
+    },
+    {
+      "path": "Check-In.ps1",
+      "sha256": "3df22426c27f2a106763be0862c4e6ac0f7c6315a714e6ae13c39572d6377fcd",
+      "bytes": 6656
+    },
+    {
+      "path": "checkpoint/CHECKIN.md",
+      "sha256": "49082228f47bdb1aacb496e44620a4e90b4f3b72665423ab448e1e400b810c6e",
+      "bytes": 1507
+    },
+    {
+      "path": "checkpoint/evidence/api-training-probe.json",
+      "sha256": "5da3e6c3f025c58bd97fa512e6d97d095544d6486a70a8392bda472d64886e99",
+      "bytes": 569
+    },
+    {
+      "path": "checkpoint/evidence/build-receipt.json",
+      "sha256": "8890acb329313b0476ba123a15e26dbb1fdc65ab515a2d31c38657dca70e2354",
+      "bytes": 543
+    },
+    {
+      "path": "checkpoint/evidence/development-manifest.json",
+      "sha256": "be69efb149f97531a69001ddff74728e5f28e0d8e1db2983079f91cddc1a7015",
+      "bytes": 9245
+    },
+    {
+      "path": "checkpoint/evidence/documentation-verification.json",
+      "sha256": "83cbfc484881b6b978a203103c3fec82359a5dd8d43e0d8ce990d42d7508e34f",
+      "bytes": 87
+    },
+    {
+      "path": "checkpoint/evidence/optimizer-summary.json",
+      "sha256": "39008743747345e9ecab53427eb239949f0869747912e932a548183376b1d045",
+      "bytes": 234
+    },
+    {
+      "path": "checkpoint/evidence/runtime-manifest.json",
+      "sha256": "38b3608e8b8753e81bd1a9acb631d45e4dc6312ca918448fe50c0578fa7385a0",
+      "bytes": 3195
+    },
+    {
+      "path": "checkpoint/evidence/training-metrics.json",
+      "sha256": "4e07767ff80a8e186b32a052b1b61d0a7a4a5f2516f4d47fbdd4746f19332d93",
+      "bytes": 447
+    },
+    {
+      "path": "checkpoint/evidence/unit-tests.txt",
+      "sha256": "7cab8b2937c3471463aac34e939b2f404a0bb2cfd961c417964eef1ff4f125ec",
+      "bytes": 2207
+    },
+    {
+      "path": "checkpoint/evidence/warning-interpretation-review.json",
+      "sha256": "68d290a746052016798cf0abb8ceba3e12ae11a593dc0c4fee985db685bcbecf",
+      "bytes": 1233
+    },
+    {
+      "path": "checkpoint/evidence/warning-report.json",
+      "sha256": "6fc3b8a81c6de662310a194a74376d696abb57e52e012a7a519d00da74e9d553",
+      "bytes": 2351
+    },
+    {
+      "path": "checkpoint/evidence/warning-responses.json",
+      "sha256": "d3d847b1722930f30d35364295e339487f68805313d7a2f53cca4cf533d049d9",
+      "bytes": 3141
+    },
+    {
+      "path": "checkpoint/evidence/weight-stability.json",
+      "sha256": "d4b9178dc8f070bbfd205c149f890d4791aaf8c4b342cca68959c1f1e7119723",
+      "bytes": 108
+    },
+    {
+      "path": "checkpoint/README.md",
+      "sha256": "7c063b311799fc1edcc04637c9cab9e82049173a727f442c4d8b033133188c98",
+      "bytes": 1720
+    },
+    {
+      "path": "docs/api-reference.md",
+      "sha256": "d5eeb310c2e416d7f5d4982dd6be5dcddb2d17aab4140ed891719b5ecd884025",
+      "bytes": 8252
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "a96658871471232b25c5854451db0d15964dd0b191cd268de017518d4f8b42a0",
+      "bytes": 5754
+    },
+    {
+      "path": "docs/concepts.md",
+      "sha256": "6f03d853f3576212ce1ef3fd0ec6f1cd95a8858c7073bdf75c03179187e522a5",
+      "bytes": 3725
+    },
+    {
+      "path": "docs/curricula.md",
+      "sha256": "a0806cbef4f22c2cf2c390d68371b5328abe57016384046fce918ef0c56af169",
+      "bytes": 5513
+    },
+    {
+      "path": "docs/http-tutorial.md",
+      "sha256": "2386352c3523bca530def7a3e7be85c8210a30606247d63c584010ed2ba76c72",
+      "bytes": 4114
+    },
+    {
+      "path": "docs/index.md",
+      "sha256": "79b850939557faf0f501de3046a688f0ac3cbf25c7b062b5fbe853db5027a4ec",
+      "bytes": 2543
+    },
+    {
+      "path": "docs/results.md",
+      "sha256": "188a9b9bd639410ba1c807c116bb1a8adf1f616bd23b0425bd7d13a6c6f9a2fc",
+      "bytes": 3928
+    },
+    {
+      "path": "docs/temporal-evidence.md",
+      "sha256": "be3f041bd57fa979a5452eedee59eda28c4f0b627c37ffbb38dc28e4e65eddd8",
+      "bytes": 4986
+    },
+    {
+      "path": "docs/training.md",
+      "sha256": "a510f51e4a823795b2e53384120b109fd56fa7941d41ac59bf96ce1fb21e2cdf",
+      "bytes": 6418
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "sha256": "05645824283a19b2fff6675b4cb86dfc695958867c003b0a0cd2155ff5686df9",
+      "bytes": 5549
+    },
+    {
+      "path": "docs/tutorial.md",
+      "sha256": "de1e8b74d84640c32b3518306c0243d7c7e80827833718f61f14087b0da50f2b",
+      "bytes": 4601
+    },
+    {
+      "path": "examples/http_tutorial.py",
+      "sha256": "886c223a2a0685332ad5bd5068f4542078f3010aa9cf89b011f5e19b73323e67",
+      "bytes": 778
+    },
+    {
+      "path": "examples/layertime.examples.json",
+      "sha256": "a2f56339a715976e3e093815e92873db0327b0a5814ae0bffd59e9cd6e8f0acf",
+      "bytes": 120555
+    },
+    {
+      "path": "examples/layertime.ontology.json",
+      "sha256": "45ee6115d645435f4936f1e1a1064e34bc510a46f9e0ce8f6375703f8759da82",
+      "bytes": 3980
+    },
+    {
+      "path": "examples/tutorial.py",
+      "sha256": "4fedabfde45ab799a10ee355441fc614d10406b230179d6e8f1eccbe4a1d2215",
+      "bytes": 3103
+    },
+    {
+      "path": "notella/__init__.py",
+      "sha256": "2af27d93f3c92f9d9b99253b462e77a611240632872cacf907dc7181c798020d",
+      "bytes": 195
+    },
+    {
+      "path": "notella/__main__.py",
+      "sha256": "a88662762dc9c98138537351745b76fbc3b7873c624d7b6023fc625d0c148852",
+      "bytes": 1461
+    },
+    {
+      "path": "notella/client.py",
+      "sha256": "0fe483f54b5ae1c4c66f545b8bea19f0bbe9c532c183055a6bebe3149b0f2c54",
+      "bytes": 1490
+    },
+    {
+      "path": "notella/core.py",
+      "sha256": "78dc0bad6b8fd04cae08d8304776cb23066f50ca2c04e182352961c5a131f09e",
+      "bytes": 12485
+    },
+    {
+      "path": "notella/correlation.py",
+      "sha256": "bf1a101fb7f164b86652563930088b07d58e524a1d0c7fdfe03cc5ffc1fba4ab",
+      "bytes": 1137
+    },
+    {
+      "path": "notella/http.py",
+      "sha256": "3583bdd2dfb85fcdfc8b42ff7557aa8895162b522e78f5baaa8134131e38564a",
+      "bytes": 3355
+    },
+    {
+      "path": "notella/jobs.py",
+      "sha256": "03e32f0c677a900dee02cb07d95897d91382044d7b3d0434738117c54444738d",
+      "bytes": 5326
+    },
+    {
+      "path": "notella/openapi.py",
+      "sha256": "350e3dc0c4d37520c69daf8e98f541816204625496f60f044900c394779d522e",
+      "bytes": 2265
+    },
+    {
+      "path": "notella/training_profile.py",
+      "sha256": "fe64e6e25de8c082af1d67b4bd3da5a36af6c68089b9a8a8ab0e093c6898715f",
+      "bytes": 1835
+    },
+    {
+      "path": "openapi.json",
+      "sha256": "aeb42993ba2e341308f014c161e38967666445cf50d5dfea977f0bf93efcd9ba",
+      "bytes": 10300
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "4b228973f4ff4011ca7f82a205a698d67b62686f7732412ed336140ca683d916",
+      "bytes": 368
+    },
+    {
+      "path": "README.md",
+      "sha256": "4f301982d54cbed09ecc83a1d59c8a592e7e88590ebbe39b845a789e82fda105",
+      "bytes": 7059
+    },
+    {
+      "path": "Start-Notella.ps1",
+      "sha256": "1b05ed7cff9cbc5060ae8d471a1eb9bfaa4b1ab8e7f9c0695ac78e7947761296",
+      "bytes": 910
+    },
+    {
+      "path": "tests/test_api.py",
+      "sha256": "cefdb20d2961bb05180fcb1c844d406a9fe74c8bd9544c52699b0bdc438919b0",
+      "bytes": 5920
+    },
+    {
+      "path": "tests/test_correlation.py",
+      "sha256": "c32005e6d9728e283b2306c4c9c124d0fb2721b3626c76722b6080e8576457ca",
+      "bytes": 804
+    },
+    {
+      "path": "tests/test_tutorials.py",
+      "sha256": "26f65adc69cf85356331f5c3e21b346eb2e61a31f1cb376afb3330e377a17366",
+      "bytes": 1267
+    },
+    {
+      "path": "training-requirements.txt",
+      "sha256": "b1e5b1add0250d2b9171907a3eb011422f6a39273d991230ffe94bfd3ae6d4b6",
+      "bytes": 215
+    },
+    {
+      "path": "training_engine/analytic_intent.py",
+      "sha256": "7c43b6d768302fa178efff99591050e7755761daed6ac44afe58f2a576522c42",
+      "bytes": 1875
+    },
+    {
+      "path": "training_engine/analytic_quantity.py",
+      "sha256": "20866be331f868f089b5d91a103bfca4de081c27d3120c0421940a8702706230",
+      "bytes": 5981
+    },
+    {
+      "path": "training_engine/assemble_development_corpus.py",
+      "sha256": "dbbe8e7a4352fd967e89fec9d569d4943eadb6a1e9b6d9370c859c2c3a882a44",
+      "bytes": 8385
+    },
+    {
+      "path": "training_engine/assemble_domain_pilot_v3.py",
+      "sha256": "04b8cb19f3081ca55dd5c7c6a35cba6dc9d68659e043e2149e62e5f4cf2f04de",
+      "bytes": 5499
+    },
+    {
+      "path": "training_engine/audit_ble_connections.py",
+      "sha256": "c4f2d5eb5b39a4226505d2e8b175bae5686f493ce451b4d2b5b5d9d9e8444f2f",
+      "bytes": 4275
+    },
+    {
+      "path": "training_engine/audit_ble_decoder.py",
+      "sha256": "dd597bbb7267aa7527abda8fdbd30cd8b711517b9ceb01030560cac39afade1a",
+      "bytes": 3467
+    },
+    {
+      "path": "training_engine/audit_blue_team_domain.py",
+      "sha256": "22447611be0a9c26b2cfbaeb816e5b9a6333b539e9395319ec59e8077ad64dd5",
+      "bytes": 7001
+    },
+    {
+      "path": "training_engine/audit_blue_team_review.py",
+      "sha256": "9e3c56062dff977d6b50e363d24fb10d3b77995b3440fff5eb0fdd9eb861975f",
+      "bytes": 8323
+    },
+    {
+      "path": "training_engine/audit_domain_curriculum_density.py",
+      "sha256": "6dd7432ef9d499ddf7778835872f55a721664620df2ffdb7133e3af79f6980e3",
+      "bytes": 1570
+    },
+    {
+      "path": "training_engine/audit_domain_pilot_v3.py",
+      "sha256": "9c4fe92682f7dda75a3ed75b0ed9f318fe0b0342b528af29d7bb885893b2b53d",
+      "bytes": 5443
+    },
+    {
+      "path": "training_engine/audit_duration_bounds.py",
+      "sha256": "b5abf20d9dfebc9da90d61094c5491a700157f0abb0b6edd87958dc106c55a06",
+      "bytes": 5078
+    },
+    {
+      "path": "training_engine/audit_instructions.py",
+      "sha256": "4a3bab4794f267014c45dcdb36945adabc428c4c943ee0e268972412b62d5ff7",
+      "bytes": 4915
+    },
+    {
+      "path": "training_engine/audit_policy_curriculum.py",
+      "sha256": "f71f28fb261832a0c834df981e4516d04ea314dbca144179db1086543b561d93",
+      "bytes": 4145
+    },
+    {
+      "path": "training_engine/backup_training_review.py",
+      "sha256": "036d6bef2ebed5b3cbf5dcdb31ff2361d89b9d52b8e7b957d954e22fb6d0185b",
+      "bytes": 2147
+    },
+    {
+      "path": "training_engine/ble_features.py",
+      "sha256": "0aaf3fce2e5edb5cfbbace99aae8b679d86ffd0253e6ccf9d3a0d2fd982b7db9",
+      "bytes": 7796
+    },
+    {
+      "path": "training_engine/blue_team_cases.py",
+      "sha256": "82a15103fc50d66b5fe48207f59a58a27f4dd611768cb6ea1c6ff4eae1a58601",
+      "bytes": 13547
+    },
+    {
+      "path": "training_engine/blue_team_contracts.py",
+      "sha256": "b4ffe7e159f7c6ff234955c914544cbd5861fbef99cc5a3be347afaadd5aebfe",
+      "bytes": 5603
+    },
+    {
+      "path": "training_engine/blue_team_ontology.py",
+      "sha256": "b8efabb879090e35404ad145bde86a0b163390d287b15e637c14f16f78a92ad1",
+      "bytes": 12316
+    },
+    {
+      "path": "training_engine/blue_team_source_cards.py",
+      "sha256": "fbea93615080d82f96c61060e46c6f638bf949ec19ae81f96613666b3e57295b",
+      "bytes": 5289
+    },
+    {
+      "path": "training_engine/build_acceptance_v1.py",
+      "sha256": "33b3153a3f8ecadc9c461bd2bc1b0dda465e2700a5c09b22c53fa32ff43a4050",
+      "bytes": 9075
+    },
+    {
+      "path": "training_engine/build_acceptance_v2.py",
+      "sha256": "02263b55ed259235d11be7236c3b3d6d19732f6a0f33dd5017ba6c6c8f506a5b",
+      "bytes": 3989
+    },
+    {
+      "path": "training_engine/build_ble_feature_knowledge.py",
+      "sha256": "1c9272e97dd4998c9592ecc487cb5706c89dfb1bdeab28a2fcf27ae14854a752",
+      "bytes": 12781
+    },
+    {
+      "path": "training_engine/build_ble_teaching.py",
+      "sha256": "fb976b005033d10129a949c983f0f101555fb44f0593b4ee8bdddef75c5c5a2e",
+      "bytes": 8935
+    },
+    {
+      "path": "training_engine/build_blue_team_domain.py",
+      "sha256": "e5fbcd0a5ccaa5aa843f6a2647b6acd0db91ab8e2fe20ce54e4a6b4debe6c04a",
+      "bytes": 15299
+    },
+    {
+      "path": "training_engine/build_blue_team_review.py",
+      "sha256": "ce0ed0376637a9c451524cc7bbe1dfd876bcdec999f9d8bbb33df1e58a5d92dd",
+      "bytes": 14052
+    },
+    {
+      "path": "training_engine/build_defensive_teaching.py",
+      "sha256": "0c353acd97d535ce80ed8ba87ac32fbeef8c567f90b185c84e205da00479bda3",
+      "bytes": 8510
+    },
+    {
+      "path": "training_engine/build_domain_pilot_v3.py",
+      "sha256": "46a93cf8b84956864e49eb2fe7d9aec85247e3a9962e326852d17b786c409e3b",
+      "bytes": 11567
+    },
+    {
+      "path": "training_engine/build_eapol_semantic_teaching.py",
+      "sha256": "74c3e0fdba209f242e513e01caacf7b9ff3956073fc0acd5040f09d50fc8ee91",
+      "bytes": 16456
+    },
+    {
+      "path": "training_engine/build_evaluation_v2.py",
+      "sha256": "cc26faca2d01c6d4160d8b2a16e32db88ac7cdd32120e4d7df7165b1f1553d8d",
+      "bytes": 5898
+    },
+    {
+      "path": "training_engine/build_evidence_contrast_curriculum.py",
+      "sha256": "203a3cff68a0abc7a666df9933fef5b13319adb1f05e125f28661d463378495e",
+      "bytes": 17717
+    },
+    {
+      "path": "training_engine/build_intent_corpus.py",
+      "sha256": "70c4b2f1baad968b2acaaa3fd3636e780ba436fc87bc7f801be47b024c982092",
+      "bytes": 9997
+    },
+    {
+      "path": "training_engine/build_intent_curriculum.py",
+      "sha256": "43feb6142de869b429d998ac5e342555e1468a820e2b9193e78b60e9ecadbbef",
+      "bytes": 17413
+    },
+    {
+      "path": "training_engine/build_policy_curriculum.py",
+      "sha256": "b5c24918cbbb8223df77c4e67263791ec4b331dfe3e3cecaa6f2c749397873ca",
+      "bytes": 10310
+    },
+    {
+      "path": "training_engine/build_quantity_corpus.py",
+      "sha256": "bf6476b3751c75b6cf52c024df5d7af56cc7c9a140d2698848dd4b3926b27ca3",
+      "bytes": 10000
+    },
+    {
+      "path": "training_engine/build_quantity_followup.py",
+      "sha256": "ded3f75cbbeb70715d56e2d098a0d33b09a56962ebf907fc194ff7e01461344f",
+      "bytes": 9897
+    },
+    {
+      "path": "training_engine/build_reference_library.py",
+      "sha256": "920e032bcef157ff98adc17e6e363f7a963851b2478cd338f8a973eaee2a747c",
+      "bytes": 4866
+    },
+    {
+      "path": "training_engine/build_wireshark_field_teaching.py",
+      "sha256": "8b597ca1d29f6375e6964228c7c1ae89295936d224b7c7a90d9ae386afa1585c",
+      "bytes": 10590
+    },
+    {
+      "path": "training_engine/collect_development_docs.py",
+      "sha256": "f50097859cef579d37354ee1f33b65398ed1ae462f2b22ab23d2f098b412aa44",
+      "bytes": 8083
+    },
+    {
+      "path": "training_engine/compact_domain_contract.py",
+      "sha256": "d7aedf16833ba9ccf03da6527ffcb153ef040815960133b2fe57e68cfb7c3b0b",
+      "bytes": 1385
+    },
+    {
+      "path": "training_engine/completion_loss.py",
+      "sha256": "2b3af28eee52759eef0f69c47b9ad1c87549168aacfc9d4d82dfd1eeb417ece3",
+      "bytes": 869
+    },
+    {
+      "path": "training_engine/domain_training_profile.py",
+      "sha256": "fe64e6e25de8c082af1d67b4bd3da5a36af6c68089b9a8a8ab0e093c6898715f",
+      "bytes": 1835
+    },
+    {
+      "path": "training_engine/evaluate_local_model.py",
+      "sha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254",
+      "bytes": 16473
+    },
+    {
+      "path": "training_engine/evidence_facts.py",
+      "sha256": "c9527a7a5ad584234550a3ec49913a85122c48dbaecbf59e2870d11c54277a89",
+      "bytes": 6294
+    },
+    {
+      "path": "training_engine/export_development.py",
+      "sha256": "a77e404b64c162a46efe65ed5da3892454adc74ab24c62aed8c714870eec11e2",
+      "bytes": 3217
+    },
+    {
+      "path": "training_engine/export_training_transparency.py",
+      "sha256": "1ad7453285a2921d4f36b405dca224edc926411ecc4cf55993c15c4aa8a5b442",
+      "bytes": 9099
+    },
+    {
+      "path": "training_engine/extract_defensive_concepts.py",
+      "sha256": "f6201aa18f50c6e1d9dddfde0f1a0b67954c028f652223f7cd710f96df43c758",
+      "bytes": 3778
+    },
+    {
+      "path": "training_engine/fetch_ble_connections.py",
+      "sha256": "1843ce88d05c07a181704370d04750809740998185bcfbf7e1dbba5612d243bf",
+      "bytes": 2753
+    },
+    {
+      "path": "training_engine/fetch_defensive_ontology.py",
+      "sha256": "ec41fba04f8abc53ea8e2eccf70fbd7c1c26a9b36195da59d5ab8980a1ce99f6",
+      "bytes": 2529
+    },
+    {
+      "path": "training_engine/fetch_public_data.py",
+      "sha256": "531744a1c3df38eb22c24396aad05e2100e0587299bff17ecabaf8de8e364086",
+      "bytes": 8407
+    },
+    {
+      "path": "training_engine/fetch_wifi_domain_reference.py",
+      "sha256": "b9e151ba0cbc868bd257a5c9ec1883d22aea207373b2fe971b04f8596e744a0a",
+      "bytes": 3997
+    },
+    {
+      "path": "training_engine/fetch_wireshark_teaching_reference.py",
+      "sha256": "f7513efe217c1f5f85b2765fe382bc384b9569d7ea0613a39ad5e513938555d6",
+      "bytes": 2939
+    },
+    {
+      "path": "training_engine/freeze_domain_pilot_v3_evaluation.py",
+      "sha256": "8f7c9b0cef43ba4aeb3c88efc4b28a6dd5d5873e254b41cc1df6a807d39f4e30",
+      "bytes": 3577
+    },
+    {
+      "path": "training_engine/frozen_cpu_layers.py",
+      "sha256": "e2a9d7945159fa29285e6c0c685880a74a64192f92c2cba77f5ade779d8a852a",
+      "bytes": 714
+    },
+    {
+      "path": "training_engine/grounded_contract.py",
+      "sha256": "70ccf26e95893e53193dbd4bbfb9adcfa5e03ef9674ba397b87baf92c676e87d",
+      "bytes": 6596
+    },
+    {
+      "path": "training_engine/inspect_quantity_training.py",
+      "sha256": "730fce9f119fae96afbdb21c86c1220f2b506ffb4d7be9755c0328a9b6b0f8db",
+      "bytes": 2811
+    },
+    {
+      "path": "training_engine/intent_curriculum_audit.py",
+      "sha256": "0c08fc04f541f9f30e8436de3724565d754ca685ea8e74962a2f947b312da578",
+      "bytes": 3906
+    },
+    {
+      "path": "training_engine/knowledge_cards.py",
+      "sha256": "44f6c1d3fa0c655f8bbd546e2fa2804c1d9f1832251ba13f3dcca9f9f73a7445",
+      "bytes": 10543
+    },
+    {
+      "path": "training_engine/merge_domain_candidate.py",
+      "sha256": "4a676d60330cbf6f13bf8f8f649e6390e36a08c5671971d93af60f3515339b3a",
+      "bytes": 2776
+    },
+    {
+      "path": "training_engine/pair_evidence_meaning_teaching.py",
+      "sha256": "3bc7bbfc036b2aa430f7e579c162c74da9c1e3768baa0ede1ece27395398d56f",
+      "bytes": 3471
+    },
+    {
+      "path": "training_engine/preflight_evaluation.py",
+      "sha256": "9b81168488c454461652990bb5dd3a93c260017c355ab7de60ae84c51e354032",
+      "bytes": 2130
+    },
+    {
+      "path": "training_engine/prepare.py",
+      "sha256": "5c89af090200f45cf71a7cd2257c7ed5049c71491c830a11c4bb593ef700572d",
+      "bytes": 9187
+    },
+    {
+      "path": "training_engine/prepare_domain_phone_assets.py",
+      "sha256": "83a894df97db2dacd0654d9bf58f7aec47761a20e15944409763b57a733391cf",
+      "bytes": 4417
+    },
+    {
+      "path": "training_engine/PROVENANCE.json",
+      "sha256": "30a74f750dfff383f2fe47ee701ee7803b529372064bd9246e7f572803d36033",
+      "bytes": 442
+    },
+    {
+      "path": "training_engine/quantity_ontology.py",
+      "sha256": "cbceba742746755498903ea3e2aa773a0ed447193e92712d398451129f5f29f7",
+      "bytes": 2316
+    },
+    {
+      "path": "training_engine/record_domain_pilot_v3_prose_review.py",
+      "sha256": "4f6a4ca6ec575c3873712cafe1c30e1fe6b6b084c8fb7e3955e11c13861c7cc7",
+      "bytes": 4101
+    },
+    {
+      "path": "training_engine/record_domain_v2_review.py",
+      "sha256": "be52df7ef0954d46904e6c0f4d8809a4e07a56d47a734c2d6b46d798ae2ccd6e",
+      "bytes": 4524
+    },
+    {
+      "path": "training_engine/record_trained_domain_review.py",
+      "sha256": "49250c316dc65079cc659d7c196889078527f49590dd7574e4cec3caff8702eb",
+      "bytes": 4461
+    },
+    {
+      "path": "training_engine/repair_domain_views_v2.py",
+      "sha256": "2c5e0e5aaf3e90a158527143688a0f9d736378eb11058f59303937538aafeb75",
+      "bytes": 10933
+    },
+    {
+      "path": "training_engine/review_compact_domain_run.py",
+      "sha256": "95cec01aea84fd7d2505e4e75ba0d6129285e6137871684c47ac7f1cf705b1bf",
+      "bytes": 3053
+    },
+    {
+      "path": "training_engine/review_domain_baseline.py",
+      "sha256": "910744281f1afcd2f327adc7a0850e9fb422a85bf8708f1d51210819bf47a80c",
+      "bytes": 6175
+    },
+    {
+      "path": "training_engine/review_evaluation.py",
+      "sha256": "aaa4562158ead92d2c967a0c8ddc299fbf2889a7b4f87f3b2944d86d687a8788",
+      "bytes": 2788
+    },
+    {
+      "path": "training_engine/review_intent_curriculum_run.py",
+      "sha256": "ee2cf0dad2954f69cf89e9ef603a9b14051810ef33d610d492cdb8c90a5b9f36",
+      "bytes": 4106
+    },
+    {
+      "path": "training_engine/review_quantity_run.py",
+      "sha256": "fdae240225c4faf2bdafdf8d778087f1deabcafe314ee72f97a5ca7476321034",
+      "bytes": 4442
+    },
+    {
+      "path": "training_engine/review_wifi_eapol_types.py",
+      "sha256": "9c204f30f8e9896b41b3b2e9d52ba6626a226c93dae0c5680b03163b1bab6ebb",
+      "bytes": 6408
+    },
+    {
+      "path": "training_engine/score_acceptance.py",
+      "sha256": "903c3d6b524f72e6f39b4498097ff5605e54c5be9290b274f84bb9928006e03a",
+      "bytes": 5030
+    },
+    {
+      "path": "training_engine/score_policy_predictions.py",
+      "sha256": "e3d06f98027cc0033ca0a4313d98f59e1eaa5db0c68634ea35045b6ce8e41f64",
+      "bytes": 4868
+    },
+    {
+      "path": "training_engine/summarize_grounded_run.py",
+      "sha256": "59e90554eab730668879bba12241a9d00bc97f7ac5a583245b6529716bc62919",
+      "bytes": 3284
+    },
+    {
+      "path": "training_engine/test_acceptance.py",
+      "sha256": "3b46f235f0ec3e34eac521be6b3ad030d0345ddcdbd643a7b062934f3686b02b",
+      "bytes": 2850
+    },
+    {
+      "path": "training_engine/test_analytic_intent.py",
+      "sha256": "b6251419f3e0960f1fdf9f7ddfd82cb83d7900058ec8fd84f91fbfbb67935669",
+      "bytes": 2251
+    },
+    {
+      "path": "training_engine/test_analytic_quantity.py",
+      "sha256": "9658b6b3a21f527b1aa39179cb878cee4b575beae02443ac489609c4c78880d6",
+      "bytes": 2727
+    },
+    {
+      "path": "training_engine/test_ble_connections.py",
+      "sha256": "b0a5f29ed10779dcff07af1edccf0935263a70cba2bc7de8843cc52b941b6497",
+      "bytes": 1008
+    },
+    {
+      "path": "training_engine/test_ble_feature_knowledge.py",
+      "sha256": "8147f6868d908c60485eb2807b04b6e0e0c1b11fbc0510af87580fcbcb2ce18f",
+      "bytes": 1632
+    },
+    {
+      "path": "training_engine/test_ble_features.py",
+      "sha256": "d2fe6eb6ea8b5465cc6785c38d41f5944326afda032fec05fc9b25818954df8a",
+      "bytes": 1555
+    },
+    {
+      "path": "training_engine/test_ble_teaching.py",
+      "sha256": "9f76fcb361a6cd92451a7ce1864515ba957ad49980bef662d129659824096bc5",
+      "bytes": 1417
+    },
+    {
+      "path": "training_engine/test_ble_training.py",
+      "sha256": "7be04ac379f792b82077b0eaa933f4f837b4a44358d374b9fd1d2bc3bc8f8d6e",
+      "bytes": 1163
+    },
+    {
+      "path": "training_engine/test_blue_team_contracts.py",
+      "sha256": "f24982995a19177e020d81b30506262b1588587ee9d3c089f677d18d7178cdbc",
+      "bytes": 4004
+    },
+    {
+      "path": "training_engine/test_blue_team_domain.py",
+      "sha256": "ae50f6c989057b250a7a4de2c4c10b360231629c21f93ab0dd1da8f0e4af737c",
+      "bytes": 1990
+    },
+    {
+      "path": "training_engine/test_compact_domain_contract.py",
+      "sha256": "4c54af298b865b60447497373d20f6ec1b8b876b70b23eacf2fa2e9b942bbc10",
+      "bytes": 1330
+    },
+    {
+      "path": "training_engine/test_completion_loss.py",
+      "sha256": "b7ca21a1f79484df65e9db032e3c327c33c195379c5d5f6b770ccc7e4b6932a5",
+      "bytes": 2871
+    },
+    {
+      "path": "training_engine/test_defensive_concepts.py",
+      "sha256": "c82ba4ce3f3deb7c641d5e089edd8bfb7e3dac2505d048f11a5f83494e4a27ba",
+      "bytes": 819
+    },
+    {
+      "path": "training_engine/test_development_corpus.py",
+      "sha256": "c54caa7572dc9606b56f23a23d27f5ca274b0bff2dde37f26daa3503197a9b03",
+      "bytes": 2529
+    },
+    {
+      "path": "training_engine/test_domain_baseline_review.py",
+      "sha256": "61875f860d06e21aa47c61b03c6d289603ad29a41acc486b53338695092e27aa",
+      "bytes": 2065
+    },
+    {
+      "path": "training_engine/test_domain_pilot_v3.py",
+      "sha256": "8733feda9bc69bddd9d46e01caf598f7717c386baa06950ae763c7c1551e3997",
+      "bytes": 1388
+    },
+    {
+      "path": "training_engine/test_domain_repair_v2.py",
+      "sha256": "ce220bfc24ea950050d5c6a0f8126063fcd82df087521f939e31274d1450f905",
+      "bytes": 1778
+    },
+    {
+      "path": "training_engine/test_domain_training_profile.py",
+      "sha256": "e79fc8bee0cce51d373b5f30321006ad2a2a28d0bcf9aa16fa5be224a316e23c",
+      "bytes": 1429
+    },
+    {
+      "path": "training_engine/test_duration_bounds.py",
+      "sha256": "ff89fa7c3ea5c0d17f9df41cc3568e629c5742d12b5d75288ecdc4b16f5fe789",
+      "bytes": 1758
+    },
+    {
+      "path": "training_engine/test_eapol_semantic_teaching.py",
+      "sha256": "89d05a3050bf486b3475805a902b43c0aa5b1fe10d2e2cff3ee79a63e66dbcde",
+      "bytes": 1984
+    },
+    {
+      "path": "training_engine/test_evaluation_prompt.py",
+      "sha256": "b90d79d1780a861b72e5be4490084ed95fd92ec2c976f1b982e0a2b5c9de4d67",
+      "bytes": 886
+    },
+    {
+      "path": "training_engine/test_evaluation_review.py",
+      "sha256": "e34debbba4d475b2a583a2e858020bf32312dbb31919399c9408b820da28b435",
+      "bytes": 1330
+    },
+    {
+      "path": "training_engine/test_evaluation_v2.py",
+      "sha256": "1f4fd152c26ca311bc44dd5dfed604a96491f926aad330f9032e6cd6da461dcb",
+      "bytes": 1465
+    },
+    {
+      "path": "training_engine/test_evidence_contrast_curriculum.py",
+      "sha256": "0e017fd79948d6f30c4c558667e0a10b88a23abaed81e0d00bb3835526e1ebc8",
+      "bytes": 3081
+    },
+    {
+      "path": "training_engine/test_evidence_facts.py",
+      "sha256": "a6fdd9b6f57f3059361861ef0b2e41e78effcfde3e173507da9d5ac49645b730",
+      "bytes": 3745
+    },
+    {
+      "path": "training_engine/test_explanation_evaluation.py",
+      "sha256": "30ccd860b78c9b6d33f1622b5ffbb69e4fe4425df0ad93d371c646e99f98edde",
+      "bytes": 1127
+    },
+    {
+      "path": "training_engine/test_frozen_cpu_layers.py",
+      "sha256": "ee06283c8033c814f2b124a1ff8ea79e9f06a5bac756252fa00d5ffe944f1fd1",
+      "bytes": 1260
+    },
+    {
+      "path": "training_engine/test_grounded_contract.py",
+      "sha256": "e14c31f704215d0d94cba056ea6697e95a81fb63b0eeb7df649180c0df8f94e5",
+      "bytes": 3260
+    },
+    {
+      "path": "training_engine/test_grounded_summary.py",
+      "sha256": "a0d089a45a40999dd09fbd2209a2ece89b65471f67e3c48d60314522ee1ac476",
+      "bytes": 1863
+    },
+    {
+      "path": "training_engine/test_instruction_audit.py",
+      "sha256": "c4aa90dc4cc55b5be3028cf40a975e8913d20dd4f3d39f951c464709dcc39e2e",
+      "bytes": 1305
+    },
+    {
+      "path": "training_engine/test_intent_curriculum.py",
+      "sha256": "5658be47691b6470ea046d72e7e264ff8d69d34fc241efd5a32af501e281be8b",
+      "bytes": 3034
+    },
+    {
+      "path": "training_engine/test_intent_curriculum_review.py",
+      "sha256": "74e3220db0f95260a05c7b5d642e1c40a39af918405f1e0bca7d2697d6192414",
+      "bytes": 2501
+    },
+    {
+      "path": "training_engine/test_knowledge_cards.py",
+      "sha256": "cb5e655c34a8bf6ba2a8ae992c3e5c22d50eeebd1e35980205a2d5e241638b61",
+      "bytes": 1614
+    },
+    {
+      "path": "training_engine/test_model_evaluation.py",
+      "sha256": "95150ee45c894869ab5e0539ea08bf8f6cf4f376cdf7e59fbaf29660e54a3d1a",
+      "bytes": 2450
+    },
+    {
+      "path": "training_engine/test_policy_curriculum.py",
+      "sha256": "24a804d41e76148c15d91cfdd067e9219ac11719ad92235871fbd4c32df08655",
+      "bytes": 1982
+    },
+    {
+      "path": "training_engine/test_policy_scoring.py",
+      "sha256": "88eede6156a41ff8b7c0fbbbd30976c4c0aca957e2b2ed5a2dc34b59e9bcca1f",
+      "bytes": 1530
+    },
+    {
+      "path": "training_engine/test_prepare.py",
+      "sha256": "01494e3704fc487841a1a303ea512be4d62f6c3020a44dd257ea60663770a3bc",
+      "bytes": 2618
+    },
+    {
+      "path": "training_engine/test_prompt_retention.py",
+      "sha256": "c00d29ca3cbff4ed4012b309079aa6b4476d2c85333f02e9de19abb2195f8987",
+      "bytes": 1521
+    },
+    {
+      "path": "training_engine/test_quantity_review.py",
+      "sha256": "08384bf0c9dc9303a49115b33264c4e9fcc7f534dac2791fba65132a8d02578f",
+      "bytes": 2250
+    },
+    {
+      "path": "training_engine/test_reference_library.py",
+      "sha256": "12a60d92f36a2507f21c352a4f1506baa89bac8ccf10af5f1aacaf3008b349ae",
+      "bytes": 604
+    },
+    {
+      "path": "training_engine/test_training_recovery.py",
+      "sha256": "7b26ec887ab897918a0c6759ed22dedb3a3b89f0c26a596bd1e8af1f5405eb1c",
+      "bytes": 5014
+    },
+    {
+      "path": "training_engine/test_training_stability.py",
+      "sha256": "06fb5d545062fb3d86af2cab2118908ca05e900e3bce835a7b5ce06b9b12bd77",
+      "bytes": 1320
+    },
+    {
+      "path": "training_engine/test_training_transparency.py",
+      "sha256": "4740f7fec287ff5ec5f0b9a2d82f47b35ff8a7b9124c3ac347191b189a77110c",
+      "bytes": 3359
+    },
+    {
+      "path": "training_engine/test_wifi_eapol_types.py",
+      "sha256": "e8050e51294165c441bb2308e9454f85514a387e9395e3730fc1079db27098fc",
+      "bytes": 1148
+    },
+    {
+      "path": "training_engine/test_wireless_curriculum.py",
+      "sha256": "d2483bb4146961164ca39fa7b34d697c05ff9a27646b21130774d6832e2ac895",
+      "bytes": 978
+    },
+    {
+      "path": "training_engine/test_wireshark_field_teaching.py",
+      "sha256": "4f8d6be1d609fb163796013246f25907ff85d42c6023c7752b9f1a0ffe2e8fe4",
+      "bytes": 1947
+    },
+    {
+      "path": "training_engine/train_ble_specialists.py",
+      "sha256": "fdd5556128582c83967b5e1fbc7a311dea38d0ac075e718c00b0623b60b9b1df",
+      "bytes": 8002
+    },
+    {
+      "path": "training_engine/train_lora.py",
+      "sha256": "9a7435c07e1cbc10cf94ce73a1c32ee0c83ae32f4f1a137ca3bef42853540475",
+      "bytes": 19615
+    },
+    {
+      "path": "training_engine/training_recovery.py",
+      "sha256": "548013fec7561669c60517ccf97d62b972cb4e11acb2d687e5a8987d889a1dbb",
+      "bytes": 2831
+    },
+    {
+      "path": "training_engine/training_stability.py",
+      "sha256": "b4e9cd664371ac9f3265e3191103338f64109d0d64a034187e72cec1ca76ea30",
+      "bytes": 1848
+    },
+    {
+      "path": "training_engine/wifi_domain_reference.py",
+      "sha256": "2be3f7c6a07a843a0122ae2a4e6694cde4460152e715d36ccad76085478d2557",
+      "bytes": 8457
+    },
+    {
+      "path": "training_engine/wireless_curriculum.py",
+      "sha256": "d3dd88ae99ce78f3cdf2ca4780958ce1744595ff52efda6f04e0fb6dc31df483",
+      "bytes": 11509
+    },
+    {
+      "path": "verify_backend.py",
+      "sha256": "f254a55c26c821d5f1a8ad9a0127f868df7792b75f6fe0fd6503cca279fd9253",
+      "bytes": 2006
+    }
+  ],
+  "excluded": [
+    "runtime/",
+    "data/",
+    ".venv/",
+    "__pycache__/",
+    "model and optimizer weights",
+    "subsequent experiment files"
+  ]
+}

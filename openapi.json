@@ -1,0 +1,408 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Notella API",
+    "version": "0.1.0",
+    "description": "Ontology-guided semantic LoRA training. Local developer API."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8765"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Service health"
+          }
+        }
+      }
+    },
+    "/v1/ontologies": {
+      "post": {
+        "operationId": "create_ontologies",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "version": {
+                    "type": "string"
+                  },
+                  "concepts": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "relations": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string"
+                        },
+                        "predicate": {
+                          "type": "string"
+                        },
+                        "object": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "predicate",
+                        "object"
+                      ]
+                    }
+                  },
+                  "instruction": {
+                    "type": "string"
+                  },
+                  "outputSchema": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "name",
+                  "version",
+                  "concepts",
+                  "relations",
+                  "instruction",
+                  "outputSchema"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created artifact or training job"
+          },
+          "400": {
+            "description": "Validation failure"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/v1/ontologies/{id}": {
+      "get": {
+        "operationId": "get_ontologies",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored artifact or job"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/v1/curricula": {
+      "post": {
+        "operationId": "create_curricula",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ontologyId": {
+                    "type": "string"
+                  },
+                  "examples": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "excludedPromptHashes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "ontologyId",
+                  "examples"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created artifact or training job"
+          },
+          "400": {
+            "description": "Validation failure"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/v1/curricula/{id}": {
+      "get": {
+        "operationId": "get_curricula",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored artifact or job"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/v1/plans": {
+      "post": {
+        "operationId": "create_plans",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "curriculumId": {
+                    "type": "string"
+                  },
+                  "baseModel": {
+                    "type": "string"
+                  },
+                  "steps": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100000
+                  },
+                  "rank": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 128
+                  },
+                  "learningRate": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 0.001
+                  }
+                },
+                "required": [
+                  "curriculumId",
+                  "baseModel"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created artifact or training job"
+          },
+          "400": {
+            "description": "Validation failure"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/v1/plans/{id}": {
+      "get": {
+        "operationId": "get_plans",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored artifact or job"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/v1/jobs": {
+      "post": {
+        "operationId": "create_jobs",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "planId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "planId"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created artifact or training job"
+          },
+          "400": {
+            "description": "Validation failure"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/v1/jobs/{id}": {
+      "get": {
+        "operationId": "get_jobs",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored artifact or job"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/v1/evaluations": {
+      "post": {
+        "operationId": "create_evaluations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "curriculumId": {
+                    "type": "string"
+                  },
+                  "predictions": {
+                    "type": "object"
+                  },
+                  "split": {
+                    "type": "string",
+                    "enum": [
+                      "validation",
+                      "test"
+                    ]
+                  }
+                },
+                "required": [
+                  "curriculumId",
+                  "predictions"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created artifact or training job"
+          },
+          "400": {
+            "description": "Validation failure"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/v1/evaluations/{id}": {
+      "get": {
+        "operationId": "get_evaluations",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored artifact or job"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    }
+  }
+}
