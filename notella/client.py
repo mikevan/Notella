@@ -18,3 +18,5 @@ class Client:
     def get(self,kind,identity):return self.request('/v1/'+kind+'/'+identity)
     def evaluate(self,curriculum_id,predictions,split='test'):
         return self.request('/v1/evaluations',dict(curriculumId=curriculum_id,predictions=predictions,split=split))
+    def record_review(self,curriculum_id,example_id,output,reviewer,criteria,judgments,split='validation'):
+        return self.request('/v1/interpretation-reviews',dict(curriculumId=curriculum_id,exampleId=example_id,output=output,reviewer=reviewer,criteria=criteria,judgments=judgments,split=split))

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "v4-ontoforge-heldout-corrob-sequence-0",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "6d442f60b61f5a7f6cd7812d6ac08f94c0bda5579085b7aaa2937fbaa667f0c2"
+  },
+  {
+    "id": "v4-ontoforge-heldout-unknown-signal-0",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "d88c77ac18890d6bf89155eb4a8766df5fc2aa43788f54ef4a66a5b6b768ee8b"
+  },
+  {
+    "id": "v4-development-outage-only",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "3fa62823a3f9a8cafe514acea8b566a680f8ff9a984f202998e139a0206fd841"
+  },
+  {
+    "id": "v4-development-reversed-order",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "d91a02b3e09ce5ecb4efb7d7706c2ea6ffef495b94dd9258ceb7ddb6323174af"
+  },
+  {
+    "id": "v4-development-missing-clock",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "489f0d811309c34c39504825c80aa4a65e7bedf8279c18a1432212f307c16ced"
+  },
+  {
+    "id": "v4-development-distant-location",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "e6521e589ab65d620510177a34f09dcf4596a3e66e57685c5082cf43706997c6"
+  },
+  {
+    "id": "v4-development-benign-operations",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "e288f29fb37fec73e17441f89cd501a5cf98c6ca92e3a2d967501d4bcef00443"
+  },
+  {
+    "id": "v4-development-duplicate-reports",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "0c55fbf7a78122910f01889eb316416023e0251f5da6228f0cba73b0d4ed4f2d"
+  },
+  {
+    "id": "v4-development-outside-window",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "258bb7ecfe2f52e86c068bf217be3fb37f6649bbf374c17bb67b5cf5b50dadbb"
+  },
+  {
+    "id": "v4-development-overlapping-clock",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "0a105d6982c321ca54f0d96cd59aff8b5e3971c1d6e86da13811fc8d98129fd2"
+  },
+  {
+    "id": "v4-probe-source-order",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "0f80df100126cfabcd0712f876aaed4c88b3da8d15c4a75be30a49b3f120a7a6"
+  },
+  {
+    "id": "v4-probe-translated-time",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "0f80df100126cfabcd0712f876aaed4c88b3da8d15c4a75be30a49b3f120a7a6"
+  },
+  {
+    "id": "v4-probe-narrow-window",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "d24703aabf6c3fe96b064c4f7b17a591c83a8145020c4982dc5b1992169f13ab"
+  },
+  {
+    "id": "v4-probe-fact-order",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "0f80df100126cfabcd0712f876aaed4c88b3da8d15c4a75be30a49b3f120a7a6"
+  },
+  {
+    "id": "v4-probe-untrusted-captured-text",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "a744aa778dfeca192f80ea5c5e537242ab2b3d3b3a70d98c15d4ec468ec16820"
+  },
+  {
+    "id": "v4-probe-shared-upstream-source",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "4a4ea13c897b7e08a03212b1cb1201365863b08cd958eac17b3986e0f6545141"
+  },
+  {
+    "id": "v5-new-captured-payload-0",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "d88c77ac18890d6bf89155eb4a8766df5fc2aa43788f54ef4a66a5b6b768ee8b"
+  },
+  {
+    "id": "v5-new-captured-payload-1",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "d88c77ac18890d6bf89155eb4a8766df5fc2aa43788f54ef4a66a5b6b768ee8b"
+  },
+  {
+    "id": "v5-new-source-aliases",
+    "eligible": true,
+    "unsupported": [],
+    "modelInputSha256": "0c55fbf7a78122910f01889eb316416023e0251f5da6228f0cba73b0d4ed4f2d"
+  },
+  {
+    "id": "v5-defer-unmapped-origin",
+    "eligible": false,
+    "unsupported": [
+      "source_lineage_unknown"
+    ],
+    "modelInputSha256": "3283a7dd8a856ec77c20b7246630a6ed441ca530fc38b08e24507b775520f111"
+  },
+  {
+    "id": "v5-defer-window-boundary",
+    "eligible": false,
+    "unsupported": [
+      "window_membership_uncertain"
+    ],
+    "modelInputSha256": "39ef3a3f7afef0fce03223a86fb46f3bf0e346e0eee103f60ac7dd02d11b3d17"
+  }
+]

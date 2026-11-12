@@ -1,0 +1,46 @@
+{
+  "visual-observer": {
+    "originRef": "visual-observer-origin",
+    "reviewed": true
+  },
+  "independent-acoustic-sensor": {
+    "originRef": "acoustic-sensor-origin",
+    "reviewed": true
+  },
+  "rf-sensor": {
+    "originRef": "rf-monitor-origin",
+    "reviewed": true
+  },
+  "social repost 1 derived from report X": {
+    "originRef": "report-x-origin",
+    "reviewed": true
+  },
+  "social repost 2 derived from report X": {
+    "originRef": "report-x-origin",
+    "reviewed": true
+  },
+  "channel A relays original-message-7": {
+    "originRef": "message-7-origin",
+    "reviewed": true
+  },
+  "channel B relays original-message-7": {
+    "originRef": "message-7-origin",
+    "reviewed": true
+  },
+  "relay-C": {
+    "originRef": "new-authored-upstream",
+    "reviewed": true
+  },
+  "relay-D": {
+    "originRef": "new-authored-upstream",
+    "reviewed": true
+  },
+  "third-independent-observer": {
+    "originRef": "third-observer-origin",
+    "reviewed": true
+  },
+  "third-relay-of-report-X": {
+    "originRef": "report-x-origin",
+    "reviewed": true
+  }
+}

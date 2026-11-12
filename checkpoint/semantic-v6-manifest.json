@@ -1,0 +1,366 @@
+{
+  "createdUtc": "2026-11-12T23:01:03.537795Z",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f566fea76e86cc56b0cc13a6dc296e7c0d88789efaaee541979525d9f5645ae6"
+    },
+    {
+      "path": "brand/concepts/notella-weave-brain-v1.png",
+      "sha256": "1f3a7216e42789d39dd9d08202cb26df662e0d037fdc5e3c5ff49834827d3be2"
+    },
+    {
+      "path": "brand/concepts/notella-weave-brain-v2-vixen-accents.png",
+      "sha256": "9b8f77687a1146794ecf53c6deb9ab89c6e1281978591c9264f980fe296b999f"
+    },
+    {
+      "path": "brand/concepts/README.md",
+      "sha256": "00ae035a649c518c59949df304652431a28aa5071e1a9c4ab6a0e2ce499f73b0"
+    },
+    {
+      "path": "brand/current.json",
+      "sha256": "ba232a9a08116b5b6fbdd0ccc238e274c4d50f5d051a92ae55c69f2d04d1049c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "e97b92d34b3ce4dc8f211dc95f2c1c445785fd67a2813a412b5166c6c9d03b42"
+    },
+    {
+      "path": "Check-In-SemanticV6.ps1",
+      "sha256": "767814df908ea045299c2399daa8da65ca75eaef832436ab4cc99cbbcf02b487"
+    },
+    {
+      "path": "checkpoint/SEMANTIC-V6.md",
+      "sha256": "0fe5d660d8595b79329aaeae52b985c5c3caa774c4ff2e98250bacf7042b9f58"
+    },
+    {
+      "path": "docs/api-reference.md",
+      "sha256": "682ff044e458fda2bd8d84916aa08f1dd4e8930c0cd0db1edd9b1bc4c9f05a41"
+    },
+    {
+      "path": "docs/decision-scoring.md",
+      "sha256": "b790d38be5e3c90f6a5d4351e70cbb22ffe944ab9ee599278b9a182c840fcfe8"
+    },
+    {
+      "path": "docs/index.md",
+      "sha256": "ca00872fd44beae35fbe97d58068d029a32e34ce9453f9b9af06ac51a07c829d"
+    },
+    {
+      "path": "docs/input-output-contracts.md",
+      "sha256": "3cbebd01081ff5f2278e9ba0e519754f54ee851fe657197b977e4d16fa7ace70"
+    },
+    {
+      "path": "docs/portable-profiles.md",
+      "sha256": "3bef50616f23cb6ca18553b261aeb4c7fa11596de64474fdaa3f647bcd624d7e"
+    },
+    {
+      "path": "docs/semantic-reviews.md",
+      "sha256": "5cb8aec9cb38f0860d190ccc5660ba5adb60d8dccb0e3ed629783bee0db45aef"
+    },
+    {
+      "path": "docs/temporal-features.md",
+      "sha256": "dc586554f44c7f732180f7cc886cfc7826b0c7442e635d312f4a2a5868615189"
+    },
+    {
+      "path": "examples/decision_contract_tutorial.py",
+      "sha256": "5423e5f44bedee5e9eb8758e5a2dffe7ec8a111b9244b80be1081efdedc7b335"
+    },
+    {
+      "path": "examples/review_tutorial.py",
+      "sha256": "b6c81ef8bb4a8b23682ca0922930e2b2eef7eb0f5f640a01482bee35a41a55fa"
+    },
+    {
+      "path": "experiments/warning-v2/development-examples.json",
+      "sha256": "953175113db4f8bc57811e848e5c270b8107db19cf938e8cf7516cab70819d91"
+    },
+    {
+      "path": "experiments/warning-v2/evaluate_training_fit.py",
+      "sha256": "084c9f3d27d72bbd4b42b2c68a2c7ea735584505e88f3d84e11ca9a29dbafda9"
+    },
+    {
+      "path": "experiments/warning-v2/evaluate.py",
+      "sha256": "1bd551a976104cf6f5dce886682d018078f79054bd7bd74109e837beef7124e5"
+    },
+    {
+      "path": "experiments/warning-v2/prepare.py",
+      "sha256": "1151d0b359c39a6025ee4063cc6ad1ef0ade9adc0a6fa13b393cc8a7b31881f0"
+    },
+    {
+      "path": "experiments/warning-v2/PROTOCOL.md",
+      "sha256": "68e7cca20dba4c6266c5586babb052562a4e180171d365c66bd7af74def4e4eb"
+    },
+    {
+      "path": "experiments/warning-v2/README.md",
+      "sha256": "f74dc49e366f2994a1d71731e1c25e948e914480a1ba9ffadd3e9b41a0c2d935"
+    },
+    {
+      "path": "experiments/warning-v2/RESULTS.md",
+      "sha256": "e45b2a2d324a9c8423246ae1de13e9f0c76489d6feaa69073ea319d28b24854d"
+    },
+    {
+      "path": "experiments/warning-v2/run.py",
+      "sha256": "7994d49247ae15e1b904773db641c4b369785aa1b0ce0e8c60d349c71d00dfc2"
+    },
+    {
+      "path": "experiments/warning-v3-fit/development-examples.json",
+      "sha256": "3e9f831bea9af4f47cd849d3639bc12b19cb3603672a6e8ec7dd976be7dcad66"
+    },
+    {
+      "path": "experiments/warning-v3-fit/evaluate_training_fit.py",
+      "sha256": "76c30dca8385792759cf9ce79430352c9700b852fb66d2c76e34eca5ae7bce0f"
+    },
+    {
+      "path": "experiments/warning-v3-fit/evaluate.py",
+      "sha256": "f628c1f9091e2d725032b6ea2b90070fa87509c3e4b749fc781f3ac9b9ed78a9"
+    },
+    {
+      "path": "experiments/warning-v3-fit/ontology.json",
+      "sha256": "932690573fc31ec1459b62945cbff82dcab572454434fbe4580e666a1433db32"
+    },
+    {
+      "path": "experiments/warning-v3-fit/profile.json",
+      "sha256": "a987f8850cf4fd9279f8637b9106d294affacc540830e777848502317cbf6bd7"
+    },
+    {
+      "path": "experiments/warning-v3-fit/PROTOCOL.md",
+      "sha256": "6691afa612de245a5b8e31544956825937bdc68e125f2b32d7006773bdc69088"
+    },
+    {
+      "path": "experiments/warning-v3-fit/RESULTS.md",
+      "sha256": "048f8cb369d3347eb7cede70f0322a7ecde086819076bf07dacd7d5ac418ba31"
+    },
+    {
+      "path": "experiments/warning-v3-fit/run.py",
+      "sha256": "c922263baf479d573d42e5158c9717b74a893d04fa99aae0e6eebfa499d898f0"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/development-examples.json",
+      "sha256": "27094c844eac1603f5b0dcd6e8208e8c93a897fa3b770c8ad5c5be3c69103968"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/evaluate_robustness.py",
+      "sha256": "784d9bea5577d1f78a9a88b89e4ef40bf46e64f3dcea647e47686ca9e0f00b7f"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/evaluate_temporal_facts.py",
+      "sha256": "282f4a7455cb17f9570c71f9e2cb6b3d750c9a135eaa9c8bc900b324c6687711"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/evaluate_training_fit.py",
+      "sha256": "7ec21e17759409826b22776623ca5e75e9b718c1b208a10990ea59695a7c01b1"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/evaluate.py",
+      "sha256": "3b42994d6c061915e1a15ccb132c468a598bc1804ed6303d4b4679098cd8e71e"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/ontology.json",
+      "sha256": "bc67bf93825d37241a97bd38f1e80078f7a341c210189640a5084b978ff4b15d"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/prepare.py",
+      "sha256": "69e5e62bd3267e659d68e000a6d505018627270acc1c68a11ee4b715cc1fae45"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/profile.json",
+      "sha256": "4610862713c5108278079638a7b97e427349f2693f4b40519906dae7064a6dc5"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/PROTOCOL.md",
+      "sha256": "a7565a80270945c46b36b08236ac9cfbc62124a0b396eae35dcd5d86da740e37"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/RESULTS.md",
+      "sha256": "f32ba0af0fd63088420a4a16092ce66f671f36e6748417d38ad8191ada55c11d"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/robustness-probes.json",
+      "sha256": "cb3498d9492a8c6f9f5143943225f5847355708e95793351ab2d6f59e2ee67bb"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/ROBUSTNESS.md",
+      "sha256": "4cf494f9bba2bb0b4f9bf91791c82290b65c0216f125ea193bc42b585e4f0ea2"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/run_robustness.py",
+      "sha256": "04c542b9334373b8cb1bea472760d9b530f4105f5a54430d36608fcb0c191878"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/run_temporal_facts.py",
+      "sha256": "98653fe7ef299f4099939d6c5792ce42856e6f349e59f2df3dd717d826fa3ff1"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/run.py",
+      "sha256": "e241a40fa659493bf6bb29811ede2c050cd3b35205e22e9010a451b0a9736ace"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/sampling-audit.json",
+      "sha256": "70b0ec4ff5856f64731acb69ef395d14fd0f2d3f94f4b2a0c01f4e505a690f18"
+    },
+    {
+      "path": "experiments/warning-v4-expanded/TEMPORAL-FACTS.md",
+      "sha256": "ce6a73ef602c2de8ee424315c0f1c68ac3b8bfc44382060ff7ec5d9b6b35514b"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/cases.json",
+      "sha256": "713ec2f1af1f5ec16d04b4bdde0bce8d3366cba4ac79bf370211ffd485c04099"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/contract.json",
+      "sha256": "d966a6bda5bf8f204753f25804b874cf5498b1d2f57ac4ad046bf7861d61c50b"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/evaluate.py",
+      "sha256": "013a2e93f0c83ecd02cdc14dc4e6d79026ead65a06e8326b36cb9630523bb29b"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/frozen-inputs.json",
+      "sha256": "0b5b2e9ed63a4d408afc5d2207b9c5614dce01f5626b99464b2f9f7dc6c15044"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/input-preflight.json",
+      "sha256": "14b78e3b68e623f6581632f7bdb51c8256ed622bccf7e019e8946f2c0e795e21"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/PROTOCOL.md",
+      "sha256": "1f444f6d48052454052e7ae15347a288207d997d83179c383bdebc7322a2c0d5"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/RESULTS.md",
+      "sha256": "8f733fc7e0900df5714bc579c0b4414b0a05530f53d11b1e93a4904baf1c4a5e"
+    },
+    {
+      "path": "experiments/warning-v5-contracts/run.py",
+      "sha256": "c9631c2881fab8049e372d66214b762dc474e0ab4f83650e0576f9fabaa05671"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/development-examples.json",
+      "sha256": "827d48681b602eefceb6b0c732f80e0f4a3e2749ba46d9041d7062a68aa5ffcf"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/evaluate_regressions.py",
+      "sha256": "5fb58f383b2ddb46e4529c51b411abc23f8a5b3698808ebf320de569491306fb"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/evaluate.py",
+      "sha256": "6daf1f18f1baca04cd75a78531fab642c0aaf3dc5ff2473111a62d6828689770"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/ontology.json",
+      "sha256": "d2622bcc71ef909834eeda052348430453bf31a6f28db903bffd99a6d97494a2"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/prepare.py",
+      "sha256": "f483a392e5f3b76cc2e8281628c3217033bca4751644b4e7d2dbdcff4a9a7827"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/profile.json",
+      "sha256": "b3a12d5b302d5f21c80ca8b64a4f4cb869aa525037d8791e026f0741338f4fd1"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/projection-receipts.json",
+      "sha256": "869d7e775ede3815b627253ab8ffeacb1026285022f3a814d60266ae9761987f"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/PROTOCOL.md",
+      "sha256": "d041dd0ec9bcd54c30d9b5bd5069aed0706f0dd3ed9f365b4aac4aee71d94468"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/RESULTS.md",
+      "sha256": "49fdeb1b4345198008070a68de967eb5c1708b653d3e8c8b254de82bf6ed3797"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/run_regressions.py",
+      "sha256": "dc2f888407b40b7ffac9c9d8a14ec7f7f0bf3000b3f7da0695bb8c2b0bd33810"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/run.py",
+      "sha256": "07edd4a162e0f05cc7b3031ef748701ac79fba3ab3c00ae1e476d991fc33dcd7"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/sampling-audit.json",
+      "sha256": "905a0dc5b5bdf98c79e883a663bb48ec7da70c2598e713736f6db26f869cc82b"
+    },
+    {
+      "path": "experiments/warning-v6-typed-training/source-registry.json",
+      "sha256": "c5665001873df0da33a252b263442ff1496ae187209d259ec6ada83ada769cb4"
+    },
+    {
+      "path": "notella/client.py",
+      "sha256": "5884399dbc66dbf3bd903a0a00fe35c7bc266d72bff65d52c90bc6ff18fe4cf3"
+    },
+    {
+      "path": "notella/http.py",
+      "sha256": "a989082e461cedf8fc0f4e6016738ad8b5ddffb63b8b5a4f4e87f8c1d0487308"
+    },
+    {
+      "path": "notella/lineage.py",
+      "sha256": "79fa7a72b60e86f1a0f7dad21b92d9b0a721a8b42c7a8f837c3b3226292be9e2"
+    },
+    {
+      "path": "notella/openapi.py",
+      "sha256": "ea146103e94ca900206470acc1d45eaff6573e5a15b0fc7767a37eb48f87a97d"
+    },
+    {
+      "path": "notella/output_contracts.py",
+      "sha256": "e5776f287f0ab8d103d8defc19f2a78bb5495726ba55072949cbfff29a6efb7a"
+    },
+    {
+      "path": "notella/profile.py",
+      "sha256": "f93a2105ec3968cbece2edf0fa707edf58cf145d419df48b64e5581c8f2de443"
+    },
+    {
+      "path": "notella/scoring.py",
+      "sha256": "7e68ccfcbc1c9ecad873956a157705ea9ee0ec00aa3303f2416b65120d602dd4"
+    },
+    {
+      "path": "notella/semantic_reviews.py",
+      "sha256": "edb6fbe2cb8204686ecdc1e6f0e54bdd7a1e2b8206277b41139964b12bcab09d"
+    },
+    {
+      "path": "openapi.json",
+      "sha256": "111f42215487e343e5bba21c03e8152546ea1d612edbf9188527ac5670d7cbce"
+    },
+    {
+      "path": "profiles/layertime/decision_contract.py",
+      "sha256": "e4aeed66de8ad5addb291ea1edd880b80aa55eda94e230f23ac6fd0ed65cc641"
+    },
+    {
+      "path": "profiles/layertime/temporal_features.py",
+      "sha256": "ab96a09bbda732a8e9c993d59d3eeb01ab36c59a26266eb6c1af81f2b7edc99b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "edc1493bbad6e6fb188e50a6eb8d4798a67c2881dd61f643aedc1b94732ce9f9"
+    },
+    {
+      "path": "tests/test_decision_contract.py",
+      "sha256": "8d0914e907ac556c773019a1a7fbb6b6eb7f32c8753ab5713ba18c81edb24b71"
+    },
+    {
+      "path": "tests/test_lineage.py",
+      "sha256": "b9561d090ff1c81018ed1b7a7260957608be6bda2ecef340e9d5ceac9dbf40ca"
+    },
+    {
+      "path": "tests/test_output_contracts.py",
+      "sha256": "3b936ec6ca5eb199a7ed83dc3333aa668f0e5c66c93008395a8e67c7bc65552c"
+    },
+    {
+      "path": "tests/test_profile.py",
+      "sha256": "5d313efdfa843a0d08744ec5fd9f7a5bea9f8e37f7ad315b8ba85dfd7ab0ecbe"
+    },
+    {
+      "path": "tests/test_scoring.py",
+      "sha256": "14e720b15abbcf04e80f6b42413376440b5eef8edf17644cdb98d27d5d038e0b"
+    },
+    {
+      "path": "tests/test_semantic_reviews.py",
+      "sha256": "c53da78e57f7f656b6d9715a9eb449c34898889577803b3124b850f53850bbc5"
+    },
+    {
+      "path": "tests/test_temporal_features.py",
+      "sha256": "c87ba24bb89d00912e8736e4f8852913a2bcd2b5727ee5159cdcd501ac4a1459"
+    }
+  ],
+  "parent": "ceb591609709e65aa1d4ab1dd3c53a71ce570dad"
+}

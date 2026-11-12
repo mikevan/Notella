@@ -1,0 +1,16 @@
+{
+  "trainingRows": 45,
+  "uniqueProjectedTrainingInputs": 24,
+  "sourceAuthoredTrainingVariants": 30,
+  "explicitReplayRows": 15,
+  "postureCounts": {
+    "critical": 15,
+    "high": 15,
+    "contextual": 15
+  },
+  "newDevelopmentControls": 10,
+  "exactCrossSplitInputOverlap": 0,
+  "oldAnchorRole": "known-template regression only; some old anchors equal projected training inputs",
+  "independentFieldIncidents": 0,
+  "frozenTestLoaded": false
+}

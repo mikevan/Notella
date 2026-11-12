@@ -1,0 +1,1777 @@
+[
+  {
+    "id": "v4-ontoforge-credible-sequence-0",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 10000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 28000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-1",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 27000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 74000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-2",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 44000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 137000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-generic-rf-0",
+    "family": "generic-rf",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template generic-rf",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-generic-rf-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 12341, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unidentified RF signature; drone classifier uncertain\", \"location\": \"camp-area\", \"sources\": [\"rf-sensor\"], \"timeMs\": 30341, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unidentified_signal"
+    }
+  },
+  {
+    "id": "v4-ontoforge-generic-rf-1",
+    "family": "generic-rf",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template generic-rf",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-generic-rf-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 29341, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unidentified RF signature; drone classifier uncertain\", \"location\": \"camp-area\", \"sources\": [\"rf-sensor\"], \"timeMs\": 76341, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unidentified_signal"
+    }
+  },
+  {
+    "id": "v4-ontoforge-generic-rf-2",
+    "family": "generic-rf",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template generic-rf",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-generic-rf-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 46341, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unidentified RF signature; drone classifier uncertain\", \"location\": \"camp-area\", \"sources\": [\"rf-sensor\"], \"timeMs\": 139341, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unidentified_signal"
+    }
+  },
+  {
+    "id": "v4-ontoforge-outage-only-0",
+    "family": "outage-only",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outage-only",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-outage-only-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"Wi-Fi outage; cause unknown\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 14682, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 32682, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "cause_unresolved"
+    }
+  },
+  {
+    "id": "v4-ontoforge-outage-only-1",
+    "family": "outage-only",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outage-only",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-outage-only-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"Wi-Fi outage; cause unknown\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 31682, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 78682, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "cause_unresolved"
+    }
+  },
+  {
+    "id": "v4-ontoforge-outage-only-2",
+    "family": "outage-only",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outage-only",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-outage-only-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"Wi-Fi outage; cause unknown\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 48682, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 141682, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "cause_unresolved"
+    }
+  },
+  {
+    "id": "v4-ontoforge-reversed-order-0",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-reversed-order-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 17023, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": -2977, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-ontoforge-reversed-order-1",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-reversed-order-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 34023, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 14023, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-ontoforge-reversed-order-2",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-reversed-order-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 51023, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 31023, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-ontoforge-missing-clock-0",
+    "family": "missing-clock",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template missing-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-missing-clock-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 19364, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": null, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"clock alignment unknown\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unknown_time"
+    }
+  },
+  {
+    "id": "v4-ontoforge-missing-clock-1",
+    "family": "missing-clock",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template missing-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-missing-clock-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 36364, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": null, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"clock alignment unknown\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unknown_time"
+    }
+  },
+  {
+    "id": "v4-ontoforge-missing-clock-2",
+    "family": "missing-clock",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template missing-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-missing-clock-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 53364, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": null, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"clock alignment unknown\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unknown_time"
+    }
+  },
+  {
+    "id": "v4-ontoforge-distant-location-0",
+    "family": "distant-location",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template distant-location",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-distant-location-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 21705, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"verified different area 20 km away\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 39705, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "different_location"
+    }
+  },
+  {
+    "id": "v4-ontoforge-distant-location-1",
+    "family": "distant-location",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template distant-location",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-distant-location-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 38705, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"verified different area 20 km away\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 85705, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "different_location"
+    }
+  },
+  {
+    "id": "v4-ontoforge-distant-location-2",
+    "family": "distant-location",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template distant-location",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-distant-location-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 55705, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"verified different area 20 km away\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 148705, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "different_location"
+    }
+  },
+  {
+    "id": "v4-ontoforge-benign-operations-0",
+    "family": "benign-operations",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template benign-operations",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-benign-operations-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"verified scheduled maintenance outage\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 24046, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"verified authorized humanitarian aid drone\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 42046, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "benign_explanation"
+    }
+  },
+  {
+    "id": "v4-ontoforge-benign-operations-1",
+    "family": "benign-operations",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template benign-operations",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-benign-operations-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"verified scheduled maintenance outage\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 41046, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"verified authorized humanitarian aid drone\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 88046, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "benign_explanation"
+    }
+  },
+  {
+    "id": "v4-ontoforge-benign-operations-2",
+    "family": "benign-operations",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template benign-operations",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-benign-operations-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"verified scheduled maintenance outage\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 58046, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"verified authorized humanitarian aid drone\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 151046, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "benign_explanation"
+    }
+  },
+  {
+    "id": "v4-ontoforge-duplicate-reports-0",
+    "family": "duplicate-reports",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template duplicate-reports",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-duplicate-reports-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 26387, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unverified drone report\", \"location\": \"camp-area\", \"sources\": [\"social repost 1 derived from report X\", \"social repost 2 derived from report X\"], \"timeMs\": 44387, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "dependent_reports"
+    }
+  },
+  {
+    "id": "v4-ontoforge-duplicate-reports-1",
+    "family": "duplicate-reports",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template duplicate-reports",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-duplicate-reports-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 43387, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unverified drone report\", \"location\": \"camp-area\", \"sources\": [\"social repost 1 derived from report X\", \"social repost 2 derived from report X\"], \"timeMs\": 90387, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "dependent_reports"
+    }
+  },
+  {
+    "id": "v4-ontoforge-duplicate-reports-2",
+    "family": "duplicate-reports",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template duplicate-reports",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-duplicate-reports-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 60387, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unverified drone report\", \"location\": \"camp-area\", \"sources\": [\"social repost 1 derived from report X\", \"social repost 2 derived from report X\"], \"timeMs\": 153387, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "dependent_reports"
+    }
+  },
+  {
+    "id": "v4-ontoforge-outside-window-0",
+    "family": "outside-window",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outside-window",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-outside-window-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 28728, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 3628728, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "outside_window"
+    }
+  },
+  {
+    "id": "v4-ontoforge-outside-window-1",
+    "family": "outside-window",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outside-window",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-outside-window-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 45728, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 3645728, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "outside_window"
+    }
+  },
+  {
+    "id": "v4-ontoforge-outside-window-2",
+    "family": "outside-window",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outside-window",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-outside-window-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 62728, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 3662728, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "outside_window"
+    }
+  },
+  {
+    "id": "v4-ontoforge-overlapping-clock-0",
+    "family": "overlapping-clock",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template overlapping-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-overlapping-clock-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 31069, \"uncertaintyMs\": 60000}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 49069, \"uncertaintyMs\": 60000}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "uncertain_order"
+    }
+  },
+  {
+    "id": "v4-ontoforge-overlapping-clock-1",
+    "family": "overlapping-clock",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template overlapping-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-overlapping-clock-1",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 48069, \"uncertaintyMs\": 60000}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 95069, \"uncertaintyMs\": 60000}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "uncertain_order"
+    }
+  },
+  {
+    "id": "v4-ontoforge-overlapping-clock-2",
+    "family": "overlapping-clock",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template overlapping-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-overlapping-clock-2",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 65069, \"uncertaintyMs\": 60000}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 158069, \"uncertaintyMs\": 60000}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "uncertain_order"
+    }
+  },
+  {
+    "id": "v4-ontoforge-heldout-corrob-sequence-0",
+    "family": "heldout-corrob-sequence",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template heldout-corrob-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-heldout-corrob-sequence-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 33410, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 51410, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-heldout-unknown-signal-0",
+    "family": "heldout-unknown-signal",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template heldout-unknown-signal",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-heldout-unknown-signal-0",
+      "samplingRole": "original development view"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 35751, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unidentified RF signature; drone classifier uncertain\", \"location\": \"camp-area\", \"sources\": [\"rf-sensor\"], \"timeMs\": 53751, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unidentified_signal"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-0-replay-0",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-0",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 0
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 10000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 28000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-1-replay-1",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-1",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 1
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 27000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 74000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-2-replay-2",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-2",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 2
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 44000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 137000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-0-replay-3",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-0",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 3
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 10000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 28000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-1-replay-4",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-1",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 4
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 27000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 74000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-2-replay-5",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-2",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 5
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 44000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 137000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-0-replay-6",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-0",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 6
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 10000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 28000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-1-replay-7",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-1",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 7
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 27000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 74000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-2-replay-8",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-2",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 8
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 44000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 137000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-0-replay-9",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-0",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 9
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 10000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 28000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-1-replay-10",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-1",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 10
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 27000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 74000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-credible-sequence-2-replay-11",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template credible-sequence",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-credible-sequence-2",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 11
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 44000, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 137000, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "v4-ontoforge-reversed-order-0-replay-0",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-reversed-order-0",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 0
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 17023, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": -2977, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-ontoforge-reversed-order-1-replay-1",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-reversed-order-1",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 1
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 34023, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 14023, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-ontoforge-reversed-order-2-replay-2",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": true,
+      "originalExampleId": "ontoforge-reversed-order-2",
+      "samplingRole": "deliberate replay; not a new independent example",
+      "replayIndex": 2
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 51023, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 31023, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"camp-A\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-development-outage-only",
+    "family": "development-v4-outage-only",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outage-only",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-outage-only-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"Wi-Fi outage; cause unknown\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 162819, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 180819, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "cause_unresolved"
+    }
+  },
+  {
+    "id": "v4-development-reversed-order",
+    "family": "development-v4-reversed-order",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template reversed-order",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-reversed-order-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 165160, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 145160, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "v4-development-missing-clock",
+    "family": "development-v4-missing-clock",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template missing-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-missing-clock-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 167501, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": null, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"clock alignment unknown\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unknown_time"
+    }
+  },
+  {
+    "id": "v4-development-distant-location",
+    "family": "development-v4-distant-location",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template distant-location",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-distant-location-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 169842, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"verified different area 20 km away\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 187842, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "different_location"
+    }
+  },
+  {
+    "id": "v4-development-benign-operations",
+    "family": "development-v4-benign-operations",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template benign-operations",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-benign-operations-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"verified scheduled maintenance outage\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 172183, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"verified authorized humanitarian aid drone\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 190183, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "benign_explanation"
+    }
+  },
+  {
+    "id": "v4-development-duplicate-reports",
+    "family": "development-v4-duplicate-reports",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template duplicate-reports",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-duplicate-reports-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 174524, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"unverified drone report\", \"location\": \"camp-area\", \"sources\": [\"social repost 1 derived from report X\", \"social repost 2 derived from report X\"], \"timeMs\": 192524, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "dependent_reports"
+    }
+  },
+  {
+    "id": "v4-development-outside-window",
+    "family": "development-v4-outside-window",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template outside-window",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-outside-window-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 176865, \"uncertaintyMs\": 100}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 3776865, \"uncertaintyMs\": 100}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "outside_window"
+    }
+  },
+  {
+    "id": "v4-development-overlapping-clock",
+    "family": "development-v4-overlapping-clock",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "notella-authored-warning-expansion-v4",
+      "kind": "synthetic",
+      "reference": "Previously authored development template overlapping-clock",
+      "permission": "Project-authored development use",
+      "labelAuthor": "Agent-authored project-policy labels; no independent field validation",
+      "trainingAllowed": false,
+      "originalExampleId": "ontoforge-overlapping-clock-0",
+      "samplingRole": "development view derived from a training template; not independent field evidence"
+    },
+    "input": "{\"facts\": [{\"factId\": \"capture_summary\", \"value\": {\"context\": \"Synthetic development camp under a supplied credible ongoing threat; not actor attribution.\", \"disruption\": {\"kind\": \"credible independently reviewed deliberate Wi-Fi denial of service\", \"location\": \"camp-area\", \"source\": \"network-monitor\", \"timeMs\": 179206, \"uncertaintyMs\": 60000}, \"drone\": {\"kind\": \"corroborated drone presence\", \"location\": \"camp-area\", \"sources\": [\"visual-observer\", \"independent-acoustic-sensor\"], \"timeMs\": 197206, \"uncertaintyMs\": 60000}, \"linkingWindowMs\": 120000, \"location\": \"development-camp-C\", \"timeBasis\": \"relative milliseconds on a shared clock\"}}, {\"factId\": \"review_policy\", \"value\": {\"action\": \"Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.\", \"certainty\": \"Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.\", \"contextual\": \"If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.\", \"critical\": \"Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.\", \"high\": \"Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.\", \"id\": \"civilian-precaution-v0.1\", \"status\": \"proposed-project-policy-not-field-validated\", \"timing\": \"The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.\"}}]}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "uncertain_order"
+    }
+  }
+]

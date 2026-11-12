@@ -7,6 +7,7 @@ def specification():
       'curricula':body({'ontologyId':text,'examples':{'type':'array','items':{'type':'object'}},'excludedPromptHashes':{'type':'array','items':text}},['ontologyId','examples']),
       'plans':body({'curriculumId':text,'baseModel':text,'steps':{'type':'integer','minimum':1,'maximum':100000},'rank':{'type':'integer','minimum':1,'maximum':128},'learningRate':{'type':'number','exclusiveMinimum':0,'maximum':0.001}},['curriculumId','baseModel']),
       'jobs':body({'planId':text},['planId']),
+      'interpretation-reviews':body({'curriculumId':text,'exampleId':text,'output':text,'reviewer':body({'name':text,'kind':{'type':'string','enum':['human','agent']},'independent':{'type':'boolean'}},['name','kind','independent']),'criteria':{'type':'array','items':body({'id':text,'description':text},['id','description'])},'judgments':{'type':'array','items':body({'criterionId':text,'status':{'type':'string','enum':['pass','fail','not_assessed']},'rationale':text},['criterionId','status','rationale'])},'split':{'type':'string','enum':['validation','test']}},['curriculumId','exampleId','output','reviewer','criteria','judgments']),
       'evaluations':body({'curriculumId':text,'predictions':{'type':'object'},'split':{'type':'string','enum':['validation','test']}},['curriculumId','predictions'])}
     paths={'/health':{'get':{'security':[],'responses':{'200':{'description':'Service health'}}}}}
     for resource,schema in requests.items():

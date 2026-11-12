@@ -120,3 +120,17 @@ The result reports per-example presence, schema validity, exactTargetMatch and a
 | 500 | Unexpected local server/storage failure | Inspect local state; preserve evidence |
 
 Error bodies have `{"error":"message"}`. There is no CORS support, streaming upload, chunked request handling, public hosting or pagination in 0.1. This is a small local developer service. Large datasets should be handled through a future bounded import API rather than removing request limits without resource planning.
+
+
+## Hash-bound interpretation reviews
+
+POST /v1/interpretation-reviews records explicit reviewer judgments against exact output text and criteria. GET /v1/interpretation-reviews/{id} retrieves them. This complements structural evaluations and does not automate semantic truth. See the [runnable review tutorial](semantic-reviews.md) for field definitions and Python/HTTP examples.
+
+
+## Python contract extensions
+
+`notella.lineage.summarize_lineage(labels, registry)` returns a model-facing origin topology and a separate provenance receipt. Unknown/unreviewed labels never become invented independent origins.
+
+`notella.output_contracts.inspect_output(output, schema, allowed_states, fields)` checks exact generated text, schema and declared field combinations. It returns violations and a hash, never a repaired answer or ground-truth certification.
+
+The source-checkout LayerTime adapter provides `profiles.layertime.decision_contract.project_observation` and `inspect_warning_output`. These explicitly project relevant observations and check necessary evidence relations. They are profile helpers, not automatic behavior of every core endpoint and not additional HTTP routes. See the [runnable contract tutorial](input-output-contracts.md).

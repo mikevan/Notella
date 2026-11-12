@@ -1,0 +1,11 @@
+{
+  "currentConcept": "concepts/notella-weave-brain-v2-vixen-accents.png",
+  "status": "selected-raster-concept",
+  "wordmarkTreatment": "Amber letters with Vixen-style green diagonal facets; no Not/ella color split",
+  "palette": {
+    "amber": "#F2AB21",
+    "green": "#69D100",
+    "background": "#000000"
+  },
+  "productionVectorMaster": null
+}

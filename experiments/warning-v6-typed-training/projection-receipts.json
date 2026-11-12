@@ -1,0 +1,2832 @@
+[
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-0",
+    "receipt": {
+      "observationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-1",
+    "receipt": {
+      "observationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-2",
+    "receipt": {
+      "observationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-generic-rf-0",
+    "receipt": {
+      "observationSha256": "0f3f898b85fff29276b7e424f18dfff76743cc416af469503548b84dd3928618",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+            "registryEntry": {
+              "originRef": "rf-monitor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "0f3f898b85fff29276b7e424f18dfff76743cc416af469503548b84dd3928618",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-generic-rf-1",
+    "receipt": {
+      "observationSha256": "74e6843343fd9c32433c6d001e955b16ee1f9e54844e3f05e8287a288e2e2d2d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+            "registryEntry": {
+              "originRef": "rf-monitor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "74e6843343fd9c32433c6d001e955b16ee1f9e54844e3f05e8287a288e2e2d2d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-generic-rf-2",
+    "receipt": {
+      "observationSha256": "592cd37ee672cb1748e3103319e38c7af64768ec948d5cf725f1246e55be828e",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+            "registryEntry": {
+              "originRef": "rf-monitor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "592cd37ee672cb1748e3103319e38c7af64768ec948d5cf725f1246e55be828e",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-outage-only-0",
+    "receipt": {
+      "observationSha256": "dfc7f74f4238de709a085a4f6ce57cac7660e6d8c32bd9b85a5a9dc6cbddd023",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "dfc7f74f4238de709a085a4f6ce57cac7660e6d8c32bd9b85a5a9dc6cbddd023",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-outage-only-1",
+    "receipt": {
+      "observationSha256": "ee0f9e01a093acb45020300c81f1dce1706d8a7895623f8a616c3d69474b22d4",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "ee0f9e01a093acb45020300c81f1dce1706d8a7895623f8a616c3d69474b22d4",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-outage-only-2",
+    "receipt": {
+      "observationSha256": "285c6a200a44f7270184a29d6b76e08d92545121f89f6b918eb9ba4c0d319b5c",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "285c6a200a44f7270184a29d6b76e08d92545121f89f6b918eb9ba4c0d319b5c",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-reversed-order-0",
+    "receipt": {
+      "observationSha256": "994ac7ecb0b7d673cdbb5fdfdf8db45642cb0d568d596fb8bc0b5336b1e0a064",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "994ac7ecb0b7d673cdbb5fdfdf8db45642cb0d568d596fb8bc0b5336b1e0a064",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-reversed-order-1",
+    "receipt": {
+      "observationSha256": "fb0085de5760f2fb86b93ffdcdbf823c41464d8444ce0db8a71282c5509c0134",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "fb0085de5760f2fb86b93ffdcdbf823c41464d8444ce0db8a71282c5509c0134",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-reversed-order-2",
+    "receipt": {
+      "observationSha256": "d1de673f5debd58fe59ddf9d82ab16245d8a70b10f5812df39567187ba56aa7f",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "d1de673f5debd58fe59ddf9d82ab16245d8a70b10f5812df39567187ba56aa7f",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-missing-clock-0",
+    "receipt": {
+      "observationSha256": "c77ceaa950d1ede6af89bfa32519644cb2840448104e78a0d9f152531deb11ae",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "c77ceaa950d1ede6af89bfa32519644cb2840448104e78a0d9f152531deb11ae",
+          "clockComparabilityAssertedByInput": false,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "unknown",
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Shared-clock alignment is not supplied; times cannot be compared."
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-missing-clock-1",
+    "receipt": {
+      "observationSha256": "5818d28d1a509e8fb6587122921e5c73cc207537325406459510e31e51505264",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "5818d28d1a509e8fb6587122921e5c73cc207537325406459510e31e51505264",
+          "clockComparabilityAssertedByInput": false,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "unknown",
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Shared-clock alignment is not supplied; times cannot be compared."
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-missing-clock-2",
+    "receipt": {
+      "observationSha256": "d77f5639a5ebcbe50fab326751bbbbf5f0435ec4eff4413819d26e8503bd7c69",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "d77f5639a5ebcbe50fab326751bbbbf5f0435ec4eff4413819d26e8503bd7c69",
+          "clockComparabilityAssertedByInput": false,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "unknown",
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Shared-clock alignment is not supplied; times cannot be compared."
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-distant-location-0",
+    "receipt": {
+      "observationSha256": "b75e7807739c600c7762a00e60eb220b7de603214d8f03680db7f68716e11729",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "b75e7807739c600c7762a00e60eb220b7de603214d8f03680db7f68716e11729",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-distant-location-1",
+    "receipt": {
+      "observationSha256": "3c2e2d390214e4cc0e289822ccf877de8db7ec70290762b5ebad17107331e2f8",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "3c2e2d390214e4cc0e289822ccf877de8db7ec70290762b5ebad17107331e2f8",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-distant-location-2",
+    "receipt": {
+      "observationSha256": "1a784fda5edd05449a06795113993f981b7e41d332f2e3b6ebebb447b6c38b51",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "1a784fda5edd05449a06795113993f981b7e41d332f2e3b6ebebb447b6c38b51",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-benign-operations-0",
+    "receipt": {
+      "observationSha256": "802f4c27f10d0aab6a9c1cb93a7a8f84cc31d77070b10048e8fb546309def5d9",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "802f4c27f10d0aab6a9c1cb93a7a8f84cc31d77070b10048e8fb546309def5d9",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-benign-operations-1",
+    "receipt": {
+      "observationSha256": "16334dc4d18624c6f9f4896fbc11128a8682fb0c47087cf7a1b77361f725ca41",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "16334dc4d18624c6f9f4896fbc11128a8682fb0c47087cf7a1b77361f725ca41",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-benign-operations-2",
+    "receipt": {
+      "observationSha256": "e020a6c939af5d449a85a16f85565f9376e229fd8d5064483cf81a4aa4322dd8",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "e020a6c939af5d449a85a16f85565f9376e229fd8d5064483cf81a4aa4322dd8",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-duplicate-reports-0",
+    "receipt": {
+      "observationSha256": "ec68580cd1c15c90b52d360777ab9a42d190b3419ccfaedfb7c0edd6b0111ada",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "9a0942eed49a8a8adaab0e16526705017c59235ed8938eed9871c92baa4c3b52",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "273648f237c93cd167db9cfae935474ed4cc53ed8a083cd529104a15075280df",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "ec68580cd1c15c90b52d360777ab9a42d190b3419ccfaedfb7c0edd6b0111ada",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-duplicate-reports-1",
+    "receipt": {
+      "observationSha256": "ea2c29ee82d025bfffa71db25205cc911ac653a0e21e9a3400bfb6ceff8e8735",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "9a0942eed49a8a8adaab0e16526705017c59235ed8938eed9871c92baa4c3b52",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "273648f237c93cd167db9cfae935474ed4cc53ed8a083cd529104a15075280df",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "ea2c29ee82d025bfffa71db25205cc911ac653a0e21e9a3400bfb6ceff8e8735",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-duplicate-reports-2",
+    "receipt": {
+      "observationSha256": "8272c30c1bcccc28bf0f9555a0618ef91bef55e854c2227c8a883194d0cdf131",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "9a0942eed49a8a8adaab0e16526705017c59235ed8938eed9871c92baa4c3b52",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "273648f237c93cd167db9cfae935474ed4cc53ed8a083cd529104a15075280df",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "8272c30c1bcccc28bf0f9555a0618ef91bef55e854c2227c8a883194d0cdf131",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-outside-window-0",
+    "receipt": {
+      "observationSha256": "b4c6f9c5ffb650cc452465822a82557358940ad24ad701841b5447cacfa63c9f",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "b4c6f9c5ffb650cc452465822a82557358940ad24ad701841b5447cacfa63c9f",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              3599800,
+              3600200
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-outside-window-1",
+    "receipt": {
+      "observationSha256": "1eb5476f33ee7c4ead00d3c18c5a004aded3fe2d41ae21b8e483a6bdb9b84792",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "1eb5476f33ee7c4ead00d3c18c5a004aded3fe2d41ae21b8e483a6bdb9b84792",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              3599800,
+              3600200
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-outside-window-2",
+    "receipt": {
+      "observationSha256": "cc07cb8f31dd2192fe5d76cbc850746510935502a1be9ce100f9f66b68286262",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "cc07cb8f31dd2192fe5d76cbc850746510935502a1be9ce100f9f66b68286262",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              3599800,
+              3600200
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-overlapping-clock-0",
+    "receipt": {
+      "observationSha256": "96f2a10752fa285881532b0af5a5ab8f0925e6d9b43176157ddd4358899e7a83",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "96f2a10752fa285881532b0af5a5ab8f0925e6d9b43176157ddd4358899e7a83",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "uncertain",
+            "delayIntervalMs": [
+              -102000,
+              138000
+            ],
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-overlapping-clock-1",
+    "receipt": {
+      "observationSha256": "8019072c19f5c3febd7bbf91dcccc37211ae10acba7f4e8f432e753f05f4d3a0",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "8019072c19f5c3febd7bbf91dcccc37211ae10acba7f4e8f432e753f05f4d3a0",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "uncertain",
+            "delayIntervalMs": [
+              -73000,
+              167000
+            ],
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-overlapping-clock-2",
+    "receipt": {
+      "observationSha256": "d758b2707848b3b2982e588119a9abb7f8b89226556fecd3240a122090bfe123",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "d758b2707848b3b2982e588119a9abb7f8b89226556fecd3240a122090bfe123",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "uncertain",
+            "delayIntervalMs": [
+              -27000,
+              213000
+            ],
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-0-replay-0",
+    "receipt": {
+      "observationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-1-replay-1",
+    "receipt": {
+      "observationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-2-replay-2",
+    "receipt": {
+      "observationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-0-replay-3",
+    "receipt": {
+      "observationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-1-replay-4",
+    "receipt": {
+      "observationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-2-replay-5",
+    "receipt": {
+      "observationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-0-replay-6",
+    "receipt": {
+      "observationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-1-replay-7",
+    "receipt": {
+      "observationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-2-replay-8",
+    "receipt": {
+      "observationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-0-replay-9",
+    "receipt": {
+      "observationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "036eb9300cc0906d1e00e705eb7b459532f8adf571f45429ddddd1ea556c8068",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-1-replay-10",
+    "receipt": {
+      "observationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "4fe4591a9a0d7bcf3440dbc59e63ada1465118026abdd9c1467de425ccac86a2",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              46800,
+              47200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-credible-sequence-2-replay-11",
+    "receipt": {
+      "observationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-reversed-order-0-replay-0",
+    "receipt": {
+      "observationSha256": "994ac7ecb0b7d673cdbb5fdfdf8db45642cb0d568d596fb8bc0b5336b1e0a064",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "994ac7ecb0b7d673cdbb5fdfdf8db45642cb0d568d596fb8bc0b5336b1e0a064",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-reversed-order-1-replay-1",
+    "receipt": {
+      "observationSha256": "fb0085de5760f2fb86b93ffdcdbf823c41464d8444ce0db8a71282c5509c0134",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "fb0085de5760f2fb86b93ffdcdbf823c41464d8444ce0db8a71282c5509c0134",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-v4-ontoforge-reversed-order-2-replay-2",
+    "receipt": {
+      "observationSha256": "d1de673f5debd58fe59ddf9d82ab16245d8a70b10f5812df39567187ba56aa7f",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "d1de673f5debd58fe59ddf9d82ab16245d8a70b10f5812df39567187ba56aa7f",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-credible-sequence",
+    "receipt": {
+      "observationSha256": "578a52de75dba8fa9deb95142ab2530fbf66181f1e576626c12ca7cf911a80e3",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "d0a41c0174506320995770f72cfc06dc951df7d1c2051b4e9419ea3c9c25eade",
+            "registryEntry": {
+              "originRef": "third-observer-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "578a52de75dba8fa9deb95142ab2530fbf66181f1e576626c12ca7cf911a80e3",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 90000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              54500,
+              55500
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-generic-rf",
+    "receipt": {
+      "observationSha256": "2a78ef05258f71d188e68030472db97195138d2ee8747733667239f730bdddc7",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+            "registryEntry": {
+              "originRef": "rf-monitor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2a78ef05258f71d188e68030472db97195138d2ee8747733667239f730bdddc7",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 60000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              24500,
+              25500
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-outage-only",
+    "receipt": {
+      "observationSha256": "51d0d1699a22001c423c3c144d01be65487de8bc3e2dc20680bb39a19193f43d",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "51d0d1699a22001c423c3c144d01be65487de8bc3e2dc20680bb39a19193f43d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 45000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              34500,
+              35500
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-reversed-order",
+    "receipt": {
+      "observationSha256": "fc1e0f8c7c8234c21d87910774b8e7b18524bfec5fa565d59e6eb1ea3d21e96f",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "fc1e0f8c7c8234c21d87910774b8e7b18524bfec5fa565d59e6eb1ea3d21e96f",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 90000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -15500,
+              -14500
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-missing-clock",
+    "receipt": {
+      "observationSha256": "718c41bb72389ffa5574106bfe93c237a3c7c8517603b8e410c096bde6616393",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "718c41bb72389ffa5574106bfe93c237a3c7c8517603b8e410c096bde6616393",
+          "clockComparabilityAssertedByInput": false,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 90000,
+          "measurement": {
+            "order": "unknown",
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Shared-clock alignment is not supplied; times cannot be compared."
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-distant-location",
+    "receipt": {
+      "observationSha256": "ad087929c8175cb4fe4b310a8172969bf3f9dd3228a5a5306217ff7ae601444f",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "ad087929c8175cb4fe4b310a8172969bf3f9dd3228a5a5306217ff7ae601444f",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 60000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              12000,
+              13000
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-benign-operations",
+    "receipt": {
+      "observationSha256": "fee7ebb78fe2035b7442edd144b64b878989a8ee30a68affe6b33f0fc2468ce3",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "fee7ebb78fe2035b7442edd144b64b878989a8ee30a68affe6b33f0fc2468ce3",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 60000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              8500,
+              9500
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-duplicate-reports",
+    "receipt": {
+      "observationSha256": "2dc63054845eadb8a4ec814802d7241f69eae2f0d37bff997376d364a6996309",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "9a0942eed49a8a8adaab0e16526705017c59235ed8938eed9871c92baa4c3b52",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "273648f237c93cd167db9cfae935474ed4cc53ed8a083cd529104a15075280df",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "cf44bca5ffe00a2d79099e2136a0669642a2bd6dc988bc8ce6d873aac2094cb2",
+            "registryEntry": {
+              "originRef": "report-x-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2dc63054845eadb8a4ec814802d7241f69eae2f0d37bff997376d364a6996309",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 45000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              32500,
+              33500
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-outside-window",
+    "receipt": {
+      "observationSha256": "0f79f8c0886717174caae11b8ec34913363f13d70dd419fccadd654aa9542817",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "0f79f8c0886717174caae11b8ec34913363f13d70dd419fccadd654aa9542817",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 60000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              399500,
+              400500
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  },
+  {
+    "id": "v6-control-overlapping-clock",
+    "receipt": {
+      "observationSha256": "843ea628d477df9e9dfeae866f9a2b533a934a0b31d7f59d8dcac79a1be3624c",
+      "lineage": {
+        "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+        "sources": [
+          {
+            "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+            "registryEntry": {
+              "originRef": "visual-observer-origin",
+              "reviewed": true
+            }
+          },
+          {
+            "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+            "registryEntry": {
+              "originRef": "acoustic-sensor-origin",
+              "reviewed": true
+            }
+          }
+        ],
+        "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+      },
+      "temporal": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "843ea628d477df9e9dfeae866f9a2b533a934a0b31d7f59d8dcac79a1be3624c",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 90000,
+          "measurement": {
+            "order": "uncertain",
+            "delayIntervalMs": [
+              -15000,
+              25000
+            ],
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "untrustedFreeTextPassedToModel": false,
+      "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+    }
+  }
+]

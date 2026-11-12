@@ -1,0 +1,196 @@
+{
+  "formatVersion": "layertime.decision-contract.v1",
+  "ongoingThreat": true,
+  "provenanceScope": "Synthetic authored source registry assertions; not external source verification.",
+  "registry": {
+    "visual-observer": {
+      "originRef": "visual-observer-origin",
+      "reviewed": true
+    },
+    "independent-acoustic-sensor": {
+      "originRef": "acoustic-sensor-origin",
+      "reviewed": true
+    },
+    "rf-sensor": {
+      "originRef": "rf-monitor-origin",
+      "reviewed": true
+    },
+    "social repost 1 derived from report X": {
+      "originRef": "report-x-origin",
+      "reviewed": true
+    },
+    "social repost 2 derived from report X": {
+      "originRef": "report-x-origin",
+      "reviewed": true
+    },
+    "channel A relays original-message-7": {
+      "originRef": "message-7-origin",
+      "reviewed": true
+    },
+    "channel B relays original-message-7": {
+      "originRef": "message-7-origin",
+      "reviewed": true
+    },
+    "relay-C": {
+      "originRef": "new-authored-upstream",
+      "reviewed": true
+    },
+    "relay-D": {
+      "originRef": "new-authored-upstream",
+      "reviewed": true
+    }
+  },
+  "allowedStates": [
+    {
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone",
+      "posture": "critical"
+    },
+    {
+      "combinedTrigger": "not_met",
+      "evidenceClass": "benign_explanation",
+      "posture": "contextual"
+    },
+    {
+      "combinedTrigger": "not_met",
+      "evidenceClass": "different_location",
+      "posture": "contextual"
+    },
+    {
+      "combinedTrigger": "not_met",
+      "evidenceClass": "outside_window",
+      "posture": "contextual"
+    },
+    {
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence",
+      "posture": "contextual"
+    },
+    {
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "cause_unresolved",
+      "posture": "high"
+    },
+    {
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "dependent_reports",
+      "posture": "high"
+    },
+    {
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "uncertain_order",
+      "posture": "high"
+    },
+    {
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unidentified_signal",
+      "posture": "high"
+    },
+    {
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unknown_time",
+      "posture": "high"
+    }
+  ],
+  "outputSchema": {
+    "additionalProperties": false,
+    "properties": {
+      "combinedTrigger": {
+        "enum": [
+          "met",
+          "unconfirmed",
+          "not_met"
+        ],
+        "type": "string"
+      },
+      "evidenceClass": {
+        "enum": [
+          "corroborated_drone",
+          "unidentified_signal",
+          "cause_unresolved",
+          "reversed_sequence",
+          "unknown_time",
+          "different_location",
+          "benign_explanation",
+          "dependent_reports",
+          "outside_window",
+          "uncertain_order"
+        ],
+        "type": "string"
+      },
+      "posture": {
+        "enum": [
+          "critical",
+          "high",
+          "contextual"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "posture",
+      "combinedTrigger",
+      "evidenceClass"
+    ],
+    "type": "object",
+    "enum": [
+      {
+        "combinedTrigger": "met",
+        "evidenceClass": "corroborated_drone",
+        "posture": "critical"
+      },
+      {
+        "combinedTrigger": "not_met",
+        "evidenceClass": "benign_explanation",
+        "posture": "contextual"
+      },
+      {
+        "combinedTrigger": "not_met",
+        "evidenceClass": "different_location",
+        "posture": "contextual"
+      },
+      {
+        "combinedTrigger": "not_met",
+        "evidenceClass": "outside_window",
+        "posture": "contextual"
+      },
+      {
+        "combinedTrigger": "not_met",
+        "evidenceClass": "reversed_sequence",
+        "posture": "contextual"
+      },
+      {
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "cause_unresolved",
+        "posture": "high"
+      },
+      {
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "dependent_reports",
+        "posture": "high"
+      },
+      {
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "uncertain_order",
+        "posture": "high"
+      },
+      {
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "unidentified_signal",
+        "posture": "high"
+      },
+      {
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "unknown_time",
+        "posture": "high"
+      }
+    ]
+  },
+  "systemInstruction": "Use only the supplied typed observation and the trusted proposed policy below. This is a synthetic development task, not an attack probability. Source lineage is supplied by a caller-reviewed registry: distinct_reviewed_origins means different asserted provenance roots, not statistical independence. shared_origin means reports relay one origin. Critical/met/corroborated_drone requires ongoingThreat=true, reviewed_deliberate_disruption, corroborated_drone_identity, distinct_reviewed_origins, equal areaRef, order=after and withinWindow=true. Use high/unconfirmed/unidentified_signal for unidentified_rf. Use high/unconfirmed/cause_unresolved for outage_cause_unknown. Use high/unconfirmed/unknown_time for order=unknown, and high/unconfirmed/uncertain_order for order=uncertain. Use high/unconfirmed/dependent_reports for shared_origin reports. Use contextual/not_met/reversed_sequence for order=before; contextual/not_met/outside_window for order=after and withinWindow=false; contextual/not_met/different_location for different areaRef; contextual/not_met/benign_explanation for verified_maintenance or verified_humanitarian_drone. Verified benign operations negate this specific combined trigger even when temporal linkage exists. Contextual does not remove a separate hazard or standing threat. No output establishes causation, perpetrator identity or a certain attack. Return only JSON matching: {\"additionalProperties\":false,\"enum\":[{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"},{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"benign_explanation\",\"posture\":\"contextual\"},{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"different_location\",\"posture\":\"contextual\"},{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"outside_window\",\"posture\":\"contextual\"},{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"},{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"cause_unresolved\",\"posture\":\"high\"},{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"dependent_reports\",\"posture\":\"high\"},{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"uncertain_order\",\"posture\":\"high\"},{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"},{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unknown_time\",\"posture\":\"high\"}],\"properties\":{\"combinedTrigger\":{\"enum\":[\"met\",\"unconfirmed\",\"not_met\"],\"type\":\"string\"},\"evidenceClass\":{\"enum\":[\"corroborated_drone\",\"unidentified_signal\",\"cause_unresolved\",\"reversed_sequence\",\"unknown_time\",\"different_location\",\"benign_explanation\",\"dependent_reports\",\"outside_window\",\"uncertain_order\"],\"type\":\"string\"},\"posture\":{\"enum\":[\"critical\",\"high\",\"contextual\"],\"type\":\"string\"}},\"required\":[\"posture\",\"combinedTrigger\",\"evidenceClass\"],\"type\":\"object\"}",
+  "sourceCurriculumIds": [
+    "8b7a7cdcf1ac7f456be982f66b4a65a4dd11ccd8e975fa80bbdc562d67e5f25f",
+    "0139546347ccdbe99d84d403df28403bd818a808587e465f08daba87facf9203"
+  ],
+  "noWeightUpdates": true,
+  "adapterTrainedUnderPreviousRawContract": true
+}

@@ -1,0 +1,17 @@
+{
+  "formatVersion": "notella.profile.v1",
+  "training": {
+    "baseModel": "qwen3-4b",
+    "steps": 60,
+    "rank": 16,
+    "learningRate": 0.0001
+  },
+  "ontology": {
+    "file": "ontology.json",
+    "sha256": "932690573fc31ec1459b62945cbff82dcab572454434fbe4580e666a1433db32"
+  },
+  "examples": {
+    "file": "development-examples.json",
+    "sha256": "3e9f831bea9af4f47cd849d3639bc12b19cb3603672a6e8ec7dd976be7dcad66"
+  }
+}

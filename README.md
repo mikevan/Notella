@@ -1,10 +1,18 @@
 # Notella
 
+<img src="brand/concepts/notella-weave-brain-v2-vixen-accents.png" alt="Notella logo concept: information strands become a weave inside an angular brain" width="420">
+
 **Weave knowledge into understanding.** A Project Revive Solutions technology.
 
 Notella provides a reusable Python API and a versioned local HTTP API for ontology-guided semantic LoRA training. LayerTime is its first profile, not a dependency of the core API. Version 0.1 is a working developer foundation, not a hosted service or qualified threat-detection product.
 
 **Start with the [guided documentation and tutorials](docs/index.md).** The [first tutorial](docs/tutorial.md) runs without a GPU; the [training tutorial](docs/training.md) explains exactly when real training starts. Other applications can use `from notella import Client` or the authenticated OpenAPI description at `/v1/openapi.json`.
+
+## Latest development result
+
+The [v6 typed-observation experiment](experiments/warning-v6-typed-training/RESULTS.md) completed 90 applied updates and matched all ten new synthetic development controls, versus five for the matched base. It also passes 19 known-template regressions; 18 of those inputs equal normalized training inputs and are explicitly not held-out evidence. Two unsupported input specimens are deferred before generation. No phone installation or field qualification follows.
+
+[Input/output contract tutorial](docs/input-output-contracts.md) explains payload exclusion, explicit provenance roots, output rejection without repair, and why caller assertions are not source authentication. The software suite currently has 75 passing checks.
 
 ## Quick start
 

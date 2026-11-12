@@ -336,6 +336,149 @@
         }
       }
     },
+    "/v1/interpretation-reviews": {
+      "post": {
+        "operationId": "create_interpretation-reviews",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "curriculumId": {
+                    "type": "string"
+                  },
+                  "exampleId": {
+                    "type": "string"
+                  },
+                  "output": {
+                    "type": "string"
+                  },
+                  "reviewer": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "human",
+                          "agent"
+                        ]
+                      },
+                      "independent": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "kind",
+                      "independent"
+                    ]
+                  },
+                  "criteria": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "description": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "description"
+                      ]
+                    }
+                  },
+                  "judgments": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "criterionId": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "not_assessed"
+                          ]
+                        },
+                        "rationale": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "criterionId",
+                        "status",
+                        "rationale"
+                      ]
+                    }
+                  },
+                  "split": {
+                    "type": "string",
+                    "enum": [
+                      "validation",
+                      "test"
+                    ]
+                  }
+                },
+                "required": [
+                  "curriculumId",
+                  "exampleId",
+                  "output",
+                  "reviewer",
+                  "criteria",
+                  "judgments"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created artifact or training job"
+          },
+          "400": {
+            "description": "Validation failure"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/v1/interpretation-reviews/{id}": {
+      "get": {
+        "operationId": "get_interpretation-reviews",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored artifact or job"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
     "/v1/evaluations": {
       "post": {
         "operationId": "create_evaluations",

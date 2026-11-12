@@ -1,0 +1,22 @@
+{
+  "formatVersion": "notella.profile.v1",
+  "training": {
+    "baseModel": "qwen3-4b",
+    "steps": 90,
+    "rank": 16,
+    "learningRate": 0.0001
+  },
+  "inputProjection": {
+    "formatVersion": "layertime.decision-observation.v1",
+    "implementationSha256": "e4aeed66de8ad5addb291ea1edd880b80aa55eda94e230f23ac6fd0ed65cc641",
+    "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2"
+  },
+  "ontology": {
+    "file": "ontology.json",
+    "sha256": "d2622bcc71ef909834eeda052348430453bf31a6f28db903bffd99a6d97494a2"
+  },
+  "examples": {
+    "file": "development-examples.json",
+    "sha256": "827d48681b602eefceb6b0c732f80e0f4a3e2749ba46d9041d7062a68aa5ffcf"
+  }
+}

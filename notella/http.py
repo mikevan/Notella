@@ -22,7 +22,9 @@ def server(service,token,host='127.0.0.1',port=8765,jobs=None):
                     return self.send(200,specification())
                 parts=self.path.strip('/').split('/')
                 if self.command=='GET' and len(parts)==3 and parts[0]=='v1':
-                    value=jobs.get(parts[2]) if parts[1]=='jobs' and jobs else service.get(parts[1],parts[2])
+                    kind='evaluations' if parts[1]=='interpretation-reviews' else parts[1]
+                    value=jobs.get(parts[2]) if kind=='jobs' and jobs else service.get(kind,parts[2])
+                    if parts[1]=='interpretation-reviews' and value.get('formatVersion')!='notella.interpretation-review.v1':raise FileNotFoundError(parts[2])
                     return self.send(200,value)
                 if self.command!='POST':return self.send(404,dict(error='Unknown route'))
                 length=int(self.headers.get('Content-Length','0'))
@@ -33,6 +35,9 @@ def server(service,token,host='127.0.0.1',port=8765,jobs=None):
                 elif self.path=='/v1/curricula':result=service.compile(body['ontologyId'],body['examples'],body.get('excludedPromptHashes'))
                 elif self.path=='/v1/plans':result=service.plan(body['curriculumId'],body['baseModel'],body.get('steps',100),body.get('rank',16),body.get('learningRate',0.00005))
                 elif self.path=='/v1/evaluations':result=service.evaluate(body['curriculumId'],body['predictions'],body.get('split','test'))
+                elif self.path=='/v1/interpretation-reviews':
+                    from .semantic_reviews import record_review
+                    result=record_review(service,body['curriculumId'],body['exampleId'],body['output'],body['reviewer'],body['criteria'],body['judgments'],body.get('split','validation'))
                 elif self.path=='/v1/jobs' and jobs:result=jobs.start(body['planId'])
                 else:return self.send(404,dict(error='Unknown route'))
                 self.send(201,result)
