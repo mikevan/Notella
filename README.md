@@ -14,11 +14,11 @@ The camp-protection scenario shows semantic ontology morphology connecting the c
 
 </td>
 <td valign="top" align="center" width="48%">
-<img src="brand/concepts/notella-weave-brain-v2-vixen-accents.png" alt="Notella: information strands become a weave inside an angular brain" width="420">
+<img src="brand/concepts/notella-weave-brain-v2-vixen-accents.png" alt="Notella: information strands become a weave inside an angular brain" width="100%">
 <br>
-<a href="https://github.com/mikevan/Notella/blob/main/docs/infographics/ontology-events.mp4"><img src="docs/infographics/ontology-events-correction.png" alt="Watch the 58-second camp protection animation: Wi-Fi and BLE flooding, strengthening drone signatures, EVACUATE" width="420"></a>
+<a href="https://mikevan.github.io/Notella/infographics/watch.html"><img src="docs/infographics/ontology-events-correction.png" alt="Watch the 58-second camp protection animation: Wi-Fi and BLE flooding, strengthening drone signatures, EVACUATE" width="100%"></a>
 <br>
-<a href="https://github.com/mikevan/Notella/blob/main/docs/infographics/ontology-events.mp4">▶ Watch the 58-second animation</a>
+<a href="https://mikevan.github.io/Notella/infographics/watch.html">▶ Watch the 58-second animation</a>
 </td>
 </tr>
 </table>
