@@ -1,8 +1,27 @@
 # Notella
 
-<img src="brand/concepts/notella-weave-brain-v2-vixen-accents.png" alt="Notella logo concept: information strands become a weave inside an angular brain" width="420">
+<table>
+<tr>
+<td valign="top" width="52%">
 
 **Weave knowledge into understanding.** A Project Revive Solutions technology.
+
+### Warn the camp. Before the attack.
+
+Wi-Fi flooding. BLE flooding. Multiple drone signatures growing stronger.
+
+The camp-protection scenario shows semantic ontology morphology connecting the changing pattern to an urgent **EVACUATE** warning.
+
+</td>
+<td valign="top" align="center" width="48%">
+<img src="brand/concepts/notella-weave-brain-v2-vixen-accents.png" alt="Notella: information strands become a weave inside an angular brain" width="420">
+<br>
+<a href="https://github.com/mikevan/Notella/blob/main/docs/infographics/ontology-events.mp4"><img src="docs/infographics/ontology-events-correction.png" alt="Watch the 58-second camp protection animation: Wi-Fi and BLE flooding, strengthening drone signatures, EVACUATE" width="420"></a>
+<br>
+<a href="https://github.com/mikevan/Notella/blob/main/docs/infographics/ontology-events.mp4">▶ Watch the 58-second animation</a>
+</td>
+</tr>
+</table>
 
 **The ontology represents the semantic model. The intended AI captures changes in that model over time (morphology) and interprets them. The trainer defines the semantic model and how it is represented as an ontology before authoring examples or adapting weights.**
 
