@@ -1,0 +1,18 @@
+{
+  "ontologyId": "de8b8fa925137177906f1422d92e9024f7253a4ff086f4ee10ef731ab4fa5092",
+  "conditions": {
+    "direct": {
+      "curriculumId": "a0d810542688060701d212faa7d0f15f6e5dc7c95219ac4d5b1c189194da1bdc",
+      "planId": "0a0079ab4f378309554521e253f8403d7a9a36b35f433c253bd1088486d7cbb2",
+      "trainingRows": 45,
+      "validationRows": 8
+    },
+    "augmented": {
+      "curriculumId": "8e465c2ba01076227f79c875b0d9fd501788835233f8eca56660d10c2c74e685",
+      "planId": "a2da711799f0cbb123033bdbe3b78f8b108d1225cc0f9a04a586efa65b164b4c",
+      "trainingRows": 51,
+      "validationRows": 8
+    }
+  },
+  "modelIntakeSha256": "8d21582afa86af72fd9b03d88683e4d888aceafa02fcab3923ff10061a579e70"
+}

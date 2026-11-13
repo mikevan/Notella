@@ -2,7 +2,11 @@
 
 **Outcome:** understand what to supply, how to admit it and how to judge whether it teaches the desired distinctions.
 
-## 1. Define a behavior before adding examples
+## 1. Define the semantic model before adding examples
+
+The ontology represents the semantic model. The trainer first defines the system's concepts, attributes, relationships, evidence requirements and assessment policy, then specifies how these are represented as an ontology. Examples teach the AI to interpret that model and, in the planned scenario workflow, its change over time. Teacher-generated scenarios must follow the specification rather than silently redefine it.
+
+Use [the node-edge and morphology method](semantic-ontology-morphology.md) to specify supported relationship changes, and [the Colibri authoring workflow](scenario-authoring.md) to plan new scenario branches. The [scenario API](scenarios.md) now validates selected prefix-visibility and graph/evidence transitions when explicitly called. The generic compiler does not automatically invoke it; domain meaning and criticality still require separate review.
 
 Write a concrete statement: “When two observations have different network-radio identities, the model must not treat them as one same-network sequence.” This is testable. “Understand wireless security” is too broad for a single teaching objective.
 

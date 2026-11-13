@@ -1,0 +1,6 @@
+{"jobId": "aa9f10c9989c4f0dbb3b5a81e68b49f8", "status": "running"}
+Traceback (most recent call last):
+  File "C:\workspace\Notella\experiments\scenario-model-v2\memory_check.py", line 16, in <module>
+    if job['status']!='completed':raise RuntimeError('Longest-example memory check failed; inspect job')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Longest-example memory check failed; inspect job

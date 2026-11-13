@@ -1,0 +1,14 @@
+{
+  "formatVersion": "notella.teacher-draft-review-criteria.v1",
+  "scope": "First synthetic draft feasibility review; no field accuracy estimate",
+  "criteria": [
+    {"id":"ontology_scope","requirement":"Use the supplied concept meanings and proposed policy without claiming outside evidence."},
+    {"id":"source_lineage","requirement":"Distinguish different asserted provenance roots from two reports sharing one root; do not equate asserted roots with statistical independence."},
+    {"id":"temporal_link","requirement":"A supported temporal link requires the supplied later order and configured window; uncertainty must not be silently discarded."},
+    {"id":"causal_restraint","requirement":"Neither observation establishes an attack, perpetrator identity, causal proof or a calibrated attack probability."},
+    {"id":"contrast_consistency","requirement":"Changes between the two scenarios must be explicit; any posture or trigger claim must follow the supplied policy."},
+    {"id":"completion","requirement":"Output must be complete rather than token-limit truncated; preserve any failed or partial response."},
+    {"id":"candidate_only","requirement":"The draft remains synthetic, pending admission and unqualified for deployment."}
+  ],
+  "reviewerRequirement": "Record kind=agent for assistant review, independent=false. Another reviewed source is needed before claiming independent evaluation."
+}

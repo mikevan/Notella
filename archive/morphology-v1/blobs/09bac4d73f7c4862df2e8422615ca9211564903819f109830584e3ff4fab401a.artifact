@@ -1,0 +1,1 @@
+{"baseModel":"local-test-model","curriculumId":"b280c09d1a2cd3ad9a1d9b0a5bbbb70b9a71fba01fc37f5d55ab3b1c26826e0a","formatVersion":"notella.plan.v1","learningRate":5e-05,"rank":16,"releaseEligible":false,"splits":{"test":3,"train":30,"validation":2},"steps":2}

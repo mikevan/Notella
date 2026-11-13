@@ -1,0 +1,39 @@
+"""Public scenario terminology; the episode v1 engine remains a compatibility backend."""
+import copy,json
+from .core import check,canonical,fingerprint
+from . import episodes as _legacy
+
+scenario_output_schema=_legacy.episode_output_schema
+evidence_counts=_legacy.evidence_counts
+visible_evidence=_legacy.visible_evidence
+
+def _backend(scenario):
+    check(isinstance(scenario,dict),'Scenario must be an object')
+    check(scenario.get('formatVersion') in ('notella.scenario.v1','notella.episode.v1'),'Unsupported scenario format')
+    value=copy.deepcopy(scenario);value['formatVersion']='notella.episode.v1'
+    return value
+
+def _receipt(receipt,scenario):
+    result=copy.deepcopy(receipt)
+    result['scenarioId']=result.pop('episodeId');result.pop('episodeSha256')
+    result['scenarioSha256']=fingerprint(scenario)
+    return result
+
+def validate_scenario(ontology,scenario):
+    return _receipt(_legacy.validate_episode(ontology,_backend(scenario)),scenario)
+
+def validate_scenario_set(ontology,scenarios):
+    check(isinstance(scenarios,list) and bool(scenarios),'Scenario list required')
+    result=_legacy.validate_episode_set(ontology,[_backend(s) for s in scenarios])
+    result['scenarios']=result.pop('episodes')
+    result['receipts']=[_receipt(r,s) for r,s in zip(result['receipts'],scenarios)]
+    return result
+
+def compile_scenario_examples(ontology,scenarios):
+    """Export scenario prefixes; no automatic admission or source mutation."""
+    validate_scenario_set(ontology,scenarios)
+    rows=_legacy.compile_episode_examples(ontology,[_backend(s) for s in scenarios])
+    for row in rows:
+        frame=json.loads(row['input']);frame['formatVersion']='notella.scenario-prefix.v1'
+        frame['scenarioId']=frame.pop('episodeId');row['input']=canonical(frame)
+    return rows

@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "splits": {
+    "train": 371,
+    "validation": 15,
+    "test": 15
+  },
+  "added": {
+    "train": 30,
+    "validation": 2,
+    "test": 3
+  },
+  "sourceTrainerSha256": "9a7435c07e1cbc10cf94ce73a1c32ee0c83ae32f4f1a137ca3bef42853540475",
+  "copiedTrainerSha256": "9a7435c07e1cbc10cf94ce73a1c32ee0c83ae32f4f1a137ca3bef42853540475",
+  "ontologySha256": "096b5d76701e6ca115d3b61484de8eabd2c67d98bc5f770d7e21159a6bf6fd65",
+  "casesSha256": "60542fc4fba25713460c8535e932c35a2bc1e3a52d1cad21969055f330a6c427"
+}

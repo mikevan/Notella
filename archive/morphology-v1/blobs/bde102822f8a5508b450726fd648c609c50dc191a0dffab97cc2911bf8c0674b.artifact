@@ -1,0 +1,38 @@
+"""Completion-only loss with bounded FP32 vocabulary buffers for long graph targets."""
+
+def token_cross_entropy(logits,targets,chunk_tokens=64):
+    """Equivalent token-mean CE; checkpoint chunks to avoid retaining full FP32 logits.
+
+    Caller supplies only non-masked completion targets. No model/dropout work is
+    recomputed here, only the deterministic loss operation.
+    """
+    import torch
+    from torch.utils.checkpoint import checkpoint
+    if type(chunk_tokens) is not int or chunk_tokens<1:raise ValueError('Positive chunk size required')
+    if targets.numel()==0:raise ValueError('Completion targets required')
+    def chunk_loss(values,labels):
+        return torch.nn.functional.cross_entropy(values.float().reshape(-1,values.shape[-1]),labels.reshape(-1),reduction='sum')
+    total=logits.new_zeros((),dtype=torch.float32)
+    for start in range(0,logits.shape[1],chunk_tokens):
+        values=logits[:,start:start+chunk_tokens];labels=targets[:,start:start+chunk_tokens]
+        if torch.is_grad_enabled() and values.requires_grad:
+            loss=checkpoint(chunk_loss,values,labels,use_reentrant=False,preserve_rng_state=False)
+        else:loss=chunk_loss(values,labels)
+        total=total+loss
+    return total/targets.numel()
+
+def completion_loss(model,inputs):
+    import torch
+    labels=inputs['labels']
+    if labels.ndim!=2 or labels.shape[0]!=1:raise ValueError('The initial memory-bounded configuration requires batch size one')
+    positions=torch.nonzero(labels[0,1:]!=-100,as_tuple=False).flatten()
+    if positions.numel()==0:raise ValueError('The training example contains no supervised completion')
+    import os,json
+    trace=os.environ.get('NOTELLA_TRAIN_TRACE')=='1'
+    if trace:print(json.dumps(dict(completionStage='model_forward',completionTokens=int(positions.numel()))),flush=True)
+    outputs=model(input_ids=inputs['input_ids'],attention_mask=inputs.get('attention_mask'),logits_to_keep=positions,use_cache=False)
+    if trace:print(json.dumps(dict(completionStage='loss',logitDevice=str(outputs.logits.device))),flush=True)
+    targets=labels[:,1:][:,positions].to(outputs.logits.device)
+    loss=token_cross_entropy(outputs.logits,targets).to(inputs['input_ids'].device)
+    if trace:print(json.dumps(dict(completionStage='loss_ready')),flush=True)
+    return loss,outputs

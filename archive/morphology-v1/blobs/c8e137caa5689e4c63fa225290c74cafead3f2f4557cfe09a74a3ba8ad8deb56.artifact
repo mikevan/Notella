@@ -1,0 +1,16 @@
+{
+  "train_runtime": 1118.0163,
+  "train_samples_per_second": 0.107,
+  "train_steps_per_second": 0.107,
+  "total_flos": 3137113341149184.0,
+  "train_loss": 0.948106483494242,
+  "epoch": 4.0,
+  "eval_loss": 0.5375781059265137,
+  "eval_runtime": 6.0371,
+  "eval_samples_per_second": 0.331,
+  "eval_steps_per_second": 0.331,
+  "peakGpuAllocatedBytes": 3102317056,
+  "globalStep": 120,
+  "resumedFromStep": 0,
+  "auditedIterations": 120
+}

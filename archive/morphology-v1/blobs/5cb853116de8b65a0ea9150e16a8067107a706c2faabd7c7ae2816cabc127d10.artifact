@@ -1,0 +1,20 @@
+{"id": "v4-ontoforge-heldout-corrob-sequence-0", "matched": true, "contractPassed": true}
+{"id": "v4-ontoforge-heldout-unknown-signal-0", "matched": true, "contractPassed": true}
+{"id": "v4-development-outage-only", "matched": true, "contractPassed": true}
+{"id": "v4-development-reversed-order", "matched": true, "contractPassed": true}
+{"id": "v4-development-missing-clock", "matched": true, "contractPassed": true}
+{"id": "v4-development-distant-location", "matched": true, "contractPassed": true}
+{"id": "v4-development-benign-operations", "matched": true, "contractPassed": true}
+{"id": "v4-development-duplicate-reports", "matched": true, "contractPassed": true}
+{"id": "v4-development-outside-window", "matched": true, "contractPassed": true}
+{"id": "v4-development-overlapping-clock", "matched": true, "contractPassed": true}
+{"id": "v4-probe-source-order", "matched": true, "contractPassed": true}
+{"id": "v4-probe-translated-time", "matched": true, "contractPassed": true}
+{"id": "v4-probe-narrow-window", "matched": true, "contractPassed": true}
+{"id": "v4-probe-fact-order", "matched": true, "contractPassed": true}
+{"id": "v4-probe-untrusted-captured-text", "matched": true, "contractPassed": true}
+{"id": "v4-probe-shared-upstream-source", "matched": true, "contractPassed": true}
+{"id": "v5-new-captured-payload-0", "matched": true, "contractPassed": true}
+{"id": "v5-new-captured-payload-1", "matched": true, "contractPassed": true}
+{"id": "v5-new-source-aliases", "matched": true, "contractPassed": true}
+{"condition": "adapted", "groups": {"primary": {"total": 10, "rawDecisionMatches": 10, "contractPasses": 10, "acceptedWrong": 0, "rejectedCorrect": 0}, "robustness": {"total": 6, "rawDecisionMatches": 6, "contractPasses": 6, "acceptedWrong": 0, "rejectedCorrect": 0}, "prospective": {"total": 3, "rawDecisionMatches": 3, "contractPasses": 3, "acceptedWrong": 0, "rejectedCorrect": 0}}, "inputDeferred": 2}

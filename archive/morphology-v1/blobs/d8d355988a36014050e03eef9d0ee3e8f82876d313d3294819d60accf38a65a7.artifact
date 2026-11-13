@@ -1,0 +1,51 @@
+"""Bounded scenario-output agreement and contract checks, not an explanation judge."""
+import copy,json
+from collections import Counter
+from .core import canonical,check,validate_schema
+from .scenarios import validate_scenario
+
+def score_scenario_output(ontology,scenario,as_of,output,token_limit_reached=False):
+    """Ignore arbitrary node/edge identifiers when comparing reference records.
+
+    Reference agreement does not establish a valid threat policy or prose truth.
+    A separate full-trajectory check is needed for identity continuity.
+    """
+    check(isinstance(output,str),'Exact output text required')
+    target=next((s['target'] for s in scenario['steps'] if s['asOfMs']==as_of),None)
+    check(target is not None,'Unknown scenario prefix')
+    result=dict(jsonValid=False,schemaValid=False,contractValid=False,criticalityMatch=False,assessmentStatusMatch=False,assessmentEvidenceMatch=False,nodesMatch=False,edgesMatch=False,contractAndDecisionMatch=False,tokenLimitReached=bool(token_limit_reached),fullStateMatch=False,semanticAccuracyMeasured=False)
+    def unique(pairs):
+        check(len({k for k,_ in pairs})==len(pairs),'Duplicate JSON key');return dict(pairs)
+    try:value=json.loads(output,object_pairs_hook=unique);canonical(value);result['jsonValid']=True
+    except (ValueError,TypeError) as e:result['error']=str(e);return result
+    # Report decision-field agreement independently of graph serialization validity.
+    if isinstance(value,dict) and isinstance(value.get('assessment'),dict):
+        assessment=value['assessment'];expected=target['assessment']
+        result['criticalityMatch']=assessment.get('criticality')==expected['criticality']
+        result['assessmentStatusMatch']=assessment.get('status')==expected['status']
+        refs=assessment.get('evidenceRefs')
+        if isinstance(refs,list) and all(isinstance(r,str) for r in refs):
+            result['assessmentEvidenceMatch']=len(refs)==len(set(refs)) and set(refs)==set(expected['evidenceRefs'])
+    try:
+        validate_schema(value,ontology['outputSchema']);result['schemaValid']=True
+        result['criticalityMatch']=value['assessment']['criticality']==target['assessment']['criticality']
+        result['assessmentStatusMatch']=value['assessment']['status']==target['assessment']['status']
+        result['assessmentEvidenceMatch']=set(value['assessment']['evidenceRefs'])==set(target['assessment']['evidenceRefs'])
+        record=copy.deepcopy(scenario);record['steps']=[dict(asOfMs=as_of,target=value)];validate_scenario(ontology,record)
+        newest={e['id'] for e in scenario['evidence'] if e['availableAtMs']==as_of}
+        check(bool(set(value['change']['evidenceRefs'])&newest),'Change does not cite evidence newly available at this prefix')
+        result['contractValid']=True
+    except (ValueError,TypeError,KeyError) as e:result['error']=str(e)
+    if result['schemaValid']:
+        def normalized(state):
+            nodes={n['id']:n for n in state['nodes']}
+            def nodekey(n):return (n['kind'],n['concept'],n['assetRef'],tuple(sorted(n['evidenceRefs'])) if n['kind']=='observation' else ())
+            nrecords=Counter(canonical(dict(key=nodekey(n),status=n['status'],evidenceRefs=sorted(n['evidenceRefs']),counts=n['counts'])) for n in state['nodes'])
+            erecords=Counter(canonical(dict(source=nodekey(nodes[e['from']]) if e['from'] in nodes else ('unknown',e['from']),target=nodekey(nodes[e['to']]) if e['to'] in nodes else ('unknown',e['to']),relation=e['relation'],status=e['status'],evidenceRefs=sorted(e['evidenceRefs']),counts=e['counts'])) for e in state['edges'])
+            return nrecords,erecords
+        predicted_nodes,predicted_edges=normalized(value);expected_nodes,expected_edges=normalized(target)
+        result['nodesMatch']=predicted_nodes==expected_nodes;result['edgesMatch']=predicted_edges==expected_edges
+        result['matchedEdgeRecords']=sum((predicted_edges&expected_edges).values());result['extraEdgeRecords']=sum((predicted_edges-expected_edges).values());result['missingEdgeRecords']=sum((expected_edges-predicted_edges).values())
+    result['contractAndDecisionMatch']=result['contractValid'] and result['criticalityMatch'] and result['assessmentStatusMatch'] and not token_limit_reached
+    result['fullStateMatch']=result['contractAndDecisionMatch'] and result['assessmentEvidenceMatch'] and result['nodesMatch'] and result['edgesMatch']
+    return result

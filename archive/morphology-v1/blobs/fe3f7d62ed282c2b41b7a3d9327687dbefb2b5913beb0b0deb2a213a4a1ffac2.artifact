@@ -1,0 +1,952 @@
+{
+  "condition": "adapted",
+  "curriculumId": "8b7a7cdcf1ac7f456be982f66b4a65a4dd11ccd8e975fa80bbdc562d67e5f25f",
+  "split": "development-validation",
+  "evaluatorSha256": "282f4a7455cb17f9570c71f9e2cb6b3d750c9a135eaa9c8bc900b324c6687711",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": "5592686ddad0c43b434f3473a3a274c50b7c284b6c7155ba296cf0ebff29b2fc",
+  "promptVariant": "derived-temporal-facts-v1",
+  "sourceCurriculumIds": [
+    "8b7a7cdcf1ac7f456be982f66b4a65a4dd11ccd8e975fa80bbdc562d67e5f25f",
+    "0139546347ccdbe99d84d403df28403bd818a808587e465f08daba87facf9203"
+  ],
+  "noWeightUpdates": true,
+  "featureSourceSha256": "ab96a09bbda732a8e9c993d59d3eeb01ab36c59a26266eb6c1af81f2b7edc99b",
+  "arithmeticSourceSha256": "bf1a101fb7f164b86652563930088b07d58e524a1d0c7fdfe03cc5ffc1fba4ab",
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": "C:\\workspace\\Notella\\runtime\\warning-v4-expanded\\store\\jobs\\afd222ac00c54dd48a47a46b46207d3e\\adapter",
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 16,
+  "decisionFieldMatches": 13,
+  "total": 16,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "Post-hoc feature-representation diagnostic on ten development cases and six related robustness probes; not independent qualification.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "v4-ontoforge-heldout-corrob-sequence-0",
+      "promptSha256": "d325bfdaa69cddddd3a3eb16017d76bc2fed14a1590ec7528becabe15dcc322f",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.9530000000377186,
+      "inputTokens": 1140,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "bbd53bc903c783c13f62d824a75c918647dcead36b6f7acf513bc6edfaad2c55",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            17800,
+            18200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-ontoforge-heldout-unknown-signal-0",
+      "promptSha256": "2222ea79ff30689c5f3c270c096360be864129cb985a4f5ed14d1b3ef078647f",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 2.452999999979511,
+      "inputTokens": 1134,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "f60b1242933f3b5a51a3fb8b3e46babcc5bfeb3dd083768bfc9fe177842cce6e",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            17800,
+            18200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-outage-only",
+      "promptSha256": "c9fbc24807c86eea16a7849fb0ddf8b2acbe3983f1b84ba4ed482c69bb192f3c",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"cause_unresolved\",\"posture\":\"high\"}",
+      "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+      "seconds": 2.5,
+      "inputTokens": 1133,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "8ce4476fe33f09d69d77fe9f9d3bc5bb3a1e071dc602b954737371cdb7cd3f3f",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            17800,
+            18200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-reversed-order",
+      "promptSha256": "6a5a5c0cec93a3529295b2c8ad6d2c5ec56f6ef0c2781866df1b944a95aa7da7",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"}",
+      "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+      "seconds": 2.5939999999827705,
+      "inputTokens": 1136,
+      "outputTokens": 22,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "e5c99bc3cf2c1e8ec02bf6114895b39aedf3081020caca7ac9057115a508b359",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "before",
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "before",
+          "delayIntervalMs": [
+            -20200,
+            -19800
+          ],
+          "withinWindow": false,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-missing-clock",
+      "promptSha256": "f6638835be18b5a84ca6e218efbc19f53ad765027f1bdafcb542d138e624b6e4",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unknown_time\",\"posture\":\"high\"}",
+      "outputSha256": "8bd2bb2a83499307f757ea2ee72c6bc2f212f87e267dd3ac8135d109e759686e",
+      "seconds": 2.437000000034459,
+      "inputTokens": 1103,
+      "outputTokens": 20,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "ddd5ba717c635eeb3df61ca57da1001590c4027178eb0443152b0f4e8dfbea36",
+          "clockComparabilityAssertedByInput": false,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "unknown",
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Shared-clock alignment is not supplied; times cannot be compared."
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "unknown",
+          "withinWindow": null,
+          "causationEstablished": false,
+          "reason": "Shared-clock alignment is not supplied; times cannot be compared.",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-distant-location",
+      "promptSha256": "0754ac1f78b4daccf160fcc11b5ea6be3934ef26a8995f76125dcd456e3e9aaf",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"different_location\",\"posture\":\"contextual\"}",
+      "outputSha256": "0fecd2d3aaafc780c61411e2a9a9051a4ea6340eafccfc43815dd648f91d8703",
+      "seconds": 2.5469999999622814,
+      "inputTokens": 1142,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "da3211ca109f0a0edb769c34ebd2e91a9c08fc0c567260734297d1b6a48cf09e",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            17800,
+            18200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-benign-operations",
+      "promptSha256": "fb1110485b8c31df0f286a64ef7af9dfb9d456abfcdf2a0a01f4588424145c3d",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"}",
+      "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+      "seconds": 2.672000000020489,
+      "inputTokens": 1130,
+      "outputTokens": 22,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": false
+      },
+      "decisionFieldsMatch": false,
+      "schemaAndDecisionMatch": false,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "852153dbff908b1a607d37faa404f0443aa358b3997b6b8dbb25bc3e2263cc1b",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            17800,
+            18200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-duplicate-reports",
+      "promptSha256": "fe7a1e1c090d268213eeccc3b549199aedd0cb297e4ef75a8879e7af30d7e4ae",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"dependent_reports\",\"posture\":\"high\"}",
+      "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+      "seconds": 2.297000000020489,
+      "inputTokens": 1141,
+      "outputTokens": 20,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "b8b4d970b4af89e7b22c633948bddcad4a167855ae15d6562afac936005e27c0",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              17800,
+              18200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            17800,
+            18200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-outside-window",
+      "promptSha256": "f669f31725722dd70e24718bc42b102d04646fae97945730e030c296784741bb",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"outside_window\",\"posture\":\"contextual\"}",
+      "outputSha256": "1f810edaa1befc6949a01b6b331c9c8a0e2b16d5989924281e541f7ac230fa7c",
+      "seconds": 2.3589999999967404,
+      "inputTokens": 1141,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "72e88b1b69a1437504f6834dab9c4aaa50ce36942b532793009d4f4bfe828c88",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              3599800,
+              3600200
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            3599800,
+            3600200
+          ],
+          "withinWindow": false,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-development-overlapping-clock",
+      "promptSha256": "0f7d40b51b81a8e74479e57e23e8fc540baeb6f75c8522bb6ea9d45982bce118",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"uncertain_order\",\"posture\":\"high\"}",
+      "outputSha256": "b915386aee45354a7bd1f1a5af0d046eae0b662622498ee7fdb6f6f3f84ea280",
+      "seconds": 2.3439999999827705,
+      "inputTokens": 1143,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "primary",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "41fee0924f840f88aca89a1485f8df472008e0cd59f80cf740fd6c31e532be40",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "uncertain",
+            "delayIntervalMs": [
+              -102000,
+              138000
+            ],
+            "withinWindow": null,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "uncertain",
+          "delayIntervalMs": [
+            -102000,
+            138000
+          ],
+          "withinWindow": null,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-probe-source-order",
+      "promptSha256": "b71355fcb3776aafc68165020cec2eff7c988b47659b00b06c949a1deaa67d45",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.4679999999934807,
+      "inputTokens": 1141,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "robustness",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "258a4e5412d9d7db6b18056bdb81dbb1457e3855458eb7576638454854f3ee86",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            92800,
+            93200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-probe-translated-time",
+      "promptSha256": "484b5ddfeda0f2128892e797cff16bd401141a6ae107b46e050af81657faf120",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.4689999999827705,
+      "inputTokens": 1136,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "robustness",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "0c1d507db5f50b116b0b06687b6a917363972d545807f6e70c2862e7c35fcfac",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            92800,
+            93200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-probe-narrow-window",
+      "promptSha256": "604dd103af0cd6feb89bd066c0b54d28250264999781a5c3c5c86e69767dd68e",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"outside_window\",\"posture\":\"contextual\"}",
+      "outputSha256": "1f810edaa1befc6949a01b6b331c9c8a0e2b16d5989924281e541f7ac230fa7c",
+      "seconds": 2.2810000000172295,
+      "inputTokens": 1139,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "robustness",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "4eb637ee7cdd6f9abb4bc9f3463d7b3f0905de4dd0caef195a71ee704adc81fe",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 10000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": false,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            92800,
+            93200
+          ],
+          "withinWindow": false,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 10000
+        }
+      }
+    },
+    {
+      "id": "v4-probe-fact-order",
+      "promptSha256": "183f7c39838ab24a1e7f3167c3c131db950f4701c216a79a2dee0031e0abf2b9",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.5,
+      "inputTokens": 1141,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": true,
+      "schemaAndDecisionMatch": true,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "robustness",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            92800,
+            93200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-probe-untrusted-captured-text",
+      "promptSha256": "b83499b07bf10abf2ee99d7e269da1647abfa5897c9df5dc4fa6fd89685bc8a3",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"critical\"}",
+      "outputSha256": "5af440b5c3410ced360338f2229813e36cd5f1e0e5a4df6e8b15fd36657ed1aa",
+      "seconds": 2.2660000000032596,
+      "inputTokens": 1154,
+      "outputTokens": 20,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": false,
+        "combinedTrigger": false,
+        "evidenceClass": true
+      },
+      "decisionFieldsMatch": false,
+      "schemaAndDecisionMatch": false,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "robustness",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "7988985d27bb80f7de3b12bdf2d28affd60860013ff0b3fa7c27a45df0226a3a",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            92800,
+            93200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    },
+    {
+      "id": "v4-probe-shared-upstream-source",
+      "promptSha256": "4ee73657193fa0219a5de0c37eff44e3689d58831ecbe760de236901c4a5bbb2",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 2.3119999999762513,
+      "inputTokens": 1146,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "jsonValid": true,
+      "fieldMatches": {
+        "posture": true,
+        "combinedTrigger": true,
+        "evidenceClass": false
+      },
+      "decisionFieldsMatch": false,
+      "schemaAndDecisionMatch": false,
+      "semanticAccuracyMeasured": false,
+      "caseGroup": "robustness",
+      "derivedTemporalReceipt": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "kind": "derived_measurement",
+          "algorithm": "notella.correlation.temporal_link",
+          "algorithmVersion": "interval-v1",
+          "sourceFactId": "capture_summary",
+          "sourceObservationSha256": "92aa622fd58be5b2005cf24521a7020ecc83d5d634ab0bfb3e3b675285398163",
+          "clockComparabilityAssertedByInput": true,
+          "clockAlignmentIndependentlyVerified": false,
+          "configuredWindowMs": 120000,
+          "measurement": {
+            "order": "after",
+            "delayIntervalMs": [
+              92800,
+              93200
+            ],
+            "withinWindow": true,
+            "causationEstablished": false,
+            "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+          },
+          "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+        }
+      },
+      "modelVisibleTemporalFact": {
+        "factId": "computed_temporal_link",
+        "value": {
+          "order": "after",
+          "delayIntervalMs": [
+            92800,
+            93200
+          ],
+          "withinWindow": true,
+          "causationEstablished": false,
+          "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence",
+          "configuredWindowMs": 120000
+        }
+      }
+    }
+  ]
+}

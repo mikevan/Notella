@@ -1,0 +1,48 @@
+{
+  "condition": "base",
+  "curriculumId": "a4aedd27602ec4c6695e0d56e16fac40faf0734bf5b3c22ae06e9638c05d92c4",
+  "split": "development-validation",
+  "evaluatorSha256": "1bd551a976104cf6f5dce886682d018078f79054bd7bd74109e837beef7124e5",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": null,
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": null,
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 0,
+  "decisionFieldMatches": 0,
+  "total": 2,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "Two related synthetic development families only; not independent test or field qualification.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "explicit-ontoforge-heldout-corrob-sequence-0",
+      "promptSha256": "76b49dede0cd50fef0fa3d9c83a7ce449757c33fbea94916a4a7241a3a5f0794",
+      "output": "{\n  \"posture\": \"critical\",\n  \"combinedTrigger\": \"met\",\n  \"causation\": \"not_established\",\n  \"limitation\": \"The Wi-Fi disruption and drone presence are both within the same location (camp-A) and time window (33410 to 51410 ms), with a temporal precedence confirmed by non-overlapping uncertainty intervals (33410\u00b1100 and 51410\u00b1100). The disruption is credible and independently reviewed, and the drone presence is corroborated by two independent sources (visual-observer and independent-acoustic-sensor). The policy defines critical posture when a credible ongoing threat context coincides with deliberate Wi-Fi disruption followed by independently corroborated drone presence in the same area. This condition is met, regardless of causation or actor identity.\",\n  \"reason\": \"The combined trigger is met: a credible ongoing threat context exists, and there is credible local deliberate Wi-Fi disruption (deliberate, independently reviewed, in camp-area) followed by independently corroborated drone presence (same location, within 120,000 ms window). The policy explicitly states that critical precautionary posture applies when this combination occurs, without requiring proof of coordination or causation. Therefore, the posture is classified as critical. Causation remains not_established, as the policy explicitly separates precautionary posture from proof of attack or actor identity. The time, location, and signal identity are all within the bounds of the supplied observations and corroborated by independent sources. No benign explanation is presented that would negate the trigger; thus, no counterevidence is required to be stated. The standing threat context remains relevant even if the combined trigger is absent, but here it is fully present.\"\n}",
+      "outputSha256": "ba341139f60efeeac7b9aef428a895bd6b0cbb67ee068259a259417b0b79cd57",
+      "seconds": 56.88999999995576,
+      "inputTokens": 1116,
+      "outputTokens": 366,
+      "schemaValid": false,
+      "error": "$.limitation: string length",
+      "decisionFieldsMatch": false
+    },
+    {
+      "id": "explicit-ontoforge-heldout-unknown-signal-0",
+      "promptSha256": "2a584dfcfe755cea0b3cafeed1c1e1108b871cc7f3c2e6bec061f4acb2dad09f",
+      "output": "{\n  \"posture\": \"critical\",\n  \"combinedTrigger\": \"met\",\n  \"causation\": \"not_established\",\n  \"limitation\": \"The Wi-Fi disruption and drone presence are both observed within the same location (camp-A) and time window (with temporal precedence: Wi-Fi disruption at 35751ms, drone at 53751ms, separated by 18000ms \u2014 within the 120000ms linking window), and both are credible and independently reported. The Wi-Fi disruption is confirmed as deliberate and local, while the drone signal is identified only as an 'unidentified RF signature' with uncertain classification. However, the policy does not require proof of coordination or causation \u2014 only that the credible threat context coincides with the two events. Thus, the combined trigger is met under the policy's definition.\",\n  \"reason\": \"The policy defines a critical precautionary posture when a credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed by independently corroborated drone presence in the same area. The facts confirm: (1) a credible ongoing threat context (synthetic refugee camp under oppressive regime), (2) credible local deliberate Wi-Fi disruption (with source, location, and time), and (3) independently corroborated drone presence (RF signature, same location, within 120-second window of the disruption). Although the signal identity of the drone is uncertain and no actor attribution exists, the policy does not require proof of causation or coordination. The temporal sequence and spatial overlap are within the defined window. Therefore, the combined trigger is met, and the posture is critical, even though causation remains not_established. The policy explicitly separates precautionary warning from causal certainty.\"\n}",
+      "outputSha256": "9a0d22986f3f48e9ec06a26ecb43ec855a07663513a16aa664bb1ee7514d1784",
+      "seconds": 46.95400000002701,
+      "inputTokens": 1110,
+      "outputTokens": 366,
+      "schemaValid": false,
+      "error": "$.limitation: string length",
+      "decisionFieldsMatch": false
+    }
+  ]
+}

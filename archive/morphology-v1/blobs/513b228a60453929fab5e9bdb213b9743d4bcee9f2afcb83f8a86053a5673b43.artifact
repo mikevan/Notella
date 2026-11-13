@@ -1,0 +1,16 @@
+{
+  "ontologyId": "8309165c6f8fcc3ef1d636ffc82d6d474b9f3a208023c30a4a73286ee5e8816b",
+  "curriculumId": "21fa5925d61caaa0d569fdfe83d6556176d823e9341ce48293dbdcbc8d1104f5",
+  "planId": "4c1ad4d3df70121e50e8afeb2f1359767bde125c726cb0667aa71c4c307dc54b",
+  "splits": {
+    "train": 6,
+    "validation": 2,
+    "test": 0
+  },
+  "profileSha256": "a987f8850cf4fd9279f8637b9106d294affacc540830e777848502317cbf6bd7",
+  "componentSha256": {
+    "ontology": "932690573fc31ec1459b62945cbff82dcab572454434fbe4580e666a1433db32",
+    "examples": "3e9f831bea9af4f47cd849d3639bc12b19cb3603672a6e8ec7dd976be7dcad66"
+  },
+  "trainingStarted": false
+}

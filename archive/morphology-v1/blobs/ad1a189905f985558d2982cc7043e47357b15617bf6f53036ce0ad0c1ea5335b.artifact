@@ -1,0 +1,2623 @@
+[
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "developing-access",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "scan-1",
+        "concept": "reconnaissance",
+        "assetRef": "host-A",
+        "timeMs": 1000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 1100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-1",
+        "statement": "Synthetic supplied reconnaissance on host-A"
+      },
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      },
+      {
+        "id": "access-1",
+        "concept": "compromise_evidence",
+        "assetRef": "host-A",
+        "timeMs": 9000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 9100,
+        "sourceRoot": "root:compromise_evidence",
+        "originEventId": "event:access-1",
+        "statement": "Synthetic supplied compromise_evidence on host-A"
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 1100,
+        "target": {
+          "asOfMs": 1100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "summary": "New evidence: scan-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      },
+      {
+        "asOfMs": 9100,
+        "target": {
+          "asOfMs": 9100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:access-1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1",
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:access-1",
+              "from": "obs:access-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:auth-1:access-1",
+              "from": "obs:auth-1",
+              "to": "obs:access-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1",
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1",
+              "access-1"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "access-1"
+            ],
+            "summary": "New evidence: access-1. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "benign-branch",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "scan-1",
+        "concept": "reconnaissance",
+        "assetRef": "host-A",
+        "timeMs": 1000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 1100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-1",
+        "statement": "Synthetic supplied reconnaissance on host-A"
+      },
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      },
+      {
+        "id": "benign-1",
+        "concept": "benign_operation",
+        "assetRef": "host-A",
+        "timeMs": 10000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 10100,
+        "sourceRoot": "root:benign_operation",
+        "originEventId": "event:benign-1",
+        "statement": "Synthetic supplied benign_operation on host-A",
+        "explains": [
+          "scan-1",
+          "auth-1"
+        ]
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 1100,
+        "target": {
+          "asOfMs": 1100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "summary": "New evidence: scan-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      },
+      {
+        "asOfMs": 10100,
+        "target": {
+          "asOfMs": 10100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:benign-1",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "benign-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "weakened",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1",
+                "benign-1"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:benign-1",
+              "from": "obs:benign-1",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "benign-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1",
+              "benign-1"
+            ],
+            "rationale": "A supplied benign explanation covers the referenced scan and authentication observations; no separate current compromise evidence remains."
+          },
+          "change": {
+            "evidenceRefs": [
+              "benign-1"
+            ],
+            "summary": "New evidence: benign-1. A supplied benign explanation covers the referenced scan and authentication observations; no separate current compromise evidence remains."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "source-correction",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "scan-1",
+        "concept": "reconnaissance",
+        "assetRef": "host-A",
+        "timeMs": 1000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 1100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-1",
+        "statement": "Synthetic supplied reconnaissance on host-A"
+      },
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      },
+      {
+        "id": "access-1",
+        "concept": "compromise_evidence",
+        "assetRef": "host-A",
+        "timeMs": 9000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 9100,
+        "sourceRoot": "root:compromise_evidence",
+        "originEventId": "event:access-1",
+        "statement": "Synthetic supplied compromise_evidence on host-A"
+      },
+      {
+        "id": "correction-1",
+        "concept": "source_correction",
+        "assetRef": "host-A",
+        "timeMs": 13000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 13100,
+        "sourceRoot": "root:source_correction",
+        "originEventId": "event:correction-1",
+        "statement": "Synthetic supplied source_correction on host-A",
+        "retracts": [
+          "access-1"
+        ]
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 1100,
+        "target": {
+          "asOfMs": 1100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "summary": "New evidence: scan-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      },
+      {
+        "asOfMs": 9100,
+        "target": {
+          "asOfMs": 9100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:access-1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1",
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:access-1",
+              "from": "obs:access-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:auth-1:access-1",
+              "from": "obs:auth-1",
+              "to": "obs:access-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1",
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1",
+              "access-1"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "access-1"
+            ],
+            "summary": "New evidence: access-1. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 13100,
+        "target": {
+          "asOfMs": 13100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:access-1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-A",
+              "status": "retracted",
+              "evidenceRefs": [
+                "access-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:correction-1",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "correction-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1",
+                "correction-1"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:access-1",
+              "from": "obs:access-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "access-1",
+                "correction-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:auth-1:access-1",
+              "from": "obs:auth-1",
+              "to": "obs:access-1",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "auth-1",
+                "access-1",
+                "correction-1"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1",
+              "correction-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "correction-1"
+            ],
+            "summary": "New evidence: correction-1. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "unrelated-asset",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "scan-1",
+        "concept": "reconnaissance",
+        "assetRef": "host-A",
+        "timeMs": 1000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 1100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-1",
+        "statement": "Synthetic supplied reconnaissance on host-A"
+      },
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      },
+      {
+        "id": "scan-other",
+        "concept": "reconnaissance",
+        "assetRef": "host-B",
+        "timeMs": 9000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 9100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-other",
+        "statement": "Synthetic supplied reconnaissance on host-B"
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 1100,
+        "target": {
+          "asOfMs": 1100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "summary": "New evidence: scan-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      },
+      {
+        "asOfMs": 9100,
+        "target": {
+          "asOfMs": 9100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:scan-other",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-other"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-other"
+            ],
+            "summary": "New evidence: scan-other. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "duplicate-reports",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      },
+      {
+        "id": "auth-repost",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 6500,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 6500,
+        "target": {
+          "asOfMs": 6500,
+          "nodes": [
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-repost",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-repost"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "auth-1",
+                "auth-repost"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-repost",
+              "from": "obs:auth-repost",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-repost"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "auth-1",
+              "auth-repost"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-repost"
+            ],
+            "summary": "New evidence: auth-repost. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "late-arrival",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "scan-1",
+        "concept": "reconnaissance",
+        "assetRef": "host-A",
+        "timeMs": 1000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 1100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-1",
+        "statement": "Synthetic supplied reconnaissance on host-A"
+      },
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      },
+      {
+        "id": "access-late",
+        "concept": "compromise_evidence",
+        "assetRef": "host-A",
+        "timeMs": 2500,
+        "uncertaintyMs": 100,
+        "availableAtMs": 12000,
+        "sourceRoot": "root:compromise_evidence",
+        "originEventId": "event:access-late",
+        "statement": "Synthetic supplied compromise_evidence on host-A"
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 1100,
+        "target": {
+          "asOfMs": 1100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "summary": "New evidence: scan-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. A supported scan-to-authentication sequence remains on the primary asset; compromise is not established."
+          }
+        }
+      },
+      {
+        "asOfMs": 12000,
+        "target": {
+          "asOfMs": 12000,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:access-late",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "access-late"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1",
+                "access-late"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:access-late",
+              "from": "obs:access-late",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "access-late"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:scan-1:auth-1",
+              "from": "obs:scan-1",
+              "to": "obs:auth-1",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1",
+              "access-late"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "access-late"
+            ],
+            "summary": "New evidence: access-late. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.episode.v1",
+    "id": "unresolved-clock",
+    "family": "network-access-authored-family-001",
+    "split": "train",
+    "ontologyId": "187f0681c6aed8384bf1d9bd491f83e6dd4c1ac6c800c3c0af83d02b5b3d31fc",
+    "policyId": "network-episode-policy-v1-development",
+    "primaryAsset": "host-A",
+    "assets": [
+      "host-A",
+      "host-B"
+    ],
+    "timeBasis": "unresolved",
+    "evidence": [
+      {
+        "id": "scan-1",
+        "concept": "reconnaissance",
+        "assetRef": "host-A",
+        "timeMs": 1000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 1100,
+        "sourceRoot": "root:reconnaissance",
+        "originEventId": "event:scan-1",
+        "statement": "Synthetic supplied reconnaissance on host-A"
+      },
+      {
+        "id": "auth-1",
+        "concept": "credential_activity",
+        "assetRef": "host-A",
+        "timeMs": 4000,
+        "uncertaintyMs": 100,
+        "availableAtMs": 4100,
+        "sourceRoot": "root:credential_activity",
+        "originEventId": "event:auth-1",
+        "statement": "Synthetic supplied credential_activity on host-A"
+      }
+    ],
+    "source": {
+      "id": "network-episode-authoring-v1",
+      "kind": "synthetic",
+      "reference": "profiles/network_episodes/reference.py",
+      "permission": "Project-authored development fixtures; admission pending",
+      "labelAuthor": "Explicit agent-authored rule baseline, not independent domain review",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 1100,
+        "target": {
+          "asOfMs": 1100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "scan-1"
+            ],
+            "summary": "New evidence: scan-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 4100,
+        "target": {
+          "asOfMs": 4100,
+          "nodes": [
+            {
+              "id": "obs:scan-1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:auth-1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "host-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-A",
+              "status": "proposed",
+              "evidenceRefs": [
+                "scan-1",
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:scan-1",
+              "from": "obs:scan-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "scan-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:auth-1",
+              "from": "obs:auth-1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "auth-1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "review_required",
+            "evidenceRefs": [
+              "scan-1",
+              "auth-1"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "auth-1"
+            ],
+            "summary": "New evidence: auth-1. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      }
+    ]
+  }
+]

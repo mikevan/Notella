@@ -1,0 +1,328 @@
+{
+  "recordedIterations": 80,
+  "appliedOptimizerUpdates": 80,
+  "skippedOptimizerUpdates": 0,
+  "note": "Mixed-precision loss scaling may skip updates after overflow. Requested iterations are not proof of applied updates.",
+  "steps": [
+    {
+      "iteration": 1,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 2,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 3,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 4,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 5,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 6,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 7,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 8,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 9,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 10,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 11,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 12,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 13,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 14,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 15,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 16,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 17,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 18,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 19,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 20,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 21,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 22,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 23,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 24,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 25,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 26,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 27,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 28,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 29,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 30,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 31,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 32,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 33,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 34,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 35,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 36,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 37,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 38,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 39,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 40,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 41,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 42,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 43,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 44,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 45,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 46,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 47,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 48,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 49,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 50,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 51,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 52,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 53,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 54,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 55,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 56,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 57,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 58,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 59,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 60,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 61,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 62,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 63,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 64,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 65,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 66,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 67,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 68,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 69,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 70,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 71,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 72,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 73,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 74,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 75,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 76,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 77,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 78,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 79,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 80,
+      "optimizerStepSkipped": false
+    }
+  ]
+}

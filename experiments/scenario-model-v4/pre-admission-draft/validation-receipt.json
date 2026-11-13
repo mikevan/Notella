@@ -1,0 +1,146 @@
+{
+  "steps": 38,
+  "uniquePrefixes": 38,
+  "originalFamilies": 5,
+  "receipts": [
+    {
+      "steps": 2,
+      "prefixSha256": [
+        "d538214da117f3b99307de0ff1356507ad9b55432e74012876f71c580cc70f32",
+        "7d01266d1223726e3e20497495562d616d0673ade6e38f85dc1502478fcc13e8"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-101",
+      "scenarioSha256": "e375a2e3fcc3831847a026540a45a11168706d3bc1fbc6afb907fc37bf6e2423"
+    },
+    {
+      "steps": 3,
+      "prefixSha256": [
+        "0201e56aab1261efb46839c76b63fa4348c15449b51e25727c6a78aaa92e309e",
+        "96f9a0c4ebdbb230a9e9e1a991511a34a9af656c24816270dcb1512711bd691e",
+        "0fbf250b6db0718b2a871a8181b7f186538d0df37afbf11e1e69b30c7071dd8c"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-206",
+      "scenarioSha256": "313c16050a10b1b1b96575a4edd0953c729b1a58a2adfff9d135ef37f685a7cd"
+    },
+    {
+      "steps": 4,
+      "prefixSha256": [
+        "ce712ae791451d087df22893ba3a02124a51c1428414f35d70bbd3743d193c99",
+        "2ad128328bd609bc8bf495a908e268f351d902e591668d11d90e354b72faf425",
+        "58d8c3635e8b17b315573b9a336048658422f4e1da33a4bf6c80976a7a367941",
+        "4493076e51571404417fa46f7e58f4ff51572e13e0fc86003c2870ada3447dfa"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-309",
+      "scenarioSha256": "2aaf3f4f768c7b0da6b58c5b7899a60d94df28e2e8a3243a257604e63ad9f959"
+    },
+    {
+      "steps": 2,
+      "prefixSha256": [
+        "b83629ce8edf63c95f76611b234cf98162da9780d976a58e607f3e1af3234aef",
+        "e4b47f2715675cf428f7e00f1606b45180b6636a4eeef8bab0be12560c2a6362"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-412",
+      "scenarioSha256": "dcc6300da32317fd1b4d7f3436afa2b0df34c40b88cf8bed0e04d155919db582"
+    },
+    {
+      "steps": 2,
+      "prefixSha256": [
+        "29fa598f92459c848215f93cb6765c2ad5eeb400519db5ffabef68d38b324d9c",
+        "25967cdd0c2180136afcedf1a256270bc1c56c662328652261758f92a8dd14fa"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-515",
+      "scenarioSha256": "65569a44e08df1a1083122351be8e906e63ba1db02b58cc8650f6ed905989d2a"
+    },
+    {
+      "steps": 4,
+      "prefixSha256": [
+        "49db89c7aa6eba3c2898120aaa0b72eb61f6ff007fc84a6ccc388ad901b47d6c",
+        "eb586842c6b6fd57cb2a5a501f7bacf7b69f52c5ff76189f32f8b27ec29b9e8c",
+        "84b76cc34c85ab5eba0c25944e3fd6cfa2971509d5c2be59bad9765ebb4ef821",
+        "3ee1f141edf1321c3070261bce4653153fd91f5457393d741a38133034fe4754"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-618",
+      "scenarioSha256": "bea9dc0d0d32fb00330f189a67ec0d0b97e3b031490e9ec3827843f122a78d00"
+    },
+    {
+      "steps": 3,
+      "prefixSha256": [
+        "505bfbdb26028ec1b3e906df48cd25b4e5befee796307106ce5bb4adf58debce",
+        "a35bd686a1f8e52ff6e960aaf943d6d3170e86875844a36731521653ac62bd9d",
+        "a7870bdc6a9796f22d45247a999bff3206b2d6e1206688a1bf8eb469fa044fdb"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "R-721",
+      "scenarioSha256": "49278a43e535641106369eb7285eb943714a92b9ef474ee7effe22256dfc3412"
+    },
+    {
+      "steps": 5,
+      "prefixSha256": [
+        "15c84a1209498a90f295f0af02cb401be344e0ce3bc7bdf7dee2793383317d00",
+        "a7d1058a54ab1383dbfcd11d92550e6334069bf3bb85639fe657ad55b127697c",
+        "8583ae904e2c7f8d438436cca887687a9f4ae445651643ad16ac7082af21a793",
+        "a9e1bb9f41bddcfa1d078b42d964f50bba3a89ebfee795d75db13a13a4d38664",
+        "fd9a9f8c88d234f387ebfc4ea25e5fe6c238a26b3722ffaf684af83b4d9d9e43"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "S-Q71",
+      "scenarioSha256": "e258eb189b4ad2d0f76d797f21b868c3897b37cd3f56b9e18c2f1faf4c03c30d"
+    },
+    {
+      "steps": 5,
+      "prefixSha256": [
+        "46fa404cbc48a2d78a5ac7a7fa60e45dda1036875a37191309d2a322c562a1a9",
+        "26198fd960698e8d1a076f1f0498aa6dece178b8d28c83dcf8473eddc1a2ec57",
+        "5c709db3eb4be5b024bc55c7cbe457270f0183d018b842d7c158e056c9bbded2",
+        "cc3483a8f625678bf04c4040b3d86b626bdb6307f4279b19432a4e95217e5a84",
+        "a89a691fd4786e81f07ca5cb56a404e61b8ce0a3662b0b24d45f327a77d9db36"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "S-Q92",
+      "scenarioSha256": "dc2c2fe710f3c05a608ba26ee2ee11d1373ad8dc6b1fd42906e478e0040de1ad"
+    },
+    {
+      "steps": 4,
+      "prefixSha256": [
+        "2d36c324bf808f0ef80096c4c1eaa5a0c296fb5c616cc6d89c49106feb65d03b",
+        "61bdbc95bc4e155612a6843cca8873dbfe7d6c51d95ddf2c8277d481b82616b5",
+        "bbe4603b235004f6d447d522c6bf293c8e3b7c505466d9152689f77948de086c",
+        "91bbf6ccb81349983332898b3a976683cf1e080eb1e6330dc5278ed916f463f1"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "V-834",
+      "scenarioSha256": "f4077d90c18d7c12bd2a524d0ef1570067c1bc4e7038ebfaa97d4e7be6553155"
+    },
+    {
+      "steps": 4,
+      "prefixSha256": [
+        "48e2bb6b1053a92270c0dfffd2ec977b102101e891eb9e46a59bb06222f235cc",
+        "f82ed75ff8206a64ba803910c47673da4d4e1cbec965e91fbcce8b7b002289fa",
+        "845fc4f3463d715d873075a46ab1d1d46e32dbaad26bd92d14a23336daaeeee4",
+        "02182f56b56959706b555695e4e6608dc7846a9c76b5306f5db13a1e792f1576"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "V-947",
+      "scenarioSha256": "c848fbe10c47e36ec35cfa33cb0c6e64f24291c4e9c763e6032063bd96f05344"
+    }
+  ],
+  "semanticCorrectnessEstablished": false,
+  "scenarios": 11
+}

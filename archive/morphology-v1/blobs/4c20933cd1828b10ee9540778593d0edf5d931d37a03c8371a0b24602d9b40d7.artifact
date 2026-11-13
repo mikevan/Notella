@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "base",
+    "exampleId": "explicit-ontoforge-heldout-corrob-sequence-0",
+    "outputSha256": "2d74d185ea7b7043f4fe8e220963cbe72b36b42b88354357589ab37bf6d7bc02",
+    "reviewId": "c60a92a6f5dca115f4dc8dfa4277a5d95d1427f7392e6324adb01457446731f2"
+  },
+  {
+    "condition": "base",
+    "exampleId": "explicit-ontoforge-heldout-unknown-signal-0",
+    "outputSha256": "059d25470761bb6a74df62563d8dc04eb9556863e689276c28a3de476d218bea",
+    "reviewId": "b06bfff0a9c4480d7986890af0d3242927cb91dbeca1e2dc9bb702b9795e840f"
+  },
+  {
+    "condition": "adapted",
+    "exampleId": "explicit-ontoforge-heldout-corrob-sequence-0",
+    "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+    "reviewId": "22528d2cc80ce8eb13be6ef5928fc85c15a1f70d500297455693663d95ff42f6"
+  },
+  {
+    "condition": "adapted",
+    "exampleId": "explicit-ontoforge-heldout-unknown-signal-0",
+    "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+    "reviewId": "b464ac58af7b8eda98a796ae56f465828b7e6b0ec45072c1ddb74f26fe00ffc4"
+  }
+]

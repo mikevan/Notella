@@ -4,15 +4,21 @@
 
 **Weave knowledge into understanding.** A Project Revive Solutions technology.
 
+**The ontology represents the semantic model. The intended AI captures changes in that model over time (morphology) and interprets them. The trainer defines the semantic model and how it is represented as an ontology before authoring examples or adapting weights.**
+
+Our intended approach is **Semantic Ontology Morphology–guided LoRA training**: use existing language-model capabilities to interpret an explicit system model, its evidence relationships and their evolution. The [method and node-edge reasoning](docs/semantic-ontology-morphology.md) describe the intended behavior; the [Colibri scenario workflow](docs/scenario-authoring.md) explains how a local teacher will propose new scenario branches for review. The first [scenario contract and tutorial](docs/scenarios.md) now provide versioned prefix states, graph/evidence validation, a rule baseline and seven provisional teaching branches. Neural scenario interpretation, live state maintenance and independent scenario evaluation remain unimplemented; earlier model experiments concern compact single-observation decisions.
+
 Notella provides a reusable Python API and a versioned local HTTP API for ontology-guided semantic LoRA training. LayerTime is its first profile, not a dependency of the core API. Version 0.1 is a working developer foundation, not a hosted service or qualified threat-detection product.
 
 **Start with the [guided documentation and tutorials](docs/index.md).** The [first tutorial](docs/tutorial.md) runs without a GPU; the [training tutorial](docs/training.md) explains exactly when real training starts. Other applications can use `from notella import Client` or the authenticated OpenAPI description at `/v1/openapi.json`.
 
-## Latest development result
+## Development results
 
-The [v6 typed-observation experiment](experiments/warning-v6-typed-training/RESULTS.md) completed 90 applied updates and matched all ten new synthetic development controls, versus five for the matched base. It also passes 19 known-template regressions; 18 of those inputs equal normalized training inputs and are explicitly not held-out evidence. Two unsupported input specimens are deferred before generation. No phone installation or field qualification follows.
+The [0.6B student diagnostic](experiments/student-v1-teacher-augmentation/RESULTS.md) completed two fresh adapters with 90 applied updates each and zero skips. Direct training matched 8/8 new numeric-variation controls and 10/10 historical development controls; adding six reviewed teacher labels matched 6/8 and 8/10. These are related synthetic cases, not scenario-morphology or field validation. The direct student is preferred for further diagnostics; a teacher benefit has not been demonstrated.
 
-[Input/output contract tutorial](docs/input-output-contracts.md) explains payload exclusion, explicit provenance roots, output rejection without repair, and why caller assertions are not source authentication. The software suite currently has 75 passing checks.
+Earlier, the [v6 typed-observation experiment](experiments/warning-v6-typed-training/RESULTS.md) completed 90 applied updates and matched all ten new synthetic development controls, versus five for the matched base. It also passes 19 known-template regressions; 18 of those inputs equal normalized training inputs and are explicitly not held-out evidence. Two unsupported input specimens are deferred before generation. No phone installation or field qualification follows.
+
+[Input/output contract tutorial](docs/input-output-contracts.md) explains payload exclusion, explicit provenance roots, output rejection without repair, and why caller assertions are not source authentication. The software suite currently has 108 passing checks.
 
 ## Quick start
 
@@ -86,3 +92,33 @@ One server process per store is supported. Keep the server running while trainin
 The initial camp profile contains 30 training variants from ten synthetic families, two validation families and three test families. These are policy-teaching examples, not 35 observed incidents. The 120-second timing window and posture levels are proposed project policy, not calibrated attack probabilities. No model can establish a looming attack merely because two events occur close together.
 
 See [temporal evidence design](docs/temporal-evidence.md) and [development results](docs/results.md).
+
+## Local teacher experiment
+
+The optional teacher Python API and [Tutorial 10](docs/teachers.md) connect a loopback Colibri/OpenAI-compatible server to ontology-scoped candidate drafting, exact request/response receipts and explicit review boundaries. It does not admit candidates or start student training.
+
+The [first live teacher results](experiments/colibri-teacher-v1/RESULTS.md) are negative for automatic label generation: the configured untuned 35B teacher matched 5/10 existing synthetic development controls, versus the unchanged trained 4B adapter's prior 10/10 on the same case IDs. All five wrong replies were rejected by evidence checks. Its first free-form draft also failed review. These are different model/runtime conditions, not an engine benchmark or independent field accuracy measurement. That first experiment admitted no examples; no compression, training speed or phone improvement was established. Core/provider checks at that checkpoint: 81 passing.
+
+## Smaller student diagnostic
+
+A [constrained teacher task](experiments/colibri-teacher-v2-constrained/RESULTS.md) produced six policy-consistent decisions, which received explicit agent review before admission to a bounded augmentation experiment. Two fresh local 0.6B adapters completed 90 applied updates each, zero skips, with finite weights. The direct ontology-guided student matched 8/8 new numeric-variation controls and 10/10 historical development controls; the teacher-augmented student matched 6/8 and 8/10. The direct student is preferred for further diagnostics. These are related synthetic cases, not independent field validation, and this one-seed added-data comparison does not isolate a causal teacher effect. No phone export or deployment occurred. [Full results, receipts and limits](experiments/student-v1-teacher-augmentation/RESULTS.md). Software checks at that checkpoint: 108 passing.
+
+## Semantic morphology comparison and streaming reference
+
+The [completed matched 4B scenario comparison](experiments/scenario-model-v3/RESULTS.md) improved schema validity (3/10 to 8/10) but not criticality agreement (3/10 for both). The adapter remains unsuitable for deployment. Exact evidence, semantic failure analysis and a curriculum correction plan are preserved with the results. [Tutorial 15](docs/semantic-failure-diagnosis.md) explains the diagnosis.
+
+[Rolling windows](docs/rolling-windows.md) and [focused monitoring](docs/focused-monitoring.md) implement and demonstrate broad ten-second monitoring advancing every second, explicit focused incidents, retained evidence and continued background collection. The synthetic replay does not call an AI. These are runtime primitives, separate from the full-prefix model comparison; delta-model and phone integration remain unqualified. Checks at that checkpoint: 138 core tests and 4 optional training-loss tests passing.
+
+## Curriculum repair and warning continuity
+
+The [controlled curriculum rerun](experiments/scenario-model-v4/RESULTS.md) holds the model/training settings and twenty-row/eighty-update budget fixed. Known criticality agreement improves from 3/10 to 6/10; fresh agreement is 5/8 versus base 4/8. Retraction/scope errors and repetitive incomplete output remain. [Interpretation and next target](experiments/scenario-model-v4/INTERPRETATION.md). The adapter remains unqualified for deployment.
+
+[Tutorial 16](docs/warning-continuity.md) demonstrates configurable output budgets, bounded retries, retained validated assessments/focused incidents, and warning-state callbacks before inference. It uses a simulated backend, with real-provider/phone delivery integration still required. Token exhaustion must not silently clear or discard warnings. Current core checks: 154 passing; the unchanged optional training-loss checks passed separately.
+
+## Failure checkpoint and next direction
+
+Read the [consolidated failure report](docs/morphology-failure-report.md), [five root-cause hypotheses](experiments/retraction-diagnosis-v1/HYPOTHESES.md), and [teacher-to-student roadmap](docs/teacher-student-roadmap.md). The v5 curriculum reduced repetition and improved known decision agreement but regressed full-state correctness and underperformed the base on the fresh decision controls. Root cause is unresolved; no candidate is deployment-ready.
+
+The [checkpoint archive](archive/morphology-v1/README.md) preserves runtime documents, training records, outputs and historical source snapshots with original paths and hashes. Binary weights and optimizer files remain local and are inventoried separately. Publication uses the reviewed checkpoint statement and explicit file manifest.
+
+[Explore the scrollable development infographic](docs/infographics/semantic-morphology-evolution.html): initial approach, semantic-model transformation, measured failures and gains, and the proposed teacher/student path.

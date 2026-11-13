@@ -1,0 +1,58 @@
+{
+  "evaluationRole": "known-template-regression-not-heldout",
+  "matchedPrompts": true,
+  "conditions": {
+    "base": {
+      "groups": {
+        "primary": {
+          "total": 10,
+          "rawDecisionMatches": 5,
+          "contractPasses": 5,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "robustness": {
+          "total": 6,
+          "rawDecisionMatches": 5,
+          "contractPasses": 5,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "prospective": {
+          "total": 3,
+          "rawDecisionMatches": 2,
+          "contractPasses": 2,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        }
+      },
+      "inputDeferred": 2
+    },
+    "adapted": {
+      "groups": {
+        "primary": {
+          "total": 10,
+          "rawDecisionMatches": 10,
+          "contractPasses": 10,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "robustness": {
+          "total": 6,
+          "rawDecisionMatches": 6,
+          "contractPasses": 6,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "prospective": {
+          "total": 3,
+          "rawDecisionMatches": 3,
+          "contractPasses": 3,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        }
+      },
+      "inputDeferred": 2
+    }
+  }
+}

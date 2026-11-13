@@ -1,0 +1,84 @@
+{
+  "recordedIterations": 19,
+  "appliedOptimizerUpdates": 19,
+  "skippedOptimizerUpdates": 0,
+  "note": "Mixed-precision loss scaling may skip updates after overflow. Requested iterations are not proof of applied updates.",
+  "steps": [
+    {
+      "iteration": 1,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 2,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 3,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 4,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 5,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 6,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 7,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 8,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 9,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 10,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 11,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 12,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 13,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 14,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 15,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 16,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 17,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 18,
+      "optimizerStepSkipped": false
+    },
+    {
+      "iteration": 19,
+      "optimizerStepSkipped": false
+    }
+  ]
+}

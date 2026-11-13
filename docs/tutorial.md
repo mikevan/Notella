@@ -32,7 +32,11 @@ The example prints four content-addressed IDs and these values:
 
 IDs are SHA-256 fingerprints of canonical content. Running the same example again produces the same artifact IDs. Changing a definition, target or source annotation produces a new relevant artifact. The summary is also saved as `runtime/tutorial/tutorial-result.json`.
 
-## 3. Understand the ontology
+## 3. Define the semantic model and represent it as an ontology
+
+The ontology **is the explicit representation of the semantic model**. As the trainer, define what the application must understand: its entities, observations, meanings, relationships and evidence requirements. Then express that model as an ontology. Scenario examples and expected decisions follow from that specification.
+
+For the intended scenario workflow, the AI learns to interpret changes in this semantic model over time. Nodes represent scoped semantic elements, typed edges represent supported relationships, and morphology includes changes in their support, structure and interpretation. This temperature example teaches a small static distinction; it does not yet demonstrate evolving attack scenarios. Continue with [the full method](semantic-ontology-morphology.md) and [Colibri scenario authoring](scenario-authoring.md).
 
 Open `examples/tutorial.py`. `teaching_material()` returns the ontology and its examples. The ontology defines observation, threshold and interpretation, then connects them with supportedBy and comparedAgainst relations.
 
@@ -47,6 +51,8 @@ print(registered['id'])
 ```
 
 The output contract requires a finding string, an exceedsThreshold boolean and a limitation string. The contract constrains the answer's shape; the authored target demonstrates the intended meaning.
+
+For the real LayerTime application, continue with the [ontology walkthrough](layertime-ontology.md): nine concepts, four relationships, a worked example and the limits of the proposed threat policy. This first tutorial retains the smaller temperature example so the reusable API is easy to learn.
 
 ## 4. Compile the examples
 

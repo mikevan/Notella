@@ -1,0 +1,94 @@
+"""Bounded capture windows and semantic diffs. No model calls or threat policy."""
+import copy
+from .core import canonical,check,fingerprint
+
+class RollingInterceptWindow:
+    """Normalized capture times; window is (end-window_ms, end], advanced by stride_ms.
+
+    availableAtMs is the receipt clock. This class assumes both times are normalized
+    to the same monotonic clock; it does not verify synchronization. Late records
+    older than the current window are reported, never revived as fresh evidence.
+    """
+    def __init__(self,window_ms=10000,stride_ms=1000,max_records=100000,max_bytes=67108864):
+        check(type(window_ms) is int and type(stride_ms) is int and window_ms>0 and 0<stride_ms<=window_ms,'Invalid window/stride')
+        check(type(max_records) is int and max_records>0,'Positive capacity required')
+        check(type(max_bytes) is int and max_bytes>0,'Positive serialized-data capacity required')
+        self.window_ms=window_ms;self.stride_ms=stride_ms;self.max_records=max_records;self.max_bytes=max_bytes;self.sizes={};self.bytes=0
+        self.end=None;self.records={};self.active={};self.late=[];self.late_count=0;self.overflows=0;self.revision=0
+    def ingest(self,record):
+        canonical(record);check(isinstance(record,dict),'Intercept object required')
+        check(isinstance(record.get('id'),str) and record['id'],'Intercept id required')
+        for k in ('observedAtMs','availableAtMs'):check(type(record.get(k)) is int and record[k]>=0,k+' requires nonnegative integer milliseconds')
+        check(record['observedAtMs']<=record['availableAtMs'],'Normalize capture and receipt clocks before ingestion')
+        identity=record['id']
+        if identity in self.records:
+            check(canonical(self.records[identity])==canonical(record),'Conflicting intercept identity');return dict(accepted=False,reason='duplicate_id')
+        if self.end is not None and record['observedAtMs']<=self.end-self.window_ms:
+            self.late_count+=1
+            if len(self.late)<100:self.late.append(identity)
+            return dict(accepted=False,reason='outside_active_window')
+        if self.end is not None:check(record['availableAtMs']>self.end,'Cannot insert a report into a committed receipt-time prefix')
+        size=len(canonical(record).encode('utf-8'))
+        if len(self.records)>=self.max_records or self.bytes+size>self.max_bytes:
+            self.overflows+=1;return dict(accepted=False,reason='capacity_exceeded')
+        self.records[identity]=copy.deepcopy(record);self.sizes[identity]=size;self.bytes+=size;return dict(accepted=True)
+    def advance(self,end_ms):
+        check(type(end_ms) is int and end_ms>=0,'Nonnegative cutoff required')
+        check(self.end is None or end_ms-self.end==self.stride_ms,'Advance exactly one configured stride')
+        start=end_ms-self.window_ms
+        current={k:r for k,r in self.records.items() if start<r['observedAtMs']<=end_ms and r['availableAtMs']<=end_ms}
+        added=sorted(set(current)-set(self.active));expired=sorted(set(self.active)-set(current));retained=sorted(set(current)&set(self.active))
+        self.revision+=1
+        frame=dict(formatVersion='notella.intercept-window.v1',revision=self.revision,startExclusiveMs=start,endInclusiveMs=end_ms,added=[copy.deepcopy(current[k]) for k in added],expiredIds=expired,retainedCount=len(retained),activeCount=len(current),lateOutsideWindowIds=list(self.late),lateOutsideWindowCount=self.late_count,capacityRejects=self.overflows)
+        self.late.clear();self.late_count=0;self.overflows=0
+        # Release old records; incident evidence retention belongs to a separate store.
+        self.records={k:r for k,r in self.records.items() if r['observedAtMs']>start or r['availableAtMs']>end_ms}
+        self.sizes={k:self.sizes[k] for k in self.records};self.bytes=sum(self.sizes.values())
+        self.active=current;self.end=end_ms;frame['frameSha256']=fingerprint(frame)
+        return frame
+
+def semantic_delta(before,after):
+    """Pure comparison of caller-validated semantic states; no inferred truth/importance."""
+    canonical(before);canonical(after)
+    result=dict(formatVersion='notella.semantic-delta.v1',beforeSha256=fingerprint(before),afterSha256=fingerprint(after))
+    for field in ('nodes','edges'):
+        check(isinstance(before.get(field),list) and isinstance(after.get(field),list),'Node/edge lists required')
+        for state in (before,after):
+            check(all(isinstance(r,dict) and isinstance(r.get('id'),str) and r['id'] for r in state[field]),'Stable record ids required')
+            check(len({r['id'] for r in state[field]})==len(state[field]),'Duplicate semantic record id')
+        old={r['id']:r for r in before[field]};new={r['id']:r for r in after[field]}
+        result[field]=dict(added=[copy.deepcopy(new[k]) for k in sorted(set(new)-set(old))],removed=[copy.deepcopy(old[k]) for k in sorted(set(old)-set(new))],updated=[dict(id=k,before=copy.deepcopy(old[k]),after=copy.deepcopy(new[k])) for k in sorted(set(old)&set(new)) if canonical(old[k])!=canonical(new[k])])
+    result['assessmentChanged']=canonical(before.get('assessment'))!=canonical(after.get('assessment'))
+    result['assessment']=copy.deepcopy(after.get('assessment')) if result['assessmentChanged'] else None
+    return result
+
+class LatestWindowWork:
+    """One active and one latest pending semantic snapshot, never skipped raw deltas.
+
+    Diffs are based on the last explicitly accepted input state. Caller validates
+    model output before accepting. Stale results require revalidation and cannot
+    automatically advance that baseline.
+    """
+    def __init__(self):
+        self.active=None;self.pending=None;self.latest=0;self.baselineRevision=None
+        self.baseline=dict(nodes=[],edges=[],assessment=None)
+    def offer(self,frame):
+        canonical(frame)
+        check(type(frame.get('revision')) is int and frame['revision']>self.latest,'Window revisions must increase')
+        state=frame.get('state');check(isinstance(state,dict) and isinstance(state.get('nodes'),list) and isinstance(state.get('edges'),list),'Offer a complete latest semantic snapshot, not a raw per-tick delta')
+        self.latest=frame['revision'];self.pending=copy.deepcopy(frame)
+    def begin(self):
+        if self.active is not None or self.pending is None:return None
+        self.active=self.pending;self.pending=None
+        result=copy.deepcopy(self.active);result['baselineRevision']=self.baselineRevision;result['delta']=semantic_delta(self.baseline,self.active['state'])
+        return result
+    def finish(self,revision,accepted=False,revalidated_revision=None):
+        check(type(accepted) is bool,'Explicit boolean acceptance required')
+        check(self.active is not None and self.active['revision']==revision,'Unexpected inference completion')
+        stale=revision!=self.latest
+        check(revalidated_revision is None or (type(revalidated_revision) is int and revalidated_revision==self.latest),'Revalidation must name the latest semantic revision')
+        revalidated=stale and revalidated_revision==self.latest
+        applied=accepted and (not stale or revalidated)
+        if applied:self.baseline=copy.deepcopy(self.active['state']);self.baselineRevision=revision
+        self.active=None
+        return dict(revision=revision,stale=stale,accepted=applied,requiresRevalidation=stale and not revalidated,revalidatedAtRevision=revalidated_revision)

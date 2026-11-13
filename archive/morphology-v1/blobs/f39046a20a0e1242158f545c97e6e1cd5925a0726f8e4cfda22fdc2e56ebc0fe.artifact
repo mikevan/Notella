@@ -1,0 +1,16 @@
+[
+  {
+    "iteration": 1,
+    "lossScale": 256.0,
+    "finite": true,
+    "unscaledL2Norm": 1.1905326101766411,
+    "normDtype": "float64"
+  },
+  {
+    "iteration": 2,
+    "lossScale": 256.0,
+    "finite": true,
+    "unscaledL2Norm": 0.8140076378387143,
+    "normDtype": "float64"
+  }
+]

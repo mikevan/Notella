@@ -93,3 +93,12 @@ $env:NOTELLA_TEST_MODEL='C:\workspace\TUltra-Project\LayerTime\tools\ai-training
 ```
 
 This launches a temporary authenticated HTTP server and a real two-update job, then stores its numeric results. It is intentionally an integration probe. Its reference to the LayerTime warning curriculum does not make two updates an effective warning model.
+
+
+## Long semantic-state targets and the 8 GB workstation
+
+The first scenario run retained full GPU vocabulary-logit/loss buffers for long graph targets and stopped after 19 applied updates without a final adapter when optimizer progress ceased near GPU capacity. No OOM exception was reported. A chunked-loss-only longest-target check did not complete an update and was preserved separately.
+
+The current --cpu-frozen-layers path keeps the frozen output projection and its large logits on CPU, computes token-mean cross entropy in checkpointed chunks there, and transfers the scalar loss back to CUDA. Prompt masking and target shift are unchanged. Optional training-environment tests compare loss/gradient values and exercise differentiable CPU-logit/GPU-loss transfer. A two-update check on the longest scenario training example completed with zero skips and finite weights before the fresh full run. Actual source/device/precision choices are recorded per job; numerical equivalence within the tested tolerance is not a claim of bitwise identity.
+
+Colibri is a local teacher inference engine in this workflow. It can propose scenarios but is not the student optimizer or an automatic remedy for training activation/loss memory. No other applications are stopped to make the model fit. Do not combine discarded partial-run updates or the two-update hardware check with a fresh adapter's applied-update count.

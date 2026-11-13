@@ -1,6 +1,13 @@
 {
   "origin": "LayerTime local LoRA engine; project-owned code reused by Notella",
-  "adaptation": "domain_training_profile.py replaced with Notella manifest verifier; evaluate_local_model.py adds a Notella prompt branch; train_lora.py unchanged",
-  "trainerSha256": "9a7435c07e1cbc10cf94ce73a1c32ee0c83ae32f4f1a137ca3bef42853540475",
-  "notellaPromptAdapterSha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254"
+  "adaptation": "Notella manifest verifier and prompt branch; local trainer adds checkpointed completion-loss chunks and optional CPU frozen-output logits for memory-bounded training. Root source line endings are normalized to LF at the morphology checkpoint; historical run snapshots retain their original bytes and hashes.",
+  "trainerSha256": "e9d4bd99eb43cbe3985908a476812ee192c609090c8852da38ecdc8757d2f39c",
+  "notellaPromptAdapterSha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254",
+  "upstreamTrainerSha256": "9a7435c07e1cbc10cf94ce73a1c32ee0c83ae32f4f1a137ca3bef42853540475",
+  "modifiedSourceSha256": {
+    "train_lora.py": "e9d4bd99eb43cbe3985908a476812ee192c609090c8852da38ecdc8757d2f39c",
+    "completion_loss.py": "96ecf9b57427fd70690151a0432da1da16c58fc6830bf275bfdcacd34d4a6453",
+    "frozen_cpu_layers.py": "4198aa5c6a24343ba382a897554ff236971ede71e737a54053743ac5ba991e52"
+  },
+  "historicalRunSource": "Use each archived runtime-manifest.json and exact engine snapshot for historical reproduction, rather than substituting current root source."
 }

@@ -1,0 +1,58 @@
+{
+  "noWeightUpdates": true,
+  "matchedPrompts": true,
+  "conditions": {
+    "base": {
+      "groups": {
+        "primary": {
+          "total": 10,
+          "rawDecisionMatches": 4,
+          "contractPasses": 4,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "robustness": {
+          "total": 6,
+          "rawDecisionMatches": 4,
+          "contractPasses": 4,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "prospective": {
+          "total": 3,
+          "rawDecisionMatches": 0,
+          "contractPasses": 0,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        }
+      },
+      "inputDeferred": 2
+    },
+    "adapted": {
+      "groups": {
+        "primary": {
+          "total": 10,
+          "rawDecisionMatches": 5,
+          "contractPasses": 5,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "robustness": {
+          "total": 6,
+          "rawDecisionMatches": 4,
+          "contractPasses": 4,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        },
+        "prospective": {
+          "total": 3,
+          "rawDecisionMatches": 0,
+          "contractPasses": 0,
+          "acceptedWrong": 0,
+          "rejectedCorrect": 0
+        }
+      },
+      "inputDeferred": 2
+    }
+  }
+}

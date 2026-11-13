@@ -1,0 +1,61 @@
+{
+  "tokenizerEos": 151645,
+  "generationEos": [
+    151645,
+    151643
+  ],
+  "runs": [
+    {
+      "run": "scenario-model-v3",
+      "checks": {
+        "train": {
+          "prefixesMatched": 20,
+          "lengthsMatchTrainingLog": true,
+          "maxLength": 2296
+        },
+        "validation": {
+          "prefixesMatched": 10,
+          "lengthsMatchTrainingLog": true,
+          "maxLength": 2414
+        }
+      },
+      "helperSha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254"
+    },
+    {
+      "run": "scenario-model-v4",
+      "checks": {
+        "train": {
+          "prefixesMatched": 20,
+          "lengthsMatchTrainingLog": true,
+          "maxLength": 2412
+        },
+        "validation": {
+          "prefixesMatched": 18,
+          "lengthsMatchTrainingLog": true,
+          "maxLength": 2414
+        }
+      },
+      "helperSha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254"
+    },
+    {
+      "run": "scenario-model-v5",
+      "checks": {
+        "train": {
+          "prefixesMatched": 20,
+          "lengthsMatchTrainingLog": true,
+          "maxLength": 2403
+        },
+        "validation": {
+          "prefixesMatched": 24,
+          "lengthsMatchTrainingLog": true,
+          "maxLength": 2414
+        }
+      },
+      "helperSha256": "70175dc8205dbb5b0147bf5cd5bb24a55eb9957385513e9ba2f3c82e7bd19254"
+    }
+  ],
+  "limits": [
+    "Checks saved code, rendered prefixes, logged lengths and EOS configuration; not a dump of live label tensors or gradients.",
+    "Matching interfaces and numerical stability do not prove adequate training or correct semantics."
+  ]
+}

@@ -21,3 +21,9 @@ Core tests: python -m unittest discover -s tests -v. Training uses a separately 
 ## Documentation and identity
 
 Document new public capabilities with runnable examples, expected outputs, failure cases and explicit limits. PRS visual language is angular amber #F2AB21 and vivid green #69D100 on black. Selected Notella logo direction: loose information strands becoming an ordered weave inside an angular brain. Preserve concept originals; version refinements.
+
+## Warning continuity and output budgets
+
+Output-token limits must not silently discard or clear validated warnings or focused incidents. Keep compact validated warning state available independently of long explanations. Surface incomplete assessments explicitly, retain evidence and the last validated assessment with its revision, and permit bounded retries within measured device context/memory budgets. Never present stale history as a new current assessment, accept an unvalidated partial label, or interpret exhaustion as all clear. Revalidate older completed proposals against current evidence before acceptance. Ordinary pending broad monitoring must not invent an attack alert.
+
+Preserve raw failed outputs and retry provenance. Keep collection/window updates independent of inference. Token budgets do not replace backend deadlines, cancellation, worker supervision or tested notification delivery. The current reference components are not phone integration or an operational delivery guarantee. Keep generation settings frozen within a matched experiment; evaluate budget changes as separate diagnostics.

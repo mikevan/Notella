@@ -1,0 +1,1003 @@
+{
+  "known": {
+    "base": {
+      "total": 10,
+      "counts": {
+        "jsonValid": 6,
+        "schemaValid": 3,
+        "contractValid": 0,
+        "criticalityMatch": 3,
+        "assessmentEvidenceMatch": 4,
+        "nodesMatch": 0,
+        "edgesMatch": 0,
+        "fullStateMatch": 0,
+        "tokenLimitReached": 4
+      }
+    },
+    "previousAdapter": {
+      "total": 10,
+      "counts": {
+        "jsonValid": 8,
+        "schemaValid": 8,
+        "contractValid": 2,
+        "criticalityMatch": 3,
+        "assessmentEvidenceMatch": 5,
+        "nodesMatch": 2,
+        "edgesMatch": 2,
+        "fullStateMatch": 1,
+        "tokenLimitReached": 2
+      }
+    },
+    "repairedAdapter": {
+      "total": 10,
+      "counts": {
+        "jsonValid": 6,
+        "schemaValid": 5,
+        "contractValid": 2,
+        "criticalityMatch": 6,
+        "assessmentEvidenceMatch": 5,
+        "nodesMatch": 4,
+        "edgesMatch": 3,
+        "fullStateMatch": 2,
+        "tokenLimitReached": 4
+      }
+    }
+  },
+  "fresh": {
+    "base": {
+      "total": 8,
+      "counts": {
+        "jsonValid": 7,
+        "schemaValid": 5,
+        "contractValid": 0,
+        "criticalityMatch": 4,
+        "assessmentEvidenceMatch": 4,
+        "nodesMatch": 0,
+        "edgesMatch": 0,
+        "fullStateMatch": 0,
+        "tokenLimitReached": 1
+      }
+    },
+    "repairedAdapter": {
+      "total": 8,
+      "counts": {
+        "jsonValid": 7,
+        "schemaValid": 6,
+        "contractValid": 2,
+        "criticalityMatch": 5,
+        "assessmentEvidenceMatch": 5,
+        "nodesMatch": 3,
+        "edgesMatch": 2,
+        "fullStateMatch": 2,
+        "tokenLimitReached": 1
+      }
+    }
+  },
+  "releaseEligible": false,
+  "decisionDetails": {
+    "base": [
+      {
+        "id": "S-Q71-step-1",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "$: unknown fields"
+      },
+      {
+        "id": "S-Q71-step-2",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "high",
+        "match": false,
+        "contractValid": false,
+        "error": "$.edges[2].evidenceRefs: array length"
+      },
+      {
+        "id": "S-Q71-step-3",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "high",
+        "match": false,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      },
+      {
+        "id": "S-Q71-step-4",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "high",
+        "match": false,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      },
+      {
+        "id": "S-Q71-step-5",
+        "scenarioId": "S-Q71",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Expecting ',' delimiter: line 191 column 25 (char 5361)"
+      },
+      {
+        "id": "S-Q92-step-1",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": false,
+        "error": "$: unknown fields"
+      },
+      {
+        "id": "S-Q92-step-2",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": false,
+        "error": "Unknown/self edge endpoint"
+      },
+      {
+        "id": "S-Q92-step-3",
+        "scenarioId": "S-Q92",
+        "expected": "critical",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 25 column 13 (char 6720)"
+      },
+      {
+        "id": "S-Q92-step-4",
+        "scenarioId": "S-Q92",
+        "expected": "critical",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 178 column 9 (char 5491)"
+      },
+      {
+        "id": "S-Q92-step-5",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 186 column 7 (char 5107)"
+      },
+      {
+        "id": "V-834-step-1",
+        "scenarioId": "V-834",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "$: unknown fields"
+      },
+      {
+        "id": "V-834-step-2",
+        "scenarioId": "V-834",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      },
+      {
+        "id": "V-834-step-3",
+        "scenarioId": "V-834",
+        "expected": "contextual",
+        "generated": "critical",
+        "match": false,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      },
+      {
+        "id": "V-834-step-4",
+        "scenarioId": "V-834",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Expecting property name enclosed in double quotes: line 74 column 6 (char 6854)"
+      },
+      {
+        "id": "V-947-step-1",
+        "scenarioId": "V-947",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": false,
+        "error": "$: unknown fields"
+      },
+      {
+        "id": "V-947-step-2",
+        "scenarioId": "V-947",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Undeclared ontology relationship"
+      },
+      {
+        "id": "V-947-step-3",
+        "scenarioId": "V-947",
+        "expected": "critical",
+        "generated": "contextual",
+        "match": false,
+        "contractValid": false,
+        "error": "Target must retain every visible report, including retractions and duplicates"
+      },
+      {
+        "id": "V-947-step-4",
+        "scenarioId": "V-947",
+        "expected": "contextual",
+        "generated": "critical",
+        "match": false,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      }
+    ],
+    "previousAdapter": [
+      {
+        "id": "S-Q71-step-1",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "contextual",
+        "match": false,
+        "contractValid": true,
+        "error": null
+      },
+      {
+        "id": "S-Q71-step-2",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "contextual",
+        "match": false,
+        "contractValid": false,
+        "error": "Undeclared ontology relationship"
+      },
+      {
+        "id": "S-Q71-step-3",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Edge match counts inconsistent"
+      },
+      {
+        "id": "S-Q71-step-4",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "contextual",
+        "match": false,
+        "contractValid": false,
+        "error": "Undeclared ontology relationship"
+      },
+      {
+        "id": "S-Q71-step-5",
+        "scenarioId": "S-Q71",
+        "expected": "contextual",
+        "generated": "critical",
+        "match": false,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      },
+      {
+        "id": "S-Q92-step-1",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": true,
+        "error": null
+      },
+      {
+        "id": "S-Q92-step-2",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": false,
+        "error": "Cross-asset links require a future explicit bridge contract"
+      },
+      {
+        "id": "S-Q92-step-3",
+        "scenarioId": "S-Q92",
+        "expected": "critical",
+        "generated": "high",
+        "match": false,
+        "contractValid": false,
+        "error": "Unknown/self edge endpoint"
+      },
+      {
+        "id": "S-Q92-step-4",
+        "scenarioId": "S-Q92",
+        "expected": "critical",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 109 (char 108)"
+      },
+      {
+        "id": "S-Q92-step-5",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 115 (char 114)"
+      }
+    ],
+    "repairedAdapter": [
+      {
+        "id": "S-Q71-step-1",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": true,
+        "error": null
+      },
+      {
+        "id": "S-Q71-step-2",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "$.nodes[2].evidenceRefs: array length"
+      },
+      {
+        "id": "S-Q71-step-3",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Undeclared ontology relationship"
+      },
+      {
+        "id": "S-Q71-step-4",
+        "scenarioId": "S-Q71",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Unknown/self edge endpoint"
+      },
+      {
+        "id": "S-Q71-step-5",
+        "scenarioId": "S-Q71",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 115 (char 114)"
+      },
+      {
+        "id": "S-Q92-step-1",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": true,
+        "error": null
+      },
+      {
+        "id": "S-Q92-step-2",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": false,
+        "error": "Target must retain every visible report, including retractions and duplicates"
+      },
+      {
+        "id": "S-Q92-step-3",
+        "scenarioId": "S-Q92",
+        "expected": "critical",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 103 (char 102)"
+      },
+      {
+        "id": "S-Q92-step-4",
+        "scenarioId": "S-Q92",
+        "expected": "critical",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 109 (char 108)"
+      },
+      {
+        "id": "S-Q92-step-5",
+        "scenarioId": "S-Q92",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 115 (char 114)"
+      },
+      {
+        "id": "V-834-step-1",
+        "scenarioId": "V-834",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "$.nodes[0].evidenceRefs: array length"
+      },
+      {
+        "id": "V-834-step-2",
+        "scenarioId": "V-834",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Cross-asset links require a future explicit bridge contract"
+      },
+      {
+        "id": "V-834-step-3",
+        "scenarioId": "V-834",
+        "expected": "contextual",
+        "generated": "critical",
+        "match": false,
+        "contractValid": false,
+        "error": "Observation retraction status mismatch"
+      },
+      {
+        "id": "V-834-step-4",
+        "scenarioId": "V-834",
+        "expected": "contextual",
+        "generated": "critical",
+        "match": false,
+        "contractValid": false,
+        "error": "Active edge cites withdrawn evidence"
+      },
+      {
+        "id": "V-947-step-1",
+        "scenarioId": "V-947",
+        "expected": "contextual",
+        "generated": "contextual",
+        "match": true,
+        "contractValid": true,
+        "error": null
+      },
+      {
+        "id": "V-947-step-2",
+        "scenarioId": "V-947",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": true,
+        "error": null
+      },
+      {
+        "id": "V-947-step-3",
+        "scenarioId": "V-947",
+        "expected": "critical",
+        "generated": "critical",
+        "match": true,
+        "contractValid": false,
+        "error": "Undeclared ontology relationship"
+      },
+      {
+        "id": "V-947-step-4",
+        "scenarioId": "V-947",
+        "expected": "contextual",
+        "generated": null,
+        "match": false,
+        "contractValid": false,
+        "error": "Unterminated string starting at: line 1 column 5890 (char 5889)"
+      }
+    ]
+  },
+  "revisions": {
+    "conditions": {
+      "base": {
+        "observedTransitions": 14,
+        "expectedTransitions": 14,
+        "directionMatches": 5,
+        "endpointMatches": 3,
+        "transitions": [
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 12000,
+            "afterMs": 15000,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "high"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "deescalate",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 15000,
+            "afterMs": 16000,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "high",
+              "high"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 16000,
+            "afterMs": 20100,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "high",
+              "high"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 20100,
+            "afterMs": 25100,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              "high",
+              null
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 40100,
+            "afterMs": 42000,
+            "expected": [
+              "contextual",
+              "contextual"
+            ],
+            "generated": [
+              "contextual",
+              "contextual"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 42000,
+            "afterMs": 50100,
+            "expected": [
+              "contextual",
+              "critical"
+            ],
+            "generated": [
+              "contextual",
+              null
+            ],
+            "expectedDirection": "escalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 50100,
+            "afterMs": 52000,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              null,
+              null
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 52000,
+            "afterMs": 55100,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              null,
+              null
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-834",
+            "beforeMs": 300200,
+            "afterMs": 307200,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "V-834",
+            "beforeMs": 307200,
+            "afterMs": 313200,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unchanged",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-834",
+            "beforeMs": 313200,
+            "afterMs": 320200,
+            "expected": [
+              "contextual",
+              "contextual"
+            ],
+            "generated": [
+              "critical",
+              null
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-947",
+            "beforeMs": 360200,
+            "afterMs": 367200,
+            "expected": [
+              "contextual",
+              "critical"
+            ],
+            "generated": [
+              "contextual",
+              "critical"
+            ],
+            "expectedDirection": "escalate",
+            "generatedDirection": "escalate",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "V-947",
+            "beforeMs": 367200,
+            "afterMs": 373200,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "contextual"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "deescalate",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-947",
+            "beforeMs": 373200,
+            "afterMs": 379200,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              "contextual",
+              "critical"
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "escalate",
+            "directionMatch": false,
+            "endpointsMatch": false
+          }
+        ]
+      },
+      "adapted": {
+        "observedTransitions": 14,
+        "expectedTransitions": 14,
+        "directionMatches": 8,
+        "endpointMatches": 7,
+        "transitions": [
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 12000,
+            "afterMs": 15000,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 15000,
+            "afterMs": 16000,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 16000,
+            "afterMs": 20100,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "S-Q71",
+            "beforeMs": 20100,
+            "afterMs": 25100,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              "critical",
+              null
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 40100,
+            "afterMs": 42000,
+            "expected": [
+              "contextual",
+              "contextual"
+            ],
+            "generated": [
+              "contextual",
+              "contextual"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 42000,
+            "afterMs": 50100,
+            "expected": [
+              "contextual",
+              "critical"
+            ],
+            "generated": [
+              "contextual",
+              null
+            ],
+            "expectedDirection": "escalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 50100,
+            "afterMs": 52000,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              null,
+              null
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "S-Q92",
+            "beforeMs": 52000,
+            "afterMs": 55100,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              null,
+              null
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-834",
+            "beforeMs": 300200,
+            "afterMs": 307200,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "V-834",
+            "beforeMs": 307200,
+            "afterMs": 313200,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unchanged",
+            "directionMatch": false,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-834",
+            "beforeMs": 313200,
+            "afterMs": 320200,
+            "expected": [
+              "contextual",
+              "contextual"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": false
+          },
+          {
+            "scenarioId": "V-947",
+            "beforeMs": 360200,
+            "afterMs": 367200,
+            "expected": [
+              "contextual",
+              "critical"
+            ],
+            "generated": [
+              "contextual",
+              "critical"
+            ],
+            "expectedDirection": "escalate",
+            "generatedDirection": "escalate",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "V-947",
+            "beforeMs": 367200,
+            "afterMs": 373200,
+            "expected": [
+              "critical",
+              "critical"
+            ],
+            "generated": [
+              "critical",
+              "critical"
+            ],
+            "expectedDirection": "unchanged",
+            "generatedDirection": "unchanged",
+            "directionMatch": true,
+            "endpointsMatch": true
+          },
+          {
+            "scenarioId": "V-947",
+            "beforeMs": 373200,
+            "afterMs": 379200,
+            "expected": [
+              "critical",
+              "contextual"
+            ],
+            "generated": [
+              "critical",
+              null
+            ],
+            "expectedDirection": "deescalate",
+            "generatedDirection": "unreadable",
+            "directionMatch": false,
+            "endpointsMatch": false
+          }
+        ]
+      }
+    },
+    "limits": [
+      "Decision revisions reconstructed from independent full-prefix responses, not model-state rollout.",
+      "Direction agreement alone can conceal consistently wrong severity.",
+      "No automatic judgment of rationale truth or causal validity."
+    ]
+  },
+  "sameTrainingSettingsVerified": true,
+  "sameTrainingEngineVerified": true,
+  "sameBaseIntakeVerified": true
+}

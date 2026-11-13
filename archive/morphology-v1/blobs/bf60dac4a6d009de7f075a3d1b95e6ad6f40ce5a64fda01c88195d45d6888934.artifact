@@ -1,0 +1,26 @@
+{
+  "status": "development-candidate-for-independent-evaluation",
+  "releaseEligible": false,
+  "installedOnPhone": false,
+  "trainingRun": "warning-v6-typed-training",
+  "jobId": "025ce308a46d40bdbe930e83eea9c965",
+  "ontologyId": "de8b8fa925137177906f1422d92e9024f7253a4ff086f4ee10ef731ab4fa5092",
+  "curriculumId": "79f4ab22a6c942fb9062a7ad9d78f654f1ff4f135f3524053389d8a3e55bb683",
+  "profileSha256": "b3a12d5b302d5f21c80ca8b64a4f4cb869aa525037d8791e026f0741338f4fd1",
+  "adapterSha256": "ef6547a6668bd6276a86d1656784d06bce56c8c9d9b239447a10e292106dbddb",
+  "newDevelopment": {
+    "base": 5,
+    "adapted": 10,
+    "total": 10,
+    "exactTrainingInputOverlap": 0
+  },
+  "knownTemplateRegressions": {
+    "base": 12,
+    "adapted": 19,
+    "total": 19,
+    "exactTrainingInputMatches": 18
+  },
+  "inputSpecimensDeferred": 2,
+  "semanticAccuracyMeasured": false,
+  "independentFieldQualification": false
+}

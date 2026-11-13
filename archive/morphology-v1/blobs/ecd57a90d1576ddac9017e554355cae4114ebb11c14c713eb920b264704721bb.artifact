@@ -1,0 +1,43 @@
+test_backend_exports_and_runs_without_shell (test_api.CoreTests.test_backend_exports_and_runs_without_shell) ... ok
+test_evaluation_missing_and_wrong_split (test_api.CoreTests.test_evaluation_missing_and_wrong_split) ... ok
+test_exact_match_does_not_claim_semantics (test_api.CoreTests.test_exact_match_does_not_claim_semantics) ... ok
+test_exclusion (test_api.CoreTests.test_exclusion) ... ok
+test_family_leakage (test_api.CoreTests.test_family_leakage) ... ok
+test_http_auth_and_roundtrip (test_api.CoreTests.test_http_auth_and_roundtrip) ... ok
+test_non_loopback_rejected (test_api.CoreTests.test_non_loopback_rejected) ... ok
+test_path_escape (test_api.CoreTests.test_path_escape) ... ok
+test_plan_bounds (test_api.CoreTests.test_plan_bounds) ... ok
+test_prompt_leakage (test_api.CoreTests.test_prompt_leakage) ... ok
+test_relation_validation (test_api.CoreTests.test_relation_validation) ... ok
+test_reproducibility (test_api.CoreTests.test_reproducibility) ... ok
+test_schema_rejects_wrong_answer (test_api.CoreTests.test_schema_rejects_wrong_answer) ... ok
+test_source_admission (test_api.CoreTests.test_source_admission) ... ok
+test_stored_tampering (test_api.CoreTests.test_stored_tampering) ... ok
+test_training_disabled (test_api.CoreTests.test_training_disabled) ... ok
+test_unsupported_schema_rejected_up_front (test_api.CoreTests.test_unsupported_schema_rejected_up_front) ... ok
+test_boundary_uncertainty (test_correlation.TemporalTests.test_boundary_uncertainty) ... ok
+test_invalid (test_correlation.TemporalTests.test_invalid) ... ok
+test_missing (test_correlation.TemporalTests.test_missing) ... ok
+test_reversed (test_correlation.TemporalTests.test_reversed) ... ok
+test_supported_link (test_correlation.TemporalTests.test_supported_link) ... ok
+test_uncertain_order (test_correlation.TemporalTests.test_uncertain_order) ... ok
+test_component_tampering_rejected (test_profile.ProfileTests.test_component_tampering_rejected) ... ok
+test_path_escape_rejected (test_profile.ProfileTests.test_path_escape_rejected) ... ok
+test_prepare_is_reproducible_and_does_not_train (test_profile.ProfileTests.test_prepare_is_reproducible_and_does_not_train) ... ok
+test_unknown_training_settings_rejected (test_profile.ProfileTests.test_unknown_training_settings_rejected) ... ok
+test_windows_utf8_bom_manifest (test_profile.ProfileTests.test_windows_utf8_bom_manifest) ... ok
+test_exact_output_hash (test_semantic_reviews.ReviewTests.test_exact_output_hash) ... ok
+test_http_review_roundtrip (test_semantic_reviews.ReviewTests.test_http_review_roundtrip) ... ok
+test_invalid_json_can_be_reviewed (test_semantic_reviews.ReviewTests.test_invalid_json_can_be_reviewed) ... ok
+test_missing_judgment_rejected (test_semantic_reviews.ReviewTests.test_missing_judgment_rejected) ... ok
+test_not_assessed_is_not_pass (test_semantic_reviews.ReviewTests.test_not_assessed_is_not_pass) ... ok
+test_unknown_criterion_rejected (test_semantic_reviews.ReviewTests.test_unknown_criterion_rejected) ... ok
+test_whitespace_changes_review_identity (test_semantic_reviews.ReviewTests.test_whitespace_changes_review_identity) ... ok
+test_wrong_split_rejected (test_semantic_reviews.ReviewTests.test_wrong_split_rejected) ... ok
+test_first_tutorial_runs_as_documented (test_tutorials.TutorialTests.test_first_tutorial_runs_as_documented) ... ok
+test_http_tutorial_runs_as_documented (test_tutorials.TutorialTests.test_http_tutorial_runs_as_documented) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 2.112s
+
+OK

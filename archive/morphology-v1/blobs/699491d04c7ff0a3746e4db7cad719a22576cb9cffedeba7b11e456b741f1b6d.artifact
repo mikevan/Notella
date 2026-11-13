@@ -1,0 +1,7 @@
+{
+  "matchedCachedPrompts": 10,
+  "trainingRows": 20,
+  "maxTrainingTokens": 2413,
+  "minTrainingTokens": 1505,
+  "allValidationInputsPlus1536Within4096": true
+}

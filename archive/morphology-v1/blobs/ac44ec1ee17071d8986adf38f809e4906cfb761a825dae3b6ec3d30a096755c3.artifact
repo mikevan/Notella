@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\Users\vange\OneDrive\Documents\ChatGPT\LayerTime\OntoForge\engine\train_lora.py", line 269, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\vange\OneDrive\Documents\ChatGPT\LayerTime\OntoForge\engine\train_lora.py", line 121, in main
+    train=tokenize_split('train');validation=tokenize_split('validation')
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vange\OneDrive\Documents\ChatGPT\LayerTime\OntoForge\engine\train_lora.py", line 111, in tokenize_split
+    prefix=render_evaluation_prompt(tokenizer,example,merge_system_messages=args.merge_system_messages)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vange\OneDrive\Documents\ChatGPT\LayerTime\OntoForge\engine\evaluate_local_model.py", line 56, in render_evaluation_prompt
+    context=evaluation_messages(record,evidence_facts,policy_guided,merge_system_messages)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vange\OneDrive\Documents\ChatGPT\LayerTime\OntoForge\engine\evaluate_local_model.py", line 40, in evaluation_messages
+    else:context=[{'role':'system','content':'Return only a JSON object matching this schema: '+record['outputSchema']}]+record['messages'][:-1]
+                                                                                                ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'outputSchema'
+Exception: C:\Users\vange\OneDrive\Documents\ChatGPT\LayerTime\OntoForge\Train-LayerTime.ps1:14
+Line |
+  14 |  . DE -ne 0) { throw "Training exited with code $LASTEXITCODE; preserve  .
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Training exited with code 1; preserve logs and partial checkpoints.

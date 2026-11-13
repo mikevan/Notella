@@ -1,0 +1,55 @@
+{
+  "formatVersion": "notella.teacher-draft-review.v1",
+  "candidateResultId": "d63e28a7d99a8537cbe76372a7b419a22cf983d1b238ca6640497a9456972eca",
+  "outputSha256": "df0cedf0acba91c7d02d873fe28f4d364150c71fb90f5b7a4b9aebe76e839ed1",
+  "criteriaFileSha256": "d1c57d804bf03561717b2fe0bc6091b13a9119478fef8d429c1102ffc58f8c5f",
+  "reviewer": {
+    "name": "Codex",
+    "kind": "agent",
+    "independent": false
+  },
+  "disposition": "reject_for_training",
+  "admittedForTraining": false,
+  "fieldQualified": false,
+  "judgments": [
+    {
+      "criterion": "ontology_scope",
+      "status": "fail",
+      "rationale": "Observation 1 labels the outage cause_unresolved but assigns critical/met/corroborated_drone. The proposed policy requires reviewed_deliberate_disruption and maps unresolved outage cause to high/unconfirmed/cause_unresolved."
+    },
+    {
+      "criterion": "source_lineage",
+      "status": "fail",
+      "rationale": "The draft counts one origin for the disruption and another for the drone as corroborating provenance. The profile source-lineage summary concerns reports of the drone observation; cross-event origins do not supply that corroboration."
+    },
+    {
+      "criterion": "temporal_link",
+      "status": "uncertain",
+      "rationale": "The draft states after/withinWindow and defines uncertainty intervals, but supplies no measured intervals or configured numerical window. These are authored assertions, not derived temporal facts."
+    },
+    {
+      "criterion": "causal_restraint",
+      "status": "pass",
+      "rationale": "Explicitly distinguishes temporal association and warning posture from causation, perpetrator attribution and calibrated attack probability."
+    },
+    {
+      "criterion": "contrast_consistency",
+      "status": "fail",
+      "rationale": "The second scenario changes both source lineage and event order uncertainty, and gives two evidenceClass alternatives. It does not isolate the source-origin contrast or resolve a single policy-consistent target."
+    },
+    {
+      "criterion": "completion",
+      "status": "pass",
+      "rationale": "finishReason=stop; 691 generated tokens, not token-limit truncation."
+    },
+    {
+      "criterion": "candidate_only",
+      "status": "pass",
+      "rationale": "The response is labelled synthetic and the provider saved it with admittedForTraining=false. No example was admitted or trained."
+    }
+  ],
+  "limitations": [
+    "Agent-authored interpretation review, not independently verified ground truth.",
+    "One rejected draft is not an aggregate teacher accuracy estimate."
+  ]
+}

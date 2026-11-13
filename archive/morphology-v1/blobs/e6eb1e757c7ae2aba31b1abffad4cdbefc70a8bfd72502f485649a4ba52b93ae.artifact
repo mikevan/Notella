@@ -1,0 +1,15 @@
+{
+  "ontologyId": "f01e6c9456ad50918b2b9d6d6dffca3a9033760acd5a40fa9bb33c605ff4734d",
+  "curriculumId": "329b3b08ec9ceff7bd3afe9d53ed55de79f929d5f7570d58b32d22d18caaa97f",
+  "planId": "c20d4e1a7d3b19c4b6e3b32b1299aac87ba50c3ccebf2ab36bfab3d8c5105940",
+  "evaluationId": "51a265dd5e705395e566c3e33096ff7bdf5e6af6dc114b20ed8ac059513270f1",
+  "splits": {
+    "train": 3,
+    "validation": 1,
+    "test": 1
+  },
+  "fixtureOnly": true,
+  "modelLoaded": false,
+  "trainingStarted": false,
+  "semanticAccuracyMeasured": false
+}

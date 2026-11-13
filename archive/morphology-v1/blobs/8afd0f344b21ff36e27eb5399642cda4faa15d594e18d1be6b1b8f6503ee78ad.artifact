@@ -1,0 +1,9 @@
+test_cpu_logits_return_gpu_loss_and_differentiable_cpu_gradient (test_completion_loss_memory.CpuLogitTransferTests.test_cpu_logits_return_gpu_loss_and_differentiable_cpu_gradient) ... ok
+test_invalid_chunk_and_empty_target_refused (test_completion_loss_memory.MemoryBoundedLossTests.test_invalid_chunk_and_empty_target_refused) ... ok
+test_prompt_masking_and_target_shift (test_completion_loss_memory.MemoryBoundedLossTests.test_prompt_masking_and_target_shift) ... ok
+test_value_and_gradient_match_full_loss (test_completion_loss_memory.MemoryBoundedLossTests.test_value_and_gradient_match_full_loss) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.965s
+
+OK

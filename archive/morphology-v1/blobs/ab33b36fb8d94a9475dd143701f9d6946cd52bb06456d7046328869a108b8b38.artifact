@@ -1,0 +1,8 @@
+{
+  "ProcessId": 12520,
+  "StartedAt": "2026-11-12T09:39:38.1783683-06:00",
+  "Run": "fresh-base-v1",
+  "RequestedSteps": 742,
+  "InitialAdapter": null,
+  "Attempt": 2
+}

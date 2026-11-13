@@ -1,0 +1,50 @@
+{
+  "raw-base": {
+    "primary": {
+      "total": 10,
+      "matched": 1,
+      "schemaPasses": 10
+    },
+    "robustness": {
+      "total": 6,
+      "matched": 3,
+      "schemaPasses": 6
+    }
+  },
+  "raw-adapted": {
+    "primary": {
+      "total": 10,
+      "matched": 7,
+      "schemaPasses": 10
+    },
+    "robustness": {
+      "total": 6,
+      "matched": 3,
+      "schemaPasses": 5
+    }
+  },
+  "temporal-facts-base": {
+    "primary": {
+      "total": 10,
+      "matched": 1,
+      "schemaPasses": 10
+    },
+    "robustness": {
+      "total": 6,
+      "matched": 3,
+      "schemaPasses": 6
+    }
+  },
+  "temporal-facts-adapted": {
+    "primary": {
+      "total": 10,
+      "matched": 9,
+      "schemaPasses": 10
+    },
+    "robustness": {
+      "total": 6,
+      "matched": 4,
+      "schemaPasses": 6
+    }
+  }
+}

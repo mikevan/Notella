@@ -1,0 +1,8 @@
+{
+  "tensors": 144,
+  "allWeightsFinite": true,
+  "nonfiniteTensors": [],
+  "nonzeroLoraBTensors": 72,
+  "globalStep": 120,
+  "sha256": "69059ed886d410f35bc09200a49878872507c2ff7dfaa3a9228dc0849664b177"
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "notella.teacher-feasibility-summary.v1",
+  "teacher": {
+    "model": "notella-teacher-qwen36",
+    "decisionMatches": 5,
+    "total": 10,
+    "schemaPasses": 10,
+    "guardPasses": 5,
+    "errors": 0,
+    "seconds": 503.0,
+    "medianSeconds": 49.727000000013504
+  },
+  "priorTrained4B": {
+    "decisionMatches": 10,
+    "total": 10,
+    "caseIdsMatched": true,
+    "reportSha256": "fecb22033a49d0416bc2c1e5080d21f627b88bf2665560521a5bb5189bbc7167"
+  },
+  "freeformDraft": {
+    "seconds": 158.5,
+    "disposition": "reject_for_training"
+  },
+  "trainingExamplesAdmitted": 0,
+  "studentTrainingStarted": false,
+  "phoneDeploymentChanged": false,
+  "limitations": [
+    "Previously inspected synthetic development controls; not independent evaluation.",
+    "Teacher/base/adapter architecture, weights and runtime differ; not a matched engine or training benchmark.",
+    "The bounded teacher configuration is not a hardware performance ceiling.",
+    "Guard rejection is not a correct model answer or a universal safety guarantee.",
+    "No benefit to student size, training time or phone performance has been demonstrated."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "steps": 30,
+  "uniquePrefixes": 21,
+  "originalFamilies": 3,
+  "receipts": [
+    {
+      "steps": 3,
+      "prefixSha256": [
+        "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+        "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+        "6b0c606c9525fcf17adbde0a41841bd5f4c4391f9909aef0be2dde5c6770318f"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "developing-access",
+      "scenarioSha256": "36f79dc7122bcece5e4da0a49ba98ed7d2891a7a4a7d8ee6e1e93fd705102bbd"
+    },
+    {
+      "steps": 3,
+      "prefixSha256": [
+        "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+        "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+        "f5cd6387713ebc9b434ed70ab7a5b5a949d1894bdcd1fde438050bf2fd11924c"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "benign-branch",
+      "scenarioSha256": "5ec5032814cb308d1dc186e993d955f7596ec065d9475e2d748d1bf2e717a985"
+    },
+    {
+      "steps": 4,
+      "prefixSha256": [
+        "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+        "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+        "6b0c606c9525fcf17adbde0a41841bd5f4c4391f9909aef0be2dde5c6770318f",
+        "2124256fbaabe6168c4e8d27165a05f9dcbcc52b330f135fd9ee381316f7b26c"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "source-correction",
+      "scenarioSha256": "faecf1f6e42480723ba112c95ae0f7e740df85790ec673bf28f4585abb75754c"
+    },
+    {
+      "steps": 3,
+      "prefixSha256": [
+        "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+        "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+        "4cdeb6ae11e093d4e706decf9d61733b8a90d18aab045d92adb674bed972bbbd"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "unrelated-asset",
+      "scenarioSha256": "872da4e76d099ae9dde3378829ff2aca23e4affb6cd99f7b9a3580ab26b533c3"
+    },
+    {
+      "steps": 2,
+      "prefixSha256": [
+        "9913de13dd2d73702c7cad78316c3a784e391ed71ca19f93e76f206ccb2b4621",
+        "5e48eca63eb6246d8a8db4bbf881803d96c30868a47501f10a63eb4a3d78ea5b"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "duplicate-reports",
+      "scenarioSha256": "fe47a74596259a6d44b69c0de8d8e39cd743385c188e21654cd462b71d78269b"
+    },
+    {
+      "steps": 3,
+      "prefixSha256": [
+        "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+        "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+        "ef8ba644b3115f57657fa11e89137f03ff0cd8b5067b219ddd15c879e5335362"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "late-arrival",
+      "scenarioSha256": "866e497e0456960a818f0b01b3a319eccb1e53af0cd1de5a93d7bc1c65fe224c"
+    },
+    {
+      "steps": 2,
+      "prefixSha256": [
+        "adcf52261a6710a910cf08ac2f4e8f0d5df4067f3908ec18fd15303db253c423",
+        "2367c7c366a0346b3104e14b6a385796b006a0abed325102a3c0209e33b33e8b"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "unresolved-clock",
+      "scenarioSha256": "6e657af1e9b1630bc9586436de8b748a7c6400c978ba63690f4b87df2c0cdfa9"
+    },
+    {
+      "steps": 5,
+      "prefixSha256": [
+        "15c84a1209498a90f295f0af02cb401be344e0ce3bc7bdf7dee2793383317d00",
+        "a7d1058a54ab1383dbfcd11d92550e6334069bf3bb85639fe657ad55b127697c",
+        "8583ae904e2c7f8d438436cca887687a9f4ae445651643ad16ac7082af21a793",
+        "a9e1bb9f41bddcfa1d078b42d964f50bba3a89ebfee795d75db13a13a4d38664",
+        "fd9a9f8c88d234f387ebfc4ea25e5fe6c238a26b3722ffaf684af83b4d9d9e43"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "S-Q71",
+      "scenarioSha256": "e258eb189b4ad2d0f76d797f21b868c3897b37cd3f56b9e18c2f1faf4c03c30d"
+    },
+    {
+      "steps": 5,
+      "prefixSha256": [
+        "46fa404cbc48a2d78a5ac7a7fa60e45dda1036875a37191309d2a322c562a1a9",
+        "26198fd960698e8d1a076f1f0498aa6dece178b8d28c83dcf8473eddc1a2ec57",
+        "5c709db3eb4be5b024bc55c7cbe457270f0183d018b842d7c158e056c9bbded2",
+        "cc3483a8f625678bf04c4040b3d86b626bdb6307f4279b19432a4e95217e5a84",
+        "a89a691fd4786e81f07ca5cb56a404e61b8ce0a3662b0b24d45f327a77d9db36"
+      ],
+      "semanticCorrectnessEstablished": false,
+      "sourceAuthenticityVerified": false,
+      "scenarioId": "S-Q92",
+      "scenarioSha256": "dc2c2fe710f3c05a608ba26ee2ee11d1373ad8dc6b1fd42906e478e0040de1ad"
+    }
+  ],
+  "semanticCorrectnessEstablished": false,
+  "scenarios": 9
+}

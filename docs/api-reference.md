@@ -134,3 +134,13 @@ POST /v1/interpretation-reviews records explicit reviewer judgments against exac
 `notella.output_contracts.inspect_output(output, schema, allowed_states, fields)` checks exact generated text, schema and declared field combinations. It returns violations and a hash, never a repaired answer or ground-truth certification.
 
 The source-checkout LayerTime adapter provides `profiles.layertime.decision_contract.project_observation` and `inspect_warning_output`. These explicitly project relevant observations and check necessary evidence relations. They are profile helpers, not automatic behavior of every core endpoint and not additional HTTP routes. See the [runnable contract tutorial](input-output-contracts.md).
+
+## Optional local teacher Python API
+
+Use `notella.teachers.LocalTeacher` and `teaching_candidate` for a loopback Colibri/OpenAI-compatible teacher. This is a Python interface, not a new HTTP route. Candidate receipts pin the provider source hash, request identity and saved-result integrity hash, and always start pending review. See [Tutorial 10](teachers.md) for runnable examples, explicit retries, model-intake limits and the separate curriculum-admission boundary.
+
+The optional `notella.teacher_reviews.record_teacher_review` Python API binds criterion judgments to an exact pending teacher candidate. Its `id`/`artifact` return envelope follows other artifact APIs. Review never grants training permission. See [the teacher tutorial](teachers.md).
+
+## Scenario Python API
+
+`notella.scenarios.scenario_output_schema(concepts)`, `validate_scenario(ontology, scenario)`, `validate_scenario_set(ontology, scenarios)`, `evidence_counts(evidence_by_id, refs)` and `compile_scenario_examples(ontology, scenarios)` provide the first assessment-scenario contract. Validation receipts identify what was checked and keep semantic correctness/source authenticity false. Export does not grant admission or start training. See [Tutorial 11](scenarios.md) for runnable examples, fields and failures. No new scenario HTTP route is implemented.

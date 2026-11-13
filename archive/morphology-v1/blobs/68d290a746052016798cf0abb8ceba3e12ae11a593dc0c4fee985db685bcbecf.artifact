@@ -1,0 +1,28 @@
+{
+  "reviewer": "Agent-authored interpretation review; not independent expert validation",
+  "fieldAccuracyMeasured": false,
+  "improvementOverBaseMeasured": false,
+  "rows": [
+    {
+      "id": "ontoforge-unseen-camp-sequence-0",
+      "outputSha256": "91e79277d930311db5f26cb485241db1e7ee17748ad43382636df28f587ca4f7",
+      "criterion": "critical-sequence",
+      "judgment": "FAIL",
+      "reason": "The supplied policy trigger was met, but the model said it was not established and maintained only high concern."
+    },
+    {
+      "id": "ontoforge-unseen-no-time-0",
+      "outputSha256": "0baffcf6ed189e4306c5a1a7749675c0664d5c340131d39b8f9108139d439156",
+      "criterion": "missing-time",
+      "judgment": "PARTIAL",
+      "reason": "The posture is cautious, but the answer omits the missing/common-clock reason that prevents ordering."
+    },
+    {
+      "id": "ontoforge-unseen-benign-0",
+      "outputSha256": "65857d059e74831f055607f2a968c09325d3e273d75d4ae5e64ce3d3c3b79a77",
+      "criterion": "verified-benign",
+      "judgment": "PARTIAL",
+      "reason": "Recognizes scheduled maintenance, but adds an unsupported claim that neither identity is independently corroborated."
+    }
+  ]
+}

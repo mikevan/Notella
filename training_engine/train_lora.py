@@ -174,7 +174,7 @@ def main():
     if args.cpu_frozen_layers:
         from frozen_cpu_layers import offload_frozen_io
         torch.set_num_threads(4)
-        offload_frozen_io(model)
+        offload_frozen_io(model,keep_output_on_cpu=True)
     if args.qlora:
         model=prepare_model_for_kbit_training(model,use_gradient_checkpointing=True,
             gradient_checkpointing_kwargs={'use_reentrant':False})

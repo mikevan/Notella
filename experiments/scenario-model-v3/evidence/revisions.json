@@ -1,0 +1,297 @@
+{
+  "conditions": {
+    "base": {
+      "observedTransitions": 8,
+      "expectedTransitions": 8,
+      "directionMatches": 3,
+      "endpointMatches": 1,
+      "transitions": [
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 12000,
+          "afterMs": 15000,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "critical",
+            "high"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "deescalate",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 15000,
+          "afterMs": 16000,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "high",
+            "high"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unchanged",
+          "directionMatch": true,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 16000,
+          "afterMs": 20100,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "high",
+            "high"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unchanged",
+          "directionMatch": true,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 20100,
+          "afterMs": 25100,
+          "expected": [
+            "critical",
+            "contextual"
+          ],
+          "generated": [
+            "high",
+            null
+          ],
+          "expectedDirection": "deescalate",
+          "generatedDirection": "unreadable",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 40100,
+          "afterMs": 42000,
+          "expected": [
+            "contextual",
+            "contextual"
+          ],
+          "generated": [
+            "contextual",
+            "contextual"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unchanged",
+          "directionMatch": true,
+          "endpointsMatch": true
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 42000,
+          "afterMs": 50100,
+          "expected": [
+            "contextual",
+            "critical"
+          ],
+          "generated": [
+            "contextual",
+            null
+          ],
+          "expectedDirection": "escalate",
+          "generatedDirection": "unreadable",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 50100,
+          "afterMs": 52000,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            null,
+            null
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unreadable",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 52000,
+          "afterMs": 55100,
+          "expected": [
+            "critical",
+            "contextual"
+          ],
+          "generated": [
+            null,
+            null
+          ],
+          "expectedDirection": "deescalate",
+          "generatedDirection": "unreadable",
+          "directionMatch": false,
+          "endpointsMatch": false
+        }
+      ]
+    },
+    "adapted": {
+      "observedTransitions": 8,
+      "expectedTransitions": 8,
+      "directionMatches": 3,
+      "endpointMatches": 1,
+      "transitions": [
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 12000,
+          "afterMs": 15000,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "contextual",
+            "contextual"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unchanged",
+          "directionMatch": true,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 15000,
+          "afterMs": 16000,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "contextual",
+            "critical"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "escalate",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 16000,
+          "afterMs": 20100,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "critical",
+            "contextual"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "deescalate",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q71",
+          "beforeMs": 20100,
+          "afterMs": 25100,
+          "expected": [
+            "critical",
+            "contextual"
+          ],
+          "generated": [
+            "contextual",
+            "critical"
+          ],
+          "expectedDirection": "deescalate",
+          "generatedDirection": "escalate",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 40100,
+          "afterMs": 42000,
+          "expected": [
+            "contextual",
+            "contextual"
+          ],
+          "generated": [
+            "contextual",
+            "contextual"
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unchanged",
+          "directionMatch": true,
+          "endpointsMatch": true
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 42000,
+          "afterMs": 50100,
+          "expected": [
+            "contextual",
+            "critical"
+          ],
+          "generated": [
+            "contextual",
+            "high"
+          ],
+          "expectedDirection": "escalate",
+          "generatedDirection": "escalate",
+          "directionMatch": true,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 50100,
+          "afterMs": 52000,
+          "expected": [
+            "critical",
+            "critical"
+          ],
+          "generated": [
+            "high",
+            null
+          ],
+          "expectedDirection": "unchanged",
+          "generatedDirection": "unreadable",
+          "directionMatch": false,
+          "endpointsMatch": false
+        },
+        {
+          "scenarioId": "S-Q92",
+          "beforeMs": 52000,
+          "afterMs": 55100,
+          "expected": [
+            "critical",
+            "contextual"
+          ],
+          "generated": [
+            null,
+            null
+          ],
+          "expectedDirection": "deescalate",
+          "generatedDirection": "unreadable",
+          "directionMatch": false,
+          "endpointsMatch": false
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Decision revisions reconstructed from independent full-prefix responses, not model-state rollout.",
+    "Direction agreement alone can conceal consistently wrong severity.",
+    "No automatic judgment of rationale truth or causal validity."
+  ]
+}

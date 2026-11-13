@@ -1,0 +1,17 @@
+{
+  "type": "supplementary-post-hoc-field-diagnostic",
+  "originalScoresUnchanged": true,
+  "reason": "The original comparator gates decisionFieldsMatch on schema validity. This separates raw decision agreement from formatting without relaxing the output contract.",
+  "conditions": {
+    "base": {
+      "rawDecisionFieldMatches": 1,
+      "schemaPasses": 0,
+      "total": 2
+    },
+    "adapted": {
+      "rawDecisionFieldMatches": 1,
+      "schemaPasses": 2,
+      "total": 2
+    }
+  }
+}

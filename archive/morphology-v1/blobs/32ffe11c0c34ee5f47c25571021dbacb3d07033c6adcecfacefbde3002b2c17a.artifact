@@ -1,0 +1,235 @@
+{
+  "results": [
+    {
+      "id": "contrast-1",
+      "candidateResultId": "4ec811c827f2c3da7dbef516b6388877b86d549054b739a63969a5892c6dd64f",
+      "seconds": 98.20299999997951,
+      "finishReason": "stop",
+      "formatValid": true,
+      "decisionMatches": 2,
+      "guardPasses": 2,
+      "admittedForTraining": false,
+      "cases": [
+        {
+          "id": "A",
+          "score": {
+            "jsonValid": true,
+            "schemaValid": true,
+            "fieldMatches": {
+              "posture": true,
+              "combinedTrigger": true,
+              "evidenceClass": true
+            },
+            "decisionFieldsMatch": true,
+            "schemaAndDecisionMatch": true,
+            "semanticAccuracyMeasured": false
+          },
+          "guard": {
+            "checksPassed": true,
+            "jsonValid": true,
+            "schemaValid": true,
+            "stateConsistent": true,
+            "value": {
+              "combinedTrigger": "met",
+              "evidenceClass": "corroborated_drone",
+              "posture": "critical"
+            },
+            "violations": [],
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "groundTruthVerified": false,
+            "rewritten": false,
+            "failureAction": "none"
+          },
+          "reason": "All criteria met: ongoing threat, reviewed deliberate disruption, corroborated drone identity, and distinct reviewed origins within the time window."
+        },
+        {
+          "id": "B",
+          "score": {
+            "jsonValid": true,
+            "schemaValid": true,
+            "fieldMatches": {
+              "posture": true,
+              "combinedTrigger": true,
+              "evidenceClass": true
+            },
+            "decisionFieldsMatch": true,
+            "schemaAndDecisionMatch": true,
+            "semanticAccuracyMeasured": false
+          },
+          "guard": {
+            "checksPassed": true,
+            "jsonValid": true,
+            "schemaValid": true,
+            "stateConsistent": true,
+            "value": {
+              "combinedTrigger": "unconfirmed",
+              "evidenceClass": "cause_unresolved",
+              "posture": "high"
+            },
+            "violations": [],
+            "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+            "groundTruthVerified": false,
+            "rewritten": false,
+            "failureAction": "none"
+          },
+          "reason": "Disruption classified as outage_cause_unknown. This triggers the high posture unconfirmed cause_unresolved classification, preventing the critical drone trigger despite other matching factors."
+        }
+      ],
+      "contrast": "Case A has a reviewed deliberate disruption, enabling the critical trigger. Case B has an unknown cause, resulting in an unconfirmed high posture."
+    },
+    {
+      "id": "contrast-2",
+      "candidateResultId": "c6417f458d299b820e577e89bca229dbf0bf890ab82f32606eddf8dd720c9db1",
+      "seconds": 88.23499999998603,
+      "finishReason": "stop",
+      "formatValid": true,
+      "decisionMatches": 2,
+      "guardPasses": 2,
+      "admittedForTraining": false,
+      "cases": [
+        {
+          "id": "A",
+          "score": {
+            "jsonValid": true,
+            "schemaValid": true,
+            "fieldMatches": {
+              "posture": true,
+              "combinedTrigger": true,
+              "evidenceClass": true
+            },
+            "decisionFieldsMatch": true,
+            "schemaAndDecisionMatch": true,
+            "semanticAccuracyMeasured": false
+          },
+          "guard": {
+            "checksPassed": true,
+            "jsonValid": true,
+            "schemaValid": true,
+            "stateConsistent": true,
+            "value": {
+              "combinedTrigger": "met",
+              "evidenceClass": "corroborated_drone",
+              "posture": "critical"
+            },
+            "violations": [],
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "groundTruthVerified": false,
+            "rewritten": false,
+            "failureAction": "none"
+          },
+          "reason": "All critical conditions met: ongoing threat, reviewed disruption, corroborated drone, and distinct reviewed origins within the time window."
+        },
+        {
+          "id": "B",
+          "score": {
+            "jsonValid": true,
+            "schemaValid": true,
+            "fieldMatches": {
+              "posture": true,
+              "combinedTrigger": true,
+              "evidenceClass": true
+            },
+            "decisionFieldsMatch": true,
+            "schemaAndDecisionMatch": true,
+            "semanticAccuracyMeasured": false
+          },
+          "guard": {
+            "checksPassed": true,
+            "jsonValid": true,
+            "schemaValid": true,
+            "stateConsistent": true,
+            "value": {
+              "combinedTrigger": "unconfirmed",
+              "evidenceClass": "dependent_reports",
+              "posture": "high"
+            },
+            "violations": [],
+            "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+            "groundTruthVerified": false,
+            "rewritten": false,
+            "failureAction": "none"
+          },
+          "reason": "Drone reports share a single origin group, triggering the dependent_reports classification which requires a high posture due to unconfirmed independence."
+        }
+      ],
+      "contrast": "Case A has distinct reviewed origins enabling critical classification, while Case B shares origins, resulting in dependent reports and high posture."
+    },
+    {
+      "id": "contrast-3",
+      "candidateResultId": "b03dfce1e9aa692e3925c233e360627c876d6c4de37996b180fd72f9a37ca4d8",
+      "seconds": 88.35899999999674,
+      "finishReason": "stop",
+      "formatValid": true,
+      "decisionMatches": 2,
+      "guardPasses": 2,
+      "admittedForTraining": false,
+      "cases": [
+        {
+          "id": "A",
+          "score": {
+            "jsonValid": true,
+            "schemaValid": true,
+            "fieldMatches": {
+              "posture": true,
+              "combinedTrigger": true,
+              "evidenceClass": true
+            },
+            "decisionFieldsMatch": true,
+            "schemaAndDecisionMatch": true,
+            "semanticAccuracyMeasured": false
+          },
+          "guard": {
+            "checksPassed": true,
+            "jsonValid": true,
+            "schemaValid": true,
+            "stateConsistent": true,
+            "value": {
+              "combinedTrigger": "met",
+              "evidenceClass": "corroborated_drone",
+              "posture": "critical"
+            },
+            "violations": [],
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "groundTruthVerified": false,
+            "rewritten": false,
+            "failureAction": "none"
+          },
+          "reason": "All criteria met: ongoing threat, reviewed disruption, corroborated drone identity, and distinct reviewed origins within the time window."
+        },
+        {
+          "id": "B",
+          "score": {
+            "jsonValid": true,
+            "schemaValid": true,
+            "fieldMatches": {
+              "posture": true,
+              "combinedTrigger": true,
+              "evidenceClass": true
+            },
+            "decisionFieldsMatch": true,
+            "schemaAndDecisionMatch": true,
+            "semanticAccuracyMeasured": false
+          },
+          "guard": {
+            "checksPassed": true,
+            "jsonValid": true,
+            "schemaValid": true,
+            "stateConsistent": true,
+            "value": {
+              "combinedTrigger": "unconfirmed",
+              "evidenceClass": "unidentified_signal",
+              "posture": "high"
+            },
+            "violations": [],
+            "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+            "groundTruthVerified": false,
+            "rewritten": false,
+            "failureAction": "none"
+          },
+          "reason": "Drone classification is unidentified_rf, triggering the high/unconfirmed/unidentified_signal requirement despite other matching factors."
+        }
+      ],
+      "contrast": "Case A has corroborated drone identity; Case B has unidentified_rf. This single change shifts the classification from critical to high posture."
+    }
+  ]
+}

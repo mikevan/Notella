@@ -1,0 +1,143 @@
+{
+  "validatorSha256": "cd445b46e684c71ecf24fefd73aa34897f62527009a68bb2b92f72dff9d3c551",
+  "referenceSha256": "e292cfe302fd1777b24fe27a6c1116166de4ba624fe730d773962e31cb528ff0",
+  "compatibilityBackendSha256": "686525d9350d7c047f946b9cc5c3fa0ed67c374f20d1601482b9fb0c6a4de6df",
+  "legacyReferenceSha256": "bb9b7c62ebbc56b17ae7214a6ddd7d7b1c5e0f964c129d312ca7182de10d0e11",
+  "scenarios": 7,
+  "prefixStates": 20,
+  "uniqueVisiblePrefixes": 11,
+  "originalFamilies": 1,
+  "sharedPrefixVariants": true,
+  "modelLoaded": false,
+  "trainingStarted": false,
+  "semanticAccuracyMeasured": false,
+  "unreviewedTrainingAdmissionRefused": true,
+  "trajectories": {
+    "developing-access": [
+      "contextual",
+      "high",
+      "critical"
+    ],
+    "benign-branch": [
+      "contextual",
+      "high",
+      "contextual"
+    ],
+    "source-correction": [
+      "contextual",
+      "high",
+      "critical",
+      "high"
+    ],
+    "unrelated-asset": [
+      "contextual",
+      "high",
+      "high"
+    ],
+    "duplicate-reports": [
+      "contextual",
+      "contextual"
+    ],
+    "late-arrival": [
+      "contextual",
+      "high",
+      "critical"
+    ],
+    "unresolved-clock": [
+      "contextual",
+      "contextual/review"
+    ]
+  },
+  "receipt": {
+    "steps": 20,
+    "uniquePrefixes": 11,
+    "originalFamilies": 1,
+    "receipts": [
+      {
+        "steps": 3,
+        "prefixSha256": [
+          "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+          "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+          "6b0c606c9525fcf17adbde0a41841bd5f4c4391f9909aef0be2dde5c6770318f"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "developing-access",
+        "scenarioSha256": "d254e056d8319947c32bd27ed900edb5ab58adba8bdc06c2a0a29cf44f8dc3ea"
+      },
+      {
+        "steps": 3,
+        "prefixSha256": [
+          "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+          "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+          "f5cd6387713ebc9b434ed70ab7a5b5a949d1894bdcd1fde438050bf2fd11924c"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "benign-branch",
+        "scenarioSha256": "74377ac827d1d25a4379230b7aa1a085bfd82f708825d3a088fb78bbb66f7680"
+      },
+      {
+        "steps": 4,
+        "prefixSha256": [
+          "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+          "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+          "6b0c606c9525fcf17adbde0a41841bd5f4c4391f9909aef0be2dde5c6770318f",
+          "2124256fbaabe6168c4e8d27165a05f9dcbcc52b330f135fd9ee381316f7b26c"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "source-correction",
+        "scenarioSha256": "bc1373804f882ec159748e2d9d505a12b9751c0d25b79a0e04f98c77397ece19"
+      },
+      {
+        "steps": 3,
+        "prefixSha256": [
+          "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+          "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+          "4cdeb6ae11e093d4e706decf9d61733b8a90d18aab045d92adb674bed972bbbd"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "unrelated-asset",
+        "scenarioSha256": "b30900a248412db3e837531ea99533bd021ec71382b267567bfa1586e5933639"
+      },
+      {
+        "steps": 2,
+        "prefixSha256": [
+          "9913de13dd2d73702c7cad78316c3a784e391ed71ca19f93e76f206ccb2b4621",
+          "5e48eca63eb6246d8a8db4bbf881803d96c30868a47501f10a63eb4a3d78ea5b"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "duplicate-reports",
+        "scenarioSha256": "11ef7267239216dfe6533067592fdb04229a0848510df1680e3b453166f6c8b8"
+      },
+      {
+        "steps": 3,
+        "prefixSha256": [
+          "c0355d4aaec6956fed71d84a78386132f1136dcabd95810491bb04a9309705d8",
+          "d7b0a800a296c4ce0f7ed262dd8c786e32c021427358109247461649faa026a7",
+          "ef8ba644b3115f57657fa11e89137f03ff0cd8b5067b219ddd15c879e5335362"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "late-arrival",
+        "scenarioSha256": "f5f3a38940ffb32bb39363fa4de84391c68b9e09d45ae40171d0fd3a2f83f06a"
+      },
+      {
+        "steps": 2,
+        "prefixSha256": [
+          "adcf52261a6710a910cf08ac2f4e8f0d5df4067f3908ec18fd15303db253c423",
+          "2367c7c366a0346b3104e14b6a385796b006a0abed325102a3c0209e33b33e8b"
+        ],
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false,
+        "scenarioId": "unresolved-clock",
+        "scenarioSha256": "8015954148d5261c298101b104c0eb2680683c08f026180454ea0dae2a3bc032"
+      }
+    ],
+    "semanticCorrectnessEstablished": false,
+    "scenarios": 7
+  }
+}

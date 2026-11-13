@@ -1,0 +1,1 @@
+{"baseModel":"qwen3-4b","curriculumId":"a4aedd27602ec4c6695e0d56e16fac40faf0734bf5b3c22ae06e9638c05d92c4","formatVersion":"notella.plan.v1","learningRate":5e-05,"rank":16,"releaseEligible":false,"splits":{"test":0,"train":30,"validation":2},"steps":120}

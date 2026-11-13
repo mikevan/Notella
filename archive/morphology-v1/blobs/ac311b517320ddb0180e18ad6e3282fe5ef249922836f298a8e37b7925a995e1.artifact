@@ -1,0 +1,12 @@
+[
+  {
+    "id": "explicit-ontoforge-heldout-corrob-sequence-0",
+    "trainingAndInferencePrefixIdentical": true,
+    "promptSha256": "716bbaf728fbe3fe9bc605020718d50e6e7a3a34b262655a58aeb3414fb915fd"
+  },
+  {
+    "id": "explicit-ontoforge-heldout-unknown-signal-0",
+    "trainingAndInferencePrefixIdentical": true,
+    "promptSha256": "7a79f7e6bc82428b8a54a57b0c3af1e2b698497c0d91f222ecea3666f4caa83a"
+  }
+]

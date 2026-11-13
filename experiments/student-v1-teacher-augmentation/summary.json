@@ -1,0 +1,73 @@
+{
+  "formatVersion": "notella.student-augmentation-diagnostic.v1",
+  "conditions": {
+    "direct": {
+      "jobId": "8f724cbea6e543c49a2ca5df0ecde5af",
+      "trainingRows": 45,
+      "uniqueTrainingInputs": 24,
+      "requestedIterations": 90,
+      "appliedUpdates": 90,
+      "skippedUpdates": 0,
+      "finiteWeights": true,
+      "adapterTensors": 112,
+      "adapterSha256": "c7399ebba35040a6b350eafa1802d02b90e2c4ae2715acad37f3f9fa81354c99",
+      "adapterBytes": 9189904,
+      "trainingWallSeconds": 67.079745,
+      "newControls": {
+        "matches": 8,
+        "total": 8,
+        "schemaPasses": 8,
+        "guardPasses": 8
+      },
+      "historicalControls": {
+        "matches": 10,
+        "total": 10,
+        "schemaPasses": 10,
+        "guardPasses": 10
+      }
+    },
+    "augmented": {
+      "jobId": "447c5817cbb24e268bbf8a4cc1812066",
+      "trainingRows": 51,
+      "uniqueTrainingInputs": 30,
+      "requestedIterations": 90,
+      "appliedUpdates": 90,
+      "skippedUpdates": 0,
+      "finiteWeights": true,
+      "adapterTensors": 112,
+      "adapterSha256": "8c0f95a57fb3cdc24cdad125b3316a1a14383ca42050544203f9e0fdda2d5e98",
+      "adapterBytes": 9189904,
+      "trainingWallSeconds": 59.858351,
+      "newControls": {
+        "matches": 6,
+        "total": 8,
+        "schemaPasses": 8,
+        "guardPasses": 6
+      },
+      "historicalControls": {
+        "matches": 8,
+        "total": 10,
+        "schemaPasses": 10,
+        "guardPasses": 8
+      }
+    }
+  },
+  "developmentOnly": true,
+  "fieldQualified": false,
+  "phoneDeploymentChanged": false,
+  "matchedStudentBase": true,
+  "matchedPrompts": true,
+  "seed": 42,
+  "rank": 16,
+  "learningRate": 0.0001,
+  "teacherExamplesAdded": 6,
+  "prospectiveControlsSha256": "11d8541b8e49dd375bcb43e450867c0e8a0b3dc896b444ff4d2d5cccfe09add1",
+  "preferredDevelopmentCandidate": "direct",
+  "limitations": [
+    "One-seed synthetic known-pattern diagnostic, not independent field evaluation.",
+    "Adding six rows changes data quantity and sampling; no causal attribution to teacher quality.",
+    "Student rationales were not trained; only three decision fields were targets.",
+    "No structural pruning, logit distillation or phone conversion/benchmark performed.",
+    "Adapter bytes exclude the required base model."
+  ]
+}

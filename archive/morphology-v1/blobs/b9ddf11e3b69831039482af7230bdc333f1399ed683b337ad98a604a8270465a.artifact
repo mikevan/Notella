@@ -1,0 +1,46 @@
+{
+  "condition": "base",
+  "curriculumId": "21fa5925d61caaa0d569fdfe83d6556176d823e9341ce48293dbdcbc8d1104f5",
+  "split": "development-validation",
+  "evaluatorSha256": "f628c1f9091e2d725032b6ea2b90070fa87509c3e4b749fc781f3ac9b9ed78a9",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": null,
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": null,
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 2,
+  "decisionFieldMatches": 1,
+  "total": 2,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "Two related synthetic development families only; not independent test or field qualification.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "explicit-ontoforge-heldout-corrob-sequence-0",
+      "promptSha256": "716bbaf728fbe3fe9bc605020718d50e6e7a3a34b262655a58aeb3414fb915fd",
+      "output": "{\"combinedTrigger\": \"met\", \"evidenceClass\": \"corroborated_drone\", \"posture\": \"critical\"}",
+      "outputSha256": "2d74d185ea7b7043f4fe8e220963cbe72b36b42b88354357589ab37bf6d7bc02",
+      "seconds": 3.875,
+      "inputTokens": 1141,
+      "outputTokens": 28,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-heldout-unknown-signal-0",
+      "promptSha256": "7a79f7e6bc82428b8a54a57b0c3af1e2b698497c0d91f222ecea3666f4caa83a",
+      "output": "{\"combinedTrigger\": \"met\", \"evidenceClass\": \"unidentified_signal\", \"posture\": \"critical\"}",
+      "outputSha256": "059d25470761bb6a74df62563d8dc04eb9556863e689276c28a3de476d218bea",
+      "seconds": 3.0,
+      "inputTokens": 1135,
+      "outputTokens": 25,
+      "schemaValid": true,
+      "decisionFieldsMatch": false
+    }
+  ]
+}

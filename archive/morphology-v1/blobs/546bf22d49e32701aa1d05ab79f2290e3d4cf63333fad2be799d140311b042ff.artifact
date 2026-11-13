@@ -1,0 +1,90 @@
+{
+  "condition": "adapted",
+  "curriculumId": "21fa5925d61caaa0d569fdfe83d6556176d823e9341ce48293dbdcbc8d1104f5",
+  "split": "training-fit-diagnostic",
+  "evaluatorSha256": "76c30dca8385792759cf9ce79430352c9700b852fb66d2c76e34eca5ae7bce0f",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": "87a094d5c1b50ac6f52684180ee3015d0662554eae51cd7d51710fb701abaf75",
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": "runtime\\warning-v3-fit\\store\\jobs\\addcdd4c035443b98b9e52caeef08f40\\adapter",
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 6,
+  "decisionFieldMatches": 6,
+  "total": 6,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "All six training variants from two families: fit diagnostic only, not held-out performance.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "explicit-ontoforge-credible-sequence-0",
+      "promptSha256": "4b5a7f35d98bdca17f4d77d1af194fcedf49dcc0340fce5b92d08dbd7ea4feae",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 8.51600000000326,
+      "inputTokens": 1141,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-credible-sequence-1",
+      "promptSha256": "8d5a30680993587121b145146d406f3541ce851db188e37477554f8a42486f99",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 8.375,
+      "inputTokens": 1141,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-credible-sequence-2",
+      "promptSha256": "5d40a4e66ba8a2f36d93f704ff1a99e1167ee16cde3347f1b4f7eb59d4e048a0",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 9.454000000027008,
+      "inputTokens": 1142,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-generic-rf-0",
+      "promptSha256": "acb14e6ab84ada365bd31438d85339b2a0ad89f73e741d76a4a4fb823bd01cdc",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 8.280999999959022,
+      "inputTokens": 1135,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-generic-rf-1",
+      "promptSha256": "ad09b6fe9d5f0a65bf8a69bc7eeaa2015cd4972e9ecdadbb046218ab97f5b8af",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 7.688000000023749,
+      "inputTokens": 1135,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-generic-rf-2",
+      "promptSha256": "437d5d223644aded49ec06a1691c76ae1354b88b1aeb436d1454325ce01096df",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 8.420999999972992,
+      "inputTokens": 1136,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    }
+  ]
+}

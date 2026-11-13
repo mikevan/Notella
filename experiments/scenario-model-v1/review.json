@@ -1,0 +1,23 @@
+{
+  "reviewer": {
+    "name": "Codex",
+    "kind": "agent",
+    "independent": false
+  },
+  "policyId": "network-scenario-policy-v1-development",
+  "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+  "reviewPassed": true,
+  "trainingAdmission": true,
+  "scope": "Agent review of supplied classifications and proposed policy, not source authenticity or field truth.",
+  "checks": [
+    "All prefixes obey arrival-time visibility and preserve source corrections.",
+    "Report deduplication does not add underlying observations.",
+    "No cross-asset bridge is asserted.",
+    "Reference rule criticality is internally consistent with the proposed policy.",
+    "Changed summaries explain new evidence rather than merely repeat labels.",
+    "All source branches remain in one family/split; evaluation has different authored trajectories."
+  ],
+  "originalTrainingSha256": "135d399c663e45eacfb5df05fb57ef21cf8cf761a67f89acc8fcad4b65a89fc7",
+  "reviewedTrainingSha256": "9adf7a8f3a2775b859be02a07726d539956dd5518f628d66f253072343ac2719",
+  "explanationChangesOnly": true
+}

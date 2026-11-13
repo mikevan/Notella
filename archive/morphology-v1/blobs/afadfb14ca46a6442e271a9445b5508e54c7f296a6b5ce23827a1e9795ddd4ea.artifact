@@ -1,0 +1,46 @@
+{
+  "condition": "adapted",
+  "curriculumId": "21fa5925d61caaa0d569fdfe83d6556176d823e9341ce48293dbdcbc8d1104f5",
+  "split": "development-validation",
+  "evaluatorSha256": "f628c1f9091e2d725032b6ea2b90070fa87509c3e4b749fc781f3ac9b9ed78a9",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": "87a094d5c1b50ac6f52684180ee3015d0662554eae51cd7d51710fb701abaf75",
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": "C:\\workspace\\Notella\\runtime\\warning-v3-fit\\store\\jobs\\addcdd4c035443b98b9e52caeef08f40\\adapter",
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 2,
+  "decisionFieldMatches": 2,
+  "total": 2,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "Two related synthetic development families only; not independent test or field qualification.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "explicit-ontoforge-heldout-corrob-sequence-0",
+      "promptSha256": "716bbaf728fbe3fe9bc605020718d50e6e7a3a34b262655a58aeb3414fb915fd",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 7.0,
+      "inputTokens": 1141,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "explicit-ontoforge-heldout-unknown-signal-0",
+      "promptSha256": "7a79f7e6bc82428b8a54a57b0c3af1e2b698497c0d91f222ecea3666f4caa83a",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 6.797000000020489,
+      "inputTokens": 1135,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    }
+  ]
+}

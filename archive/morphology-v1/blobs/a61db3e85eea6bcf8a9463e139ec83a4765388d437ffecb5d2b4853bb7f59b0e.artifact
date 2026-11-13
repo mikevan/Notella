@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\workspace\Notella\training_engine\train_lora.py", line 269, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\workspace\Notella\training_engine\train_lora.py", line 121, in main
+    train=tokenize_split('train');validation=tokenize_split('validation')
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\Notella\training_engine\train_lora.py", line 111, in tokenize_split
+    prefix=render_evaluation_prompt(tokenizer,example,merge_system_messages=args.merge_system_messages)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\Notella\training_engine\evaluate_local_model.py", line 56, in render_evaluation_prompt
+    context=evaluation_messages(record,evidence_facts,policy_guided,merge_system_messages)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\Notella\training_engine\evaluate_local_model.py", line 40, in evaluation_messages
+    else:context=[{'role':'system','content':'Return only a JSON object matching this schema: '+record['outputSchema']}]+record['messages'][:-1]
+                                                                                                ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'outputSchema'

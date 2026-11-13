@@ -1,0 +1,18 @@
+{
+  "prepared.json": "439a4cffe53bd09cd95bc1d44807a345ae7147e4157d409ae3840ac8b5b2dc4b",
+  "preflight.json": "699491d04c7ff0a3746e4db7cad719a22576cb9cffedeba7b11e456b741f1b6d",
+  "reference-answer-lengths.json": "c33f7b799636d5925548efb2b38c039202a3681ca7755fac3e51a074ecd4fd3e",
+  "training-control-check.json": "1be38458113eb28d402721512f29272c1b7e0eb404d1f16d27a1d47ce22246fd",
+  "training-result.json": "621c5163a154141039826f00ef54d8488cbfe7d8daf9556cd444bb1c34b4bf98",
+  "launch.json": "52d7e53bb78203c90117b63574038686da0f4df7f269a8a3582820619b45398c",
+  "base-generation.json": "c741ceb715dfd9fe3358ee01691f4c8d6ec50715c5d40620fd410260e22dc591",
+  "base-generation.jsonl": "b37a693b42da799a7f899fddb5a9d453ef08ddd41982622ff575a372e97c3a45",
+  "adapted-generation.json": "d72fbd3b44369d56d4968a6e5b5e6e51ee1091d527c1b5a764b8ee0a65007183",
+  "adapted-generation.jsonl": "4dfbf19f225f3c040aa428d0e157526c09cc08ee72683bdc5de641eee3e744e1",
+  "training-metrics.json": "dfe589be1af51b8e57c72e466d9d74e41ddce533c70369af8490c9e89ecc0980",
+  "runtime-manifest.json": "17002365a1af5d1bd55fa26e79c21e5e7e58dbb14997f0bae32bb5a60ceedb75",
+  "optimizer-stability.json": "8487638704c44c3c1b4a9502f640a54444ac701246e4d3bc92af1a7b91bf4856",
+  "weight-stability.json": "d4b9178dc8f070bbfd205c149f890d4791aaf8c4b342cca68959c1f1e7119723",
+  "base-intake-manifest.json": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapter_config.json": "97b1d7fc514567f26788afcb63c241c0ae4c51f951adba00f2000a5f1b1d1e16"
+}

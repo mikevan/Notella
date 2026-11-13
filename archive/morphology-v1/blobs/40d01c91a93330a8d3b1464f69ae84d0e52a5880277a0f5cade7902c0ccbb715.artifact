@@ -1,0 +1,9 @@
+{"condition": "direct", "jobId": "8f724cbea6e543c49a2ca5df0ecde5af", "status": "running"}
+{"condition": "direct", "applied": 90, "skipped": 0, "finite": true}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"condition": "direct", "adapterSha256": "c7399ebba35040a6b350eafa1802d02b90e2c4ae2715acad37f3f9fa81354c99", "total": 8, "decisionMatches": 8, "schemaPasses": 8, "guardPasses": 8, "maxNewTokens": 96, "fieldQualified": false}
+{"condition": "augmented", "jobId": "447c5817cbb24e268bbf8a4cc1812066", "status": "running"}
+{"condition": "augmented", "applied": 90, "skipped": 0, "finite": true}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"condition": "augmented", "adapterSha256": "8c0f95a57fb3cdc24cdad125b3316a1a14383ca42050544203f9e0fdda2d5e98", "total": 8, "decisionMatches": 6, "schemaPasses": 8, "guardPasses": 6, "maxNewTokens": 96, "fieldQualified": false}
+BOTH_STUDENT_CONDITIONS_COMPLETED

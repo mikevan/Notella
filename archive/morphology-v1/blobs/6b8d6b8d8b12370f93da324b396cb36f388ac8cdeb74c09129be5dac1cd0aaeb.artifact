@@ -1,0 +1,70 @@
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|###3      | 1/3 [00:03<00:07,  3.99s/it]
+Loading checkpoint shards:  67%|######6   | 2/3 [00:08<00:04,  4.07s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:08<00:00,  2.26s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:08<00:00,  2.74s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"condition": "adapted", "id": "S-Q71-step-1", "seconds": 35.97, "outputTokens": 275, "contractValid": true, "criticalityMatch": true, "fullStateMatch": true}
+{"condition": "adapted", "id": "S-Q71-step-2", "seconds": 50.3, "outputTokens": 395, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q71-step-3", "seconds": 87.36, "outputTokens": 696, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q71-step-4", "seconds": 146.23, "outputTokens": 979, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q71-step-5", "seconds": 260.34, "outputTokens": 1536, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q92-step-1", "seconds": 41.27, "outputTokens": 277, "contractValid": true, "criticalityMatch": true, "fullStateMatch": true}
+{"condition": "adapted", "id": "S-Q92-step-2", "seconds": 37.72, "outputTokens": 282, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q92-step-3", "seconds": 206.38, "outputTokens": 1536, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q92-step-4", "seconds": 186.64, "outputTokens": 1536, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{"condition": "adapted", "id": "S-Q92-step-5", "seconds": 295.3, "outputTokens": 1536, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{"condition": "adapted", "id": "V-834-step-1", "seconds": 60.92, "outputTokens": 335, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "V-834-step-2", "seconds": 71.56, "outputTokens": 394, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "V-834-step-3", "seconds": 109.66, "outputTokens": 612, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{"condition": "adapted", "id": "V-834-step-4", "seconds": 196.42, "outputTokens": 1087, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{"condition": "adapted", "id": "V-947-step-1", "seconds": 44.48, "outputTokens": 267, "contractValid": true, "criticalityMatch": true, "fullStateMatch": true}
+{"condition": "adapted", "id": "V-947-step-2", "seconds": 64.89, "outputTokens": 387, "contractValid": true, "criticalityMatch": true, "fullStateMatch": true}
+{"condition": "adapted", "id": "V-947-step-3", "seconds": 114.51, "outputTokens": 579, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "adapted", "id": "V-947-step-4", "seconds": 312.22, "outputTokens": 1536, "contractValid": false, "criticalityMatch": false, "fullStateMatch": false}
+{
+  "condition": "adapted",
+  "curriculumId": "c339717554aa69b1281e1e2b8b0e63a3bb8f17ddc02bd4f05d4185e8171f92f4",
+  "evaluationSha256": "a2da8577e8c7a5cd543393762bd38bd03ad505c93e31cf6485ba548f62230ef4",
+  "evaluatorSha256": "5afd35c4538cd67ccabc39f8a95869b23ab135f5b4338c77641a091159a2f039",
+  "scorerSha256": "d8d355988a36014050e03eef9d0ee3e8f82876d313d3294819d60accf38a65a7",
+  "adapterSha256": "41bc820ff78c6feea72ad6debdd03f58dcb401d532d60f9dfff2dfb92b463b03",
+  "total": 18,
+  "counts": {
+    "jsonValid": 13,
+    "schemaValid": 11,
+    "contractValid": 4,
+    "criticalityMatch": 11,
+    "assessmentStatusMatch": 13,
+    "assessmentEvidenceMatch": 10,
+    "nodesMatch": 7,
+    "edgesMatch": 5,
+    "contractAndDecisionMatch": 4,
+    "fullStateMatch": 4
+  },
+  "trajectories": [
+    {
+      "scenarioId": "S-Q71",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "S-Q92",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "V-834",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "V-947",
+      "complete": false,
+      "contractValid": false
+    }
+  ],
+  "releaseEligible": false,
+  "semanticAccuracyMeasured": false
+}

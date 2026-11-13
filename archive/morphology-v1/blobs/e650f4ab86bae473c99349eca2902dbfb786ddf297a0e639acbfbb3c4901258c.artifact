@@ -1,0 +1,9 @@
+{"jobId": "97d40edc35d84b59a1e9ece5c48ffbfe", "status": "running"}
+Traceback (most recent call last):
+  File "C:\workspace\Notella\experiments\scenario-model-v1\train.py", line 19, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\workspace\Notella\experiments\scenario-model-v1\train.py", line 15, in main
+    if job['status']!='completed':raise RuntimeError('Inspect failed scenario job '+str(jobs.root/job['id']))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Inspect failed scenario job C:\workspace\Notella\runtime\scenario-model-v1\store\jobs\97d40edc35d84b59a1e9ece5c48ffbfe

@@ -1,0 +1,139 @@
+{
+  "episodes": 7,
+  "prefixStates": 20,
+  "uniqueVisiblePrefixes": 11,
+  "originalFamilies": 1,
+  "sharedPrefixVariants": true,
+  "modelLoaded": false,
+  "trainingStarted": false,
+  "semanticAccuracyMeasured": false,
+  "unreviewedTrainingAdmissionRefused": true,
+  "trajectories": {
+    "developing-access": [
+      "contextual",
+      "high",
+      "critical"
+    ],
+    "benign-branch": [
+      "contextual",
+      "high",
+      "contextual"
+    ],
+    "source-correction": [
+      "contextual",
+      "high",
+      "critical",
+      "high"
+    ],
+    "unrelated-asset": [
+      "contextual",
+      "high",
+      "high"
+    ],
+    "duplicate-reports": [
+      "contextual",
+      "contextual"
+    ],
+    "late-arrival": [
+      "contextual",
+      "high",
+      "critical"
+    ],
+    "unresolved-clock": [
+      "contextual",
+      "contextual/review"
+    ]
+  },
+  "receipt": {
+    "episodes": 7,
+    "steps": 20,
+    "uniquePrefixes": 11,
+    "originalFamilies": 1,
+    "receipts": [
+      {
+        "episodeId": "developing-access",
+        "steps": 3,
+        "prefixSha256": [
+          "dbc368bdf7c80f7ab2ae75ef17333d6834e69f0218f21e2635ca00d1df71a206",
+          "73196be785971d983e8103b5da1b40f907796b870524b4189633458d02473f48",
+          "4f63341021323976cc8051cf623dc7561c1eb980d404caa6566b42cefce90526"
+        ],
+        "episodeSha256": "55a5efe6f70ed7b8e179440f038348c6f19697139f8a28440265b6bca4e04398",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      },
+      {
+        "episodeId": "benign-branch",
+        "steps": 3,
+        "prefixSha256": [
+          "dbc368bdf7c80f7ab2ae75ef17333d6834e69f0218f21e2635ca00d1df71a206",
+          "73196be785971d983e8103b5da1b40f907796b870524b4189633458d02473f48",
+          "9d46d440459655e918a37593a44d2db8edc4be41d092312fa1165742abea7334"
+        ],
+        "episodeSha256": "61209b0b5e0a21085cf37e5945e8b9aa358d2260ceadc71341c9b789876cc443",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      },
+      {
+        "episodeId": "source-correction",
+        "steps": 4,
+        "prefixSha256": [
+          "dbc368bdf7c80f7ab2ae75ef17333d6834e69f0218f21e2635ca00d1df71a206",
+          "73196be785971d983e8103b5da1b40f907796b870524b4189633458d02473f48",
+          "4f63341021323976cc8051cf623dc7561c1eb980d404caa6566b42cefce90526",
+          "3f514cd87d9533dd15bd993c95e2de46ad66e9082872887871f01e680809b200"
+        ],
+        "episodeSha256": "66e4688be52cfd0ef0becc0d78a69a59f88b40af1c44cf365ca1319f7f8a4841",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      },
+      {
+        "episodeId": "unrelated-asset",
+        "steps": 3,
+        "prefixSha256": [
+          "dbc368bdf7c80f7ab2ae75ef17333d6834e69f0218f21e2635ca00d1df71a206",
+          "73196be785971d983e8103b5da1b40f907796b870524b4189633458d02473f48",
+          "e86e5cd370810dbc4155fb5f64b563ace307e0acf69f5f15e3dd3cdf2948f073"
+        ],
+        "episodeSha256": "70d31e98ffb8ee65a4b1b29d63ece3536ac9f9ccafa7fc4d50c01be468bdf44e",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      },
+      {
+        "episodeId": "duplicate-reports",
+        "steps": 2,
+        "prefixSha256": [
+          "8d3f63e1d06823f118dc390b05f4369bc8445ccc02c088dd4d9a49ddca396796",
+          "ea3ae38b60c25d318247633ed82530b0acd566fe7f3f02008cb2ac38478216c5"
+        ],
+        "episodeSha256": "de9033b26c6c677ba857a522b0f4ddfb63a9c3d60b1a331f84ac5254de3476ec",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      },
+      {
+        "episodeId": "late-arrival",
+        "steps": 3,
+        "prefixSha256": [
+          "dbc368bdf7c80f7ab2ae75ef17333d6834e69f0218f21e2635ca00d1df71a206",
+          "73196be785971d983e8103b5da1b40f907796b870524b4189633458d02473f48",
+          "39a237e2bcfe6e34c9bb60b16ceb03bc882459425d06dc6103bb549481e6120c"
+        ],
+        "episodeSha256": "8ec365a57ce83eea97c4925c0f590590123fbf1e3a72bafa38cef741fc8d1cc1",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      },
+      {
+        "episodeId": "unresolved-clock",
+        "steps": 2,
+        "prefixSha256": [
+          "928295af37d1460bca2a640d3c083cc1e0f2cd7eb9a75adf37f3da920b69d961",
+          "da4b80a801e5c40763b0723c7880023004761bf8c530c889835f07a897505e00"
+        ],
+        "episodeSha256": "cd32952e29daf001c4b4fb9090cfb1997962b3176f4175cc75b76ee67788ce09",
+        "semanticCorrectnessEstablished": false,
+        "sourceAuthenticityVerified": false
+      }
+    ],
+    "semanticCorrectnessEstablished": false
+  }
+}

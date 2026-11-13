@@ -1,0 +1,87 @@
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|###3      | 1/3 [00:04<00:09,  4.81s/it]
+Loading checkpoint shards:  67%|######6   | 2/3 [00:09<00:04,  4.89s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:09<00:00,  2.71s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:09<00:00,  3.29s/it]
+{"condition": "base", "id": "S-Q71-step-1", "reused": true}
+{"condition": "base", "id": "S-Q71-step-2", "reused": true}
+{"condition": "base", "id": "S-Q71-step-3", "reused": true}
+{"condition": "base", "id": "S-Q71-step-4", "reused": true}
+{"condition": "base", "id": "S-Q71-step-5", "reused": true}
+{"condition": "base", "id": "S-Q92-step-1", "reused": true}
+{"condition": "base", "id": "S-Q92-step-2", "reused": true}
+{"condition": "base", "id": "S-Q92-step-3", "reused": true}
+{"condition": "base", "id": "S-Q92-step-4", "reused": true}
+{"condition": "base", "id": "S-Q92-step-5", "reused": true}
+{"condition": "base", "id": "V-834-step-1", "reused": true}
+{"condition": "base", "id": "V-834-step-2", "reused": true}
+{"condition": "base", "id": "V-834-step-3", "reused": true}
+{"condition": "base", "id": "V-834-step-4", "reused": true}
+{"condition": "base", "id": "V-947-step-1", "reused": true}
+{"condition": "base", "id": "V-947-step-2", "reused": true}
+{"condition": "base", "id": "V-947-step-3", "reused": true}
+{"condition": "base", "id": "V-947-step-4", "reused": true}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"condition": "base", "id": "F-1120-step-1", "seconds": 123.12, "outputTokens": 619, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "base", "id": "F-1120-step-2", "seconds": 121.45, "outputTokens": 640, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "base", "id": "F-1120-step-3", "seconds": 185.83, "outputTokens": 780, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "base", "id": "F-1230-step-1", "seconds": 106.48, "outputTokens": 541, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "base", "id": "F-1230-step-2", "seconds": 158.61, "outputTokens": 659, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{"condition": "base", "id": "F-1230-step-3", "seconds": 220.89, "outputTokens": 844, "contractValid": false, "criticalityMatch": true, "fullStateMatch": false}
+{
+  "condition": "base",
+  "curriculumId": "5594c7c79cefb4eeec8f05897b8942ff177cd7e0cdc2f90ead4ddfd9fb988c13",
+  "evaluationSha256": "307569bdc52c2fee1020551043ef81fae28898836e4862ad7df7b073492959cb",
+  "evaluatorSha256": "93dce15bf36dc9ce4c0986ef682c1ef863eaa1f97215ebd0333fe80b8aa36938",
+  "scorerSha256": "d8d355988a36014050e03eef9d0ee3e8f82876d313d3294819d60accf38a65a7",
+  "adapterSha256": null,
+  "total": 24,
+  "counts": {
+    "jsonValid": 19,
+    "schemaValid": 12,
+    "contractValid": 0,
+    "criticalityMatch": 13,
+    "assessmentStatusMatch": 19,
+    "assessmentEvidenceMatch": 11,
+    "nodesMatch": 0,
+    "edgesMatch": 0,
+    "contractAndDecisionMatch": 0,
+    "fullStateMatch": 0
+  },
+  "trajectories": [
+    {
+      "scenarioId": "S-Q71",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "S-Q92",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "V-834",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "V-947",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "F-1120",
+      "complete": false,
+      "contractValid": false
+    },
+    {
+      "scenarioId": "F-1230",
+      "complete": true,
+      "contractValid": false,
+      "error": "Observation retraction status mismatch"
+    }
+  ],
+  "releaseEligible": false,
+  "semanticAccuracyMeasured": false
+}

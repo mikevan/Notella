@@ -1,0 +1,46 @@
+{
+  "condition": "adapted",
+  "curriculumId": "a4aedd27602ec4c6695e0d56e16fac40faf0734bf5b3c22ae06e9638c05d92c4",
+  "split": "training-fit-diagnostic",
+  "evaluatorSha256": "084c9f3d27d72bbd4b42b2c68a2c7ea735584505e88f3d84e11ca9a29dbafda9",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": "69059ed886d410f35bc09200a49878872507c2ff7dfaa3a9228dc0849664b177",
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": "runtime\\warning-v2\\store\\jobs\\433bfadaf2f04248867148e69a840920\\adapter",
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 2,
+  "decisionFieldMatches": 1,
+  "total": 2,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "Two selected training examples: fit diagnostic only, not held-out performance.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "explicit-ontoforge-credible-sequence-0",
+      "promptSha256": "e88fade95cfe9f93fdc7721a5ca20ed0f426f31998191476679c073e0137c53e",
+      "output": "{\"causation\":\"not_established\",\"combinedTrigger\":\"unconfirmed\",\"limitation\":\"A precautionary posture is not an attack probability. Timing and corroboration do not prove coordination, actor identity, or a certain impending attack.\",\"posture\":\"high\",\"reason\":\"The drone observation is not independently corroborated. A single visual observer report is not independent corroboration.\"}",
+      "outputSha256": "b5def804a20b150ad0d3c951282e21163055fa497f7824e9210d7f9e9eaae0e5",
+      "seconds": 21.89100000000326,
+      "inputTokens": 1116,
+      "outputTokens": 78,
+      "schemaValid": true,
+      "decisionFieldsMatch": false
+    },
+    {
+      "id": "explicit-ontoforge-generic-rf-0",
+      "promptSha256": "b829ebabcaded95f785c8d357cdc2d6827bbbc0402f5b79ed1e1d34f7a4a0090",
+      "output": "{\"causation\":\"not_established\",\"combinedTrigger\":\"unconfirmed\",\"limitation\":\"A precautionary posture is not an attack probability. Timing and corroboration do not prove coordination, actor identity, or a certain impending attack.\",\"posture\":\"high\",\"reason\":\"The drone signal identity is not confirmed. A benign explanation is not ruled out.\"}",
+      "outputSha256": "117cf589337ab6ed0010c59f46fc0c767605c8ccf1def410d7e80cab08dd2e1e",
+      "seconds": 22.31199999997625,
+      "inputTokens": 1110,
+      "outputTokens": 73,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    }
+  ]
+}

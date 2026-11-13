@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ontoforge-unseen-camp-sequence-0",
+    "inputTokens": 595,
+    "outputTokens": 119,
+    "seconds": 27.09399999998277,
+    "output": "{\"factReferences\":[\"capture_summary\",\"review_policy\"],\"headline\":\"A drone warning is not established by correlation alone.\",\"limitations\":\"These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.\",\"passiveNextStep\":\"Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.\",\"schemaVersion\":1,\"significance\":\"Maintain high precautionary concern for the supplied threat context, but the combined trigger is not established.\"}",
+    "compactStructureAndReferencesValid": true,
+    "proseSemanticReviewRequired": true,
+    "schemaAndReferencesValid": true
+  },
+  {
+    "id": "ontoforge-unseen-no-time-0",
+    "inputTokens": 588,
+    "outputTokens": 129,
+    "seconds": 20.39000000001397,
+    "output": "{\"factReferences\":[\"capture_summary\",\"review_policy\"],\"headline\":\"Drone presence is corroborated; the supplied threat context is not itself an attack.\",\"limitations\":\"These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.\",\"passiveNextStep\":\"Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.\",\"schemaVersion\":1,\"significance\":\"Maintain high precautionary concern for the supplied threat context; the combined observation does not meet the supplied critical trigger.\"}",
+    "compactStructureAndReferencesValid": true,
+    "proseSemanticReviewRequired": true,
+    "schemaAndReferencesValid": true
+  },
+  {
+    "id": "ontoforge-unseen-benign-0",
+    "inputTokens": 589,
+    "outputTokens": 134,
+    "seconds": 14.26600000000326,
+    "output": "{\"factReferences\":[\"capture_summary\",\"review_policy\"],\"headline\":\"A scheduled Wi-Fi maintenance outage is not itself a hostile disruption.\",\"limitations\":\"These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.\",\"passiveNextStep\":\"Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.\",\"schemaVersion\":1,\"significance\":\"The combined timing and identity are within the supplied linking window, but neither disruption nor drone identity is corroborated independently. This does not satisfy the critical combined trigger.\"}",
+    "compactStructureAndReferencesValid": true,
+    "proseSemanticReviewRequired": true,
+    "schemaAndReferencesValid": true
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "student-v1-control-credible-sequence",
+    "family": "student-v1-authored-scenario-credible-sequence",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-credible-sequence-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":171000,\"delayIntervalMs\":[27000,27360],\"order\":\"after\",\"withinWindow\":true}}}",
+    "target": {
+      "posture": "critical",
+      "combinedTrigger": "met",
+      "evidenceClass": "corroborated_drone"
+    }
+  },
+  {
+    "id": "student-v1-control-generic-rf",
+    "family": "student-v1-authored-scenario-generic-rf",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-generic-rf-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"unidentified_rf\",\"sourceLineage\":{\"originGroups\":[0],\"relationship\":\"single_origin\",\"reportCount\":1,\"reviewedDistinctOrigins\":1}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":178000,\"delayIntervalMs\":[28100,28460],\"order\":\"after\",\"withinWindow\":true}}}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "unidentified_signal"
+    }
+  },
+  {
+    "id": "student-v1-control-outage-only",
+    "family": "student-v1-authored-scenario-outage-only",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-outage-only-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"outage_cause_unknown\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":185000,\"delayIntervalMs\":[29200,29560],\"order\":\"after\",\"withinWindow\":true}}}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "cause_unresolved"
+    }
+  },
+  {
+    "id": "student-v1-control-duplicate-reports",
+    "family": "student-v1-authored-scenario-duplicate-reports",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-duplicate-reports-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"unverified_drone_report\",\"sourceLineage\":{\"originGroups\":[0,0],\"relationship\":\"shared_origin\",\"reportCount\":2,\"reviewedDistinctOrigins\":1}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":192000,\"delayIntervalMs\":[30300,30660],\"order\":\"after\",\"withinWindow\":true}}}",
+    "target": {
+      "posture": "high",
+      "combinedTrigger": "unconfirmed",
+      "evidenceClass": "dependent_reports"
+    }
+  },
+  {
+    "id": "student-v1-control-outside-window",
+    "family": "student-v1-authored-scenario-outside-window",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-outside-window-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":199000,\"delayIntervalMs\":[216000,216400],\"order\":\"after\",\"withinWindow\":false}}}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "outside_window"
+    }
+  },
+  {
+    "id": "student-v1-control-reversed-order",
+    "family": "student-v1-authored-scenario-reversed-order",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-reversed-order-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":206000,\"delayIntervalMs\":[-42000,-41500],\"order\":\"before\",\"withinWindow\":false}}}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "reversed_sequence"
+    }
+  },
+  {
+    "id": "student-v1-control-benign-operations",
+    "family": "student-v1-authored-scenario-benign-operations",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-benign-operations-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"verified_maintenance\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"verified_humanitarian_drone\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":213000,\"delayIntervalMs\":[33600,33960],\"order\":\"after\",\"withinWindow\":true}}}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "benign_explanation"
+    }
+  },
+  {
+    "id": "student-v1-control-distant-location",
+    "family": "student-v1-authored-scenario-distant-location",
+    "split": "validation",
+    "concepts": [
+      "causal_claim",
+      "counterevidence",
+      "disruption_identity",
+      "observation",
+      "signal_identity",
+      "source_independence",
+      "spatial_overlap",
+      "temporal_precedence",
+      "warning_posture"
+    ],
+    "source": {
+      "id": "student-v1-prospective-development",
+      "kind": "synthetic",
+      "reference": "v6-v4-ontoforge-distant-location-0",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Agent-authored known-pattern reference, not independent field validation",
+      "trainingAllowed": false
+    },
+    "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"different_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":220000,\"delayIntervalMs\":[34700,35060],\"order\":\"after\",\"withinWindow\":true}}}",
+    "target": {
+      "posture": "contextual",
+      "combinedTrigger": "not_met",
+      "evidenceClass": "different_location"
+    }
+  }
+]

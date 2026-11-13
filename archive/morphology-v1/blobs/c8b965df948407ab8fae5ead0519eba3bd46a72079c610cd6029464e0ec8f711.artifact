@@ -1,0 +1,14 @@
+{
+  "ontologyId": "ae1b08b76fd74c3ceaf92de1ab1a95f250657c77230896eff112d2ea41856268",
+  "curriculumId": "a4aedd27602ec4c6695e0d56e16fac40faf0734bf5b3c22ae06e9638c05d92c4",
+  "planId": "2dd21c318fc6672e9e3b7c08121e83bd2698f719f600b40ab87f7325c63e4149",
+  "splits": {
+    "train": 30,
+    "validation": 2,
+    "test": 0
+  },
+  "trainingStarted": false,
+  "frozenTestLoaded": false,
+  "hypothesis": "Explicit posture and causal fields may reduce generic caution overriding the supplied precautionary policy; effectiveness unproven.",
+  "comparison": "Matched fresh-base and adapted generation on development validation only; no independent test accuracy claim."
+}

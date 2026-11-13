@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "purpose": "development adapter training; not domain qualification",
+  "optimizerUpdatesRequested": 90,
+  "gradientAccumulation": 1,
+  "initialAdapterSha256": null,
+  "checkpointSteps": 90,
+  "baseQuantization": "NF4 double quantization",
+  "baseModel": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "corpus": {
+    "excludedPromptHashes": [],
+    "ontology": {
+      "concepts": {
+        "causal_claim": "Requires evidence beyond temporal association; actor attribution is a separate claim.",
+        "counterevidence": "Benign explanations, reversed order and absent corroboration constrain an interpretation.",
+        "disruption_identity": "An outage is not sufficient evidence of deliberate denial of service.",
+        "observation": "A measured or reported event with source, place, time and uncertainty.",
+        "signal_identity": "Generic RF energy is not confirmed drone identification.",
+        "source_independence": "Separate reports are not independent when they derive from one observation.",
+        "spatial_overlap": "Locations overlap within the supplied measurement uncertainty.",
+        "temporal_precedence": "Event A precedes B only if their uncertainty intervals do not overlap.",
+        "warning_posture": "Precautionary urgency under a named policy; not probability of attack."
+      },
+      "instruction": "Use only the supplied typed observation and the trusted proposed policy below. This is a synthetic development task, not an attack probability. Source lineage is supplied by a caller-reviewed registry: distinct_reviewed_origins means different asserted provenance roots, not statistical independence. shared_origin means reports relay one origin. Critical/met/corroborated_drone requires ongoingThreat=true, reviewed_deliberate_disruption, corroborated_drone_identity, distinct_reviewed_origins, equal areaRef, order=after and withinWindow=true. Use high/unconfirmed/unidentified_signal for unidentified_rf. Use high/unconfirmed/cause_unresolved for outage_cause_unknown. Use high/unconfirmed/unknown_time for order=unknown, and high/unconfirmed/uncertain_order for order=uncertain. Use high/unconfirmed/dependent_reports for shared_origin reports. Use contextual/not_met/reversed_sequence for order=before; contextual/not_met/outside_window for order=after and withinWindow=false; contextual/not_met/different_location for different areaRef; contextual/not_met/benign_explanation for verified_maintenance or verified_humanitarian_drone. Verified benign operations negate this specific combined trigger even when temporal linkage exists. Contextual does not remove a separate hazard or standing threat. No output establishes causation, perpetrator identity or a certain attack.",
+      "name": "LayerTime typed-observation decision training",
+      "outputSchema": {
+        "additionalProperties": false,
+        "enum": [
+          {
+            "combinedTrigger": "met",
+            "evidenceClass": "corroborated_drone",
+            "posture": "critical"
+          },
+          {
+            "combinedTrigger": "not_met",
+            "evidenceClass": "benign_explanation",
+            "posture": "contextual"
+          },
+          {
+            "combinedTrigger": "not_met",
+            "evidenceClass": "different_location",
+            "posture": "contextual"
+          },
+          {
+            "combinedTrigger": "not_met",
+            "evidenceClass": "outside_window",
+            "posture": "contextual"
+          },
+          {
+            "combinedTrigger": "not_met",
+            "evidenceClass": "reversed_sequence",
+            "posture": "contextual"
+          },
+          {
+            "combinedTrigger": "unconfirmed",
+            "evidenceClass": "cause_unresolved",
+            "posture": "high"
+          },
+          {
+            "combinedTrigger": "unconfirmed",
+            "evidenceClass": "dependent_reports",
+            "posture": "high"
+          },
+          {
+            "combinedTrigger": "unconfirmed",
+            "evidenceClass": "uncertain_order",
+            "posture": "high"
+          },
+          {
+            "combinedTrigger": "unconfirmed",
+            "evidenceClass": "unidentified_signal",
+            "posture": "high"
+          },
+          {
+            "combinedTrigger": "unconfirmed",
+            "evidenceClass": "unknown_time",
+            "posture": "high"
+          }
+        ],
+        "properties": {
+          "combinedTrigger": {
+            "enum": [
+              "met",
+              "unconfirmed",
+              "not_met"
+            ],
+            "type": "string"
+          },
+          "evidenceClass": {
+            "enum": [
+              "corroborated_drone",
+              "unidentified_signal",
+              "cause_unresolved",
+              "reversed_sequence",
+              "unknown_time",
+              "different_location",
+              "benign_explanation",
+              "dependent_reports",
+              "outside_window",
+              "uncertain_order"
+            ],
+            "type": "string"
+          },
+          "posture": {
+            "enum": [
+              "critical",
+              "high",
+              "contextual"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "posture",
+          "combinedTrigger",
+          "evidenceClass"
+        ],
+        "type": "object"
+      },
+      "relations": [
+        {
+          "object": "causal_claim",
+          "predicate": "distinctFrom",
+          "subject": "warning_posture"
+        },
+        {
+          "object": "observation",
+          "predicate": "qualifies",
+          "subject": "temporal_precedence"
+        },
+        {
+          "object": "observation",
+          "predicate": "qualifies",
+          "subject": "source_independence"
+        },
+        {
+          "object": "warning_posture",
+          "predicate": "constrains",
+          "subject": "counterevidence"
+        }
+      ],
+      "version": "0.6.0-development"
+    },
+    "ontologyId": "de8b8fa925137177906f1422d92e9024f7253a4ff086f4ee10ef731ab4fa5092",
+    "profile": "notella-lora-v1",
+    "releaseEligible": false,
+    "splits": {
+      "test": {
+        "examples": 0,
+        "file": "test.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "train": {
+        "examples": 45,
+        "file": "train.jsonl",
+        "sha256": "84910382f468f5c426afef3b597e7ca65592876ca5d9234794f0d6403baabc1b"
+      },
+      "validation": {
+        "examples": 10,
+        "file": "validation.jsonl",
+        "sha256": "67d321215d648d31f2210f03f187c3b6dbf2eb38f13fade81120c4a8120317fb"
+      }
+    }
+  },
+  "releaseEligible": false,
+  "blueTeamTrained": false,
+  "note": "Adapter training smoke only. Requires domain review, independent evaluation, merge, quantization and release qualification."
+}

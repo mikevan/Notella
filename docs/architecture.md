@@ -39,7 +39,7 @@ The core has no LayerTime imports, GPU dependencies or network requests. A profi
 | tests/ | Core, HTTP, job-boundary and temporal checks |
 | runtime/ | Local training/evaluation evidence; excluded from future source-control staging by default |
 
-The engine is a compatibility boundary inherited from LayerTime's development tools. Its train_lora.py remains unchanged. The Notella-specific manifest verifier replaces domain_training_profile.py, and the prompt adapter recognizes Notella's domain-neutral curriculum version. Historical helper names remain inside the engine; they are not public API concepts. Its original source includes additional utilities not yet split into independent packages.
+The engine is a compatibility boundary inherited from LayerTime's development tools. Its current train_lora.py selects CPU-resident frozen output logits for the --cpu-frozen-layers path, and completion_loss.py uses bounded token chunks; per-job source snapshots preserve earlier implementations. The Notella-specific manifest verifier replaces domain_training_profile.py, and the prompt adapter recognizes Notella's domain-neutral curriculum version. Historical helper names remain inside the engine; they are not public API concepts. Its original source includes additional utilities not yet split into independent packages.
 
 ## Artifact lifecycle
 
@@ -70,3 +70,39 @@ The HTTP server accepts an injected jobs object with start(plan_id) and get(job_
 Version 0.1 does not implement model serving, remote training, cancellation, queues, multi-user authorization, formal ontology reasoning, automatic source licensing checks, semantic judging or product-release approval. The documentation identifies these so integrators can rely on actual behavior rather than infer features from the project name.
 
 Before broader adoption, prioritize independent curriculum review, more domain-neutral engine packaging, durable job recovery, a formal backend interface and independently validated semantic evaluation. Changes to these boundaries should include examples and compatibility notes, not only code.
+
+
+## Intended scenario reasoning architecture
+
+The ontology represents the semantic model; an scenario supplies changing observations, scoped concept instances, typed relationships and hypotheses. The trainer defines the model and representation. The application will maintain versioned scenario state and the model will interpret its changes, propose supported revisions and assess criticality under a named policy. Application validators must check evidence references, identity scope, time, provenance and permitted transitions.
+
+The first Python scenario contract, explicit validation, full-prefix export and rule fixtures are implemented in `notella/scenarios.py` and the source-checkout `profiles/network_scenarios` profile. A live scenario-memory service, trained scenario interpreter and rollout evaluation remain intended extensions. Runtime evidence changes the scenario state/context; ordinary inference does not update neural weights. LoRA training adapts behavior from reviewed examples without proving a literal internal ontology graph.
+
+```text
+Trainer's semantic model -> versioned ontology + assessment policy
+                                  |
+                    Colibri scenario candidates
+                                  |
+             structural/domain review -> explicit admission
+                                  |
+                 scenario-prefix curriculum -> LoRA training
+
+New evidence -> versioned semantic state -> model interpretation
+                      ^                        |
+                      +--- validated revisions + assessment
+```
+
+Nodes represent scoped semantic elements. Edges carry relationship type, evidence, temporal conditions and uncertainty. Counts support association only under a defined matching unit and query/scenario scope; causal or criticality judgments require additional semantics. See [the method](semantic-ontology-morphology.md) and [scenario workflow](scenario-authoring.md).
+
+Current optional modules `notella/teachers.py` and `notella/teacher_reviews.py` provide local candidate generation and exact-output reviews. They do not themselves implement a live scenario-state service, complete scenario validation, neural introspection or automatic admission. The separate scenario module provides bounded structural/evidence validation; [Tutorial 11](scenarios.md) states its limits. Notella's domain-neutral core remains independent of LayerTime and Colibri.
+
+## Scenario contract v1
+
+`notella/scenarios.py` provides the closed graph-state schema, explicit evidence/clock/provenance checks, family/shared-prefix guards and full-prefix teaching export. It imports no application profile or model dependencies. `profiles/network_scenarios/reference.py` supplies a proposed domain ontology, transparent rule comparator and fixture-authoring helper. Frozen ontology/scenario JSON files support review. Source-checkout profiles are not packaged runtime services.
+
+An scenario reference target is not authoritative because it passed the generic contract. Domain review, rule/model comparisons and independently authored scenario families are separate requirements. All current scenario fixtures are unadmitted. The no-model [tutorial](scenarios.md) verifies that the compiler refuses to train on them.
+
+
+## Scenario naming compatibility
+
+The public `notella.scenarios` interface delegates graph validation to the preserved `notella.episodes` implementation. New profile/record names use scenario terminology; the retained episode module, profile JSON and historical receipts remain valid. The new profile wrapper preserves policy behavior and exposes the terminology/version change explicitly. See [scenario compatibility](scenarios.md#compatibility-and-preserved-evidence).

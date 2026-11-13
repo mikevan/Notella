@@ -1,0 +1,564 @@
+{
+  "jobId": "afd222ac00c54dd48a47a46b46207d3e",
+  "matchedPrompts": true,
+  "scoreFields": [
+    "posture",
+    "combinedTrigger",
+    "evidenceClass"
+  ],
+  "scoringSourceSha256": "7e68ccfcbc1c9ecad873956a157705ea9ee0ec00aa3303f2416b65120d602dd4",
+  "groups": {
+    "primary": {
+      "base": {
+        "total": 10,
+        "schemaPasses": 10,
+        "decisionMatches": 1,
+        "compliantMatches": 1,
+        "cases": [
+          {
+            "id": "v4-ontoforge-heldout-corrob-sequence-0",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-ontoforge-heldout-unknown-signal-0",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-outage-only",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-reversed-order",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-missing-clock",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-distant-location",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-benign-operations",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-duplicate-reports",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-outside-window",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-overlapping-clock",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          }
+        ]
+      },
+      "adapted": {
+        "total": 10,
+        "schemaPasses": 10,
+        "decisionMatches": 7,
+        "compliantMatches": 7,
+        "cases": [
+          {
+            "id": "v4-ontoforge-heldout-corrob-sequence-0",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-ontoforge-heldout-unknown-signal-0",
+            "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-outage-only",
+            "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-reversed-order",
+            "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-missing-clock",
+            "outputSha256": "14edb66685381eb5c67b4ac21f212f68f00747dd73bfe2b32f6c3b80893c729b",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-distant-location",
+            "outputSha256": "0fecd2d3aaafc780c61411e2a9a9051a4ea6340eafccfc43815dd648f91d8703",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-benign-operations",
+            "outputSha256": "497f6ceb522616c84d119f64be20afbbaa1e627466f0a4fbc29d5c17df9381c2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-duplicate-reports",
+            "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-outside-window",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-development-overlapping-clock",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          }
+        ]
+      }
+    },
+    "robustness": {
+      "base": {
+        "total": 6,
+        "schemaPasses": 6,
+        "decisionMatches": 3,
+        "compliantMatches": 3,
+        "cases": [
+          {
+            "id": "v4-probe-source-order",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-translated-time",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-narrow-window",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-fact-order",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-untrusted-captured-text",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-shared-upstream-source",
+            "outputSha256": "906777cf6c7689f1daa2f08b8d79199ea243e66504f905be916537a4c8360490",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          }
+        ]
+      },
+      "adapted": {
+        "total": 6,
+        "schemaPasses": 5,
+        "decisionMatches": 3,
+        "compliantMatches": 3,
+        "cases": [
+          {
+            "id": "v4-probe-source-order",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-translated-time",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-narrow-window",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-fact-order",
+            "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": true,
+              "schemaAndDecisionMatch": true,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-untrusted-captured-text",
+            "outputSha256": "5af440b5c3410ced360338f2229813e36cd5f1e0e5a4df6e8b15fd36657ed1aa",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": true,
+              "fieldMatches": {
+                "posture": false,
+                "combinedTrigger": false,
+                "evidenceClass": true
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false
+            }
+          },
+          {
+            "id": "v4-probe-shared-upstream-source",
+            "outputSha256": "942da285514192cc31e5fb3df33920f9fb4091c29309714a96fa578b3b9c543f",
+            "score": {
+              "jsonValid": true,
+              "schemaValid": false,
+              "fieldMatches": {
+                "posture": true,
+                "combinedTrigger": true,
+                "evidenceClass": false
+              },
+              "decisionFieldsMatch": false,
+              "schemaAndDecisionMatch": false,
+              "semanticAccuracyMeasured": false,
+              "error": "$.evidenceClass: enum mismatch"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "semanticAccuracyMeasured": false,
+  "fieldQualification": false,
+  "releaseEligible": false
+}

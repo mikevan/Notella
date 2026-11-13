@@ -1,0 +1,20 @@
+{
+  "desktop": {
+    "width": 1280,
+    "scrollWidth": 1265,
+    "height": 8807,
+    "images": true,
+    "title": "Notella — From evidence to evolving meaning"
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 14476
+  },
+  "narrow": {
+    "width": 320,
+    "scrollWidth": 320
+  },
+  "interaction": "All four illustrative states passed",
+  "runtimeErrors": []
+}

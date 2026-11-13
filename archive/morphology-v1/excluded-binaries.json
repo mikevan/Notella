@@ -1,0 +1,305 @@
+{
+  "files": [
+    {
+      "path": "runtime/backend-verification/jobs/84cf394dc8444499b578807f2ad833f8/adapter/adapter_model.safetensors",
+      "sha256": "412775a01d4f1b9cb6327f63e18a0b122a63ba92d7b9d75e685d0b3fed4b8453",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794500663706791000,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/backend-verification/jobs/84cf394dc8444499b578807f2ad833f8/adapter/checkpoint-2/adapter_model.safetensors",
+      "sha256": "412775a01d4f1b9cb6327f63e18a0b122a63ba92d7b9d75e685d0b3fed4b8453",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794500657050762200,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/backend-verification/jobs/84cf394dc8444499b578807f2ad833f8/adapter/checkpoint-2/optimizer.pt",
+      "sha256": "319530c634787142d6bb47e6e4515d422e18138ae03c5773f30b0e62e2002e28",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794500657378763100,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/backend-verification/jobs/b589dd10dd3d4a109448e289e1075f73/adapter/adapter_model.safetensors",
+      "sha256": "708c1ed4a2456d47e75b8b478c519fa4bbb2dea41540e5942f437eaeb2508bde",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794501188643438500,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/backend-verification/jobs/b589dd10dd3d4a109448e289e1075f73/adapter/checkpoint-2/adapter_model.safetensors",
+      "sha256": "708c1ed4a2456d47e75b8b478c519fa4bbb2dea41540e5942f437eaeb2508bde",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794501181486728900,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/backend-verification/jobs/b589dd10dd3d4a109448e289e1075f73/adapter/checkpoint-2/optimizer.pt",
+      "sha256": "39235312ddd03868f2939ed00ac7657c280ba20e6c09adaba8937f66c4d286fd",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794501181817429600,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/initial-layertime-run/runs/fresh-base-v1/adapter_model.safetensors",
+      "sha256": "82526f746d32254786ec2f65818495903ae514c5861819213c302742f594645a",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794499017870903700,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/initial-layertime-run/runs/fresh-base-v1/checkpoint-700/adapter_model.safetensors",
+      "sha256": "ad5d5613f59d7aa4409f58bd42cc28bb11c79ef413afd932e0f88e676bb347ba",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794498954658715500,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/initial-layertime-run/runs/fresh-base-v1/checkpoint-700/optimizer.pt",
+      "sha256": "3f677d6cf3bf3a4603334f24dbf1f2b74df10624cc9863aa5fcdb939474890b3",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794498954877691400,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/initial-layertime-run/runs/fresh-base-v1/checkpoint-742/adapter_model.safetensors",
+      "sha256": "82526f746d32254786ec2f65818495903ae514c5861819213c302742f594645a",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794499010115203600,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/initial-layertime-run/runs/fresh-base-v1/checkpoint-742/optimizer.pt",
+      "sha256": "b18dc2df18414b4d80b8a961cdd8fb3529379987affd171351802d0c03251489",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794499010339905200,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v3/store/jobs/210e033d22bf453c8ce332a065308c64/adapter/adapter_model.safetensors",
+      "sha256": "c8a1d8e717310ce4b7690c77abf3afa0e0fa123eba6d9d742ea6d540efab3313",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794539207756058700,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v3/store/jobs/210e033d22bf453c8ce332a065308c64/adapter/checkpoint-2/adapter_model.safetensors",
+      "sha256": "c8a1d8e717310ce4b7690c77abf3afa0e0fa123eba6d9d742ea6d540efab3313",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794539157395509800,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v3/store/jobs/210e033d22bf453c8ce332a065308c64/adapter/checkpoint-2/optimizer.pt",
+      "sha256": "9f216e56d65a71e2daec350e56055c3fd075d450c3863b20803eba762a9d75e6",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794539157725510900,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v3/store/jobs/cfcd0557687d4fd4b23a2683599ae966/adapter/adapter_model.safetensors",
+      "sha256": "31fdfd0c57b89c090f0ff7fada9e74f66735c46cdfc28487cdaf073805069fe8",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794540308039781000,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v3/store/jobs/cfcd0557687d4fd4b23a2683599ae966/adapter/checkpoint-80/adapter_model.safetensors",
+      "sha256": "31fdfd0c57b89c090f0ff7fada9e74f66735c46cdfc28487cdaf073805069fe8",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794540254747915700,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v3/store/jobs/cfcd0557687d4fd4b23a2683599ae966/adapter/checkpoint-80/optimizer.pt",
+      "sha256": "95cbf837583a9ece79c336a4ed5cc886a132c8c01fae6325b8cdec0ac8e61497",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794540255078914000,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v4/store/jobs/f73e5902592f4554b78a790b47464b83/adapter/adapter_model.safetensors",
+      "sha256": "41bc820ff78c6feea72ad6debdd03f58dcb401d532d60f9dfff2dfb92b463b03",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794543688730814000,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v4/store/jobs/f73e5902592f4554b78a790b47464b83/adapter/checkpoint-80/adapter_model.safetensors",
+      "sha256": "41bc820ff78c6feea72ad6debdd03f58dcb401d532d60f9dfff2dfb92b463b03",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794543629175111400,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v4/store/jobs/f73e5902592f4554b78a790b47464b83/adapter/checkpoint-80/optimizer.pt",
+      "sha256": "8aad9752b55344a192a87350e7cc462c94c325533068e467228abe07d16f0417",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794543629511112900,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v5/store/jobs/dac91f7b6fcb4ab5abf400fdbf7af1e3/adapter/adapter_model.safetensors",
+      "sha256": "86d8cb5be3124ae25c41dd7e12f2754dda02f8625a4ccfc2291fb869bef6b95e",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794548607709030100,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v5/store/jobs/dac91f7b6fcb4ab5abf400fdbf7af1e3/adapter/checkpoint-80/adapter_model.safetensors",
+      "sha256": "86d8cb5be3124ae25c41dd7e12f2754dda02f8625a4ccfc2291fb869bef6b95e",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794548465319360500,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/scenario-model-v5/store/jobs/dac91f7b6fcb4ab5abf400fdbf7af1e3/adapter/checkpoint-80/optimizer.pt",
+      "sha256": "f57b3783a2de6be6d3a2127e1f28434ed9089e6f7d30ca603748ccfc9ca986b8",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794548465660904500,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/student-v1-teacher-augmentation/store/jobs/447c5817cbb24e268bbf8a4cc1812066/adapter/adapter_model.safetensors",
+      "sha256": "8c0f95a57fb3cdc24cdad125b3316a1a14383ca42050544203f9e0fdda2d5e98",
+      "bytes": 9189904,
+      "modifiedUtcNs": 1794529238942095600,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/student-v1-teacher-augmentation/store/jobs/447c5817cbb24e268bbf8a4cc1812066/adapter/checkpoint-90/adapter_model.safetensors",
+      "sha256": "8c0f95a57fb3cdc24cdad125b3316a1a14383ca42050544203f9e0fdda2d5e98",
+      "bytes": 9189904,
+      "modifiedUtcNs": 1794529237518095700,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/student-v1-teacher-augmentation/store/jobs/447c5817cbb24e268bbf8a4cc1812066/adapter/checkpoint-90/optimizer.pt",
+      "sha256": "c63e26fb040178933e6a4969c5de56d6eac5a947394c184de1881ddf577196af",
+      "bytes": 18446347,
+      "modifiedUtcNs": 1794529237718121100,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/student-v1-teacher-augmentation/store/jobs/8f724cbea6e543c49a2ca5df0ecde5af/adapter/adapter_model.safetensors",
+      "sha256": "c7399ebba35040a6b350eafa1802d02b90e2c4ae2715acad37f3f9fa81354c99",
+      "bytes": 9189904,
+      "modifiedUtcNs": 1794529151125457600,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/student-v1-teacher-augmentation/store/jobs/8f724cbea6e543c49a2ca5df0ecde5af/adapter/checkpoint-90/adapter_model.safetensors",
+      "sha256": "c7399ebba35040a6b350eafa1802d02b90e2c4ae2715acad37f3f9fa81354c99",
+      "bytes": 9189904,
+      "modifiedUtcNs": 1794529149704897200,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/student-v1-teacher-augmentation/store/jobs/8f724cbea6e543c49a2ca5df0ecde5af/adapter/checkpoint-90/optimizer.pt",
+      "sha256": "b37ac1c2ca3b889a696848d5be970a18c485abba952d7da124382413fd173287",
+      "bytes": 18446347,
+      "modifiedUtcNs": 1794529149906897500,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v2/store/jobs/433bfadaf2f04248867148e69a840920/adapter/adapter_model.safetensors",
+      "sha256": "69059ed886d410f35bc09200a49878872507c2ff7dfaa3a9228dc0849664b177",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794514632446522300,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v2/store/jobs/433bfadaf2f04248867148e69a840920/adapter/checkpoint-100/adapter_model.safetensors",
+      "sha256": "421ee722e74b67fd996b549e1939c26d2354002563bce5caa44444e0675a7b62",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794514440284493100,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v2/store/jobs/433bfadaf2f04248867148e69a840920/adapter/checkpoint-100/optimizer.pt",
+      "sha256": "8fc480ba7834bdc19f787fa97815877a46ae592f1348f0411ed5e0135c75eb46",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794514440730493800,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v2/store/jobs/433bfadaf2f04248867148e69a840920/adapter/checkpoint-120/adapter_model.safetensors",
+      "sha256": "69059ed886d410f35bc09200a49878872507c2ff7dfaa3a9228dc0849664b177",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794514625631377400,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v2/store/jobs/433bfadaf2f04248867148e69a840920/adapter/checkpoint-120/optimizer.pt",
+      "sha256": "cca3f268b627bf590d4c59fb12e6d498f7fab51eade4e3f990a4eb304b56875a",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794514625954379600,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v3-fit/store/jobs/addcdd4c035443b98b9e52caeef08f40/adapter/adapter_model.safetensors",
+      "sha256": "87a094d5c1b50ac6f52684180ee3015d0662554eae51cd7d51710fb701abaf75",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794516279940969700,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v3-fit/store/jobs/addcdd4c035443b98b9e52caeef08f40/adapter/checkpoint-60/adapter_model.safetensors",
+      "sha256": "87a094d5c1b50ac6f52684180ee3015d0662554eae51cd7d51710fb701abaf75",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794516277201797600,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v3-fit/store/jobs/addcdd4c035443b98b9e52caeef08f40/adapter/checkpoint-60/optimizer.pt",
+      "sha256": "3c16320162833d996571087c4dab200c8e4a82c79965a473f66fbfdc8495aa36",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794516277481080800,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v4-expanded/store/jobs/afd222ac00c54dd48a47a46b46207d3e/adapter/adapter_model.safetensors",
+      "sha256": "5592686ddad0c43b434f3473a3a274c50b7c284b6c7155ba296cf0ebff29b2fc",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794517357777666800,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v4-expanded/store/jobs/afd222ac00c54dd48a47a46b46207d3e/adapter/checkpoint-90/adapter_model.safetensors",
+      "sha256": "5592686ddad0c43b434f3473a3a274c50b7c284b6c7155ba296cf0ebff29b2fc",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794517350012662000,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v4-expanded/store/jobs/afd222ac00c54dd48a47a46b46207d3e/adapter/checkpoint-90/optimizer.pt",
+      "sha256": "9c3683a2c0f1d42771594baea42b29cbc6b7cc838dd59e83c66f478bca38ae7f",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794517350274663400,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v6-typed-training/store/jobs/025ce308a46d40bdbe930e83eea9c965/adapter/adapter_model.safetensors",
+      "sha256": "ef6547a6668bd6276a86d1656784d06bce56c8c9d9b239447a10e292106dbddb",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794520292741804100,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v6-typed-training/store/jobs/025ce308a46d40bdbe930e83eea9c965/adapter/checkpoint-90/adapter_model.safetensors",
+      "sha256": "ef6547a6668bd6276a86d1656784d06bce56c8c9d9b239447a10e292106dbddb",
+      "bytes": 23612264,
+      "modifiedUtcNs": 1794520286544053300,
+      "reason": "Model or optimizer binary; retained locally"
+    },
+    {
+      "path": "runtime/warning-v6-typed-training/store/jobs/025ce308a46d40bdbe930e83eea9c965/adapter/checkpoint-90/optimizer.pt",
+      "sha256": "3d4729f5917d59f285c1df01274e1ae6d1a4eb8ed7381288a995d9b056f657b7",
+      "bytes": 47309579,
+      "modifiedUtcNs": 1794520286773830400,
+      "reason": "Model or optimizer binary; retained locally"
+    }
+  ]
+}

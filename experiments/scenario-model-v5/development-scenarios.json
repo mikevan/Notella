@@ -1,0 +1,3255 @@
+[
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "S-Q71",
+    "family": "compromise-first-scoped-benign-original",
+    "split": "validation",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "server-Q",
+    "assets": [
+      "server-Q",
+      "server-R"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "source": {
+      "id": "scenario-model-v1-development",
+      "kind": "synthetic",
+      "reference": "scenario-model-v1/prepare.py",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Codex agent and explicit rule reference, not independent review",
+      "trainingAllowed": false
+    },
+    "evidence": [
+      {
+        "id": "r17",
+        "concept": "compromise_evidence",
+        "assetRef": "server-Q",
+        "timeMs": 10000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 12000,
+        "sourceRoot": "reviewed-origin:compromise_evidence",
+        "originEventId": "origin:r17",
+        "statement": "Synthetic supplied compromise_evidence for server-Q"
+      },
+      {
+        "id": "r21",
+        "concept": "reconnaissance",
+        "assetRef": "server-Q",
+        "timeMs": 9000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 15000,
+        "sourceRoot": "reviewed-origin:reconnaissance",
+        "originEventId": "origin:r21",
+        "statement": "Synthetic supplied reconnaissance for server-Q"
+      },
+      {
+        "id": "r26",
+        "concept": "credential_activity",
+        "assetRef": "server-Q",
+        "timeMs": 11000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 16000,
+        "sourceRoot": "reviewed-origin:credential_activity",
+        "originEventId": "origin:r26",
+        "statement": "Synthetic supplied credential_activity for server-Q"
+      },
+      {
+        "id": "r32",
+        "concept": "benign_operation",
+        "assetRef": "server-Q",
+        "timeMs": 20000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 20100,
+        "sourceRoot": "reviewed-origin:benign_operation",
+        "originEventId": "origin:r32",
+        "statement": "Synthetic supplied benign_operation for server-Q",
+        "explains": [
+          "r21",
+          "r26"
+        ]
+      },
+      {
+        "id": "r39",
+        "concept": "source_correction",
+        "assetRef": "server-Q",
+        "timeMs": 25000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 25100,
+        "sourceRoot": "reviewed-origin:source_correction",
+        "originEventId": "origin:r39",
+        "statement": "Synthetic supplied source_correction for server-Q",
+        "retracts": [
+          "r17"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "asOfMs": 12000,
+        "target": {
+          "asOfMs": 12000,
+          "nodes": [
+            {
+              "id": "obs:r17",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r17",
+              "from": "obs:r17",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r17"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r17"
+            ],
+            "summary": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 15000,
+        "target": {
+          "asOfMs": 15000,
+          "nodes": [
+            {
+              "id": "obs:r17",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r21",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "r17",
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r17",
+              "from": "obs:r17",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r21",
+              "from": "obs:r21",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r17",
+              "r21"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r21"
+            ],
+            "summary": "This newly available observation occurred earlier. Update current knowledge at arrival time without inventing a later occurrence or leaking it into previous prefixes."
+          }
+        }
+      },
+      {
+        "asOfMs": 16000,
+        "target": {
+          "asOfMs": 16000,
+          "nodes": [
+            {
+              "id": "obs:r17",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r21",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r26",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "r17",
+                "r21",
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r17",
+              "from": "obs:r17",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r21",
+              "from": "obs:r21",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r26",
+              "from": "obs:r26",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:r21:r26",
+              "from": "obs:r21",
+              "to": "obs:r26",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "r21",
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r17",
+              "r21",
+              "r26"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r26"
+            ],
+            "summary": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 20100,
+        "target": {
+          "asOfMs": 20100,
+          "nodes": [
+            {
+              "id": "obs:r17",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r21",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r26",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r32",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r32"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "r17",
+                "r21",
+                "r26",
+                "r32"
+              ],
+              "counts": {
+                "reportCount": 4,
+                "underlyingEventCount": 4,
+                "provenanceRootCount": 4
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r17",
+              "from": "obs:r17",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r21",
+              "from": "obs:r21",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r26",
+              "from": "obs:r26",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r32",
+              "from": "obs:r32",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "r32"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:r21:r26",
+              "from": "obs:r21",
+              "to": "obs:r26",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "r21",
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r17",
+              "r21",
+              "r26",
+              "r32"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r32"
+            ],
+            "summary": "The new scoped benign explanation covers its referenced observations. It cannot negate a separate current reviewed compromise assertion."
+          }
+        }
+      },
+      {
+        "asOfMs": 25100,
+        "target": {
+          "asOfMs": 25100,
+          "nodes": [
+            {
+              "id": "obs:r17",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "retracted",
+              "evidenceRefs": [
+                "r17"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r21",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r26",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r32",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r32"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r39",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r39"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "weakened",
+              "evidenceRefs": [
+                "r21",
+                "r26",
+                "r32",
+                "r39"
+              ],
+              "counts": {
+                "reportCount": 4,
+                "underlyingEventCount": 4,
+                "provenanceRootCount": 4
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r17",
+              "from": "obs:r17",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "r17",
+                "r39"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:r21",
+              "from": "obs:r21",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r21"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r26",
+              "from": "obs:r26",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r32",
+              "from": "obs:r32",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "r32"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:r21:r26",
+              "from": "obs:r21",
+              "to": "obs:r26",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "r21",
+                "r26"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:r39:r17",
+              "from": "obs:r39",
+              "to": "obs:r17",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "r39"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r21",
+              "r26",
+              "r32",
+              "r39"
+            ],
+            "rationale": "A supplied benign explanation covers the referenced scan and authentication observations; no separate current compromise evidence remains."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r39"
+            ],
+            "summary": "The newly available correction withdraws the originating access observation and all its reposts. Reassess remaining evidence; retain withdrawn nodes and inactive support."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "S-Q92",
+    "family": "reposted-compromise-unrelated-asset-original",
+    "split": "validation",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "server-Q",
+    "assets": [
+      "server-Q",
+      "server-R"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "source": {
+      "id": "scenario-model-v1-development",
+      "kind": "synthetic",
+      "reference": "scenario-model-v1/prepare.py",
+      "permission": "Project-authored synthetic development",
+      "labelAuthor": "Codex agent and explicit rule reference, not independent review",
+      "trainingAllowed": false
+    },
+    "evidence": [
+      {
+        "id": "r44",
+        "concept": "credential_activity",
+        "assetRef": "server-Q",
+        "timeMs": 40000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 40100,
+        "sourceRoot": "reviewed-origin:credential_activity",
+        "originEventId": "origin:r44",
+        "statement": "Synthetic supplied credential_activity for server-Q"
+      },
+      {
+        "id": "r51",
+        "concept": "reconnaissance",
+        "assetRef": "server-R",
+        "timeMs": 30000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 42000,
+        "sourceRoot": "reviewed-origin:reconnaissance",
+        "originEventId": "origin:r51",
+        "statement": "Synthetic supplied reconnaissance for server-R"
+      },
+      {
+        "id": "r57",
+        "concept": "compromise_evidence",
+        "assetRef": "server-Q",
+        "timeMs": 50000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 50100,
+        "sourceRoot": "reviewed-origin:compromise_evidence",
+        "originEventId": "origin:r57",
+        "statement": "Synthetic supplied compromise_evidence for server-Q"
+      },
+      {
+        "id": "r63",
+        "concept": "compromise_evidence",
+        "assetRef": "server-Q",
+        "timeMs": 50000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 52000,
+        "sourceRoot": "reviewed-origin:compromise_evidence",
+        "originEventId": "origin:r57",
+        "statement": "Synthetic supplied compromise_evidence for server-Q"
+      },
+      {
+        "id": "r68",
+        "concept": "source_correction",
+        "assetRef": "server-Q",
+        "timeMs": 55000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 55100,
+        "sourceRoot": "reviewed-origin:source_correction",
+        "originEventId": "origin:r68",
+        "statement": "Synthetic supplied source_correction for server-Q",
+        "retracts": [
+          "r57"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "asOfMs": 40100,
+        "target": {
+          "asOfMs": 40100,
+          "nodes": [
+            {
+              "id": "obs:r44",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "proposed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r44",
+              "from": "obs:r44",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r44"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r44"
+            ],
+            "summary": "The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 42000,
+        "target": {
+          "asOfMs": 42000,
+          "nodes": [
+            {
+              "id": "obs:r44",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r51",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "r51"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "proposed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r44",
+              "from": "obs:r44",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r44"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r51"
+            ],
+            "summary": "The new evidence concerns another asset. Preserve its observation but do not add a link to the primary-asset hypothesis without an explicit bridge."
+          }
+        }
+      },
+      {
+        "asOfMs": 50100,
+        "target": {
+          "asOfMs": 50100,
+          "nodes": [
+            {
+              "id": "obs:r44",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r51",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "r51"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r57",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "r44",
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r44",
+              "from": "obs:r44",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r57",
+              "from": "obs:r57",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:r44:r57",
+              "from": "obs:r44",
+              "to": "obs:r57",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "r44",
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r44",
+              "r57"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r57"
+            ],
+            "summary": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 52000,
+        "target": {
+          "asOfMs": 52000,
+          "nodes": [
+            {
+              "id": "obs:r44",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r51",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "r51"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r57",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r63",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r63"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "r44",
+                "r57",
+                "r63"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r44",
+              "from": "obs:r44",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r57",
+              "from": "obs:r57",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r63",
+              "from": "obs:r63",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r63"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:r44:r57",
+              "from": "obs:r44",
+              "to": "obs:r57",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "r44",
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:r44:r63",
+              "from": "obs:r44",
+              "to": "obs:r63",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "r44",
+                "r63"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r44",
+              "r57",
+              "r63"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r63"
+            ],
+            "summary": "The new report repeats an originating observation already present. Report count increases without another underlying observation or provenance root; repetition alone does not escalate criticality."
+          }
+        }
+      },
+      {
+        "asOfMs": 55100,
+        "target": {
+          "asOfMs": 55100,
+          "nodes": [
+            {
+              "id": "obs:r44",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r51",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "server-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "r51"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r57",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "retracted",
+              "evidenceRefs": [
+                "r57"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r63",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "server-Q",
+              "status": "retracted",
+              "evidenceRefs": [
+                "r63"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:r68",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "server-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "server-Q",
+              "status": "weakened",
+              "evidenceRefs": [
+                "r44",
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:r44",
+              "from": "obs:r44",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "r44"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:r57",
+              "from": "obs:r57",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "r57",
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:r63",
+              "from": "obs:r63",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "r63",
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:r44:r57",
+              "from": "obs:r44",
+              "to": "obs:r57",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "r44",
+                "r57",
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "order:r44:r63",
+              "from": "obs:r44",
+              "to": "obs:r63",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "r44",
+                "r63",
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "correct:r68:r57",
+              "from": "obs:r68",
+              "to": "obs:r57",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "r68"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "r44",
+              "r68"
+            ],
+            "rationale": "Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          },
+          "change": {
+            "evidenceRefs": [
+              "r68"
+            ],
+            "summary": "The newly available correction withdraws the originating access observation and all its reposts. Reassess remaining evidence; retain withdrawn nodes and inactive support."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "V-834",
+    "family": "V-834-fresh-family",
+    "split": "validation",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "node-U",
+    "assets": [
+      "node-T",
+      "node-U"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "u2",
+        "concept": "compromise_evidence",
+        "assetRef": "node-U",
+        "timeMs": 300000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 300200,
+        "sourceRoot": "source:u2",
+        "originEventId": "origin:u2",
+        "statement": "Synthetic supplied compromise_evidence for node-U"
+      },
+      {
+        "id": "u5",
+        "concept": "compromise_evidence",
+        "assetRef": "node-T",
+        "timeMs": 307000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 307200,
+        "sourceRoot": "source:u5",
+        "originEventId": "origin:u5",
+        "statement": "Synthetic supplied compromise_evidence for node-T"
+      },
+      {
+        "id": "u7",
+        "concept": "source_correction",
+        "assetRef": "node-U",
+        "timeMs": 313000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 313200,
+        "sourceRoot": "source:u7",
+        "originEventId": "origin:u7",
+        "statement": "Synthetic supplied source_correction for node-U",
+        "retracts": [
+          "u2"
+        ]
+      },
+      {
+        "id": "u9",
+        "concept": "source_correction",
+        "assetRef": "node-T",
+        "timeMs": 320000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 320200,
+        "sourceRoot": "source:u9",
+        "originEventId": "origin:u9",
+        "statement": "Synthetic supplied source_correction for node-T",
+        "retracts": [
+          "u5"
+        ]
+      }
+    ],
+    "source": {
+      "id": "V-834",
+      "kind": "synthetic",
+      "reference": "scenario-model-v4/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 300200,
+        "target": {
+          "asOfMs": 300200,
+          "nodes": [
+            {
+              "id": "obs:u2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-U",
+              "status": "observed",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-U",
+              "status": "supported",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:u2",
+              "from": "obs:u2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "u2"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "u2"
+            ],
+            "summary": "Current reviewed primary-asset compromise is sufficient without a scan/authentication prerequisite. Reposts do not add independent support. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 307200,
+        "target": {
+          "asOfMs": 307200,
+          "nodes": [
+            {
+              "id": "obs:u2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-U",
+              "status": "observed",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:u5",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-T",
+              "status": "observed",
+              "evidenceRefs": [
+                "u5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-U",
+              "status": "supported",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:u2",
+              "from": "obs:u2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "u2"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "u5"
+            ],
+            "summary": "Interpret the newly available observations under asset scope and rule precedence. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 313200,
+        "target": {
+          "asOfMs": 313200,
+          "nodes": [
+            {
+              "id": "obs:u2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-U",
+              "status": "retracted",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:u5",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-T",
+              "status": "observed",
+              "evidenceRefs": [
+                "u5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:u7",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "node-U",
+              "status": "observed",
+              "evidenceRefs": [
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-U",
+              "status": "weakened",
+              "evidenceRefs": [
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:u2",
+              "from": "obs:u2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "u2",
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:u7:u2",
+              "from": "obs:u7",
+              "to": "obs:u2",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "u7"
+            ],
+            "rationale": "Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          },
+          "change": {
+            "evidenceRefs": [
+              "u7"
+            ],
+            "summary": "Apply the new retraction to its originating event and all reposts, then reassess remaining primary-asset support. Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          }
+        }
+      },
+      {
+        "asOfMs": 320200,
+        "target": {
+          "asOfMs": 320200,
+          "nodes": [
+            {
+              "id": "obs:u2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-U",
+              "status": "retracted",
+              "evidenceRefs": [
+                "u2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:u5",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-T",
+              "status": "retracted",
+              "evidenceRefs": [
+                "u5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:u7",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "node-U",
+              "status": "observed",
+              "evidenceRefs": [
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:u9",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "node-T",
+              "status": "observed",
+              "evidenceRefs": [
+                "u9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-U",
+              "status": "weakened",
+              "evidenceRefs": [
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:u2",
+              "from": "obs:u2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "u2",
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:u7:u2",
+              "from": "obs:u7",
+              "to": "obs:u2",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "u7"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "u7"
+            ],
+            "rationale": "Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          },
+          "change": {
+            "evidenceRefs": [
+              "u9"
+            ],
+            "summary": "Apply the new retraction to its originating event and all reposts, then reassess remaining primary-asset support. Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "V-947",
+    "family": "V-947-fresh-family",
+    "split": "validation",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "sensor-B",
+    "assets": [
+      "sensor-B"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "b3",
+        "concept": "reconnaissance",
+        "assetRef": "sensor-B",
+        "timeMs": 360000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 360200,
+        "sourceRoot": "source:b3",
+        "originEventId": "origin:b3",
+        "statement": "Synthetic supplied reconnaissance for sensor-B"
+      },
+      {
+        "id": "b6",
+        "concept": "compromise_evidence",
+        "assetRef": "sensor-B",
+        "timeMs": 367000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 367200,
+        "sourceRoot": "source:b6",
+        "originEventId": "origin:b6",
+        "statement": "Synthetic supplied compromise_evidence for sensor-B"
+      },
+      {
+        "id": "b8",
+        "concept": "benign_operation",
+        "assetRef": "sensor-B",
+        "timeMs": 373000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 373200,
+        "sourceRoot": "source:b8",
+        "originEventId": "origin:b8",
+        "statement": "Synthetic supplied benign_operation for sensor-B",
+        "explains": [
+          "b3"
+        ]
+      },
+      {
+        "id": "b9",
+        "concept": "source_correction",
+        "assetRef": "sensor-B",
+        "timeMs": 379000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 379200,
+        "sourceRoot": "source:b9",
+        "originEventId": "origin:b9",
+        "statement": "Synthetic supplied source_correction for sensor-B",
+        "retracts": [
+          "b6"
+        ]
+      }
+    ],
+    "source": {
+      "id": "V-947",
+      "kind": "synthetic",
+      "reference": "scenario-model-v4/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 360200,
+        "target": {
+          "asOfMs": 360200,
+          "nodes": [
+            {
+              "id": "obs:b3",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-B",
+              "status": "proposed",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:b3",
+              "from": "obs:b3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "b3"
+            ],
+            "rationale": "The available primary-asset evidence does not establish the configured association or compromise."
+          },
+          "change": {
+            "evidenceRefs": [
+              "b3"
+            ],
+            "summary": "Interpret the newly available observations under asset scope and rule precedence. The available primary-asset evidence does not establish the configured association or compromise."
+          }
+        }
+      },
+      {
+        "asOfMs": 367200,
+        "target": {
+          "asOfMs": 367200,
+          "nodes": [
+            {
+              "id": "obs:b3",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:b6",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-B",
+              "status": "supported",
+              "evidenceRefs": [
+                "b3",
+                "b6"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:b3",
+              "from": "obs:b3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:b6",
+              "from": "obs:b6",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "b6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "b3",
+              "b6"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "b6"
+            ],
+            "summary": "Current reviewed primary-asset compromise is sufficient without a scan/authentication prerequisite. Reposts do not add independent support. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 373200,
+        "target": {
+          "asOfMs": 373200,
+          "nodes": [
+            {
+              "id": "obs:b3",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:b6",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:b8",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-B",
+              "status": "supported",
+              "evidenceRefs": [
+                "b3",
+                "b6",
+                "b8"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:b3",
+              "from": "obs:b3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:b6",
+              "from": "obs:b6",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "b6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:b8",
+              "from": "obs:b8",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "b8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "b3",
+              "b6",
+              "b8"
+            ],
+            "rationale": "The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          },
+          "change": {
+            "evidenceRefs": [
+              "b8"
+            ],
+            "summary": "The new explanation covers only its explicit references; it cannot clear a separate current compromise. The visible prefix contains supplied reviewed unauthorized-access evidence on the primary asset."
+          }
+        }
+      },
+      {
+        "asOfMs": 379200,
+        "target": {
+          "asOfMs": 379200,
+          "nodes": [
+            {
+              "id": "obs:b3",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:b6",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-B",
+              "status": "retracted",
+              "evidenceRefs": [
+                "b6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:b8",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:b9",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "sensor-B",
+              "status": "observed",
+              "evidenceRefs": [
+                "b9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-B",
+              "status": "weakened",
+              "evidenceRefs": [
+                "b3",
+                "b8",
+                "b9"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:b3",
+              "from": "obs:b3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "b3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:b6",
+              "from": "obs:b6",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "b6",
+                "b9"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:b8",
+              "from": "obs:b8",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "b8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "correct:b9:b6",
+              "from": "obs:b9",
+              "to": "obs:b6",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "b9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "b3",
+              "b8",
+              "b9"
+            ],
+            "rationale": "Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          },
+          "change": {
+            "evidenceRefs": [
+              "b9"
+            ],
+            "summary": "Apply the new retraction to its originating event and all reposts, then reassess remaining primary-asset support. Retraction removes the compromise support; remaining evidence does not establish the configured scan/authentication link."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "F-1120",
+    "family": "F-1120-fresh-family",
+    "split": "validation",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "sensor-X",
+    "assets": [
+      "sensor-X",
+      "sensor-Z"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "x1",
+        "concept": "compromise_evidence",
+        "assetRef": "sensor-X",
+        "timeMs": 410000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 410200,
+        "sourceRoot": "source:x1",
+        "originEventId": "origin:x1",
+        "statement": "Synthetic supplied compromise_evidence for sensor-X"
+      },
+      {
+        "id": "x4",
+        "concept": "compromise_evidence",
+        "assetRef": "sensor-Z",
+        "timeMs": 418000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 418200,
+        "sourceRoot": "source:x4",
+        "originEventId": "origin:x4",
+        "statement": "Synthetic supplied compromise_evidence for sensor-Z"
+      },
+      {
+        "id": "x9",
+        "concept": "source_correction",
+        "assetRef": "sensor-Z",
+        "timeMs": 427000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 427200,
+        "sourceRoot": "source:x9",
+        "originEventId": "origin:x9",
+        "statement": "Synthetic supplied source_correction for sensor-Z",
+        "retracts": [
+          "x4"
+        ]
+      }
+    ],
+    "source": {
+      "id": "F-1120",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 410200,
+        "target": {
+          "asOfMs": 410200,
+          "nodes": [
+            {
+              "id": "obs:x1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-X",
+              "status": "observed",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-X",
+              "status": "supported",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:x1",
+              "from": "obs:x1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "x1"
+            ],
+            "rationale": "x1 supplies active primary access evidence independently of the retired assertions none."
+          },
+          "change": {
+            "evidenceRefs": [
+              "x1"
+            ],
+            "summary": "Newly available reports x1 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 418200,
+        "target": {
+          "asOfMs": 418200,
+          "nodes": [
+            {
+              "id": "obs:x1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-X",
+              "status": "observed",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:x4",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-Z",
+              "status": "observed",
+              "evidenceRefs": [
+                "x4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-X",
+              "status": "supported",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:x1",
+              "from": "obs:x1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "x1"
+            ],
+            "rationale": "x1 supplies active primary access evidence independently of the retired assertions none."
+          },
+          "change": {
+            "evidenceRefs": [
+              "x4"
+            ],
+            "summary": "Newly available reports x4 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 427200,
+        "target": {
+          "asOfMs": 427200,
+          "nodes": [
+            {
+              "id": "obs:x1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-X",
+              "status": "observed",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:x4",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "sensor-Z",
+              "status": "retracted",
+              "evidenceRefs": [
+                "x4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:x9",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "sensor-Z",
+              "status": "observed",
+              "evidenceRefs": [
+                "x9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "sensor-X",
+              "status": "supported",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:x1",
+              "from": "obs:x1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "x1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "x1"
+            ],
+            "rationale": "x1 supplies active primary access evidence independently of the retired assertions none."
+          },
+          "change": {
+            "evidenceRefs": [
+              "x9"
+            ],
+            "summary": "Correction x9 withdraws reports x4 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "F-1230",
+    "family": "F-1230-fresh-family",
+    "split": "validation",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "node-Y",
+    "assets": [
+      "node-Y"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "y2",
+        "concept": "compromise_evidence",
+        "assetRef": "node-Y",
+        "timeMs": 460000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 460200,
+        "sourceRoot": "source:y2",
+        "originEventId": "origin:y2",
+        "statement": "Synthetic supplied compromise_evidence for node-Y"
+      },
+      {
+        "id": "y5",
+        "concept": "source_correction",
+        "assetRef": "node-Y",
+        "timeMs": 469000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 469200,
+        "sourceRoot": "source:y5",
+        "originEventId": "origin:y5",
+        "statement": "Synthetic supplied source_correction for node-Y",
+        "retracts": [
+          "y2"
+        ]
+      },
+      {
+        "id": "y8",
+        "concept": "credential_activity",
+        "assetRef": "node-Y",
+        "timeMs": 477000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 477200,
+        "sourceRoot": "source:y8",
+        "originEventId": "origin:y8",
+        "statement": "Synthetic supplied credential_activity for node-Y"
+      }
+    ],
+    "source": {
+      "id": "F-1230",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": false
+    },
+    "steps": [
+      {
+        "asOfMs": 460200,
+        "target": {
+          "asOfMs": 460200,
+          "nodes": [
+            {
+              "id": "obs:y2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-Y",
+              "status": "observed",
+              "evidenceRefs": [
+                "y2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-Y",
+              "status": "supported",
+              "evidenceRefs": [
+                "y2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:y2",
+              "from": "obs:y2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "y2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "y2"
+            ],
+            "rationale": "Current reviewed primary compromise: y2. Retired access assertions: none. The current support warrants critical."
+          },
+          "change": {
+            "evidenceRefs": [
+              "y2"
+            ],
+            "summary": "Newly available reports y2 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 469200,
+        "target": {
+          "asOfMs": 469200,
+          "nodes": [
+            {
+              "id": "obs:y2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-Y",
+              "status": "retracted",
+              "evidenceRefs": [
+                "y2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:y5",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "node-Y",
+              "status": "observed",
+              "evidenceRefs": [
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-Y",
+              "status": "weakened",
+              "evidenceRefs": [
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:y2",
+              "from": "obs:y2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "y2",
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:y5:y2",
+              "from": "obs:y5",
+              "to": "obs:y2",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "y5"
+            ],
+            "rationale": "Primary access support is absent after excluding y2; remaining evidence is contextual."
+          },
+          "change": {
+            "evidenceRefs": [
+              "y5"
+            ],
+            "summary": "Correction y5 withdraws reports y2 by originating event; preserve their retired history."
+          }
+        }
+      },
+      {
+        "asOfMs": 477200,
+        "target": {
+          "asOfMs": 477200,
+          "nodes": [
+            {
+              "id": "obs:y2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "node-Y",
+              "status": "retracted",
+              "evidenceRefs": [
+                "y2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:y5",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "node-Y",
+              "status": "observed",
+              "evidenceRefs": [
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:y8",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "node-Y",
+              "status": "observed",
+              "evidenceRefs": [
+                "y8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "node-Y",
+              "status": "weakened",
+              "evidenceRefs": [
+                "y5",
+                "y8"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:y2",
+              "from": "obs:y2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "y2",
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:y8",
+              "from": "obs:y8",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "y8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "correct:y5:y2",
+              "from": "obs:y5",
+              "to": "obs:y2",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "y5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "y5",
+              "y8"
+            ],
+            "rationale": "Primary access support is absent after excluding y2; remaining evidence is contextual."
+          },
+          "change": {
+            "evidenceRefs": [
+              "y8"
+            ],
+            "summary": "Newly available reports y8 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      }
+    ]
+  }
+]

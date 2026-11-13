@@ -1,0 +1,7 @@
+{
+  "matchedKnownPromptHashes": 18,
+  "trainingRows": 20,
+  "maxTrainingTokens": 2403,
+  "maxReferenceAnswerTokens": 857,
+  "noTruncation": true
+}

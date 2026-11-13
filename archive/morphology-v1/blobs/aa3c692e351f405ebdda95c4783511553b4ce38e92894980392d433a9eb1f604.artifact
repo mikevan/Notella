@@ -1,0 +1,130 @@
+{
+  "complete": true,
+  "matchedPromptPairs": 10,
+  "conditions": {
+    "base": {
+      "completed": 10,
+      "expected": 10,
+      "finalized": true,
+      "counts": {
+        "jsonValid": 6,
+        "schemaValid": 3,
+        "contractValid": 0,
+        "criticalityMatch": 3,
+        "assessmentEvidenceMatch": 4,
+        "nodesMatch": 0,
+        "edgesMatch": 0,
+        "fullStateMatch": 0,
+        "tokenLimitReached": 4
+      },
+      "errors": {
+        "$: unknown fields": 2,
+        "$.edges[2].evidenceRefs: array length": 1,
+        "Observation retraction status mismatch": 2,
+        "Expecting ',' delimiter: line 191 column 25 (char 5361)": 1,
+        "Unknown/self edge endpoint": 1,
+        "Unterminated string starting at: line 25 column 13 (char 6720)": 1,
+        "Unterminated string starting at: line 178 column 9 (char 5491)": 1,
+        "Unterminated string starting at: line 186 column 7 (char 5107)": 1
+      },
+      "criticalityConfusion": [
+        {
+          "expected": "contextual",
+          "generated": "<unreadable>",
+          "count": 2
+        },
+        {
+          "expected": "contextual",
+          "generated": "contextual",
+          "count": 2
+        },
+        {
+          "expected": "critical",
+          "generated": "<unreadable>",
+          "count": 2
+        },
+        {
+          "expected": "critical",
+          "generated": "critical",
+          "count": 1
+        },
+        {
+          "expected": "critical",
+          "generated": "high",
+          "count": 3
+        }
+      ],
+      "generationSeconds": 1229.640000000014
+    },
+    "adapted": {
+      "completed": 10,
+      "expected": 10,
+      "finalized": true,
+      "counts": {
+        "jsonValid": 8,
+        "schemaValid": 8,
+        "contractValid": 2,
+        "criticalityMatch": 3,
+        "assessmentEvidenceMatch": 5,
+        "nodesMatch": 2,
+        "edgesMatch": 2,
+        "fullStateMatch": 1,
+        "tokenLimitReached": 2
+      },
+      "errors": {
+        "<none>": 2,
+        "Undeclared ontology relationship": 2,
+        "Edge match counts inconsistent": 1,
+        "Observation retraction status mismatch": 1,
+        "Cross-asset links require a future explicit bridge contract": 1,
+        "Unknown/self edge endpoint": 1,
+        "Unterminated string starting at: line 1 column 109 (char 108)": 1,
+        "Unterminated string starting at: line 1 column 115 (char 114)": 1
+      },
+      "criticalityConfusion": [
+        {
+          "expected": "contextual",
+          "generated": "<unreadable>",
+          "count": 1
+        },
+        {
+          "expected": "contextual",
+          "generated": "contextual",
+          "count": 2
+        },
+        {
+          "expected": "contextual",
+          "generated": "critical",
+          "count": 1
+        },
+        {
+          "expected": "critical",
+          "generated": "<unreadable>",
+          "count": 1
+        },
+        {
+          "expected": "critical",
+          "generated": "contextual",
+          "count": 3
+        },
+        {
+          "expected": "critical",
+          "generated": "critical",
+          "count": 1
+        },
+        {
+          "expected": "critical",
+          "generated": "high",
+          "count": 1
+        }
+      ],
+      "generationSeconds": 999.2339999999967
+    }
+  },
+  "releaseEligible": false,
+  "limits": [
+    "Same-author synthetic development, not independent field evidence.",
+    "Full-prefix reconstruction, not delta inference or phone performance.",
+    "Partial conditions cannot establish training benefit."
+  ]
+}

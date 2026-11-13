@@ -1,0 +1,27 @@
+{
+  "reviewer": {
+    "name": "Codex",
+    "independent": false
+  },
+  "trainingAdmission": true,
+  "ruleReferenceUnchanged": true,
+  "ontologyUnchanged": true,
+  "trainingRows": 20,
+  "uniqueTrainingPrefixes": 20,
+  "trainingTemplates": 7,
+  "trainingAuthoredFamilies": 1,
+  "labels": {
+    "critical": 8,
+    "contextual": 9,
+    "high": 3
+  },
+  "knownDiagnosticPrefixes": 10,
+  "freshEvaluationPrefixes": 8,
+  "checks": [
+    "Explicit criticality trajectories asserted against unchanged rule reference",
+    "Retractions invalidate originating events and reposts",
+    "Scoped benign explanations do not clear separate compromise",
+    "New training events/identities/contexts; no copied development outputs",
+    "Same-author synthetic motifs, not independent field evidence; known diagnostic semantic motifs are now intentionally taught through new contrasts"
+  ]
+}

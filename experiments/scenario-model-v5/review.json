@@ -1,0 +1,29 @@
+{
+  "reviewer": {
+    "name": "Codex",
+    "independent": false
+  },
+  "trainingAdmission": true,
+  "trainingRows": 20,
+  "uniqueTrainingPrefixes": 20,
+  "trainingTemplates": 10,
+  "trainingAuthoredFamilies": 1,
+  "labels": {
+    "critical": 11,
+    "contextual": 7,
+    "high": 2
+  },
+  "knownDiagnosticPrefixes": 18,
+  "freshPrefixes": 6,
+  "ontologyAndRuleUnchanged": true,
+  "intervention": [
+    "More before/after correction contrasts, including surviving independent compromise and remaining high/contextual support",
+    "Scope is explicit in short fact-specific rationales with current and retired IDs",
+    "Change summaries describe the update without repeating assessment rationale",
+    "Selected before/after prefixes; no copied evaluation outputs or targets"
+  ],
+  "limits": [
+    "Same-author synthetic motifs informed by inspected failures, not independent validation",
+    "No change to decoder, output format, input representation, loss or training settings"
+  ]
+}

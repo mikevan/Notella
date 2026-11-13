@@ -1,0 +1,2 @@
+{"jobId": "f73e5902592f4554b78a790b47464b83", "status": "running"}
+{"jobId": "f73e5902592f4554b78a790b47464b83", "applied": 80, "skipped": 0, "finite": true, "adapter": "C:\\workspace\\Notella\\runtime\\scenario-model-v4\\store\\jobs\\f73e5902592f4554b78a790b47464b83\\adapter", "releaseEligible": false}

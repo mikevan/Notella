@@ -1,0 +1,65 @@
+"""Materialize inspectable synthetic teaching cases; no model-generated labels."""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent
+concepts={
+ 'observation':'A measured or reported event with source, place, time and uncertainty.',
+ 'temporal_precedence':'Event A precedes B only if their uncertainty intervals do not overlap.',
+ 'spatial_overlap':'Locations overlap within the supplied measurement uncertainty.',
+ 'source_independence':'Separate reports are not independent when they derive from one observation.',
+ 'causal_claim':'Requires evidence beyond temporal association; actor attribution is a separate claim.',
+ 'warning_posture':'Precautionary urgency under a named policy; not probability of attack.',
+ 'signal_identity':'Generic RF energy is not confirmed drone identification.',
+ 'disruption_identity':'An outage is not sufficient evidence of deliberate denial of service.',
+ 'counterevidence':'Benign explanations, reversed order and absent corroboration constrain an interpretation.'}
+policy=dict(id='civilian-precaution-v0.1',status='proposed-project-policy-not-field-validated',
+ critical='Extremely high precautionary posture when a supplied credible ongoing threat context coincides with credible local deliberate Wi-Fi disruption followed shortly by independently corroborated drone presence in the same area.',
+ high='Maintain high precautionary concern in the supplied ongoing-threat context when one supporting sensor identity, time or location is uncertain; explain the missing link.',
+ contextual='If the combined trigger fails, assess each credible hazard separately; do not erase the underlying threat context.',
+ timing='The 120-second example window is a synthetic policy parameter, not a validated universal attack precursor.',
+ action='Recommend prompt use of the locally established civilian safety plan and trusted warning channels; do not direct confrontation or claim a safe route.',
+ certainty='Never equate critical precautionary posture with proof of causation, actor identity, or a certain impending attack.')
+(ROOT/'ontology.json').write_text(json.dumps(dict(version='0.1.0',concepts=concepts,warningPolicy=policy),indent=2)+'\n',encoding='utf-8')
+
+# Each family stays in one split. Variants are parameter changes, not independent incidents.
+specs=[
+ ('train','credible-sequence','critical','Credible local disruption is followed by corroborated drone presence.','The combined observations meet the supplied policy for an extremely high precautionary threat posture. A possible looming attack warrants urgent protective attention; timing does not prove a shared cause.'),
+ ('train','generic-rf','high','An unidentified radio signal does not confirm a drone.','Maintain high precautionary concern given the supplied ongoing threat, but the combined critical trigger is unconfirmed because the signal identity is unresolved.'),
+ ('train','outage-only','high','A Wi-Fi outage and drone report require urgent review.','High precautionary concern is justified in this context, but an outage alone does not establish deliberate Wi-Fi denial of service or satisfy the combined critical trigger.'),
+ ('train','reversed-order','contextual','Drone presence precedes the disruption in these observations.','The specific disruption-then-drone sequence is absent. Assess the credible drone hazard urgently under the local safety plan without claiming the proposed precursor pattern occurred.'),
+ ('train','missing-clock','high','Unknown timestamps prevent establishing the event order.','Maintain high precautionary concern in the supplied ongoing-threat setting. The combined time-bounded critical trigger cannot be verified.'),
+ ('train','distant-location','contextual','The drone observation is outside the affected camp area.','The supplied locations do not support a local combined precursor. Assess the camp disruption and distant drone report separately; the wider threat context remains.'),
+ ('train','benign-operations','contextual','Known maintenance and an authorized aid drone explain these observations.','The supplied corroborated benign explanations do not support the proposed attack precursor. The standing regional threat remains a separate concern.'),
+ ('train','duplicate-reports','high','Multiple drone reports repeat the same unverified source.','Maintain high precautionary concern, but duplicated reports do not independently corroborate drone presence or complete the critical trigger.'),
+ ('train','outside-window','contextual','The drone observation is later than the supplied linking window.','The observed delay exceeds this policy window. This does not prove the events are unrelated or remove the drone hazard; the specific critical combined trigger is not met.'),
+ ('train','overlapping-clock','high','Clock uncertainty prevents confirming disruption before drone presence.','High precautionary concern remains appropriate, but overlapping time intervals do not establish the required order.'),
+ ('validation','heldout-corrob-sequence','critical','Corroborated drone presence follows credible local disruption.','Apply an extremely high precautionary threat posture under the supplied policy and use the established civilian safety plan promptly. The warning is not proof that an attack will occur.'),
+ ('validation','heldout-unknown-signal','high','The later signal has no verified drone identity.','Maintain high precautionary concern while seeking trusted corroboration; the critical combined trigger is unconfirmed.'),
+ ('test','unseen-camp-sequence','critical','Independent observations support the local disruption-then-drone warning pattern.','This meets the proposed policy for an extremely high precautionary threat posture. Treat a possible impending attack as an urgent warning, with causal and actor attribution still unresolved.'),
+ ('test','unseen-no-time','high','The supplied observations lack a common clock.','High precautionary concern is warranted by the context and observations. A time-bounded critical combined warning cannot be established.'),
+ ('test','unseen-benign','contextual','The supplied events have verified benign explanations.','Do not label these events a coordinated attack precursor. Preserve the standing threat context and assess any new credible hazards separately.')]
+cases=[]
+for family_index,(split,family,posture,headline,meaning) in enumerate(specs):
+ for variant in range(3 if split=='train' else 1):
+    start=10000+variant*17000+family_index*2341; delay=[18000,47000,93000][variant]
+    o=dict(context='Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.',
+      location='camp-'+('B' if split=='test' else 'A'),timeBasis='relative milliseconds on a shared clock',
+      disruption=dict(kind='credible independently reviewed deliberate Wi-Fi denial of service',timeMs=start,uncertaintyMs=100,location='camp-area',source='network-monitor'),
+      drone=dict(kind='corroborated drone presence',timeMs=start+delay,uncertaintyMs=100,location='camp-area',sources=['visual-observer','independent-acoustic-sensor']),
+      linkingWindowMs=120000)
+    if 'generic' in family or 'unknown-signal' in family: o['drone'].update(kind='unidentified RF signature; drone classifier uncertain',sources=['rf-sensor'])
+    if family=='outage-only':o['disruption']['kind']='Wi-Fi outage; cause unknown'
+    if family=='reversed-order':o['drone']['timeMs']=start-20000
+    if 'missing-clock' in family or 'no-time' in family:o['drone']['timeMs']=None;o['timeBasis']='clock alignment unknown'
+    if family=='distant-location':o['drone']['location']='verified different area 20 km away'
+    if 'benign' in family:o['disruption']['kind']='verified scheduled maintenance outage';o['drone']['kind']='verified authorized humanitarian aid drone'
+    if family=='duplicate-reports':o['drone'].update(kind='unverified drone report',sources=['social repost 1 derived from report X','social repost 2 derived from report X'])
+    if family=='outside-window':o['drone']['timeMs']=start+3600000
+    if family=='overlapping-clock':o['disruption']['uncertaintyMs']=60000;o['drone']['uncertaintyMs']=60000
+    answer=dict(schemaVersion=1,headline=headline,significance=meaning,
+       limitations='These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.',
+       passiveNextStep='Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.',
+       factReferences=['capture_summary','review_policy'])
+    cases.append(dict(id=f'ontoforge-{family}-{variant}',family=family,split=split,concepts=list(concepts),expectedPosture=posture,observations=o,answer=answer))
+(ROOT/'cases.json').write_text(json.dumps(cases,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+print(f'Wrote {len(cases)} synthetic examples across {len(specs)} families')

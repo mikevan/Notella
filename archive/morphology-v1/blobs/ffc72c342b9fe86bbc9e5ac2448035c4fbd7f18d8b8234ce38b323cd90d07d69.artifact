@@ -1,0 +1,47 @@
+{
+  "trainingExamples": 30,
+  "postureCounts": {
+    "critical": 3,
+    "high": 15,
+    "contextual": 12
+  },
+  "exactInputConflicts": [],
+  "approximateFieldTokenShares": {
+    "causation": 0.1168,
+    "combinedTrigger": 0.0806,
+    "limitation": 0.3972,
+    "posture": 0.0748,
+    "reason": 0.3306
+  },
+  "fieldTokenCountingNote": "Tokenize each field separately; boundaries differ from full answer tokenization. Approximate descriptive accounting, not exact training-loss attribution.",
+  "criticalTrainingSourceChecks": [
+    {
+      "id": "explicit-ontoforge-credible-sequence-0",
+      "listedSources": [
+        "visual-observer",
+        "independent-acoustic-sensor"
+      ],
+      "droneKind": "corroborated drone presence",
+      "targetPosture": "critical"
+    },
+    {
+      "id": "explicit-ontoforge-credible-sequence-1",
+      "listedSources": [
+        "visual-observer",
+        "independent-acoustic-sensor"
+      ],
+      "droneKind": "corroborated drone presence",
+      "targetPosture": "critical"
+    },
+    {
+      "id": "explicit-ontoforge-credible-sequence-2",
+      "listedSources": [
+        "visual-observer",
+        "independent-acoustic-sensor"
+      ],
+      "droneKind": "corroborated drone presence",
+      "targetPosture": "critical"
+    }
+  ],
+  "interpretation": "No exact conflicting input/answer pairs detected. Critical examples are 3/30. Repeated fields dominate much of the target. These observations motivate a balanced discriminative-objective experiment, but do not establish the cause of failure."
+}

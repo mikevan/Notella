@@ -1,0 +1,295 @@
+{
+  "name": "Network episode semantic interpretation",
+  "version": "0.1.0-development",
+  "concepts": {
+    "reconnaissance": "An observed scan of an identified asset; not proof of compromise.",
+    "credential_activity": "Observed authentication failures; not proof of successful access.",
+    "compromise_evidence": "A supplied reviewed assertion of unauthorized privileged access; authenticity is established outside this model.",
+    "benign_operation": "A supplied reviewed explanation for explicitly referenced observations; not a universal clearance.",
+    "source_correction": "An explicit retraction of earlier available evidence; retain the claim and its correction.",
+    "attack_hypothesis": "A scoped interpretation of potentially related hostile activity, distinct from causal proof or perpetrator attribution."
+  },
+  "relations": [
+    {
+      "subject": "reconnaissance",
+      "predicate": "supports",
+      "object": "attack_hypothesis"
+    },
+    {
+      "subject": "credential_activity",
+      "predicate": "supports",
+      "object": "attack_hypothesis"
+    },
+    {
+      "subject": "compromise_evidence",
+      "predicate": "supports",
+      "object": "attack_hypothesis"
+    },
+    {
+      "subject": "benign_operation",
+      "predicate": "contradicts",
+      "object": "attack_hypothesis"
+    },
+    {
+      "subject": "source_correction",
+      "predicate": "contradicts",
+      "object": "compromise_evidence"
+    },
+    {
+      "subject": "reconnaissance",
+      "predicate": "precedes",
+      "object": "credential_activity"
+    },
+    {
+      "subject": "credential_activity",
+      "predicate": "precedes",
+      "object": "compromise_evidence"
+    }
+  ],
+  "instruction": "The ontology represents the semantic model. Reconstruct the evidence-backed semantic state from only the visible episode prefix and interpret its morphology. Preserve observations, duplicates, corrections and previous graph identities. Use policy network-episode-policy-v1-development: primary asset only; retractions invalidate all reports of the retracted underlying event. A current supplied reviewed compromise_evidence assertion warrants critical. Otherwise reconnaissance followed by credential_activity on the primary asset, with strictly supported order and an entire delay interval within 120000 ms, warrants high. Either alone is contextual. A benign_operation negates this scan/credential association only when its explains list covers both reports; it does not negate separate compromise evidence. Unresolved clocks or uncertain order for an otherwise relevant pair require review, not a guessed link. After a compromise retraction reassess the remaining evidence. Do not link unrelated assets, turn report counts into independent corroboration, or infer causation, actor identity or numerical attack probability. Full-prefix reconstruction is not evidence of persistent model memory.",
+  "outputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "asOfMs",
+      "nodes",
+      "edges",
+      "assessment",
+      "change"
+    ],
+    "properties": {
+      "asOfMs": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "nodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "concept",
+            "assetRef",
+            "status",
+            "evidenceRefs",
+            "counts"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "observation",
+                "hypothesis"
+              ]
+            },
+            "concept": {
+              "type": "string",
+              "enum": [
+                "reconnaissance",
+                "credential_activity",
+                "compromise_evidence",
+                "benign_operation",
+                "source_correction",
+                "attack_hypothesis"
+              ]
+            },
+            "assetRef": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "observed",
+                "retracted",
+                "proposed",
+                "supported",
+                "weakened",
+                "withdrawn"
+              ]
+            },
+            "evidenceRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "counts": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "reportCount",
+                "underlyingEventCount",
+                "provenanceRootCount"
+              ],
+              "properties": {
+                "reportCount": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "underlyingEventCount": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "provenanceRootCount": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "edges": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "from",
+            "to",
+            "relation",
+            "status",
+            "evidenceRefs",
+            "counts"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "from": {
+              "type": "string",
+              "minLength": 1
+            },
+            "to": {
+              "type": "string",
+              "minLength": 1
+            },
+            "relation": {
+              "type": "string",
+              "enum": [
+                "supports",
+                "contradicts",
+                "precedes"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "active",
+                "inactive"
+              ]
+            },
+            "evidenceRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "counts": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "reportCount",
+                "underlyingEventCount",
+                "provenanceRootCount"
+              ],
+              "properties": {
+                "reportCount": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "underlyingEventCount": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "provenanceRootCount": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "assessment": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "criticality",
+          "status",
+          "evidenceRefs",
+          "rationale"
+        ],
+        "properties": {
+          "criticality": {
+            "type": "string",
+            "enum": [
+              "contextual",
+              "high",
+              "critical"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "assessed",
+              "review_required"
+            ]
+          },
+          "evidenceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "change": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidenceRefs",
+          "summary"
+        ],
+        "properties": {
+          "evidenceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

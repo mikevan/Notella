@@ -1,0 +1,13 @@
+{
+  "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+  "curriculumId": "4dc3f1c8342566619d9bd25c72a089d30af5b98c6a397943676945e631a39012",
+  "planId": "ae78f700aa90141a0f4b42bbe368b0b35a5bc0e8bbebaafb57e486579cafed19",
+  "trainingRows": 20,
+  "validationRows": 10,
+  "trainingFamilies": 1,
+  "validationFamilies": 2,
+  "evaluationSha256": "c677a3138acdbb8fead002a3fc4b835d99dc228678fbc9e43bac3c9054daec88",
+  "model": "C:/workspace/TUltra-Project/LayerTime/tools/ai-training/models/qwen3-4b-instruct-2507",
+  "previousAttempt": "scenario-model-v1",
+  "memoryChange": "Checkpointed token-chunk FP32 cross entropy; identical dataset/plan; new fresh adapters."
+}

@@ -1,0 +1,11 @@
+# Preserve hash-bound historical artifacts exactly, including original line endings.
+archive/morphology-v1/** -text
+archive/morphology-v1/blobs/** binary
+experiments/** -text
+checkpoint/morphology-v1* -text
+checkpoint/MORPHOLOGY-V1* -text
+Check-In-MorphologyV1.ps1 -text
+training_engine/train_lora.py text eol=lf
+training_engine/completion_loss.py text eol=lf
+training_engine/frozen_cpu_layers.py text eol=lf
+training_engine/PROVENANCE.json text eol=lf

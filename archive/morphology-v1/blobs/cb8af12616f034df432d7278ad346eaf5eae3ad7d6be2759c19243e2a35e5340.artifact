@@ -1,0 +1,312 @@
+{
+  "synthetic": true,
+  "modelCalled": false,
+  "events": [
+    {
+      "endMs": 1000,
+      "activeIntercepts": 1,
+      "added": [
+        "wifi-1"
+      ],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "broad",
+        "broadMonitoring": true,
+        "activeIncidentIds": [],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 2000,
+      "activeIntercepts": 1,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "broad",
+        "broadMonitoring": true,
+        "activeIncidentIds": [],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 3000,
+      "activeIntercepts": 1,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "broad",
+        "broadMonitoring": true,
+        "activeIncidentIds": [],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 4000,
+      "activeIntercepts": 1,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "broad",
+        "broadMonitoring": true,
+        "activeIncidentIds": [],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 5000,
+      "activeIntercepts": 2,
+      "added": [
+        "drone-1"
+      ],
+      "expired": [],
+      "newEdges": 1,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ]
+      }
+    },
+    {
+      "endMs": 6000,
+      "activeIntercepts": 2,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 7000,
+      "activeIntercepts": 3,
+      "added": [
+        "related-1"
+      ],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ]
+      }
+    },
+    {
+      "endMs": 8000,
+      "activeIntercepts": 3,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 9000,
+      "activeIntercepts": 3,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 10000,
+      "activeIntercepts": 3,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 11000,
+      "activeIntercepts": 3,
+      "added": [
+        "other-1"
+      ],
+      "expired": [
+        "wifi-1"
+      ],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ]
+      }
+    },
+    {
+      "endMs": 12000,
+      "activeIntercepts": 3,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 13000,
+      "activeIntercepts": 3,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 14000,
+      "activeIntercepts": 3,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    },
+    {
+      "endMs": 15000,
+      "activeIntercepts": 2,
+      "added": [],
+      "expired": [
+        "drone-1"
+      ],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ]
+      }
+    },
+    {
+      "endMs": 16000,
+      "activeIntercepts": 2,
+      "added": [],
+      "expired": [],
+      "newEdges": 0,
+      "plan": {
+        "mode": "focused",
+        "broadMonitoring": true,
+        "activeIncidentIds": [
+          "incident:wifi-1->drone-1"
+        ],
+        "priorityIncidentIds": []
+      }
+    }
+  ],
+  "incidents": {
+    "incident:wifi-1->drone-1": {
+      "id": "incident:wifi-1->drone-1",
+      "status": "focused",
+      "openedRevision": 5,
+      "entityKeys": [
+        "camp-A"
+      ],
+      "evidence": {
+        "wifi-1": {
+          "id": "wifi-1",
+          "observedAtMs": 1000,
+          "availableAtMs": 1000,
+          "payload": {
+            "site": "camp-A",
+            "kind": "wifi_disruption"
+          }
+        },
+        "drone-1": {
+          "id": "drone-1",
+          "observedAtMs": 5000,
+          "availableAtMs": 5000,
+          "payload": {
+            "site": "camp-A",
+            "kind": "drone_signature"
+          }
+        },
+        "related-1": {
+          "id": "related-1",
+          "observedAtMs": 7000,
+          "availableAtMs": 7000,
+          "payload": {
+            "site": "camp-A",
+            "kind": "unidentified_signal"
+          }
+        }
+      },
+      "decisions": [
+        {
+          "revision": 5,
+          "reason": "Same-site Wi-Fi disruption followed by drone signature: precautionary focused tracking; causation unproven"
+        },
+        {
+          "revision": 5,
+          "reason": "Additional related report retained"
+        },
+        {
+          "revision": 7,
+          "reason": "Additional related report retained"
+        }
+      ],
+      "lastRevision": 7
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{"trainingTokenLengths": [1183, 1183, 1184, 1168, 1168, 1169, 1175, 1175, 1176, 1177, 1178, 1178, 1161, 1161, 1161, 1180, 1180, 1181, 1165, 1165, 1166, 1175, 1175, 1176, 1181, 1181, 1181, 1168, 1168, 1169], "validationTokenLengths": [1180, 1161]}
+{'loss': 4.3504, 'grad_norm': 5.958414293990543, 'learning_rate': 5e-05, 'epoch': 0.03}
+{'loss': 4.1529, 'grad_norm': 4.938329018813693, 'learning_rate': 2.5e-05, 'epoch': 0.07}
+{'train_runtime': 21.6253, 'train_samples_per_second': 0.092, 'train_steps_per_second': 0.092, 'train_loss': 4.251657485961914, 'epoch': 0.07}

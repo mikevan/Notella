@@ -1,0 +1,7 @@
+{
+  "ontologyId": "6ecf51e574acbb029d0ca75a6a86ace590779058c89d0dfb3f6fd09886fb3c88",
+  "curriculumId": "0139546347ccdbe99d84d403df28403bd818a808587e465f08daba87facf9203",
+  "trainedCurriculumId": "8b7a7cdcf1ac7f456be982f66b4a65a4dd11ccd8e975fa80bbdc562d67e5f25f",
+  "trainingStarted": false,
+  "purpose": "Predeclared synthetic robustness probes; no new training"
+}

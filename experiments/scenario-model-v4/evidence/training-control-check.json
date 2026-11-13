@@ -1,0 +1,28 @@
+{
+  "actualCommandsMatchExceptSnapshotDatasetAndOutput": true,
+  "command": [
+    "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\.venv\\Scripts\\python.exe",
+    "<snapshot-engine>",
+    "--dataset",
+    "<run-specific-path>",
+    "--base-model",
+    "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+    "--output",
+    "<run-specific-path>",
+    "--domain",
+    "--qlora",
+    "--cpu-frozen-layers",
+    "--max-steps",
+    "80",
+    "--checkpoint-steps",
+    "80",
+    "--lora-rank",
+    "16",
+    "--lora-alpha",
+    "32",
+    "--learning-rate",
+    "0.0001",
+    "--initial-loss-scale",
+    "256"
+  ]
+}

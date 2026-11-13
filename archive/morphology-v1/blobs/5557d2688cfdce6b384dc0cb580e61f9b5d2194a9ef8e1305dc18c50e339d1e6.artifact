@@ -1,0 +1,67 @@
+"""Explicit broad-monitoring / focused-incident lifecycle; no detection policy."""
+import copy
+from .core import canonical, check
+
+
+class FocusMonitor:
+    """Caller validates triggers and supplies related entity keys and evidence.
+
+    Focus never expires with a capture window. Keep broad collection running.
+    This in-memory store must be persisted by the application for restart safety.
+    """
+    def __init__(self, max_incidents=100, max_evidence_bytes=67108864):
+        check(type(max_incidents) is int and max_incidents > 0, 'Positive incident capacity required')
+        check(type(max_evidence_bytes) is int and max_evidence_bytes > 0, 'Positive evidence capacity required')
+        self.max_incidents = max_incidents
+        self.max_evidence_bytes = max_evidence_bytes
+        self.incidents = {}
+
+    def focus(self, incident_id, revision, reason, entity_keys, evidence):
+        """Open or extend an incident. Capacity/conflict failure leaves it unchanged."""
+        check(isinstance(incident_id, str) and incident_id, 'Incident id required')
+        check(type(revision) is int and revision > 0, 'Positive semantic revision required')
+        check(isinstance(reason, str) and reason.strip(), 'Explain the focus decision')
+        check(isinstance(entity_keys, list) and entity_keys and all(isinstance(k, str) and k for k in entity_keys), 'Explicit related entity keys required')
+        check(isinstance(evidence, list) and evidence, 'Preserve triggering evidence')
+        records = {}
+        for record in evidence:
+            canonical(record)
+            check(isinstance(record, dict) and isinstance(record.get('id'), str) and record['id'], 'Evidence id required')
+            key = record['id']
+            check(key not in records or canonical(records[key]) == canonical(record), 'Conflicting evidence identity')
+            records[key] = copy.deepcopy(record)
+        old = self.incidents.get(incident_id)
+        check(old is None or old['status'] == 'focused', 'Resolved incidents require a new incident id')
+        check(old is None or revision >= old['lastRevision'], 'Cannot backdate an incident update')
+        check(old is not None or len(self.incidents) < self.max_incidents, 'Incident capacity exceeded; archive explicitly')
+        candidate = copy.deepcopy(old) if old else dict(id=incident_id, status='focused', openedRevision=revision, entityKeys=[], evidence={}, decisions=[])
+        for key, record in records.items():
+            check(key not in candidate['evidence'] or canonical(candidate['evidence'][key]) == canonical(record), 'Conflicting retained evidence; append a correction with a new id')
+            candidate['evidence'][key] = record
+        candidate['entityKeys'] = sorted(set(candidate['entityKeys']) | set(entity_keys))
+        candidate['lastRevision'] = revision
+        candidate['decisions'].append(dict(revision=revision, reason=reason))
+        combined = dict(self.incidents); combined[incident_id] = candidate
+        size = sum(len(canonical(i['evidence']).encode('utf-8')) for i in combined.values())
+        check(size <= self.max_evidence_bytes, 'Evidence capacity exceeded; persist/archive explicitly')
+        self.incidents[incident_id] = candidate
+        return copy.deepcopy(candidate)
+
+    def resolve(self, incident_id, revision, reason, basis):
+        """Explicit application decision; basis is evidence review or timeout policy."""
+        check(incident_id in self.incidents and self.incidents[incident_id]['status'] == 'focused', 'Active incident required')
+        check(type(revision) is int and revision >= self.incidents[incident_id]['lastRevision'], 'Cannot backdate resolution')
+        check(isinstance(reason, str) and reason.strip(), 'Resolution rationale required')
+        check(basis in ('evidence_review', 'timeout_policy'), 'Explicit resolution basis required')
+        item = self.incidents[incident_id]
+        item.update(status='resolved', lastRevision=revision, resolution=dict(revision=revision, reason=reason, basis=basis))
+        return copy.deepcopy(item)
+
+    def plan(self, changed_entity_keys):
+        check(isinstance(changed_entity_keys, list) and all(isinstance(k, str) for k in changed_entity_keys), 'Changed entity keys required')
+        active = [i for i in self.incidents.values() if i['status'] == 'focused']
+        affected = sorted(i['id'] for i in active if set(i['entityKeys']) & set(changed_entity_keys))
+        return dict(mode='focused' if active else 'broad', broadMonitoring=True, activeIncidentIds=sorted(i['id'] for i in active), priorityIncidentIds=affected)
+
+    def snapshot(self):
+        return copy.deepcopy(self.incidents)

@@ -1,0 +1,5 @@
+{
+  "appliedUpdates": 0,
+  "reason": "Longest-example check made no optimizer update near GPU capacity; chunked GPU loss alone did not establish a working configuration.",
+  "recordedAtUtc": "2026-11-13T03:02:20.3305198Z"
+}

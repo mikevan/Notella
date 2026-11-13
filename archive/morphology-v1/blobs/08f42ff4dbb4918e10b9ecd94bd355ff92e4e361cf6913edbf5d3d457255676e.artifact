@@ -1,0 +1,32 @@
+"""Hash-bound reviews of generated teaching candidates; never grant training permission."""
+import hashlib
+from .core import canonical,check
+
+def record_teacher_review(api,candidate,reviewer,criteria,judgments):
+    value=dict(candidate);identity=value.pop('resultId',None)
+    check(identity==hashlib.sha256(canonical(value).encode()).hexdigest(),'Candidate integrity mismatch')
+    check(candidate.get('outputSha256')==hashlib.sha256(candidate['output'].encode()).hexdigest(),'Output integrity mismatch')
+    check(candidate.get('admittedForTraining') is False,'Expected an unadmitted candidate')
+    check(isinstance(reviewer,dict) and isinstance(reviewer.get('name'),str) and reviewer['name'].strip(),'Reviewer name required')
+    check(reviewer.get('kind') in ('human','agent') and type(reviewer.get('independent')) is bool,'Reviewer kind and asserted independence required')
+    check(isinstance(criteria,list) and bool(criteria),'Review criteria required')
+    ids=[]
+    for criterion in criteria:
+        check(isinstance(criterion,dict) and isinstance(criterion.get('id'),str) and criterion['id'] and isinstance(criterion.get('requirement'),str) and criterion['requirement'].strip(),'Criterion identity and requirement required')
+        ids.append(criterion['id'])
+    check(len(ids)==len(set(ids)),'Duplicate criterion id')
+    check(isinstance(judgments,list) and len(judgments)==len(ids),'Every criterion requires a judgment')
+    judged=[]
+    for judgment in judgments:
+        check(isinstance(judgment,dict) and judgment.get('criterion') in ids,'Unknown judgment criterion')
+        check(judgment.get('status') in ('pass','fail','uncertain'),'Invalid judgment status')
+        check(isinstance(judgment.get('rationale'),str) and judgment['rationale'].strip(),'Judgment rationale required')
+        judged.append(judgment['criterion'])
+    check(set(judged)==set(ids) and len(judged)==len(set(judged)),'Missing or repeated judgment')
+    statuses={j['status'] for j in judgments}
+    disposition='rejected' if 'fail' in statuses else 'needs_review' if 'uncertain' in statuses else 'review_passed'
+    return api.put('evaluations',dict(formatVersion='notella.teacher-review.v1',candidateResultId=identity,
+        requestId=candidate['requestId'],ontologyId=candidate['ontologyId'],output=candidate['output'],outputSha256=candidate['outputSha256'],
+        reviewer=reviewer,criteria=criteria,judgments=judgments,disposition=disposition,
+        trainingPermissionGranted=False,automaticallyMeasuredSemanticAccuracy=False,releaseEligible=False,
+        limitations=['Reviewer judgments and independence are caller assertions, not verified certification.','Passing review does not admit a curriculum example or establish field accuracy.']))

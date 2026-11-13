@@ -1,0 +1,13 @@
+{
+  "ontologyId": "8309165c6f8fcc3ef1d636ffc82d6d474b9f3a208023c30a4a73286ee5e8816b",
+  "curriculumId": "21fa5925d61caaa0d569fdfe83d6556176d823e9341ce48293dbdcbc8d1104f5",
+  "planId": "4c1ad4d3df70121e50e8afeb2f1359767bde125c726cb0667aa71c4c307dc54b",
+  "splits": {
+    "train": 6,
+    "validation": 2,
+    "test": 0
+  },
+  "trainingStarted": false,
+  "frozenTestLoaded": false,
+  "scope": "Balanced two-family fit diagnostic, not comprehensive warning training or independent qualification"
+}

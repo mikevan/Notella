@@ -1,0 +1,11 @@
+{
+  "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+  "curriculumId": "5594c7c79cefb4eeec8f05897b8942ff177cd7e0cdc2f90ead4ddfd9fb988c13",
+  "planId": "b2e71bb2b9dcf795e712dc0ef001885a35afb43dceec6a177d6b33ae0393288f",
+  "trainingRows": 20,
+  "validationRows": 24,
+  "trainingFamilies": 1,
+  "validationFamilies": 6,
+  "evaluationSha256": "307569bdc52c2fee1020551043ef81fae28898836e4862ad7df7b073492959cb",
+  "model": "C:/workspace/TUltra-Project/LayerTime/tools/ai-training/models/qwen3-4b-instruct-2507"
+}

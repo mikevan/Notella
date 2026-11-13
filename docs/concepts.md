@@ -1,5 +1,9 @@
 # The method, explained
 
+**The ontology represents the semantic model. Our intended AI captures changes in that model over time (morphology) and interprets them. The trainer's job begins with defining that semantic model and its ontology representation.**
+
+Read [Semantic Ontology Morphology](semantic-ontology-morphology.md) for the intended scenario reasoning, evidence-backed nodes and typed edges, and the distinction between an ontology definition and changing scenario state. The examples below introduce the existing training plumbing; they do not demonstrate the full scenario-level method.
+
 ## Start with a distinction the model needs to learn
 
 Suppose a temperature sensor reports 32 degrees Celsius, and a configured rule has a threshold of 30. The observation is 32; the threshold is a policy parameter. The justified interpretation is that the reading exceeds the threshold. Neither number proves a fire or explains why the room warmed.
@@ -8,7 +12,7 @@ A model can produce fluent text while confusing these roles. Notella makes the r
 
 ## Ontology: the structure of the domain
 
-An ontology identifies concepts and relationships. In the tutorial, the concepts are observation, threshold and interpretation. The interpretation is supported by the observation and compared against the threshold. Concepts have definitions; relations have a subject, predicate and object.
+An ontology represents the semantic model through explicit concepts, attributes, identities and relationships. The trainer decides what those elements mean, what evidence supports them and how they should be represented before examples are generated. In the tutorial, the concepts are observation, threshold and interpretation. The interpretation is supported by the observation and compared against the threshold. Concepts have definitions; relations have a subject, predicate and object.
 
 In LayerTime, concepts include temporal precedence, source independence, signal identity, causal claim and warning posture. An urgent warning is a different judgment from an established cause. Keeping those concepts separate is part of the desired behavior.
 
@@ -37,3 +41,7 @@ Each arrow can fail. A wrong definition produces wrong examples. A family leakin
 For the tool: another application can submit a well-defined curriculum and obtain an auditable training job. For the model: held-out, meaningfully different cases receive justified interpretations, including appropriate uncertainty. For deployment: independently reviewed evidence and relevant device/field tests support the intended use.
 
 The first two-update integration probe established tool plumbing. The 742-update LayerTime run established actual training. Neither alone established useful field accuracy.
+
+## Walk through the actual LayerTime ontology
+
+The [LayerTime ontology walkthrough](layertime-ontology.md) explains all nine concepts, the four relationships, the proposed warning policy, ten output combinations and a runnable uncertainty-interval example. It distinguishes ontology meaning, policy choices, input assertions and demonstrated model behavior.

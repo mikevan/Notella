@@ -1,0 +1,7 @@
+{
+  "finalAdapterSaved": false,
+  "appliedUpdates": 19,
+  "reason": "No optimizer progress beyond 19 updates during long-target work with GPU near capacity; memory pressure suspected, no OOM exception reported.",
+  "restartPolicy": "New job and fresh adapter; original data and outputs retained.",
+  "recordedAtUtc": "2026-11-13T02:53:37.7566329Z"
+}

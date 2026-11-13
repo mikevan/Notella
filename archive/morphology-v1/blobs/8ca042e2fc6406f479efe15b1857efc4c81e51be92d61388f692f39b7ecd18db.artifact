@@ -1,0 +1,64 @@
+{"trainingTokenLengths": [2296], "validationTokenLengths": [1508, 1719, 1972, 2192, 2414, 1507, 1651, 1907, 2195, 2410]}
+{"completionStage": "model_forward", "completionTokens": 827}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 827, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 827, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{'loss': 0.6016, 'grad_norm': 1.1905326101766411, 'learning_rate': 0.0001, 'epoch': 1.0}
+{"completionStage": "model_forward", "completionTokens": 827}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 827, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 827, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{'loss': 0.5515, 'grad_norm': 0.8140076378387143, 'learning_rate': 5e-05, 'epoch': 2.0}
+{'train_runtime': 43.9052, 'train_samples_per_second': 0.046, 'train_steps_per_second': 0.046, 'train_loss': 0.576531320810318, 'epoch': 2.0}
+{"completionStage": "model_forward", "completionTokens": 262}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 262, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 262, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 400}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 400, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 400, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 580}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 580, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 580, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 714}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 714, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 714, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 856}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 856, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 856, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 264}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 264, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 264, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 334}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 334, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 334, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 512}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 512, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 512, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 722}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 722, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 722, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}
+{"completionStage": "model_forward", "completionTokens": 857}
+{"completionStage": "frozen_output_forward", "inputShape": [1, 857, 2560], "weightDtype": "torch.float32"}
+{"completionStage": "frozen_output_done", "outputShape": [1, 857, 151936]}
+{"completionStage": "loss", "logitDevice": "cpu"}
+{"completionStage": "loss_ready"}

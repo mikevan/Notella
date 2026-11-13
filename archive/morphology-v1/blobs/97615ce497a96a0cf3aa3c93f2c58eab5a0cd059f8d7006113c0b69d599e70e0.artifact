@@ -1,0 +1,12 @@
+{
+  "jobId": "addcdd4c035443b98b9e52caeef08f40",
+  "appliedUpdates": 60,
+  "skippedUpdates": 0,
+  "allWeightsFinite": true,
+  "matchedPrompts": true,
+  "baseDecisionMatches": 1,
+  "adaptedDecisionMatches": 2,
+  "developmentCases": 2,
+  "semanticAccuracyMeasured": false,
+  "releaseEligible": false
+}

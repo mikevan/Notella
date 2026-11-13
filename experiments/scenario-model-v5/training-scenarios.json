@@ -1,0 +1,3587 @@
+[
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-110",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "appliance-L",
+    "assets": [
+      "appliance-L"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "l1",
+        "concept": "compromise_evidence",
+        "assetRef": "appliance-L",
+        "timeMs": 5000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 5200,
+        "sourceRoot": "source:l1",
+        "originEventId": "origin:l1",
+        "statement": "Synthetic supplied compromise_evidence for appliance-L"
+      },
+      {
+        "id": "l8",
+        "concept": "source_correction",
+        "assetRef": "appliance-L",
+        "timeMs": 13000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 13200,
+        "sourceRoot": "source:l8",
+        "originEventId": "origin:l8",
+        "statement": "Synthetic supplied source_correction for appliance-L",
+        "retracts": [
+          "l1"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-110",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 5200,
+        "target": {
+          "asOfMs": 5200,
+          "nodes": [
+            {
+              "id": "obs:l1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "appliance-L",
+              "status": "observed",
+              "evidenceRefs": [
+                "l1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "appliance-L",
+              "status": "supported",
+              "evidenceRefs": [
+                "l1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:l1",
+              "from": "obs:l1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "l1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "l1"
+            ],
+            "rationale": "l1 supplies active primary access evidence independently of the retired assertions none."
+          },
+          "change": {
+            "evidenceRefs": [
+              "l1"
+            ],
+            "summary": "Newly available reports l1 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 13200,
+        "target": {
+          "asOfMs": 13200,
+          "nodes": [
+            {
+              "id": "obs:l1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "appliance-L",
+              "status": "retracted",
+              "evidenceRefs": [
+                "l1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:l8",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "appliance-L",
+              "status": "observed",
+              "evidenceRefs": [
+                "l8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "appliance-L",
+              "status": "weakened",
+              "evidenceRefs": [
+                "l8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:l1",
+              "from": "obs:l1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "l1",
+                "l8"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:l8:l1",
+              "from": "obs:l8",
+              "to": "obs:l1",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "l8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "l8"
+            ],
+            "rationale": "With l1 retired and no supported primary scan/auth pair, contextual assessment follows."
+          },
+          "change": {
+            "evidenceRefs": [
+              "l8"
+            ],
+            "summary": "Correction l8 withdraws reports l1 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-220",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "bridge-D",
+    "assets": [
+      "bridge-D"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "d2",
+        "concept": "compromise_evidence",
+        "assetRef": "bridge-D",
+        "timeMs": 27000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 27200,
+        "sourceRoot": "source:d2",
+        "originEventId": "origin:d2",
+        "statement": "Synthetic supplied compromise_evidence for bridge-D"
+      },
+      {
+        "id": "d6",
+        "concept": "compromise_evidence",
+        "assetRef": "bridge-D",
+        "timeMs": 27000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 33000,
+        "sourceRoot": "source:d2",
+        "originEventId": "origin:d2",
+        "statement": "Synthetic supplied compromise_evidence for bridge-D"
+      },
+      {
+        "id": "d9",
+        "concept": "source_correction",
+        "assetRef": "bridge-D",
+        "timeMs": 39000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 39200,
+        "sourceRoot": "source:d9",
+        "originEventId": "origin:d9",
+        "statement": "Synthetic supplied source_correction for bridge-D",
+        "retracts": [
+          "d2"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-220",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 33000,
+        "target": {
+          "asOfMs": 33000,
+          "nodes": [
+            {
+              "id": "obs:d2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "bridge-D",
+              "status": "observed",
+              "evidenceRefs": [
+                "d2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:d6",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "bridge-D",
+              "status": "observed",
+              "evidenceRefs": [
+                "d6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "bridge-D",
+              "status": "supported",
+              "evidenceRefs": [
+                "d2",
+                "d6"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:d2",
+              "from": "obs:d2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "d2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:d6",
+              "from": "obs:d6",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "d6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "d2",
+              "d6"
+            ],
+            "rationale": "Current reviewed primary compromise: d2, d6. Retired access assertions: none. The current support warrants critical."
+          },
+          "change": {
+            "evidenceRefs": [
+              "d6"
+            ],
+            "summary": "Newly available reports d6 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 39200,
+        "target": {
+          "asOfMs": 39200,
+          "nodes": [
+            {
+              "id": "obs:d2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "bridge-D",
+              "status": "retracted",
+              "evidenceRefs": [
+                "d2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:d6",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "bridge-D",
+              "status": "retracted",
+              "evidenceRefs": [
+                "d6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:d9",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "bridge-D",
+              "status": "observed",
+              "evidenceRefs": [
+                "d9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "bridge-D",
+              "status": "weakened",
+              "evidenceRefs": [
+                "d9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:d2",
+              "from": "obs:d2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "d2",
+                "d9"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:d6",
+              "from": "obs:d6",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "d6",
+                "d9"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:d9:d2",
+              "from": "obs:d9",
+              "to": "obs:d2",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "d9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "d9"
+            ],
+            "rationale": "Primary access support is absent after excluding d2, d6; remaining evidence is contextual."
+          },
+          "change": {
+            "evidenceRefs": [
+              "d9"
+            ],
+            "summary": "Correction d9 withdraws reports d2,d6 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-330",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "service-H",
+    "assets": [
+      "service-H"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "h1",
+        "concept": "reconnaissance",
+        "assetRef": "service-H",
+        "timeMs": 50000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 50200,
+        "sourceRoot": "source:h1",
+        "originEventId": "origin:h1",
+        "statement": "Synthetic supplied reconnaissance for service-H"
+      },
+      {
+        "id": "h2",
+        "concept": "credential_activity",
+        "assetRef": "service-H",
+        "timeMs": 55000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 55200,
+        "sourceRoot": "source:h2",
+        "originEventId": "origin:h2",
+        "statement": "Synthetic supplied credential_activity for service-H"
+      },
+      {
+        "id": "h3",
+        "concept": "compromise_evidence",
+        "assetRef": "service-H",
+        "timeMs": 61000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 61200,
+        "sourceRoot": "source:h3",
+        "originEventId": "origin:h3",
+        "statement": "Synthetic supplied compromise_evidence for service-H"
+      },
+      {
+        "id": "h8",
+        "concept": "source_correction",
+        "assetRef": "service-H",
+        "timeMs": 69000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 69200,
+        "sourceRoot": "source:h8",
+        "originEventId": "origin:h8",
+        "statement": "Synthetic supplied source_correction for service-H",
+        "retracts": [
+          "h3"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-330",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 61200,
+        "target": {
+          "asOfMs": 61200,
+          "nodes": [
+            {
+              "id": "obs:h1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "service-H",
+              "status": "observed",
+              "evidenceRefs": [
+                "h1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:h2",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "service-H",
+              "status": "observed",
+              "evidenceRefs": [
+                "h2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:h3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "service-H",
+              "status": "observed",
+              "evidenceRefs": [
+                "h3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "service-H",
+              "status": "supported",
+              "evidenceRefs": [
+                "h1",
+                "h2",
+                "h3"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:h1",
+              "from": "obs:h1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "h1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:h2",
+              "from": "obs:h2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "h2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:h3",
+              "from": "obs:h3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "h3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:h1:h2",
+              "from": "obs:h1",
+              "to": "obs:h2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "h1",
+                "h2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:h2:h3",
+              "from": "obs:h2",
+              "to": "obs:h3",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "h2",
+                "h3"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "h1",
+              "h2",
+              "h3"
+            ],
+            "rationale": "Primary-asset access support remains in h3; withdrawn reports (none) are excluded."
+          },
+          "change": {
+            "evidenceRefs": [
+              "h3"
+            ],
+            "summary": "Newly available reports h3 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 69200,
+        "target": {
+          "asOfMs": 69200,
+          "nodes": [
+            {
+              "id": "obs:h1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "service-H",
+              "status": "observed",
+              "evidenceRefs": [
+                "h1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:h2",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "service-H",
+              "status": "observed",
+              "evidenceRefs": [
+                "h2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:h3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "service-H",
+              "status": "retracted",
+              "evidenceRefs": [
+                "h3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:h8",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "service-H",
+              "status": "observed",
+              "evidenceRefs": [
+                "h8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "service-H",
+              "status": "supported",
+              "evidenceRefs": [
+                "h1",
+                "h2",
+                "h8"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:h1",
+              "from": "obs:h1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "h1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:h2",
+              "from": "obs:h2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "h2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:h3",
+              "from": "obs:h3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "h3",
+                "h8"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:h1:h2",
+              "from": "obs:h1",
+              "to": "obs:h2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "h1",
+                "h2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:h2:h3",
+              "from": "obs:h2",
+              "to": "obs:h3",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "h2",
+                "h3",
+                "h8"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "correct:h8:h3",
+              "from": "obs:h8",
+              "to": "obs:h3",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "h8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "h1",
+              "h2",
+              "h8"
+            ],
+            "rationale": "Access reports h3 are withdrawn; the remaining primary scan/authentication sequence supports high concern."
+          },
+          "change": {
+            "evidenceRefs": [
+              "h8"
+            ],
+            "summary": "Correction h8 withdraws reports h3 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-440",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "terminal-G",
+    "assets": [
+      "terminal-G"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "g1",
+        "concept": "reconnaissance",
+        "assetRef": "terminal-G",
+        "timeMs": 80000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 80200,
+        "sourceRoot": "source:g1",
+        "originEventId": "origin:g1",
+        "statement": "Synthetic supplied reconnaissance for terminal-G"
+      },
+      {
+        "id": "g2",
+        "concept": "credential_activity",
+        "assetRef": "terminal-G",
+        "timeMs": 85000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 85200,
+        "sourceRoot": "source:g2",
+        "originEventId": "origin:g2",
+        "statement": "Synthetic supplied credential_activity for terminal-G"
+      },
+      {
+        "id": "g3",
+        "concept": "benign_operation",
+        "assetRef": "terminal-G",
+        "timeMs": 90000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 90200,
+        "sourceRoot": "source:g3",
+        "originEventId": "origin:g3",
+        "statement": "Synthetic supplied benign_operation for terminal-G",
+        "explains": [
+          "g1",
+          "g2"
+        ]
+      },
+      {
+        "id": "g5",
+        "concept": "compromise_evidence",
+        "assetRef": "terminal-G",
+        "timeMs": 97000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 97200,
+        "sourceRoot": "source:g5",
+        "originEventId": "origin:g5",
+        "statement": "Synthetic supplied compromise_evidence for terminal-G"
+      },
+      {
+        "id": "g9",
+        "concept": "source_correction",
+        "assetRef": "terminal-G",
+        "timeMs": 104000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 104200,
+        "sourceRoot": "source:g9",
+        "originEventId": "origin:g9",
+        "statement": "Synthetic supplied source_correction for terminal-G",
+        "retracts": [
+          "g5"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-440",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 97200,
+        "target": {
+          "asOfMs": 97200,
+          "nodes": [
+            {
+              "id": "obs:g1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g2",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g3",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g5",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "terminal-G",
+              "status": "supported",
+              "evidenceRefs": [
+                "g1",
+                "g2",
+                "g3",
+                "g5"
+              ],
+              "counts": {
+                "reportCount": 4,
+                "underlyingEventCount": 4,
+                "provenanceRootCount": 4
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:g1",
+              "from": "obs:g1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "g1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:g2",
+              "from": "obs:g2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "g2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:g3",
+              "from": "obs:g3",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "g3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:g5",
+              "from": "obs:g5",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "g5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:g1:g2",
+              "from": "obs:g1",
+              "to": "obs:g2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "g1",
+                "g2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:g2:g5",
+              "from": "obs:g2",
+              "to": "obs:g5",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "g2",
+                "g5"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "g1",
+              "g2",
+              "g3",
+              "g5"
+            ],
+            "rationale": "g5 supplies active primary access evidence independently of the retired assertions none."
+          },
+          "change": {
+            "evidenceRefs": [
+              "g5"
+            ],
+            "summary": "Newly available reports g5 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 104200,
+        "target": {
+          "asOfMs": 104200,
+          "nodes": [
+            {
+              "id": "obs:g1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g2",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g3",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g5",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "terminal-G",
+              "status": "retracted",
+              "evidenceRefs": [
+                "g5"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:g9",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "terminal-G",
+              "status": "observed",
+              "evidenceRefs": [
+                "g9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "terminal-G",
+              "status": "weakened",
+              "evidenceRefs": [
+                "g1",
+                "g2",
+                "g3",
+                "g9"
+              ],
+              "counts": {
+                "reportCount": 4,
+                "underlyingEventCount": 4,
+                "provenanceRootCount": 4
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:g1",
+              "from": "obs:g1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "g1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:g2",
+              "from": "obs:g2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "g2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:g3",
+              "from": "obs:g3",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "g3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:g5",
+              "from": "obs:g5",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "g5",
+                "g9"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:g1:g2",
+              "from": "obs:g1",
+              "to": "obs:g2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "g1",
+                "g2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:g2:g5",
+              "from": "obs:g2",
+              "to": "obs:g5",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "g2",
+                "g5",
+                "g9"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "correct:g9:g5",
+              "from": "obs:g9",
+              "to": "obs:g5",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "g9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "g1",
+              "g2",
+              "g3",
+              "g9"
+            ],
+            "rationale": "With g5 retired and no supported primary scan/auth pair, contextual assessment follows."
+          },
+          "change": {
+            "evidenceRefs": [
+              "g9"
+            ],
+            "summary": "Correction g9 withdraws reports g5 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-550",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "station-E",
+    "assets": [
+      "station-E",
+      "station-R"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "e1",
+        "concept": "compromise_evidence",
+        "assetRef": "station-R",
+        "timeMs": 120000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 120200,
+        "sourceRoot": "source:e1",
+        "originEventId": "origin:e1",
+        "statement": "Synthetic supplied compromise_evidence for station-R"
+      },
+      {
+        "id": "e2",
+        "concept": "reconnaissance",
+        "assetRef": "station-R",
+        "timeMs": 125000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 125200,
+        "sourceRoot": "source:e2",
+        "originEventId": "origin:e2",
+        "statement": "Synthetic supplied reconnaissance for station-R"
+      },
+      {
+        "id": "e3",
+        "concept": "compromise_evidence",
+        "assetRef": "station-E",
+        "timeMs": 131000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 131200,
+        "sourceRoot": "source:e3",
+        "originEventId": "origin:e3",
+        "statement": "Synthetic supplied compromise_evidence for station-E"
+      },
+      {
+        "id": "e8",
+        "concept": "source_correction",
+        "assetRef": "station-E",
+        "timeMs": 138000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 138200,
+        "sourceRoot": "source:e8",
+        "originEventId": "origin:e8",
+        "statement": "Synthetic supplied source_correction for station-E",
+        "retracts": [
+          "e3"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-550",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 131200,
+        "target": {
+          "asOfMs": 131200,
+          "nodes": [
+            {
+              "id": "obs:e1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "station-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "e1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:e2",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "station-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "e2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:e3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "station-E",
+              "status": "observed",
+              "evidenceRefs": [
+                "e3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "station-E",
+              "status": "supported",
+              "evidenceRefs": [
+                "e3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:e3",
+              "from": "obs:e3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "e3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "e3"
+            ],
+            "rationale": "Current reviewed primary compromise: e3. Retired access assertions: none. The current support warrants critical."
+          },
+          "change": {
+            "evidenceRefs": [
+              "e3"
+            ],
+            "summary": "Newly available reports e3 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 138200,
+        "target": {
+          "asOfMs": 138200,
+          "nodes": [
+            {
+              "id": "obs:e1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "station-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "e1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:e2",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "station-R",
+              "status": "observed",
+              "evidenceRefs": [
+                "e2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:e3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "station-E",
+              "status": "retracted",
+              "evidenceRefs": [
+                "e3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:e8",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "station-E",
+              "status": "observed",
+              "evidenceRefs": [
+                "e8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "station-E",
+              "status": "weakened",
+              "evidenceRefs": [
+                "e8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:e3",
+              "from": "obs:e3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "e3",
+                "e8"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:e8:e3",
+              "from": "obs:e8",
+              "to": "obs:e3",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "e8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "e8"
+            ],
+            "rationale": "Primary access support is absent after excluding e3; remaining evidence is contextual."
+          },
+          "change": {
+            "evidenceRefs": [
+              "e8"
+            ],
+            "summary": "Correction e8 withdraws reports e3 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-660",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "host-C",
+    "assets": [
+      "host-C"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "c1",
+        "concept": "compromise_evidence",
+        "assetRef": "host-C",
+        "timeMs": 150000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 150200,
+        "sourceRoot": "source:c1",
+        "originEventId": "origin:c1",
+        "statement": "Synthetic supplied compromise_evidence for host-C"
+      },
+      {
+        "id": "c4",
+        "concept": "compromise_evidence",
+        "assetRef": "host-C",
+        "timeMs": 157000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 157200,
+        "sourceRoot": "source:c4",
+        "originEventId": "origin:c4",
+        "statement": "Synthetic supplied compromise_evidence for host-C"
+      },
+      {
+        "id": "c8",
+        "concept": "source_correction",
+        "assetRef": "host-C",
+        "timeMs": 164000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 164200,
+        "sourceRoot": "source:c8",
+        "originEventId": "origin:c8",
+        "statement": "Synthetic supplied source_correction for host-C",
+        "retracts": [
+          "c1"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-660",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 157200,
+        "target": {
+          "asOfMs": 157200,
+          "nodes": [
+            {
+              "id": "obs:c1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-C",
+              "status": "observed",
+              "evidenceRefs": [
+                "c1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:c4",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-C",
+              "status": "observed",
+              "evidenceRefs": [
+                "c4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-C",
+              "status": "supported",
+              "evidenceRefs": [
+                "c1",
+                "c4"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:c1",
+              "from": "obs:c1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "c1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:c4",
+              "from": "obs:c4",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "c4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "c1",
+              "c4"
+            ],
+            "rationale": "Primary-asset access support remains in c1, c4; withdrawn reports (none) are excluded."
+          },
+          "change": {
+            "evidenceRefs": [
+              "c4"
+            ],
+            "summary": "Newly available reports c4 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 164200,
+        "target": {
+          "asOfMs": 164200,
+          "nodes": [
+            {
+              "id": "obs:c1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-C",
+              "status": "retracted",
+              "evidenceRefs": [
+                "c1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:c4",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "host-C",
+              "status": "observed",
+              "evidenceRefs": [
+                "c4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:c8",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "host-C",
+              "status": "observed",
+              "evidenceRefs": [
+                "c8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "host-C",
+              "status": "supported",
+              "evidenceRefs": [
+                "c4",
+                "c8"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:c1",
+              "from": "obs:c1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "c1",
+                "c8"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:c4",
+              "from": "obs:c4",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "c4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "correct:c8:c1",
+              "from": "obs:c8",
+              "to": "obs:c1",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "c8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "c4",
+              "c8"
+            ],
+            "rationale": "Primary-asset access support remains in c4; withdrawn reports (c1) are excluded."
+          },
+          "change": {
+            "evidenceRefs": [
+              "c8"
+            ],
+            "summary": "Correction c8 withdraws reports c1 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-770",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "endpoint-Q",
+    "assets": [
+      "endpoint-Q"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "q1",
+        "concept": "compromise_evidence",
+        "assetRef": "endpoint-Q",
+        "timeMs": 180000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 180200,
+        "sourceRoot": "source:q1",
+        "originEventId": "origin:q1",
+        "statement": "Synthetic supplied compromise_evidence for endpoint-Q"
+      },
+      {
+        "id": "q3",
+        "concept": "compromise_evidence",
+        "assetRef": "endpoint-Q",
+        "timeMs": 187000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 187200,
+        "sourceRoot": "source:q3",
+        "originEventId": "origin:q3",
+        "statement": "Synthetic supplied compromise_evidence for endpoint-Q"
+      },
+      {
+        "id": "q6",
+        "concept": "source_correction",
+        "assetRef": "endpoint-Q",
+        "timeMs": 194000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 194200,
+        "sourceRoot": "source:q6",
+        "originEventId": "origin:q6",
+        "statement": "Synthetic supplied source_correction for endpoint-Q",
+        "retracts": [
+          "q3"
+        ]
+      },
+      {
+        "id": "q9",
+        "concept": "source_correction",
+        "assetRef": "endpoint-Q",
+        "timeMs": 201000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 201200,
+        "sourceRoot": "source:q9",
+        "originEventId": "origin:q9",
+        "statement": "Synthetic supplied source_correction for endpoint-Q",
+        "retracts": [
+          "q1"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-770",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 194200,
+        "target": {
+          "asOfMs": 194200,
+          "nodes": [
+            {
+              "id": "obs:q1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "endpoint-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "q1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:q3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "endpoint-Q",
+              "status": "retracted",
+              "evidenceRefs": [
+                "q3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:q6",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "endpoint-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "q6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "endpoint-Q",
+              "status": "supported",
+              "evidenceRefs": [
+                "q1",
+                "q6"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:q1",
+              "from": "obs:q1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "q1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:q3",
+              "from": "obs:q3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "q3",
+                "q6"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:q6:q3",
+              "from": "obs:q6",
+              "to": "obs:q3",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "q6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "q1",
+              "q6"
+            ],
+            "rationale": "q1 supplies active primary access evidence independently of the retired assertions q3."
+          },
+          "change": {
+            "evidenceRefs": [
+              "q6"
+            ],
+            "summary": "Correction q6 withdraws reports q3 by originating event; preserve their retired history."
+          }
+        }
+      },
+      {
+        "asOfMs": 201200,
+        "target": {
+          "asOfMs": 201200,
+          "nodes": [
+            {
+              "id": "obs:q1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "endpoint-Q",
+              "status": "retracted",
+              "evidenceRefs": [
+                "q1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:q3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "endpoint-Q",
+              "status": "retracted",
+              "evidenceRefs": [
+                "q3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:q6",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "endpoint-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "q6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:q9",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "endpoint-Q",
+              "status": "observed",
+              "evidenceRefs": [
+                "q9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "endpoint-Q",
+              "status": "weakened",
+              "evidenceRefs": [
+                "q6",
+                "q9"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:q1",
+              "from": "obs:q1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "q1",
+                "q6",
+                "q9"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "interpret:q3",
+              "from": "obs:q3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "q3",
+                "q6",
+                "q9"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "correct:q6:q3",
+              "from": "obs:q6",
+              "to": "obs:q3",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "q6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "correct:q9:q1",
+              "from": "obs:q9",
+              "to": "obs:q1",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "q9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "q6",
+              "q9"
+            ],
+            "rationale": "With q1, q3 retired and no supported primary scan/auth pair, contextual assessment follows."
+          },
+          "change": {
+            "evidenceRefs": [
+              "q9"
+            ],
+            "summary": "Correction q9 withdraws reports q1 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-880",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "gateway-S",
+    "assets": [
+      "gateway-S",
+      "gateway-T"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "s1",
+        "concept": "credential_activity",
+        "assetRef": "gateway-S",
+        "timeMs": 220000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 220200,
+        "sourceRoot": "source:s1",
+        "originEventId": "origin:s1",
+        "statement": "Synthetic supplied credential_activity for gateway-S"
+      },
+      {
+        "id": "s2",
+        "concept": "compromise_evidence",
+        "assetRef": "gateway-S",
+        "timeMs": 225000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 225200,
+        "sourceRoot": "source:s2",
+        "originEventId": "origin:s2",
+        "statement": "Synthetic supplied compromise_evidence for gateway-S"
+      },
+      {
+        "id": "s3",
+        "concept": "compromise_evidence",
+        "assetRef": "gateway-T",
+        "timeMs": 231000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 231200,
+        "sourceRoot": "source:s3",
+        "originEventId": "origin:s3",
+        "statement": "Synthetic supplied compromise_evidence for gateway-T"
+      },
+      {
+        "id": "s8",
+        "concept": "source_correction",
+        "assetRef": "gateway-T",
+        "timeMs": 239000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 239200,
+        "sourceRoot": "source:s8",
+        "originEventId": "origin:s8",
+        "statement": "Synthetic supplied source_correction for gateway-T",
+        "retracts": [
+          "s3"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-880",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 231200,
+        "target": {
+          "asOfMs": 231200,
+          "nodes": [
+            {
+              "id": "obs:s1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "gateway-S",
+              "status": "observed",
+              "evidenceRefs": [
+                "s1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:s2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "gateway-S",
+              "status": "observed",
+              "evidenceRefs": [
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:s3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "gateway-T",
+              "status": "observed",
+              "evidenceRefs": [
+                "s3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "gateway-S",
+              "status": "supported",
+              "evidenceRefs": [
+                "s1",
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:s1",
+              "from": "obs:s1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "s1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:s2",
+              "from": "obs:s2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:s1:s2",
+              "from": "obs:s1",
+              "to": "obs:s2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "s1",
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "s1",
+              "s2"
+            ],
+            "rationale": "Current reviewed primary compromise: s2. Retired access assertions: none. The current support warrants critical."
+          },
+          "change": {
+            "evidenceRefs": [
+              "s3"
+            ],
+            "summary": "Newly available reports s3 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      },
+      {
+        "asOfMs": 239200,
+        "target": {
+          "asOfMs": 239200,
+          "nodes": [
+            {
+              "id": "obs:s1",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "gateway-S",
+              "status": "observed",
+              "evidenceRefs": [
+                "s1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:s2",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "gateway-S",
+              "status": "observed",
+              "evidenceRefs": [
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:s3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "gateway-T",
+              "status": "retracted",
+              "evidenceRefs": [
+                "s3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:s8",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "gateway-T",
+              "status": "observed",
+              "evidenceRefs": [
+                "s8"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "gateway-S",
+              "status": "supported",
+              "evidenceRefs": [
+                "s1",
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:s1",
+              "from": "obs:s1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "s1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:s2",
+              "from": "obs:s2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:s1:s2",
+              "from": "obs:s1",
+              "to": "obs:s2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "s1",
+                "s2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "s1",
+              "s2"
+            ],
+            "rationale": "Current reviewed primary compromise: s2. Retired access assertions: none. The current support warrants critical."
+          },
+          "change": {
+            "evidenceRefs": [
+              "s8"
+            ],
+            "summary": "Correction s8 withdraws reports s3 by originating event; preserve their retired history."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-990",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "router-W",
+    "assets": [
+      "router-W"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "w1",
+        "concept": "reconnaissance",
+        "assetRef": "router-W",
+        "timeMs": 260000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 260200,
+        "sourceRoot": "source:w1",
+        "originEventId": "origin:w1",
+        "statement": "Synthetic supplied reconnaissance for router-W"
+      },
+      {
+        "id": "w2",
+        "concept": "credential_activity",
+        "assetRef": "router-W",
+        "timeMs": 265000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 265200,
+        "sourceRoot": "source:w2",
+        "originEventId": "origin:w2",
+        "statement": "Synthetic supplied credential_activity for router-W"
+      },
+      {
+        "id": "w3",
+        "concept": "compromise_evidence",
+        "assetRef": "router-W",
+        "timeMs": 271000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 271200,
+        "sourceRoot": "source:w3",
+        "originEventId": "origin:w3",
+        "statement": "Synthetic supplied compromise_evidence for router-W"
+      },
+      {
+        "id": "w6",
+        "concept": "source_correction",
+        "assetRef": "router-W",
+        "timeMs": 278000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 278200,
+        "sourceRoot": "source:w6",
+        "originEventId": "origin:w6",
+        "statement": "Synthetic supplied source_correction for router-W",
+        "retracts": [
+          "w3"
+        ]
+      },
+      {
+        "id": "w9",
+        "concept": "benign_operation",
+        "assetRef": "router-W",
+        "timeMs": 285000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 285200,
+        "sourceRoot": "source:w9",
+        "originEventId": "origin:w9",
+        "statement": "Synthetic supplied benign_operation for router-W",
+        "explains": [
+          "w1",
+          "w2"
+        ]
+      }
+    ],
+    "source": {
+      "id": "N-990",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 278200,
+        "target": {
+          "asOfMs": 278200,
+          "nodes": [
+            {
+              "id": "obs:w1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w2",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "router-W",
+              "status": "retracted",
+              "evidenceRefs": [
+                "w3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w6",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "router-W",
+              "status": "supported",
+              "evidenceRefs": [
+                "w1",
+                "w2",
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:w1",
+              "from": "obs:w1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "w1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:w2",
+              "from": "obs:w2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "w2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:w3",
+              "from": "obs:w3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "w3",
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:w1:w2",
+              "from": "obs:w1",
+              "to": "obs:w2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "w1",
+                "w2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:w2:w3",
+              "from": "obs:w2",
+              "to": "obs:w3",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "w2",
+                "w3",
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "correct:w6:w3",
+              "from": "obs:w6",
+              "to": "obs:w3",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "high",
+            "status": "assessed",
+            "evidenceRefs": [
+              "w1",
+              "w2",
+              "w6"
+            ],
+            "rationale": "Access reports w3 are withdrawn; the remaining primary scan/authentication sequence supports high concern."
+          },
+          "change": {
+            "evidenceRefs": [
+              "w6"
+            ],
+            "summary": "Correction w6 withdraws reports w3 by originating event; preserve their retired history."
+          }
+        }
+      },
+      {
+        "asOfMs": 285200,
+        "target": {
+          "asOfMs": 285200,
+          "nodes": [
+            {
+              "id": "obs:w1",
+              "kind": "observation",
+              "concept": "reconnaissance",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w2",
+              "kind": "observation",
+              "concept": "credential_activity",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w3",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "router-W",
+              "status": "retracted",
+              "evidenceRefs": [
+                "w3"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w6",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:w9",
+              "kind": "observation",
+              "concept": "benign_operation",
+              "assetRef": "router-W",
+              "status": "observed",
+              "evidenceRefs": [
+                "w9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "router-W",
+              "status": "weakened",
+              "evidenceRefs": [
+                "w1",
+                "w2",
+                "w6",
+                "w9"
+              ],
+              "counts": {
+                "reportCount": 4,
+                "underlyingEventCount": 4,
+                "provenanceRootCount": 4
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:w1",
+              "from": "obs:w1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "w1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:w2",
+              "from": "obs:w2",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "w2"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "interpret:w3",
+              "from": "obs:w3",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "w3",
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:w9",
+              "from": "obs:w9",
+              "to": "hypothesis:primary",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "w9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "order:w1:w2",
+              "from": "obs:w1",
+              "to": "obs:w2",
+              "relation": "precedes",
+              "status": "active",
+              "evidenceRefs": [
+                "w1",
+                "w2"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "order:w2:w3",
+              "from": "obs:w2",
+              "to": "obs:w3",
+              "relation": "precedes",
+              "status": "inactive",
+              "evidenceRefs": [
+                "w2",
+                "w3",
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 3,
+                "underlyingEventCount": 3,
+                "provenanceRootCount": 3
+              }
+            },
+            {
+              "id": "correct:w6:w3",
+              "from": "obs:w6",
+              "to": "obs:w3",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "w6"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "w1",
+              "w2",
+              "w6",
+              "w9"
+            ],
+            "rationale": "No active primary compromise or qualifying scan/auth association remains; w3 is historical, not current support."
+          },
+          "change": {
+            "evidenceRefs": [
+              "w9"
+            ],
+            "summary": "Explanation w9 covers only its named reports; reassess separate active support."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "formatVersion": "notella.scenario.v1",
+    "id": "N-1010",
+    "family": "retraction-authoring-suite-001",
+    "split": "train",
+    "ontologyId": "27f3474132eb10cccbb5c2eb0a2126fba8f2156dd2f254bc16fa9a6bfcca5efa",
+    "policyId": "network-scenario-policy-v1-development",
+    "primaryAsset": "relay-A",
+    "assets": [
+      "relay-A"
+    ],
+    "timeBasis": "shared-clock-asserted",
+    "evidence": [
+      {
+        "id": "a1",
+        "concept": "compromise_evidence",
+        "assetRef": "relay-A",
+        "timeMs": 300000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 300200,
+        "sourceRoot": "source:a1",
+        "originEventId": "origin:a1",
+        "statement": "Synthetic supplied compromise_evidence for relay-A"
+      },
+      {
+        "id": "a4",
+        "concept": "source_correction",
+        "assetRef": "relay-A",
+        "timeMs": 308000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 308200,
+        "sourceRoot": "source:a4",
+        "originEventId": "origin:a4",
+        "statement": "Synthetic supplied source_correction for relay-A",
+        "retracts": [
+          "a1"
+        ]
+      },
+      {
+        "id": "a9",
+        "concept": "compromise_evidence",
+        "assetRef": "relay-A",
+        "timeMs": 316000,
+        "uncertaintyMs": 80,
+        "availableAtMs": 316200,
+        "sourceRoot": "source:a9",
+        "originEventId": "origin:a9",
+        "statement": "Synthetic supplied compromise_evidence for relay-A"
+      }
+    ],
+    "source": {
+      "id": "N-1010",
+      "kind": "synthetic",
+      "reference": "scenario-model-v5/prepare.py",
+      "permission": "Owner-authorized curriculum repair; synthetic assertions",
+      "labelAuthor": "Codex author/reviewer against unchanged rule reference; not independent",
+      "trainingAllowed": true
+    },
+    "steps": [
+      {
+        "asOfMs": 308200,
+        "target": {
+          "asOfMs": 308200,
+          "nodes": [
+            {
+              "id": "obs:a1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "relay-A",
+              "status": "retracted",
+              "evidenceRefs": [
+                "a1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:a4",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "relay-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "relay-A",
+              "status": "weakened",
+              "evidenceRefs": [
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:a1",
+              "from": "obs:a1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "a1",
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "correct:a4:a1",
+              "from": "obs:a4",
+              "to": "obs:a1",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "contextual",
+            "status": "assessed",
+            "evidenceRefs": [
+              "a4"
+            ],
+            "rationale": "With a1 retired and no supported primary scan/auth pair, contextual assessment follows."
+          },
+          "change": {
+            "evidenceRefs": [
+              "a4"
+            ],
+            "summary": "Correction a4 withdraws reports a1 by originating event; preserve their retired history."
+          }
+        }
+      },
+      {
+        "asOfMs": 316200,
+        "target": {
+          "asOfMs": 316200,
+          "nodes": [
+            {
+              "id": "obs:a1",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "relay-A",
+              "status": "retracted",
+              "evidenceRefs": [
+                "a1"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:a4",
+              "kind": "observation",
+              "concept": "source_correction",
+              "assetRef": "relay-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "obs:a9",
+              "kind": "observation",
+              "concept": "compromise_evidence",
+              "assetRef": "relay-A",
+              "status": "observed",
+              "evidenceRefs": [
+                "a9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "hypothesis:primary",
+              "kind": "hypothesis",
+              "concept": "attack_hypothesis",
+              "assetRef": "relay-A",
+              "status": "supported",
+              "evidenceRefs": [
+                "a4",
+                "a9"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "interpret:a1",
+              "from": "obs:a1",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "inactive",
+              "evidenceRefs": [
+                "a1",
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 2,
+                "underlyingEventCount": 2,
+                "provenanceRootCount": 2
+              }
+            },
+            {
+              "id": "interpret:a9",
+              "from": "obs:a9",
+              "to": "hypothesis:primary",
+              "relation": "supports",
+              "status": "active",
+              "evidenceRefs": [
+                "a9"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            },
+            {
+              "id": "correct:a4:a1",
+              "from": "obs:a4",
+              "to": "obs:a1",
+              "relation": "contradicts",
+              "status": "active",
+              "evidenceRefs": [
+                "a4"
+              ],
+              "counts": {
+                "reportCount": 1,
+                "underlyingEventCount": 1,
+                "provenanceRootCount": 1
+              }
+            }
+          ],
+          "assessment": {
+            "criticality": "critical",
+            "status": "assessed",
+            "evidenceRefs": [
+              "a4",
+              "a9"
+            ],
+            "rationale": "a9 supplies active primary access evidence independently of the retired assertions a1."
+          },
+          "change": {
+            "evidenceRefs": [
+              "a9"
+            ],
+            "summary": "Newly available reports a9 update the evidence state; report multiplicity does not imply independence."
+          }
+        }
+      }
+    ]
+  }
+]

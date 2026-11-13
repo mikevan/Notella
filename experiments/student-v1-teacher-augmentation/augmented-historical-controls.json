@@ -1,0 +1,374 @@
+{
+  "suite": "previously-inspected-v6-development-controls",
+  "evaluatorSha256": "88bde4e8965ff382be691454d1c44e4d796224ec424b2b3c9cfbfd063607e306",
+  "condition": "augmented",
+  "adapterSha256": "8c0f95a57fb3cdc24cdad125b3316a1a14383ca42050544203f9e0fdda2d5e98",
+  "total": 10,
+  "decisionMatches": 8,
+  "schemaPasses": 10,
+  "guardPasses": 8,
+  "maxNewTokens": 96,
+  "results": [
+    {
+      "id": "v6-control-credible-sequence",
+      "promptSha256": "0461791b5a7032dd6ae515d02bb2b0054ca14c0e258d88c6f40a885ca83d2375",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "seconds": 1.922000000020489,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "met",
+          "evidenceClass": "corroborated_drone",
+          "posture": "critical"
+        },
+        "violations": [],
+        "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 23
+    },
+    {
+      "id": "v6-control-generic-rf",
+      "promptSha256": "097d3660402ef78bd32e5b009fc87457f60b7e152d4c7f3792eaa299e414c369",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "seconds": 1.5310000000172295,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unidentified_signal",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 21
+    },
+    {
+      "id": "v6-control-outage-only",
+      "promptSha256": "371cdffd08dea1605c97d19f44e65679623c81afe821b7f9874b10dbfe0fe713",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"cause_unresolved\",\"posture\":\"high\"}",
+      "seconds": 1.5619999999762513,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "cause_unresolved",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 21
+    },
+    {
+      "id": "v6-control-reversed-order",
+      "promptSha256": "d72b984dd630cf895b08631013f29718bb536ce91cf6ae74f1d03e1cc3448425",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"}",
+      "seconds": 1.625,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "reversed_sequence",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 22
+    },
+    {
+      "id": "v6-control-missing-clock",
+      "promptSha256": "6ceb2997dbaea325ffa43a2049108dd0e8c6a55559c759f9ad052622894a4e1f",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unknown_time\",\"posture\":\"high\"}",
+      "seconds": 1.4689999999827705,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unknown_time",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "8bd2bb2a83499307f757ea2ee72c6bc2f212f87e267dd3ac8135d109e759686e",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 20
+    },
+    {
+      "id": "v6-control-distant-location",
+      "promptSha256": "236710f18cb62e147c1c070e542f515a8d6f34299ed77b64fc9d477cb927b36e",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"different_location\",\"posture\":\"contextual\"}",
+      "seconds": 1.562000000034459,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "different_location",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "0fecd2d3aaafc780c61411e2a9a9051a4ea6340eafccfc43815dd648f91d8703",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 21
+    },
+    {
+      "id": "v6-control-benign-operations",
+      "promptSha256": "5a276be0250ca8d0534905ef987760eaeac70387391f0c01acae7c16f3a0fba3",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"benign_explanation\",\"posture\":\"contextual\"}",
+      "seconds": 1.687999999965541,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "benign_explanation",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "497f6ceb522616c84d119f64be20afbbaa1e627466f0a4fbc29d5c17df9381c2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 23
+    },
+    {
+      "id": "v6-control-duplicate-reports",
+      "promptSha256": "34c9b9d240b839b462d886c893952c9896ef6ff72b3135641be513a64707467f",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "seconds": 1.547000000020489,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": false
+        },
+        "decisionFieldsMatch": false,
+        "schemaAndDecisionMatch": false,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": false,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unidentified_signal",
+          "posture": "high"
+        },
+        "violations": [
+          {
+            "code": "wrong_identity_reason",
+            "message": "This profile uses unidentified_signal for an unresolved RF identity."
+          }
+        ],
+        "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "needs_review_no_repair"
+      },
+      "outputTokens": 21
+    },
+    {
+      "id": "v6-control-outside-window",
+      "promptSha256": "e291e12ab9006d49232d3f3948dab97b77bc3a602db999d5438dbf154ccbbfc1",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"}",
+      "seconds": 1.6400000000139698,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": false
+        },
+        "decisionFieldsMatch": false,
+        "schemaAndDecisionMatch": false,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": false,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "reversed_sequence",
+          "posture": "contextual"
+        },
+        "violations": [
+          {
+            "code": "wrong_temporal_reason",
+            "message": "Reversed sequence requires an earlier drone observation."
+          }
+        ],
+        "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "needs_review_no_repair"
+      },
+      "outputTokens": 22
+    },
+    {
+      "id": "v6-control-overlapping-clock",
+      "promptSha256": "7457f5048409461c83cc65b3021b5720a1940bba7b672f1cfe02734a82461fec",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"uncertain_order\",\"posture\":\"high\"}",
+      "seconds": 1.6099999999860302,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "uncertain_order",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "b915386aee45354a7bd1f1a5af0d046eae0b662622498ee7fdb6f6f3f84ea280",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      },
+      "outputTokens": 21
+    }
+  ],
+  "fieldQualified": false
+}

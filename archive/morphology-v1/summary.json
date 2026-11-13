@@ -1,0 +1,13 @@
+{
+  "includedFiles": 3217,
+  "uniqueBlobs": 664,
+  "originalBytes": 485335522,
+  "archivedBytes": 35906307,
+  "excludedFiles": 43,
+  "excludedBytes": 1255371173,
+  "sourceKindsInUniqueParsedRecords": {
+    "synthetic": 1035
+  },
+  "credentialScan": "No matches in the configured high-confidence checks; not a formal guarantee",
+  "preserved": "Exact bytes, hashes and original paths; no redaction of included artifacts"
+}

@@ -1,0 +1,18 @@
+Preserve semantic morphology work and document model failures
+
+Add scenario training and scoring, teacher review, rolling-window
+monitoring, focused incidents, and warning-continuity tooling.
+
+Preserve training curricula, source snapshots, logs, exact model outputs,
+and evaluation evidence in a hash-verified archive. Keep model weights
+and optimizer binaries local, with an inventory of their hashes.
+
+Document retraction and repetition failures, unresolved root-cause
+hypotheses, and the large-teacher-to-small-student development plan.
+Record improvements alongside regressions; no model is deployment-ready.
+
+Add a branded scrollable infographic and PNG exports explaining the
+initial approach, semantic-model transformation, failures, and promise.
+
+Validation: 154 core tests and 4 training-loss tests passed.
+Infographic desktop/mobile layout and four illustrative states verified.

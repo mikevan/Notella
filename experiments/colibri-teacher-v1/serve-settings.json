@@ -1,0 +1,15 @@
+{
+  "threads": 4,
+  "expertTierGiB": 1,
+  "intakeReceiptSha256": "f9ac440ddf01cdb1135789b9973a75985e34b1124b1385656cf1395d121df830",
+  "model": "notella-teacher-qwen36",
+  "thinking": false,
+  "host": "127.0.0.1",
+  "port": 8877,
+  "context": 2048,
+  "backend": "vulkan",
+  "modelDirectory": "C:\\workspace\\colibri\\models\\qwen36-35b",
+  "ramGB": 12,
+  "vulkanDeviceCapMiB": 3072,
+  "hostPoolGiB": 4
+}

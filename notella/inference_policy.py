@@ -1,0 +1,136 @@
+"""Bounded output retries and explicit continuity when model generation fails."""
+import copy
+from .core import canonical, check
+
+
+class OutputBudget:
+    """Use a measured device context bound; never silently expand that bound."""
+    def __init__(self, context_tokens=4096, initial_output_tokens=1536, max_output_tokens=4096, max_retries=1):
+        for value in (context_tokens, initial_output_tokens, max_output_tokens):
+            check(type(value) is int and value > 0, 'Positive token budgets required')
+        check(initial_output_tokens <= max_output_tokens, 'Initial output exceeds configured maximum')
+        check(type(max_retries) is int and 0 <= max_retries <= 8, 'Retry count must be between zero and eight')
+        self.context = context_tokens; self.initial = initial_output_tokens
+        self.maximum = max_output_tokens; self.retries = max_retries
+
+    def allowance(self, input_tokens, attempt=0):
+        check(type(input_tokens) is int and 0 <= input_tokens < self.context, 'Input must leave output space in the measured context budget')
+        check(type(attempt) is int and 0 <= attempt <= self.retries, 'Attempt exceeds retry policy')
+        desired = self.maximum if attempt >= self.maximum.bit_length() else min(self.maximum, self.initial << attempt)
+        return min(desired, self.context - input_tokens)
+
+    def after_limit(self, input_tokens, attempt=0):
+        current = self.allowance(input_tokens, attempt)
+        if attempt == self.retries:
+            return dict(action='review', reason='retry_budget_exhausted', assessmentIncomplete=True)
+        following = self.allowance(input_tokens, attempt+1)
+        if following <= current:
+            return dict(action='review', reason='context_or_output_budget_exhausted', assessmentIncomplete=True)
+        return dict(action='retry', attempt=attempt+1, maxNewTokens=following, assessmentIncomplete=True)
+
+
+class AssessmentContinuity:
+    """Retain history, never accept truncated/stale output as a new assessment.
+
+    The mandatory caller validator must check domain meaning and current evidence,
+    returning exactly True. This component does not establish semantic truth.
+    """
+    def __init__(self, validator):
+        check(callable(validator), 'Current-evidence assessment validator required')
+        self.validator = validator; self.last = None; self.revision = None; self.latest = 0
+
+    def finish(self, assessment, revision, latest_revision, finish_reason='complete'):
+        check(type(revision) is int and type(latest_revision) is int and 0 < revision <= latest_revision, 'Valid input/latest revisions required')
+        check(latest_revision >= self.latest, 'Cannot move evidence history backwards')
+        self.latest = latest_revision
+        check(finish_reason in ('complete','token_limit','generation_error','pending'), 'Explicit generation finish reason required')
+        reason = finish_reason
+        if revision != latest_revision: reason = 'stale_result'
+        if reason == 'complete':
+            valid = isinstance(assessment, dict)
+            if valid:
+                try: canonical(assessment)
+                except (ValueError, TypeError): valid = False
+            if valid:
+                try: valid = self.validator(copy.deepcopy(assessment), revision) is True
+                except ValueError: valid = False
+            if valid:
+                self.last = copy.deepcopy(assessment); self.revision = revision
+            else: reason = 'invalid_assessment'
+        accepted = reason == 'complete'
+        return dict(status='accepted' if accepted else 'assessment_pending' if reason == 'pending' else 'assessment_incomplete', reason=reason,
+            accepted=accepted, requiresAttention=not accepted and reason != 'pending',
+            lastValidatedAssessment=copy.deepcopy(self.last), lastValidatedRevision=self.revision,
+            assessmentCurrent=accepted, clearanceApplied=False)
+
+    def warning_state(self, focus_monitor, outcome):
+        """Return immediately from retained state; no explanation generation needed."""
+        plan = focus_monitor.plan([])
+        return dict(broadMonitoring=plan['broadMonitoring'], activeIncidentIds=plan['activeIncidentIds'],
+            requiresAttention=bool(plan['activeIncidentIds']) or outcome['requiresAttention'],
+            inferenceStatus=outcome['status'], lastValidatedAssessment=copy.deepcopy(outcome['lastValidatedAssessment']),
+            lastValidatedRevision=outcome['lastValidatedRevision'], assessmentCurrent=outcome['assessmentCurrent'])
+
+
+def run_guarded_generation(generate, continuity, focus_monitor, budget, input_tokens,
+                           revision, latest_revision, on_state, revalidate=None):
+    """Emit retained warning state before inference; retry length failures only.
+
+    generate(max_new_tokens) returns {text, finishReason}; the backend must honor
+    its token allowance. latest_revision() reads the live semantic revision.
+    on_state receives local warning state; application delivery remains its job.
+    Exact raw outputs are returned for caller-controlled durable audit storage.
+    """
+    import hashlib
+    import json
+    check(all(callable(f) for f in (generate, latest_revision, on_state)), 'Backend, live revision and warning-state callbacks required')
+    check(revalidate is None or callable(revalidate), 'Revalidation callback must be callable')
+    outcome = continuity.finish(None, revision, latest_revision(), 'pending')
+    warning = continuity.warning_state(focus_monitor, outcome)
+    on_state(copy.deepcopy(warning))
+    records = []; retry = None; attempt = 0
+    if outcome['reason'] == 'stale_result':
+        return dict(outcome=outcome, warning=warning, attempts=records, retryPlan=retry)
+    while True:
+        try:
+            allowance = budget.allowance(input_tokens, attempt)
+        except ValueError:
+            outcome = continuity.finish(None, revision, latest_revision(), 'generation_error')
+            warning = continuity.warning_state(focus_monitor, outcome); on_state(copy.deepcopy(warning))
+            return dict(outcome=outcome, warning=warning, attempts=records, retryPlan=dict(action='review',reason='input_budget_exhausted'))
+        record = dict(attempt=attempt, maxNewTokens=allowance)
+        try:
+            response = generate(allowance)
+            check(isinstance(response,dict) and isinstance(response.get('text'),str), 'Backend must return exact output text')
+            check(response.get('finishReason') in ('complete','token_limit'), 'Backend must distinguish completion from length stop')
+            raw = response['text']; reason = response['finishReason']
+            record.update(text=raw, outputSha256=hashlib.sha256(raw.encode('utf-8')).hexdigest(), finishReason=reason)
+        except Exception as error:
+            reason = 'generation_error'; raw = None
+            record.update(finishReason=reason,errorType=type(error).__name__)
+        records.append(record)
+        value = None
+        if reason == 'complete':
+            def unique(pairs):
+                check(len({k for k,v in pairs})==len(pairs), 'Duplicate JSON key')
+                return dict(pairs)
+            try: value = json.loads(raw,object_pairs_hook=unique)
+            except (ValueError,TypeError): pass
+        current_revision = latest_revision()
+        accepted_revision = revision
+        if reason == 'complete' and isinstance(value,dict) and current_revision != revision and revalidate is not None:
+            try: current = revalidate(copy.deepcopy(value), revision, current_revision) is True
+            except ValueError: current = False
+            if current and latest_revision() == current_revision:
+                accepted_revision = current_revision
+                record['revalidatedAtRevision'] = current_revision
+        record['inputRevision'] = revision
+        outcome = continuity.finish(value,accepted_revision,latest_revision(),reason)
+        warning = continuity.warning_state(focus_monitor,outcome);on_state(copy.deepcopy(warning))
+        if reason != 'token_limit' or outcome['reason'] == 'stale_result':
+            retry = None
+            break
+        retry = budget.after_limit(input_tokens,attempt)
+        if retry['action'] != 'retry':break
+        attempt = retry['attempt']
+    return dict(outcome=outcome,warning=warning,attempts=records,retryPlan=retry)

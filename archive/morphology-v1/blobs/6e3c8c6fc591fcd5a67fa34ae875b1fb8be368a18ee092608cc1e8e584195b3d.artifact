@@ -1,0 +1,152 @@
+{
+  "checks": [
+    {
+      "id": "v4-ontoforge-heldout-corrob-sequence-0",
+      "expectedEvidenceClass": "corroborated_drone",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          17800,
+          18200
+        ],
+        "withinWindow": true,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-ontoforge-heldout-unknown-signal-0",
+      "expectedEvidenceClass": "unidentified_signal",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          17800,
+          18200
+        ],
+        "withinWindow": true,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-outage-only",
+      "expectedEvidenceClass": "cause_unresolved",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          17800,
+          18200
+        ],
+        "withinWindow": true,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-reversed-order",
+      "expectedEvidenceClass": "reversed_sequence",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "before",
+        "delayIntervalMs": [
+          -20200,
+          -19800
+        ],
+        "withinWindow": false,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-missing-clock",
+      "expectedEvidenceClass": "unknown_time",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "unknown",
+        "withinWindow": null,
+        "causationEstablished": false,
+        "reason": "Missing timestamp"
+      }
+    },
+    {
+      "id": "v4-development-distant-location",
+      "expectedEvidenceClass": "different_location",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          17800,
+          18200
+        ],
+        "withinWindow": true,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-benign-operations",
+      "expectedEvidenceClass": "benign_explanation",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          17800,
+          18200
+        ],
+        "withinWindow": true,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-duplicate-reports",
+      "expectedEvidenceClass": "dependent_reports",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          17800,
+          18200
+        ],
+        "withinWindow": true,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-outside-window",
+      "expectedEvidenceClass": "outside_window",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "after",
+        "delayIntervalMs": [
+          3599800,
+          3600200
+        ],
+        "withinWindow": false,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    },
+    {
+      "id": "v4-development-overlapping-clock",
+      "expectedEvidenceClass": "uncertain_order",
+      "fixtureConditionChecked": true,
+      "temporalInterval": {
+        "order": "uncertain",
+        "delayIntervalMs": [
+          -102000,
+          138000
+        ],
+        "withinWindow": null,
+        "causationEstablished": false,
+        "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+      }
+    }
+  ],
+  "fieldProvenanceIndependentlyVerified": false,
+  "scope": "Authored fixture consistency checks, not field validation"
+}

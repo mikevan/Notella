@@ -1,0 +1,134 @@
+{
+  "condition": "adapted",
+  "curriculumId": "8b7a7cdcf1ac7f456be982f66b4a65a4dd11ccd8e975fa80bbdc562d67e5f25f",
+  "split": "development-validation",
+  "evaluatorSha256": "3b42994d6c061915e1a15ccb132c468a598bc1804ed6303d4b4679098cd8e71e",
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": "5592686ddad0c43b434f3473a3a274c50b7c284b6c7155ba296cf0ebff29b2fc",
+  "model": "C:\\workspace\\TUltra-Project\\LayerTime\\tools\\ai-training\\models\\qwen3-4b-instruct-2507",
+  "adapter": "C:\\workspace\\Notella\\runtime\\warning-v4-expanded\\store\\jobs\\afd222ac00c54dd48a47a46b46207d3e\\adapter",
+  "decoding": {
+    "doSample": false,
+    "maxNewTokens": 384
+  },
+  "schemaPasses": 10,
+  "decisionFieldMatches": 7,
+  "total": 10,
+  "semanticAccuracyMeasured": false,
+  "limitations": [
+    "Ten development cases derived from the authored pattern templates; not independent test or field qualification.",
+    "Decision-field agreement does not validate the explanation."
+  ],
+  "results": [
+    {
+      "id": "v4-ontoforge-heldout-corrob-sequence-0",
+      "promptSha256": "b35bfc5370147870c4ae67b85bc4d8ffa2ad1f07469f1fa28439317b15eb1caf",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.7810000000172295,
+      "inputTokens": 1053,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-ontoforge-heldout-unknown-signal-0",
+      "promptSha256": "2dad6e80ea8715907bf4a301050569768764b59ab62fa68d6c0e766182829071",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "seconds": 2.3439999999827705,
+      "inputTokens": 1047,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-development-outage-only",
+      "promptSha256": "69151dd878c232fa9d7cd1c3d9ecaf80393e1c9b339a141fe76da20b5c74fa72",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"cause_unresolved\",\"posture\":\"high\"}",
+      "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+      "seconds": 2.3119999999762513,
+      "inputTokens": 1046,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-development-reversed-order",
+      "promptSha256": "6a1c08a912c328fc871c27ca1b5f518d30e80166c0ee482e6d6ce9dc5b0dbbc1",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"}",
+      "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+      "seconds": 2.469000000040978,
+      "inputTokens": 1049,
+      "outputTokens": 22,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-development-missing-clock",
+      "promptSha256": "c73256511c93fd87495f46092a09f11251a986258a4e16d8406578b532529eac",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"unknown_time\",\"posture\":\"contextual\"}",
+      "outputSha256": "14edb66685381eb5c67b4ac21f212f68f00747dd73bfe2b32f6c3b80893c729b",
+      "seconds": 2.5320000000065193,
+      "inputTokens": 1040,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": false
+    },
+    {
+      "id": "v4-development-distant-location",
+      "promptSha256": "099630be552e16e223d3ba73cc78a91d33d9bb192707f9ebc4d4fdc8c1a5cbc6",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"different_location\",\"posture\":\"contextual\"}",
+      "outputSha256": "0fecd2d3aaafc780c61411e2a9a9051a4ea6340eafccfc43815dd648f91d8703",
+      "seconds": 2.3429999999934807,
+      "inputTokens": 1055,
+      "outputTokens": 21,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-development-benign-operations",
+      "promptSha256": "2f4c70c2ad25773ae2f1fa3080718ed9feae9658cc801d2cfe7815d4998143bb",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"benign_explanation\",\"posture\":\"contextual\"}",
+      "outputSha256": "497f6ceb522616c84d119f64be20afbbaa1e627466f0a4fbc29d5c17df9381c2",
+      "seconds": 2.797000000020489,
+      "inputTokens": 1043,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-development-duplicate-reports",
+      "promptSha256": "6ea60df83d36f404d14fa9d41fad77ef8978bcec42e6baf9f001847fe976f34c",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"dependent_reports\",\"posture\":\"high\"}",
+      "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+      "seconds": 2.25,
+      "inputTokens": 1054,
+      "outputTokens": 20,
+      "schemaValid": true,
+      "decisionFieldsMatch": true
+    },
+    {
+      "id": "v4-development-outside-window",
+      "promptSha256": "332f6bc58168b8c89711c5498db51542135f637bea0daaa2b04141a331bc2fa6",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.6089999999967404,
+      "inputTokens": 1050,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": false
+    },
+    {
+      "id": "v4-development-overlapping-clock",
+      "promptSha256": "a3df6a98ad2a8800e43e7bd2c46b7d3a3c8ed3f17ed1095bad19f40e392c58ba",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "seconds": 2.797000000020489,
+      "inputTokens": 1053,
+      "outputTokens": 23,
+      "schemaValid": true,
+      "decisionFieldsMatch": false
+    }
+  ]
+}

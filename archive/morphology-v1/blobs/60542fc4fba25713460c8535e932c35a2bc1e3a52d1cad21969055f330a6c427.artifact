@@ -1,0 +1,1783 @@
+[
+  {
+    "id": "ontoforge-credible-sequence-0",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "critical",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 10000,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 28000,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Credible local disruption is followed by corroborated drone presence.",
+      "significance": "The combined observations meet the supplied policy for an extremely high precautionary threat posture. A possible looming attack warrants urgent protective attention; timing does not prove a shared cause.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-credible-sequence-1",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "critical",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 27000,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 74000,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Credible local disruption is followed by corroborated drone presence.",
+      "significance": "The combined observations meet the supplied policy for an extremely high precautionary threat posture. A possible looming attack warrants urgent protective attention; timing does not prove a shared cause.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-credible-sequence-2",
+    "family": "credible-sequence",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "critical",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 44000,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 137000,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Credible local disruption is followed by corroborated drone presence.",
+      "significance": "The combined observations meet the supplied policy for an extremely high precautionary threat posture. A possible looming attack warrants urgent protective attention; timing does not prove a shared cause.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-generic-rf-0",
+    "family": "generic-rf",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 12341,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unidentified RF signature; drone classifier uncertain",
+        "timeMs": 30341,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "rf-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "An unidentified radio signal does not confirm a drone.",
+      "significance": "Maintain high precautionary concern given the supplied ongoing threat, but the combined critical trigger is unconfirmed because the signal identity is unresolved.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-generic-rf-1",
+    "family": "generic-rf",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 29341,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unidentified RF signature; drone classifier uncertain",
+        "timeMs": 76341,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "rf-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "An unidentified radio signal does not confirm a drone.",
+      "significance": "Maintain high precautionary concern given the supplied ongoing threat, but the combined critical trigger is unconfirmed because the signal identity is unresolved.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-generic-rf-2",
+    "family": "generic-rf",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 46341,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unidentified RF signature; drone classifier uncertain",
+        "timeMs": 139341,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "rf-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "An unidentified radio signal does not confirm a drone.",
+      "significance": "Maintain high precautionary concern given the supplied ongoing threat, but the combined critical trigger is unconfirmed because the signal identity is unresolved.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-outage-only-0",
+    "family": "outage-only",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "Wi-Fi outage; cause unknown",
+        "timeMs": 14682,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 32682,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "A Wi-Fi outage and drone report require urgent review.",
+      "significance": "High precautionary concern is justified in this context, but an outage alone does not establish deliberate Wi-Fi denial of service or satisfy the combined critical trigger.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-outage-only-1",
+    "family": "outage-only",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "Wi-Fi outage; cause unknown",
+        "timeMs": 31682,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 78682,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "A Wi-Fi outage and drone report require urgent review.",
+      "significance": "High precautionary concern is justified in this context, but an outage alone does not establish deliberate Wi-Fi denial of service or satisfy the combined critical trigger.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-outage-only-2",
+    "family": "outage-only",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "Wi-Fi outage; cause unknown",
+        "timeMs": 48682,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 141682,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "A Wi-Fi outage and drone report require urgent review.",
+      "significance": "High precautionary concern is justified in this context, but an outage alone does not establish deliberate Wi-Fi denial of service or satisfy the combined critical trigger.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-reversed-order-0",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 17023,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": -2977,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Drone presence precedes the disruption in these observations.",
+      "significance": "The specific disruption-then-drone sequence is absent. Assess the credible drone hazard urgently under the local safety plan without claiming the proposed precursor pattern occurred.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-reversed-order-1",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 34023,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 14023,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Drone presence precedes the disruption in these observations.",
+      "significance": "The specific disruption-then-drone sequence is absent. Assess the credible drone hazard urgently under the local safety plan without claiming the proposed precursor pattern occurred.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-reversed-order-2",
+    "family": "reversed-order",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 51023,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 31023,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Drone presence precedes the disruption in these observations.",
+      "significance": "The specific disruption-then-drone sequence is absent. Assess the credible drone hazard urgently under the local safety plan without claiming the proposed precursor pattern occurred.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-missing-clock-0",
+    "family": "missing-clock",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "clock alignment unknown",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 19364,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": null,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Unknown timestamps prevent establishing the event order.",
+      "significance": "Maintain high precautionary concern in the supplied ongoing-threat setting. The combined time-bounded critical trigger cannot be verified.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-missing-clock-1",
+    "family": "missing-clock",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "clock alignment unknown",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 36364,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": null,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Unknown timestamps prevent establishing the event order.",
+      "significance": "Maintain high precautionary concern in the supplied ongoing-threat setting. The combined time-bounded critical trigger cannot be verified.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-missing-clock-2",
+    "family": "missing-clock",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "clock alignment unknown",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 53364,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": null,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Unknown timestamps prevent establishing the event order.",
+      "significance": "Maintain high precautionary concern in the supplied ongoing-threat setting. The combined time-bounded critical trigger cannot be verified.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-distant-location-0",
+    "family": "distant-location",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 21705,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 39705,
+        "uncertaintyMs": 100,
+        "location": "verified different area 20 km away",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The drone observation is outside the affected camp area.",
+      "significance": "The supplied locations do not support a local combined precursor. Assess the camp disruption and distant drone report separately; the wider threat context remains.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-distant-location-1",
+    "family": "distant-location",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 38705,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 85705,
+        "uncertaintyMs": 100,
+        "location": "verified different area 20 km away",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The drone observation is outside the affected camp area.",
+      "significance": "The supplied locations do not support a local combined precursor. Assess the camp disruption and distant drone report separately; the wider threat context remains.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-distant-location-2",
+    "family": "distant-location",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 55705,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 148705,
+        "uncertaintyMs": 100,
+        "location": "verified different area 20 km away",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The drone observation is outside the affected camp area.",
+      "significance": "The supplied locations do not support a local combined precursor. Assess the camp disruption and distant drone report separately; the wider threat context remains.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-benign-operations-0",
+    "family": "benign-operations",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "verified scheduled maintenance outage",
+        "timeMs": 24046,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "verified authorized humanitarian aid drone",
+        "timeMs": 42046,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Known maintenance and an authorized aid drone explain these observations.",
+      "significance": "The supplied corroborated benign explanations do not support the proposed attack precursor. The standing regional threat remains a separate concern.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-benign-operations-1",
+    "family": "benign-operations",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "verified scheduled maintenance outage",
+        "timeMs": 41046,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "verified authorized humanitarian aid drone",
+        "timeMs": 88046,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Known maintenance and an authorized aid drone explain these observations.",
+      "significance": "The supplied corroborated benign explanations do not support the proposed attack precursor. The standing regional threat remains a separate concern.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-benign-operations-2",
+    "family": "benign-operations",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "verified scheduled maintenance outage",
+        "timeMs": 58046,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "verified authorized humanitarian aid drone",
+        "timeMs": 151046,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Known maintenance and an authorized aid drone explain these observations.",
+      "significance": "The supplied corroborated benign explanations do not support the proposed attack precursor. The standing regional threat remains a separate concern.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-duplicate-reports-0",
+    "family": "duplicate-reports",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 26387,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unverified drone report",
+        "timeMs": 44387,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "social repost 1 derived from report X",
+          "social repost 2 derived from report X"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Multiple drone reports repeat the same unverified source.",
+      "significance": "Maintain high precautionary concern, but duplicated reports do not independently corroborate drone presence or complete the critical trigger.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-duplicate-reports-1",
+    "family": "duplicate-reports",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 43387,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unverified drone report",
+        "timeMs": 90387,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "social repost 1 derived from report X",
+          "social repost 2 derived from report X"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Multiple drone reports repeat the same unverified source.",
+      "significance": "Maintain high precautionary concern, but duplicated reports do not independently corroborate drone presence or complete the critical trigger.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-duplicate-reports-2",
+    "family": "duplicate-reports",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 60387,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unverified drone report",
+        "timeMs": 153387,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "social repost 1 derived from report X",
+          "social repost 2 derived from report X"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Multiple drone reports repeat the same unverified source.",
+      "significance": "Maintain high precautionary concern, but duplicated reports do not independently corroborate drone presence or complete the critical trigger.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-outside-window-0",
+    "family": "outside-window",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 28728,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 3628728,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The drone observation is later than the supplied linking window.",
+      "significance": "The observed delay exceeds this policy window. This does not prove the events are unrelated or remove the drone hazard; the specific critical combined trigger is not met.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-outside-window-1",
+    "family": "outside-window",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 45728,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 3645728,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The drone observation is later than the supplied linking window.",
+      "significance": "The observed delay exceeds this policy window. This does not prove the events are unrelated or remove the drone hazard; the specific critical combined trigger is not met.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-outside-window-2",
+    "family": "outside-window",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 62728,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 3662728,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The drone observation is later than the supplied linking window.",
+      "significance": "The observed delay exceeds this policy window. This does not prove the events are unrelated or remove the drone hazard; the specific critical combined trigger is not met.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-overlapping-clock-0",
+    "family": "overlapping-clock",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 31069,
+        "uncertaintyMs": 60000,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 49069,
+        "uncertaintyMs": 60000,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Clock uncertainty prevents confirming disruption before drone presence.",
+      "significance": "High precautionary concern remains appropriate, but overlapping time intervals do not establish the required order.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-overlapping-clock-1",
+    "family": "overlapping-clock",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 48069,
+        "uncertaintyMs": 60000,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 95069,
+        "uncertaintyMs": 60000,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Clock uncertainty prevents confirming disruption before drone presence.",
+      "significance": "High precautionary concern remains appropriate, but overlapping time intervals do not establish the required order.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-overlapping-clock-2",
+    "family": "overlapping-clock",
+    "split": "train",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 65069,
+        "uncertaintyMs": 60000,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 158069,
+        "uncertaintyMs": 60000,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Clock uncertainty prevents confirming disruption before drone presence.",
+      "significance": "High precautionary concern remains appropriate, but overlapping time intervals do not establish the required order.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-heldout-corrob-sequence-0",
+    "family": "heldout-corrob-sequence",
+    "split": "validation",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "critical",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 33410,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 51410,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Corroborated drone presence follows credible local disruption.",
+      "significance": "Apply an extremely high precautionary threat posture under the supplied policy and use the established civilian safety plan promptly. The warning is not proof that an attack will occur.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-heldout-unknown-signal-0",
+    "family": "heldout-unknown-signal",
+    "split": "validation",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-A",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 35751,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "unidentified RF signature; drone classifier uncertain",
+        "timeMs": 53751,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "rf-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The later signal has no verified drone identity.",
+      "significance": "Maintain high precautionary concern while seeking trusted corroboration; the critical combined trigger is unconfirmed.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-unseen-camp-sequence-0",
+    "family": "unseen-camp-sequence",
+    "split": "test",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "critical",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-B",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 38092,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": 56092,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "Independent observations support the local disruption-then-drone warning pattern.",
+      "significance": "This meets the proposed policy for an extremely high precautionary threat posture. Treat a possible impending attack as an urgent warning, with causal and actor attribution still unresolved.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-unseen-no-time-0",
+    "family": "unseen-no-time",
+    "split": "test",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "high",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-B",
+      "timeBasis": "clock alignment unknown",
+      "disruption": {
+        "kind": "credible independently reviewed deliberate Wi-Fi denial of service",
+        "timeMs": 40433,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "corroborated drone presence",
+        "timeMs": null,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The supplied observations lack a common clock.",
+      "significance": "High precautionary concern is warranted by the context and observations. A time-bounded critical combined warning cannot be established.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  },
+  {
+    "id": "ontoforge-unseen-benign-0",
+    "family": "unseen-benign",
+    "split": "test",
+    "concepts": [
+      "observation",
+      "temporal_precedence",
+      "spatial_overlap",
+      "source_independence",
+      "causal_claim",
+      "warning_posture",
+      "signal_identity",
+      "disruption_identity",
+      "counterevidence"
+    ],
+    "expectedPosture": "contextual",
+    "observations": {
+      "context": "Synthetic refugee camp under a supplied credible ongoing threat from an oppressive regime; this is context, not actor attribution.",
+      "location": "camp-B",
+      "timeBasis": "relative milliseconds on a shared clock",
+      "disruption": {
+        "kind": "verified scheduled maintenance outage",
+        "timeMs": 42774,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "source": "network-monitor"
+      },
+      "drone": {
+        "kind": "verified authorized humanitarian aid drone",
+        "timeMs": 60774,
+        "uncertaintyMs": 100,
+        "location": "camp-area",
+        "sources": [
+          "visual-observer",
+          "independent-acoustic-sensor"
+        ]
+      },
+      "linkingWindowMs": 120000
+    },
+    "answer": {
+      "schemaVersion": 1,
+      "headline": "The supplied events have verified benign explanations.",
+      "significance": "Do not label these events a coordinated attack precursor. Preserve the standing threat context and assess any new credible hazards separately.",
+      "limitations": "These synthetic observations do not prove coordination, attacker identity, causation or a certain impending attack. This warning policy has no calibrated attack probability.",
+      "passiveNextStep": "Follow the locally established civilian safety plan and consult trusted warning channels promptly. Preserve timestamps and source provenance when safe; do not delay protective action to collect data.",
+      "factReferences": [
+        "capture_summary",
+        "review_policy"
+      ]
+    }
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "maxReferenceAnswerTokens": 857,
+  "generationCap": 1536,
+  "specific": {
+    "S-Q71-step-5": 856,
+    "S-Q92-step-3": 512
+  }
+}

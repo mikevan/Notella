@@ -2,6 +2,10 @@
 
 Notella turns explicit concepts, relationships and reviewed teaching examples into versioned training curricula. Its first implementation adapts local language models through LoRA. These guides explain both the intended meaning and the actual behavior of version 0.1.
 
+## Intended method: Semantic Ontology Morphology
+
+**The ontology represents the semantic model; morphology is its change over time; the AI interprets those changes. The trainer defines the model and its ontology representation first.** Start with [the method and node-edge reasoning](semantic-ontology-morphology.md), then [how Colibri will propose new scenarios](scenario-authoring.md). Both guides distinguish implemented tooling from planned scenario/state capabilities. [Tutorial 11: scenario contracts and teaching branches](scenarios.md) now runs the first seven provisional branches without a model.
+
 ## A suggested learning path
 
 1. [Understand the method](concepts.md): ontology, semantics, LoRA, provenance and the difference between completion and success.
@@ -14,7 +18,7 @@ Notella turns explicit concepts, relationships and reviewed teaching examples in
 8. [Understand implementation and limits](architecture.md): storage, job lifecycle, package boundaries and extension points.
 9. [Troubleshoot](troubleshooting.md): common errors and the evidence to inspect.
 
-For the first application, read [temporal evidence](temporal-evidence.md), [development results](results.md) and the profile files in `examples/layertime.*.json`. The [project README](../README.md) supplies a compact start and route summary.
+For the first application, start with the [LayerTime ontology walkthrough](layertime-ontology.md), then read [temporal evidence](temporal-evidence.md), [development results](results.md) and the profile files in `examples/layertime.*.json`. The [project README](../README.md) supplies a compact start and route summary.
 
 ## What you need
 
@@ -43,3 +47,27 @@ Examples, proposed warning policies, benchmark fixtures and observations from th
 ## Trusted decision-task contracts
 
 [Tutorial 9: input boundaries and output consistency](input-output-contracts.md) covers explicit source lineage, payload exclusion, allowed output states, review deferrals and honest evaluation after normalization. The latest [typed-training results](../experiments/warning-v6-typed-training/RESULTS.md) separate new controls from known-template regressions.
+
+## Local teacher candidates
+
+[Tutorial 10: draft and preserve local teacher candidates](teachers.md) covers the optional Python provider, restart behavior, review boundaries and teacher/student evaluation gates.
+
+The [first smaller-student comparison](../experiments/student-v1-teacher-augmentation/RESULTS.md) records the direct 0.6B development candidate and negative teacher-augmentation result, with exact outputs and limits.
+
+- [Tutorial 13: Rolling windows and semantic deltas](rolling-windows.md)
+- [Tutorial 14: Focused monitoring and connected replay](focused-monitoring.md)
+- [Tutorial 15: Diagnose semantic training failures](semantic-failure-diagnosis.md)
+- [Completed 4B morphology comparison and correction plan](../experiments/scenario-model-v3/RESULTS.md)
+
+- [Tutorial 16: Warning continuity and configurable output budgets](warning-continuity.md)
+
+- [Curriculum-only rerun results and exact evidence](../experiments/scenario-model-v4/RESULTS.md)
+- [Interpretation of the repaired curriculum and next target](../experiments/scenario-model-v4/INTERPRETATION.md)
+
+- [Consolidated semantic morphology failure report](morphology-failure-report.md)
+- [Five root-cause hypotheses and planned tests](../experiments/retraction-diagnosis-v1/HYPOTHESES.md)
+- [Large-teacher/small-student evolution roadmap](teacher-student-roadmap.md)
+- [Latest retraction/repetition comparison](../experiments/scenario-model-v5/RESULTS.md)
+- [Complete runtime-document checkpoint archive](../archive/morphology-v1/README.md)
+
+- [Scrollable infographic: from evidence to evolving meaning](infographics/semantic-morphology-evolution.html)

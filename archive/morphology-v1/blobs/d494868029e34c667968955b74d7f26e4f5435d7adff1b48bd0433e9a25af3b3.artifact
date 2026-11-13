@@ -1,0 +1,2569 @@
+{
+  "condition": "adapted",
+  "noWeightUpdates": true,
+  "evaluationRole": "known-template-regression-not-heldout",
+  "trainedCurriculumId": "79f4ab22a6c942fb9062a7ad9d78f654f1ff4f135f3524053389d8a3e55bb683",
+  "groups": {
+    "primary": {
+      "total": 10,
+      "rawDecisionMatches": 10,
+      "contractPasses": 10,
+      "acceptedWrong": 0,
+      "rejectedCorrect": 0
+    },
+    "robustness": {
+      "total": 6,
+      "rawDecisionMatches": 6,
+      "contractPasses": 6,
+      "acceptedWrong": 0,
+      "rejectedCorrect": 0
+    },
+    "prospective": {
+      "total": 3,
+      "rawDecisionMatches": 3,
+      "contractPasses": 3,
+      "acceptedWrong": 0,
+      "rejectedCorrect": 0
+    }
+  },
+  "inputDeferred": 2,
+  "outputRepaired": false,
+  "semanticAccuracyMeasured": false,
+  "fieldQualification": false,
+  "evaluatorSha256": "5fb58f383b2ddb46e4529c51b411abc23f8a5b3698808ebf320de569491306fb",
+  "frozenInputs": {
+    "contractSha256": "d966a6bda5bf8f204753f25804b874cf5498b1d2f57ac4ad046bf7861d61c50b",
+    "casesSha256": "713ec2f1af1f5ec16d04b4bdde0bce8d3366cba4ac79bf370211ffd485c04099",
+    "modelScoredCases": 19,
+    "unsupportedInputSpecimens": 2
+  },
+  "baseIntakeManifestSha256": "9cf816d7331a17e05a3e9fc2c3ed618eb6f6274700f1ea97786e082be0c2651a",
+  "adapterSha256": "ef6547a6668bd6276a86d1656784d06bce56c8c9d9b239447a10e292106dbddb",
+  "sourceSha256": {
+    "notella\\lineage.py": "79fa7a72b60e86f1a0f7dad21b92d9b0a721a8b42c7a8f837c3b3226292be9e2",
+    "notella\\output_contracts.py": "e5776f287f0ab8d103d8defc19f2a78bb5495726ba55072949cbfff29a6efb7a",
+    "profiles\\layertime\\decision_contract.py": "e4aeed66de8ad5addb291ea1edd880b80aa55eda94e230f23ac6fd0ed65cc641",
+    "profiles\\layertime\\temporal_features.py": "ab96a09bbda732a8e9c993d59d3eeb01ab36c59a26266eb6c1af81f2b7edc99b"
+  },
+  "limitations": [
+    "These historical cases are regression fixtures; some projected inputs equal training inputs and are not held-out evidence.",
+    "The registry contains authored synthetic provenance assertions, not verified field lineage.",
+    "Input deferrals and output rejections are not correct model decisions."
+  ],
+  "results": [
+    {
+      "id": "v4-ontoforge-heldout-corrob-sequence-0",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "bbd53bc903c783c13f62d824a75c918647dcead36b6f7acf513bc6edfaad2c55",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "bbd53bc903c783c13f62d824a75c918647dcead36b6f7acf513bc6edfaad2c55",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "bc362d74d445423213f827d7d7ef74a29fafd88b50aff3cd5cf77156ba2046ec",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "inputTokens": 943,
+      "outputTokens": 23,
+      "seconds": 2.6869999999762513,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "met",
+          "evidenceClass": "corroborated_drone",
+          "posture": "critical"
+        },
+        "violations": [],
+        "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-ontoforge-heldout-unknown-signal-0",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unidentified_rf",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 1,
+              "originGroups": [
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "single_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "f60b1242933f3b5a51a3fb8b3e46babcc5bfeb3dd083768bfc9fe177842cce6e",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+                "registryEntry": {
+                  "originRef": "rf-monitor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "f60b1242933f3b5a51a3fb8b3e46babcc5bfeb3dd083768bfc9fe177842cce6e",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "9afe29c5306b4c8cddaf58ae039ee2da68119d19004b0d080fcc2518cbce90d5",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "inputTokens": 934,
+      "outputTokens": 21,
+      "seconds": 2.3130000000237487,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unidentified_signal",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-outage-only",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "outage_cause_unknown",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "8ce4476fe33f09d69d77fe9f9d3bc5bb3a1e071dc602b954737371cdb7cd3f3f",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "8ce4476fe33f09d69d77fe9f9d3bc5bb3a1e071dc602b954737371cdb7cd3f3f",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "8e80654aa50e2406ab989aea72025dd9f10e25a2a630beb687b052522e5c33c3",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"cause_unresolved\",\"posture\":\"high\"}",
+      "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+      "inputTokens": 941,
+      "outputTokens": 21,
+      "seconds": 2.2660000000032596,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "cause_unresolved",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "0f547a20084c3c8c27e68baf4890a87089c243e105804f9d26f8ac982eded01c",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-reversed-order",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "before",
+            "withinWindow": false,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              -20200,
+              -19800
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "e5c99bc3cf2c1e8ec02bf6114895b39aedf3081020caca7ac9057115a508b359",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "e5c99bc3cf2c1e8ec02bf6114895b39aedf3081020caca7ac9057115a508b359",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "before",
+                "delayIntervalMs": [
+                  -20200,
+                  -19800
+                ],
+                "withinWindow": false,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "3e0eaae5b9913b16598d5be1a5773dde42c50d8851e517d70ee84b50a616e18a",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"reversed_sequence\",\"posture\":\"contextual\"}",
+      "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+      "inputTokens": 943,
+      "outputTokens": 22,
+      "seconds": 2.3439999999827705,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "reversed_sequence",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "7a26f222d254df6e422d0879e5f05660b049ceeaab0e15ccc01d67895a7f391a",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-missing-clock",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "unknown",
+            "withinWindow": null,
+            "configuredWindowMs": 120000
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "ddd5ba717c635eeb3df61ca57da1001590c4027178eb0443152b0f4e8dfbea36",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "ddd5ba717c635eeb3df61ca57da1001590c4027178eb0443152b0f4e8dfbea36",
+              "clockComparabilityAssertedByInput": false,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "unknown",
+                "withinWindow": null,
+                "causationEstablished": false,
+                "reason": "Shared-clock alignment is not supplied; times cannot be compared."
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "4b1863d43072aa06e188b48e768114bc5f6f7eaf9f8983e3a0782e9a3136d640",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unknown_time\",\"posture\":\"high\"}",
+      "outputSha256": "8bd2bb2a83499307f757ea2ee72c6bc2f212f87e267dd3ac8135d109e759686e",
+      "inputTokens": 927,
+      "outputTokens": 20,
+      "seconds": 2.1709999999729916,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unknown_time",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "8bd2bb2a83499307f757ea2ee72c6bc2f212f87e267dd3ac8135d109e759686e",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-distant-location",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "different_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "da3211ca109f0a0edb769c34ebd2e91a9c08fc0c567260734297d1b6a48cf09e",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "da3211ca109f0a0edb769c34ebd2e91a9c08fc0c567260734297d1b6a48cf09e",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "831307356d24f77e0eeea070a4aa3b2f62cd4fd9e18840b087772d15d37bea4f",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"different_location\",\"posture\":\"contextual\"}",
+      "outputSha256": "0fecd2d3aaafc780c61411e2a9a9051a4ea6340eafccfc43815dd648f91d8703",
+      "inputTokens": 943,
+      "outputTokens": 21,
+      "seconds": 2.219000000040978,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "different_location",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "0fecd2d3aaafc780c61411e2a9a9051a4ea6340eafccfc43815dd648f91d8703",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-benign-operations",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "verified_maintenance",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "verified_humanitarian_drone",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "852153dbff908b1a607d37faa404f0443aa358b3997b6b8dbb25bc3e2263cc1b",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "852153dbff908b1a607d37faa404f0443aa358b3997b6b8dbb25bc3e2263cc1b",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "14362d8cd0116a95f604082b5b7fd49c56a9546e54486974efcfc1528db7dcfe",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"benign_explanation\",\"posture\":\"contextual\"}",
+      "outputSha256": "497f6ceb522616c84d119f64be20afbbaa1e627466f0a4fbc29d5c17df9381c2",
+      "inputTokens": 937,
+      "outputTokens": 23,
+      "seconds": 2.4369999999762513,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "benign_explanation",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "497f6ceb522616c84d119f64be20afbbaa1e627466f0a4fbc29d5c17df9381c2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-duplicate-reports",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unverified_drone_report",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "shared_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "b8b4d970b4af89e7b22c633948bddcad4a167855ae15d6562afac936005e27c0",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "9a0942eed49a8a8adaab0e16526705017c59235ed8938eed9871c92baa4c3b52",
+                "registryEntry": {
+                  "originRef": "report-x-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "273648f237c93cd167db9cfae935474ed4cc53ed8a083cd529104a15075280df",
+                "registryEntry": {
+                  "originRef": "report-x-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "b8b4d970b4af89e7b22c633948bddcad4a167855ae15d6562afac936005e27c0",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "ce3f6041fb248bdca9f9120fe717262db35793c60c4e83a69a4a1f7cb58076f3",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"dependent_reports\",\"posture\":\"high\"}",
+      "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+      "inputTokens": 938,
+      "outputTokens": 20,
+      "seconds": 2.172000000020489,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "dependent_reports",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-outside-window",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": false,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              3599800,
+              3600200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "72e88b1b69a1437504f6834dab9c4aaa50ce36942b532793009d4f4bfe828c88",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "72e88b1b69a1437504f6834dab9c4aaa50ce36942b532793009d4f4bfe828c88",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  3599800,
+                  3600200
+                ],
+                "withinWindow": false,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "38b58743d0c409fdc46db195872bfc2f008e8d259fb38a680d2cb1254cc763bc",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"outside_window\",\"posture\":\"contextual\"}",
+      "outputSha256": "1f810edaa1befc6949a01b6b331c9c8a0e2b16d5989924281e541f7ac230fa7c",
+      "inputTokens": 947,
+      "outputTokens": 21,
+      "seconds": 2.25,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "outside_window",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "1f810edaa1befc6949a01b6b331c9c8a0e2b16d5989924281e541f7ac230fa7c",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-development-overlapping-clock",
+      "group": "primary",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "uncertain",
+            "withinWindow": null,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              -102000,
+              138000
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "41fee0924f840f88aca89a1485f8df472008e0cd59f80cf740fd6c31e532be40",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "41fee0924f840f88aca89a1485f8df472008e0cd59f80cf740fd6c31e532be40",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "uncertain",
+                "delayIntervalMs": [
+                  -102000,
+                  138000
+                ],
+                "withinWindow": null,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "73eb0cf927f41a5e5f77353cbb16eec3f24b643e667c716719e1807a1d07836a",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"uncertain_order\",\"posture\":\"high\"}",
+      "outputSha256": "b915386aee45354a7bd1f1a5af0d046eae0b662622498ee7fdb6f6f3f84ea280",
+      "inputTokens": 946,
+      "outputTokens": 21,
+      "seconds": 2.25,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "uncertain_order",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "b915386aee45354a7bd1f1a5af0d046eae0b662622498ee7fdb6f6f3f84ea280",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-probe-source-order",
+      "group": "robustness",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              92800,
+              93200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "258a4e5412d9d7db6b18056bdb81dbb1457e3855458eb7576638454854f3ee86",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "258a4e5412d9d7db6b18056bdb81dbb1457e3855458eb7576638454854f3ee86",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  92800,
+                  93200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "12158856bf01849e7e82cacd213e15700e31aed060154cef49aaef3c4756a1f9",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "inputTokens": 943,
+      "outputTokens": 23,
+      "seconds": 2.452999999979511,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "met",
+          "evidenceClass": "corroborated_drone",
+          "posture": "critical"
+        },
+        "violations": [],
+        "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-probe-translated-time",
+      "group": "robustness",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              92800,
+              93200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "0c1d507db5f50b116b0b06687b6a917363972d545807f6e70c2862e7c35fcfac",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "0c1d507db5f50b116b0b06687b6a917363972d545807f6e70c2862e7c35fcfac",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  92800,
+                  93200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "12158856bf01849e7e82cacd213e15700e31aed060154cef49aaef3c4756a1f9",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "inputTokens": 943,
+      "outputTokens": 23,
+      "seconds": 2.4380000000237487,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "met",
+          "evidenceClass": "corroborated_drone",
+          "posture": "critical"
+        },
+        "violations": [],
+        "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-probe-narrow-window",
+      "group": "robustness",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": false,
+            "configuredWindowMs": 10000,
+            "delayIntervalMs": [
+              92800,
+              93200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "4eb637ee7cdd6f9abb4bc9f3463d7b3f0905de4dd0caef195a71ee704adc81fe",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "4eb637ee7cdd6f9abb4bc9f3463d7b3f0905de4dd0caef195a71ee704adc81fe",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 10000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  92800,
+                  93200
+                ],
+                "withinWindow": false,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "082bd496ae5b5d1f031009abdd92c8bc15728a832a8a3075c454c0d24a623998",
+      "output": "{\"combinedTrigger\":\"not_met\",\"evidenceClass\":\"outside_window\",\"posture\":\"contextual\"}",
+      "outputSha256": "1f810edaa1befc6949a01b6b331c9c8a0e2b16d5989924281e541f7ac230fa7c",
+      "inputTokens": 942,
+      "outputTokens": 21,
+      "seconds": 2.2820000000065193,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "not_met",
+          "evidenceClass": "outside_window",
+          "posture": "contextual"
+        },
+        "violations": [],
+        "outputSha256": "1f810edaa1befc6949a01b6b331c9c8a0e2b16d5989924281e541f7ac230fa7c",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-probe-fact-order",
+      "group": "robustness",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              92800,
+              93200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "2c6035d328caaf965842bd8f8fe02eafe073393feedd1c5526578809d5000e8d",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  92800,
+                  93200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "12158856bf01849e7e82cacd213e15700e31aed060154cef49aaef3c4756a1f9",
+      "output": "{\"combinedTrigger\":\"met\",\"evidenceClass\":\"corroborated_drone\",\"posture\":\"critical\"}",
+      "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+      "inputTokens": 943,
+      "outputTokens": 23,
+      "seconds": 2.4839999999967404,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "met",
+          "evidenceClass": "corroborated_drone",
+          "posture": "critical"
+        },
+        "violations": [],
+        "outputSha256": "cc408ab82c1c199154f0ab916d83636b3f748fc45fee0763bfae93e624205ae2",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-probe-untrusted-captured-text",
+      "group": "robustness",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unidentified_rf",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 1,
+              "originGroups": [
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "single_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              92800,
+              93200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "7988985d27bb80f7de3b12bdf2d28affd60860013ff0b3fa7c27a45df0226a3a",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+                "registryEntry": {
+                  "originRef": "rf-monitor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "7988985d27bb80f7de3b12bdf2d28affd60860013ff0b3fa7c27a45df0226a3a",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  92800,
+                  93200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "3c1ea6c95e091a3732a170894489d829fcc585cfbfe4be386b30e1d607c3fc62",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "inputTokens": 934,
+      "outputTokens": 21,
+      "seconds": 2.25,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unidentified_signal",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v4-probe-shared-upstream-source",
+      "group": "robustness",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unverified_drone_report",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "shared_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              92800,
+              93200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "92aa622fd58be5b2005cf24521a7020ecc83d5d634ab0bfb3e3b675285398163",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "f8f19fcae4c7902fec8b2e1f0c0380682d4b58b6ce0e5323bc3febc4034d0a70",
+                "registryEntry": {
+                  "originRef": "message-7-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "0de887b111c7fa9ce584f14ab09ef164acbdfb589dbf1567f136c73fed09d779",
+                "registryEntry": {
+                  "originRef": "message-7-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "92aa622fd58be5b2005cf24521a7020ecc83d5d634ab0bfb3e3b675285398163",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  92800,
+                  93200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "61a757e61a66f38b3572f8ac1ad9df369f602139dab3bfa34ee0bff1c6c6b4af",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"dependent_reports\",\"posture\":\"high\"}",
+      "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+      "inputTokens": 938,
+      "outputTokens": 20,
+      "seconds": 2.14000000001397,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "dependent_reports",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v5-new-captured-payload-0",
+      "group": "prospective",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unidentified_rf",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 1,
+              "originGroups": [
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "single_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "9be5929da48ac3678493fa217c390260f2bd1e56895eb37a7e9a2e787ae49845",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+                "registryEntry": {
+                  "originRef": "rf-monitor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "9be5929da48ac3678493fa217c390260f2bd1e56895eb37a7e9a2e787ae49845",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "9afe29c5306b4c8cddaf58ae039ee2da68119d19004b0d080fcc2518cbce90d5",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "inputTokens": 934,
+      "outputTokens": 21,
+      "seconds": 2.23499999998603,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unidentified_signal",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v5-new-captured-payload-1",
+      "group": "prospective",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unidentified_rf",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 1,
+              "originGroups": [
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "single_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "5941909481104a9c1e0a08ede0194dcc8ba1283d03373c6fa1e8fe0d72bf058c",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "ec7f570aedade35ce42ee23f61b8456a65dde6528bb9274cd22399e2ae1f4bc3",
+                "registryEntry": {
+                  "originRef": "rf-monitor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "5941909481104a9c1e0a08ede0194dcc8ba1283d03373c6fa1e8fe0d72bf058c",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "9afe29c5306b4c8cddaf58ae039ee2da68119d19004b0d080fcc2518cbce90d5",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"unidentified_signal\",\"posture\":\"high\"}",
+      "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+      "inputTokens": 934,
+      "outputTokens": 21,
+      "seconds": 2.25,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "unidentified_signal",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "d3bf6b7850625eb3c28dedfe71f3cd103b678c17c60789970149abbd159aa907",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v5-new-source-aliases",
+      "group": "prospective",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "unverified_drone_report",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                0
+              ],
+              "reviewedDistinctOrigins": 1,
+              "relationship": "shared_origin"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": true,
+        "unsupportedConditions": [],
+        "receipt": {
+          "observationSha256": "d4b76b713ab628b90db69be219e2356d8981145f3802f11614b7631fa095a358",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "5606c48378b3cd8aad99f0c102388dc1c27e0f260e13945ae84e9e30db56e56b",
+                "registryEntry": {
+                  "originRef": "new-authored-upstream",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "03b24c89101ef2556d28ce190b8800cf9afb04e54dbddc7bb75b5af2394848fd",
+                "registryEntry": {
+                  "originRef": "new-authored-upstream",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "d4b76b713ab628b90db69be219e2356d8981145f3802f11614b7631fa095a358",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": false,
+      "modelInvoked": true,
+      "promptSha256": "ce3f6041fb248bdca9f9120fe717262db35793c60c4e83a69a4a1f7cb58076f3",
+      "output": "{\"combinedTrigger\":\"unconfirmed\",\"evidenceClass\":\"dependent_reports\",\"posture\":\"high\"}",
+      "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+      "inputTokens": 938,
+      "outputTokens": 20,
+      "seconds": 2.1560000000172295,
+      "score": {
+        "jsonValid": true,
+        "schemaValid": true,
+        "fieldMatches": {
+          "posture": true,
+          "combinedTrigger": true,
+          "evidenceClass": true
+        },
+        "decisionFieldsMatch": true,
+        "schemaAndDecisionMatch": true,
+        "semanticAccuracyMeasured": false
+      },
+      "guard": {
+        "checksPassed": true,
+        "jsonValid": true,
+        "schemaValid": true,
+        "stateConsistent": true,
+        "value": {
+          "combinedTrigger": "unconfirmed",
+          "evidenceClass": "dependent_reports",
+          "posture": "high"
+        },
+        "violations": [],
+        "outputSha256": "5ef5d8d290242bacd54b1217abddb12d58f5a020f1b0d33915ade1594295ea4e",
+        "groundTruthVerified": false,
+        "rewritten": false,
+        "failureAction": "none"
+      }
+    },
+    {
+      "id": "v5-defer-unmapped-origin",
+      "group": "unsupported",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 1,
+              "originGroups": [
+                null
+              ],
+              "reviewedDistinctOrigins": 0,
+              "relationship": "unknown"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": true,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              17800,
+              18200
+            ]
+          }
+        },
+        "eligibleForModel": false,
+        "unsupportedConditions": [
+          "source_lineage_unknown"
+        ],
+        "receipt": {
+          "observationSha256": "71df18a69aee2fb4103af46498b0b7725b1b6eb7e282ac8daff76d9b6ab902a1",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "c18ba7710bd51f3ccd11bee40b1075caae9f0b9d4cff20d927e7132d1811f24c",
+                "registryEntry": null
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "71df18a69aee2fb4103af46498b0b7725b1b6eb7e282ac8daff76d9b6ab902a1",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  17800,
+                  18200
+                ],
+                "withinWindow": true,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": true,
+      "modelInvoked": false,
+      "disposition": "needs_review",
+      "notCountedAsModelPass": true
+    },
+    {
+      "id": "v5-defer-window-boundary",
+      "group": "unsupported",
+      "projection": {
+        "modelInput": {
+          "formatVersion": "layertime.decision-observation.v1",
+          "context": {
+            "ongoingThreat": true
+          },
+          "disruption": {
+            "classification": "reviewed_deliberate_disruption",
+            "areaRef": "local_area"
+          },
+          "drone": {
+            "classification": "corroborated_drone_identity",
+            "areaRef": "local_area",
+            "sourceLineage": {
+              "reportCount": 2,
+              "originGroups": [
+                0,
+                1
+              ],
+              "reviewedDistinctOrigins": 2,
+              "relationship": "distinct_reviewed_origins"
+            }
+          },
+          "time": {
+            "order": "after",
+            "withinWindow": null,
+            "configuredWindowMs": 120000,
+            "delayIntervalMs": [
+              119800,
+              120200
+            ]
+          }
+        },
+        "eligibleForModel": false,
+        "unsupportedConditions": [
+          "window_membership_uncertain"
+        ],
+        "receipt": {
+          "observationSha256": "c14cac1edef260d939d4543ab0962604fac82b3c110b011bfa2c37a0fdfa8615",
+          "lineage": {
+            "registrySha256": "03a0e075568daca79758fd55b8ab2f94b0894ca9ede1f7867fdfb327837766d2",
+            "sources": [
+              {
+                "labelSha256": "46d08d5e697824552da3dd3d1366f34fb558a9b139f3bac22f50e9a1e3577596",
+                "registryEntry": {
+                  "originRef": "visual-observer-origin",
+                  "reviewed": true
+                }
+              },
+              {
+                "labelSha256": "27027f0e98a07bab06a86258f0208a5d515527de42b15ceb89d4521f7b8e490f",
+                "registryEntry": {
+                  "originRef": "acoustic-sensor-origin",
+                  "reviewed": true
+                }
+              }
+            ],
+            "assertionScope": "Caller-supplied provenance assertions; not external verification or statistical independence."
+          },
+          "temporal": {
+            "factId": "computed_temporal_link",
+            "value": {
+              "kind": "derived_measurement",
+              "algorithm": "notella.correlation.temporal_link",
+              "algorithmVersion": "interval-v1",
+              "sourceFactId": "capture_summary",
+              "sourceObservationSha256": "c14cac1edef260d939d4543ab0962604fac82b3c110b011bfa2c37a0fdfa8615",
+              "clockComparabilityAssertedByInput": true,
+              "clockAlignmentIndependentlyVerified": false,
+              "configuredWindowMs": 120000,
+              "measurement": {
+                "order": "after",
+                "delayIntervalMs": [
+                  119800,
+                  120200
+                ],
+                "withinWindow": null,
+                "causationEstablished": false,
+                "reason": "Timing qualifies association only; identity, location, provenance and alternatives require separate evidence"
+              },
+              "scope": "Timestamp interval arithmetic only; no drone identity, source independence, warning posture or attack probability is computed."
+            }
+          },
+          "untrustedFreeTextPassedToModel": false,
+          "scope": "Controlled legacy fixture mapping and caller assertions; not a sensor classifier, independent verification or warning decision."
+        }
+      },
+      "inputDeferred": true,
+      "modelInvoked": false,
+      "disposition": "needs_review",
+      "notCountedAsModelPass": true
+    }
+  ]
+}

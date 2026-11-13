@@ -1,0 +1,198 @@
+{
+  "reviewIds": [
+    "7c850156aed767f4eb16b7e1cce94947f88445525fd714adf334e79b6c4e45d0",
+    "b7410b10313d6b75007553f2e198a716ea26952ea8a13a5a65be6c01bd84c165",
+    "bf5a488f8aa8f2c100d03f87e7ac3e334bd2f424a595ff23183ddef0fef5660e"
+  ],
+  "trainingExamples": [
+    {
+      "id": "teacher-v2-contrast-1-A",
+      "family": "teacher-v2-authored-contrast-1",
+      "split": "train",
+      "concepts": [
+        "causal_claim",
+        "counterevidence",
+        "disruption_identity",
+        "observation",
+        "signal_identity",
+        "source_independence",
+        "spatial_overlap",
+        "temporal_precedence",
+        "warning_posture"
+      ],
+      "source": {
+        "id": "reviewed-teacher-v2-synthetic",
+        "kind": "synthetic",
+        "reference": "4ec811c827f2c3da7dbef516b6388877b86d549054b739a63969a5892c6dd64f#A",
+        "permission": "Project-authored synthetic experiment; explicit agent-reviewed admission under owner-authorized training",
+        "labelAuthor": "Local teacher decision; Codex agent review, not independent field truth",
+        "trainingAllowed": true,
+        "reviewId": "7c850156aed767f4eb16b7e1cce94947f88445525fd714adf334e79b6c4e45d0"
+      },
+      "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":88000,\"delayIntervalMs\":[23220,23780],\"order\":\"after\",\"withinWindow\":true}}}",
+      "target": {
+        "posture": "critical",
+        "combinedTrigger": "met",
+        "evidenceClass": "corroborated_drone"
+      }
+    },
+    {
+      "id": "teacher-v2-contrast-1-B",
+      "family": "teacher-v2-authored-contrast-1",
+      "split": "train",
+      "concepts": [
+        "causal_claim",
+        "counterevidence",
+        "disruption_identity",
+        "observation",
+        "signal_identity",
+        "source_independence",
+        "spatial_overlap",
+        "temporal_precedence",
+        "warning_posture"
+      ],
+      "source": {
+        "id": "reviewed-teacher-v2-synthetic",
+        "kind": "synthetic",
+        "reference": "4ec811c827f2c3da7dbef516b6388877b86d549054b739a63969a5892c6dd64f#B",
+        "permission": "Project-authored synthetic experiment; explicit agent-reviewed admission under owner-authorized training",
+        "labelAuthor": "Local teacher decision; Codex agent review, not independent field truth",
+        "trainingAllowed": true,
+        "reviewId": "7c850156aed767f4eb16b7e1cce94947f88445525fd714adf334e79b6c4e45d0"
+      },
+      "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"outage_cause_unknown\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":88000,\"delayIntervalMs\":[23220,23780],\"order\":\"after\",\"withinWindow\":true}}}",
+      "target": {
+        "posture": "high",
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "cause_unresolved"
+      }
+    },
+    {
+      "id": "teacher-v2-contrast-2-A",
+      "family": "teacher-v2-authored-contrast-2",
+      "split": "train",
+      "concepts": [
+        "causal_claim",
+        "counterevidence",
+        "disruption_identity",
+        "observation",
+        "signal_identity",
+        "source_independence",
+        "spatial_overlap",
+        "temporal_precedence",
+        "warning_posture"
+      ],
+      "source": {
+        "id": "reviewed-teacher-v2-synthetic",
+        "kind": "synthetic",
+        "reference": "c6417f458d299b820e577e89bca229dbf0bf890ab82f32606eddf8dd720c9db1#A",
+        "permission": "Project-authored synthetic experiment; explicit agent-reviewed admission under owner-authorized training",
+        "labelAuthor": "Local teacher decision; Codex agent review, not independent field truth",
+        "trainingAllowed": true,
+        "reviewId": "b7410b10313d6b75007553f2e198a716ea26952ea8a13a5a65be6c01bd84c165"
+      },
+      "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":110000,\"delayIntervalMs\":[37220,37780],\"order\":\"after\",\"withinWindow\":true}}}",
+      "target": {
+        "posture": "critical",
+        "combinedTrigger": "met",
+        "evidenceClass": "corroborated_drone"
+      }
+    },
+    {
+      "id": "teacher-v2-contrast-2-B",
+      "family": "teacher-v2-authored-contrast-2",
+      "split": "train",
+      "concepts": [
+        "causal_claim",
+        "counterevidence",
+        "disruption_identity",
+        "observation",
+        "signal_identity",
+        "source_independence",
+        "spatial_overlap",
+        "temporal_precedence",
+        "warning_posture"
+      ],
+      "source": {
+        "id": "reviewed-teacher-v2-synthetic",
+        "kind": "synthetic",
+        "reference": "c6417f458d299b820e577e89bca229dbf0bf890ab82f32606eddf8dd720c9db1#B",
+        "permission": "Project-authored synthetic experiment; explicit agent-reviewed admission under owner-authorized training",
+        "labelAuthor": "Local teacher decision; Codex agent review, not independent field truth",
+        "trainingAllowed": true,
+        "reviewId": "b7410b10313d6b75007553f2e198a716ea26952ea8a13a5a65be6c01bd84c165"
+      },
+      "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,0],\"relationship\":\"shared_origin\",\"reportCount\":2,\"reviewedDistinctOrigins\":1}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":110000,\"delayIntervalMs\":[37220,37780],\"order\":\"after\",\"withinWindow\":true}}}",
+      "target": {
+        "posture": "high",
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "dependent_reports"
+      }
+    },
+    {
+      "id": "teacher-v2-contrast-3-A",
+      "family": "teacher-v2-authored-contrast-3",
+      "split": "train",
+      "concepts": [
+        "causal_claim",
+        "counterevidence",
+        "disruption_identity",
+        "observation",
+        "signal_identity",
+        "source_independence",
+        "spatial_overlap",
+        "temporal_precedence",
+        "warning_posture"
+      ],
+      "source": {
+        "id": "reviewed-teacher-v2-synthetic",
+        "kind": "synthetic",
+        "reference": "b03dfce1e9aa692e3925c233e360627c876d6c4de37996b180fd72f9a37ca4d8#A",
+        "permission": "Project-authored synthetic experiment; explicit agent-reviewed admission under owner-authorized training",
+        "labelAuthor": "Local teacher decision; Codex agent review, not independent field truth",
+        "trainingAllowed": true,
+        "reviewId": "bf5a488f8aa8f2c100d03f87e7ac3e334bd2f424a595ff23183ddef0fef5660e"
+      },
+      "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"corroborated_drone_identity\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":135000,\"delayIntervalMs\":[42220,42780],\"order\":\"after\",\"withinWindow\":true}}}",
+      "target": {
+        "posture": "critical",
+        "combinedTrigger": "met",
+        "evidenceClass": "corroborated_drone"
+      }
+    },
+    {
+      "id": "teacher-v2-contrast-3-B",
+      "family": "teacher-v2-authored-contrast-3",
+      "split": "train",
+      "concepts": [
+        "causal_claim",
+        "counterevidence",
+        "disruption_identity",
+        "observation",
+        "signal_identity",
+        "source_independence",
+        "spatial_overlap",
+        "temporal_precedence",
+        "warning_posture"
+      ],
+      "source": {
+        "id": "reviewed-teacher-v2-synthetic",
+        "kind": "synthetic",
+        "reference": "b03dfce1e9aa692e3925c233e360627c876d6c4de37996b180fd72f9a37ca4d8#B",
+        "permission": "Project-authored synthetic experiment; explicit agent-reviewed admission under owner-authorized training",
+        "labelAuthor": "Local teacher decision; Codex agent review, not independent field truth",
+        "trainingAllowed": true,
+        "reviewId": "bf5a488f8aa8f2c100d03f87e7ac3e334bd2f424a595ff23183ddef0fef5660e"
+      },
+      "input": "{\"observation\":{\"context\":{\"ongoingThreat\":true},\"disruption\":{\"areaRef\":\"local_area\",\"classification\":\"reviewed_deliberate_disruption\"},\"drone\":{\"areaRef\":\"local_area\",\"classification\":\"unidentified_rf\",\"sourceLineage\":{\"originGroups\":[0,1],\"relationship\":\"distinct_reviewed_origins\",\"reportCount\":2,\"reviewedDistinctOrigins\":2}},\"formatVersion\":\"layertime.decision-observation.v1\",\"time\":{\"configuredWindowMs\":135000,\"delayIntervalMs\":[42220,42780],\"order\":\"after\",\"withinWindow\":true}}}",
+      "target": {
+        "posture": "high",
+        "combinedTrigger": "unconfirmed",
+        "evidenceClass": "unidentified_signal"
+      }
+    }
+  ],
+  "operator": "Codex under owner-authorized development training",
+  "independentReview": false,
+  "controlsFrozenSha256": "11d8541b8e49dd375bcb43e450867c0e8a0b3dc896b444ff4d2d5cccfe09add1"
+}

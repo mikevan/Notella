@@ -1,0 +1,81 @@
+{
+  "known": {
+    "base": {
+      "total": 18,
+      "counts": {
+        "jsonValid": 13,
+        "schemaValid": 8,
+        "contractValid": 0,
+        "criticalityMatch": 7,
+        "assessmentEvidenceMatch": 8,
+        "nodesMatch": 0,
+        "edgesMatch": 0,
+        "fullStateMatch": 0,
+        "tokenLimitReached": 5
+      },
+      "repetitive": 0
+    },
+    "previousAdapter": {
+      "total": 18,
+      "counts": {
+        "jsonValid": 13,
+        "schemaValid": 11,
+        "contractValid": 4,
+        "criticalityMatch": 11,
+        "assessmentEvidenceMatch": 10,
+        "nodesMatch": 7,
+        "edgesMatch": 5,
+        "fullStateMatch": 4,
+        "tokenLimitReached": 5
+      },
+      "repetitive": 5
+    },
+    "retractionAdapter": {
+      "total": 18,
+      "counts": {
+        "jsonValid": 17,
+        "schemaValid": 14,
+        "contractValid": 2,
+        "criticalityMatch": 13,
+        "assessmentEvidenceMatch": 7,
+        "nodesMatch": 5,
+        "edgesMatch": 2,
+        "fullStateMatch": 1,
+        "tokenLimitReached": 1
+      },
+      "repetitive": 1
+    }
+  },
+  "fresh": {
+    "base": {
+      "total": 6,
+      "counts": {
+        "jsonValid": 6,
+        "schemaValid": 4,
+        "contractValid": 0,
+        "criticalityMatch": 6,
+        "assessmentEvidenceMatch": 3,
+        "nodesMatch": 0,
+        "edgesMatch": 0,
+        "fullStateMatch": 0,
+        "tokenLimitReached": 0
+      },
+      "repetitive": 0
+    },
+    "retractionAdapter": {
+      "total": 6,
+      "counts": {
+        "jsonValid": 6,
+        "schemaValid": 5,
+        "contractValid": 2,
+        "criticalityMatch": 5,
+        "assessmentEvidenceMatch": 3,
+        "nodesMatch": 2,
+        "edgesMatch": 2,
+        "fullStateMatch": 2,
+        "tokenLimitReached": 0
+      },
+      "repetitive": 0
+    }
+  }
+}

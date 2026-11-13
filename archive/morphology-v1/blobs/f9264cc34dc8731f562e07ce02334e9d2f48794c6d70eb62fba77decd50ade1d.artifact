@@ -1,0 +1,14 @@
+param([switch]$DryRun)
+$ErrorActionPreference = 'Stop'
+$taskRoot = $PSScriptRoot
+$trainingRoot = 'C:\workspace\TUltra-Project\LayerTime\tools\ai-training'
+$pythonPath = Join-Path $trainingRoot '.venv\Scripts\python.exe'
+$runPath = Join-Path $taskRoot 'runs\fresh-base-v1'
+$trainArguments = @((Join-Path $taskRoot 'engine\train_lora.py'), '--dataset', (Join-Path $taskRoot 'dataset-v1'), '--base-model', (Join-Path $trainingRoot 'models\qwen3-4b-instruct-2507'), '--output', $runPath, '--domain', '--qlora', '--cpu-frozen-layers', '--lora-rank', '16', '--lora-alpha', '32', '--learning-rate', '0.00005', '--initial-loss-scale', '256', '--max-tokens', '4096', '--max-steps', '742', '--checkpoint-steps', '100')
+if ($DryRun) { $trainArguments += '--dry-run' }
+# Offline weights and standalone output. No adapter continuation, Git commands or phone installation.
+$env:HF_HUB_OFFLINE = '1'
+$env:TRANSFORMERS_OFFLINE = '1'
+$env:PYTHONDONTWRITEBYTECODE = '1'
+& $pythonPath @trainArguments
+if ($LASTEXITCODE -ne 0) { throw "Training exited with code $LASTEXITCODE; preserve logs and partial checkpoints." }
