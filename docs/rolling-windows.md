@@ -1,5 +1,7 @@
 # Tutorial 13: Rolling intercept windows and semantic deltas
 
+Continuous observation must retain meaningful changes without repeatedly treating old evidence as new support. This procedural foundation preserves the slices needed to investigate developing danger before deciding whether AI analysis is warranted.
+
 Run from the Notella project directory:
 
 ```powershell

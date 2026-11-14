@@ -1,5 +1,7 @@
 # Troubleshooting by symptom
 
+A failed development component must remain distinguishable from a successful assessment. Use these checks to diagnose the workflow without erasing evidence or interpreting missing output as safety.
+
 ## “No module named notella”
 
 Run from C:\workspace\Notella, or install the core into the intended environment with `python -m pip install -e C:\workspace\Notella`. Check which Python executable your application is using. The API interpreter and training interpreter can differ; configure --python explicitly for training.

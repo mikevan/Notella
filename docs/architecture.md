@@ -1,5 +1,7 @@
 # Architecture and extension guide
 
+Portable analysis needs to work across phones and domains. These boundaries keep Notella reusable while the LayerTime profile explores awareness and local evidence interpretation. The architecture separates evidence definitions, teaching, and execution so each can be inspected independently.
+
 ## Boundaries
 
 ```text

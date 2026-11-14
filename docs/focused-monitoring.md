@@ -1,5 +1,7 @@
 # Tutorial 14: Monitor broadly until something warrants focus
 
+Signs of developing danger need to remain available after the original capture window expires. Preserve the evidence that warrants attention while ordinary collection continues; this tutorial demonstrates that procedural boundary before model integration.
+
 Run from the Notella project directory:
 
 ```powershell

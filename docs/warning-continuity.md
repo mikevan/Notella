@@ -1,5 +1,7 @@
 # Tutorial 16: Output limits must not silently discard warnings
 
+A long or incomplete explanation must not erase an already validated warning. Preserve the evidence and current warning state independently so output limits cannot silently undermine a person's ability to respond.
+
 Run from Notella:
 
 ```powershell

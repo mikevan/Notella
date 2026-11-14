@@ -1,5 +1,7 @@
 # Tutorial 10: use a local teacher without admitting its answers
 
+A teaching model can propose useful material, but it cannot certify its own truth. Reviewable proposals and explicit admission decisions protect the learning process from unsupported claims entering the corpus.
+
 The trainer defines the semantic model and represents it as an ontology first. Colibri's intended role is to host a model that proposes new scenarios and branches demonstrating how that model changes over time. See [the scenario-authoring plan](scenario-authoring.md) and [Semantic Ontology Morphology](semantic-ontology-morphology.md). This runnable tutorial covers the current candidate/review plumbing; multi-step scenario generation and validation are not implemented by it.
 
 This optional Python API connects to a local Colibri/OpenAI-compatible server. It drafts candidate material, not a curriculum or a training job. It adds no package dependencies. No HTTP routes have been added to Notella's server.

@@ -1,5 +1,7 @@
 # Tutorial 9: bind a semantic task to trusted input and output contracts
 
+People need findings anchored to evidence rather than instructions hidden inside captured material. Explicit input and output boundaries help keep tools for self-protection accountable without treating an untrusted payload as authority.
+
 **Outcome:** keep irrelevant captured instructions out of a decision task, represent source provenance explicitly and reject inconsistent answers without rewriting them. This tutorial uses synthetic fixtures and loads no model.
 
 ## Run the working example

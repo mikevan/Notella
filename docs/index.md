@@ -1,5 +1,7 @@
 # Learn Notella
 
+People need explanations they can understand and check against the evidence. These guides show how Notella makes domain meaning, evidence, and evaluation explicit to support that goal. Start with the purpose, follow the method, then reproduce the working components and their limits.
+
 Notella turns explicit concepts, relationships and reviewed teaching examples into versioned training curricula. Its first implementation adapts local language models through LoRA. These guides explain both the intended meaning and the actual behavior of version 0.1.
 
 ## Intended method: Semantic Ontology Morphology

@@ -1,5 +1,7 @@
 # Tutorial 11: represent and validate an evolving semantic scenario
 
+Recognizing danger requires relating observations over time. These controlled scenarios make that intended understanding testable as we develop tools for local awareness and informed decisions; they are not substitutes for field evidence.
+
 **Outcome:** inspect a versioned semantic model, seven proposed teaching branches and their reference states, validate their evidence/graph boundaries, and export 20 prefix examples without training a model.
 
 The ontology represents the semantic model. A prefix state represents what is supported at one point in the scenario. These fixtures teach the intended meaning of changes in nodes, typed edges, hypotheses and assessments. Their reference targets are authored with an explicit development rule baseline; they are not model-generated answers, independently reviewed truth or a calibrated threat policy.

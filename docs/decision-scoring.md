@@ -1,5 +1,7 @@
 # Tutorial 7: separate decision agreement from formatting
 
+A plausible answer is not enough when someone may act on a warning. Separate semantic correctness from formatting so failures remain visible and improvements reflect understanding rather than cleaner JSON.
+
 **Outcome:** score an exact generated JSON answer against declared decision fields without hiding a correct decision behind a formatting failure—or mistaking valid JSON for a correct decision.
 
 The warning-v2 comparator required schema validity before checking decision fields. Its original results remain preserved, but that combined score could not show whether a verbose answer had selected the right posture. This helper makes the two checks explicit for future analysis.

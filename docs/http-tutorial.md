@@ -1,5 +1,7 @@
 # Tutorial 2: use Notella from another application
 
+The training workflow should be usable by other tools without binding the purpose to one interface. This tutorial exposes the same inspectable local workflow through HTTP; it is a development component, not a deployed protection service.
+
 **Outcome:** run the local service and use the same curriculum workflow through its HTTP API. No training starts in this tutorial.
 
 ## 1. Start a server with a known token

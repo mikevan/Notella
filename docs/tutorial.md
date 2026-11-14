@@ -1,5 +1,7 @@
 # Tutorial 1: your first semantic curriculum
 
+Start by making meaning and evidence inspectable before asking an AI to interpret them. This first local exercise introduces the reusable foundation for teaching models to support informed decisions with explanations grounded in observations.
+
 **Outcome:** create and retrieve a versioned ontology, compile five examples, create a training plan and evaluate an authored fixture. This tutorial does not load or train a model.
 
 ## 1. Check the environment

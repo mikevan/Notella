@@ -1,5 +1,7 @@
 # Tutorial 6: package a reproducible training profile
 
+Work toward self-protection should be reproducible beyond one developer's machine. Portable profiles preserve the definitions, examples, and settings needed to inspect and repeat a training preparation without claiming that reproducibility proves correctness.
+
 **Outcome:** package an ontology, examples and training settings as a portable profile that another Notella installation can verify and prepare. Preparation creates versioned artifacts and a plan; it does not launch training.
 
 ## Why a profile pack?

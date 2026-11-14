@@ -1,5 +1,7 @@
 # Warn the camp. Before the attack.
 
+People facing escalating danger need time to choose a protective response. This authored camp scenario illustrates the intended warning workflow: preserve observations, relate their changes, and make the grounds for a warning visible. The illustration is not a field-validation result.
+
 Open ontology-events-animation.html and press Play. ontology-events.mp4 is the captioned 58-second video.
 
 The camp protection scenario follows Wi-Fi flooding, BLE flooding, multiple drone signatures, increasing signal strength, and an urgent camp warning. The ontology represents the semantic model; its changing relationships and attributes over time form the morphology used to interpret escalation.

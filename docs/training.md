@@ -1,5 +1,7 @@
 # Tutorial 4: run and inspect a real training job
 
+The purpose of training is better evidence-grounded understanding, not a completed run. Reproduce the preparation, preserve failures, and judge the resulting model separately before considering any warning application.
+
 **Outcome:** submit an admitted curriculum to the local LoRA backend and inspect concrete completion evidence. Training can consume significant time and GPU resources; the earlier tutorials do not start it.
 
 ## 1. Configure the environment explicitly

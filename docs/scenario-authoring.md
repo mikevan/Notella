@@ -1,5 +1,7 @@
 # Colibri scenario authoring for Semantic Ontology Morphology
 
+A growing attack-signature corpus should teach meaningful changes, including benign alternatives and missing evidence. Reviewed scenario proposals support that purpose; generated stories alone cannot establish the situations people will encounter in the field.
+
 **Purpose:** use a local model served by Colibri to propose new scenarios that teach an existing semantic model and its change over time. The trainer defines the semantic model and represents it as an ontology before scenario generation begins.
 
 This guide describes the intended scenario workflow. The current runnable teacher API generates and preserves candidate text. A separate [scenario contract and tutorial](scenarios.md) now validate selected graph/evidence transitions and supply provisional rule-authored fixtures. The teacher API does not automatically generate, validate or admit multi-step scenario curricula.

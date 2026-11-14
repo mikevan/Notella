@@ -1,5 +1,7 @@
 # Walkthrough: the LayerTime ontology
 
+Interpreting a developing threat starts with stating what observations can and cannot support. This walkthrough makes those meanings inspectable in the LayerTime training profile before any model is trusted with them.
+
 **Outcome:** understand the ontology used by the current 4B and 0.6B development experiments, inspect its real JSON artifact, and follow a worked temporal example without loading a model.
 
 The artifact is [LayerTime typed-observation decision training, version 0.6.0-development](../experiments/warning-v6-typed-training/ontology.json). Its content-addressed ID is `de8b8fa925137177906f1422d92e9024f7253a4ff086f4ee10ef731ab4fa5092`.

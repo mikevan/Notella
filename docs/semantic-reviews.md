@@ -1,5 +1,7 @@
 # Tutorial 5: record interpretation reviews against exact outputs
 
+Trust requires a visible distinction between a proposed interpretation and one supported by reviewed evidence. Review records make that distinction inspectable while preserving disagreement and uncertainty.
+
 **Outcome:** preserve who judged a generated answer, the criteria they applied, their reasons and the exact output text. This records a review; it does not turn a judgment into independent proof of model accuracy.
 
 ## Why structure checks are insufficient

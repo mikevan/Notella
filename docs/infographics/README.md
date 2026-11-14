@@ -1,5 +1,7 @@
 # Semantic morphology evolution infographic
 
+The intended story is understanding within reach: make changing evidence visible and explain how it could support informed decisions. These illustrations explain the research direction; the linked results distinguish intended capability from measured behavior.
+
 Open [the scrollable infographic](semantic-morphology-evolution.html) in a browser. It is self-contained and works offline, including the four-stage illustrative ontology interaction. The existing approved Notella logo is embedded unchanged.
 
 - [Full-height PNG](semantic-morphology-evolution.png) is suitable for static sharing.

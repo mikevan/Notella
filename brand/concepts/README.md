@@ -1,5 +1,7 @@
 # Notella logo direction
 
+The identity should express the purpose before the mechanism: help people make sense of scattered evidence. For the first application, that means making changing observations understandable so people can assess their surroundings and make informed decisions.
+
 Selected concept: irregular information strands enter from the left and resolve into an ordered over-under weave inside an angular brain silhouette. Amber #F2AB21 and vivid green #69D100 on black follow the approved PRS portfolio language.
 
 Wordmark: Notella. Tagline: Weave knowledge into understanding.

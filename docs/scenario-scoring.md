@@ -1,5 +1,7 @@
 # Tutorial 12: test interpretation of changing scenario states
 
+Warnings must be judged against the evidence available at each moment. Score evolving scenarios without rewarding hindsight or unsupported certainty, and retain the failures that show where the approach needs work.
+
 **Outcome:** distinguish a correct decision label from a valid, reference-consistent semantic state, without treating a plausible explanation as proof of understanding.
 
 The ontology represents the semantic model. A scenario supplies evolving evidence; the model is expected to reconstruct supported nodes, typed relationships and assessment changes. This guide describes the first practical model comparison, not a separate non-LLM AI implementation or a broader formal research program.

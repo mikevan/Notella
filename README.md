@@ -6,11 +6,11 @@
 
 **Weave knowledge into understanding.** A Project Revive Solutions technology.
 
-### Warn the camp. Before the attack.
+### Put understanding in people's hands.
 
-Wi-Fi flooding. BLE flooding. Multiple drone signatures growing stronger.
+Recognizing a developing threat requires more than collecting signals. People need to understand what changed, what the evidence supports, and whether there is still time to act.
 
-The camp-protection scenario shows semantic ontology morphology connecting the changing pattern to an urgent **EVACUATE** warning.
+Notella exists to teach that distinction. The camp-protection scenario illustrates the intended progression from changing Wi-Fi/BLE observations and drone signatures to a protective warning. It is an authored scenario, not proof of a qualified warning system.
 
 </td>
 <td valign="top" align="center" width="48%">
@@ -23,9 +23,15 @@ The camp-protection scenario shows semantic ontology morphology connecting the c
 </tr>
 </table>
 
+## How we pursue that purpose
+
+We make the meaning, evidence relationships, and changes over time explicit before teaching a model to interpret them. Reviewed examples, reproducible experiments, and visible failures let us test understanding rather than mistake fluent output for reliable judgement. The reusable training core remains independent of this first application.
+
 **The ontology represents the semantic model. The intended AI captures changes in that model over time (morphology) and interprets them. The trainer defines the semantic model and how it is represented as an ontology before authoring examples or adapting weights.**
 
 Our intended approach is **Semantic Ontology Morphology–guided LoRA training**: use existing language-model capabilities to interpret an explicit system model, its evidence relationships and their evolution. The [method and node-edge reasoning](docs/semantic-ontology-morphology.md) describe the intended behavior; the [Colibri scenario workflow](docs/scenario-authoring.md) explains how a local teacher will propose new scenario branches for review. The first [scenario contract and tutorial](docs/scenarios.md) now provide versioned prefix states, graph/evidence validation, a rule baseline and seven provisional teaching branches. Neural scenario interpretation, live state maintenance and independent scenario evaluation remain unimplemented; earlier model experiments concern compact single-observation decisions.
+
+## What Notella provides
 
 Notella provides a reusable Python API and a versioned local HTTP API for ontology-guided semantic LoRA training. LayerTime is its first profile, not a dependency of the core API. Version 0.1 is a working developer foundation, not a hosted service or qualified threat-detection product.
 

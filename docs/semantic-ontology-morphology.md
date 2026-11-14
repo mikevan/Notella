@@ -1,5 +1,7 @@
 # Semantic Ontology Morphology: the training method
 
+People need to understand a developing situation while they can still choose a response. Our approach makes evidence and its changing relationships explicit, then evaluates whether a model interprets those changes faithfully.
+
 **The ontology represents the semantic model. Our intended AI captures changes in that model over time (morphology) and interprets them. The trainer's first job is to define the semantic model and how it should be represented as an ontology.**
 
 This is Notella's intended direction: adapt an existing language model to interpret a system through an explicit semantic model and its evolution. We use existing model capabilities and teach the domain's concepts, evidence relationships and assessment discipline. We do not assume that naming concepts or presenting a graph makes the model internally reason through that exact structure.

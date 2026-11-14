@@ -1,5 +1,7 @@
 # Tutorial 3: design a useful curriculum
 
+A curriculum serves people only if it teaches distinctions that matter to their decisions. For the LayerTime use case, that means recognizing developing danger while keeping uncertainty visible. Define the meaning and the evaluation before multiplying examples.
+
 **Outcome:** understand what to supply, how to admit it and how to judge whether it teaches the desired distinctions.
 
 ## 1. Define the semantic model before adding examples

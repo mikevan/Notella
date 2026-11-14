@@ -1,5 +1,7 @@
 # The method, explained
 
+Useful explanations need to stay grounded in what actually changed. This method makes the relationships and evidence behind an interpretation explicit before asking a model to learn them.
+
 **The ontology represents the semantic model. Our intended AI captures changes in that model over time (morphology) and interprets them. The trainer's job begins with defining that semantic model and its ontology representation.**
 
 Read [Semantic Ontology Morphology](semantic-ontology-morphology.md) for the intended scenario reasoning, evidence-backed nodes and typed edges, and the distinction between an ontology definition and changing scenario state. The examples below introduce the existing training plumbing; they do not demonstrate the full scenario-level method.

@@ -1,5 +1,7 @@
 # Temporal evidence and precautionary posture
 
+People need to know whether a finding is supported now, supported only in the past, or unresolved. Explicit evidence time and provenance keep a developing-threat interpretation from turning stale observations into current certainty.
+
 The system must keep four judgments separate: what was observed, which events are associated, what causal explanation is supported, and what protective urgency is warranted. High urgency can coexist with uncertain causation. A single scalar called “confidence” obscures these differences.
 
 ## Initial evidence model

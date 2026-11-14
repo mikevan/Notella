@@ -1,5 +1,7 @@
 # Evolving toward a small semantic-morphology warning model
 
+Local interpretation should be available on equipment people can carry and control. This research path tests whether reviewed teaching can transfer useful understanding to smaller models without equating compression or training completion with dependable warning.
+
 The ontology represents the semantic model. The trainer defines concepts, typed relationships and how evidence changes their support over time. The AI's intended capability is to interpret Semantic Ontology Morphology, rather than merely reproduce ontology names or a graph's visual form. This is a testable development direction, not a demonstrated reliable field capability.
 
 Training and deployment have separate resource constraints. Train and assess a capable large teacher centrally; distill demonstrated skills into smaller students. Refugees receive finished local inference models and are not expected to train them. Current direct 4B comparisons do not establish this teacher/student architecture. Earlier Colibri drafting experiments also did not establish a reliable specialized teacher.
