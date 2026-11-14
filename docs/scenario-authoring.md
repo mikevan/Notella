@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Colibri scenario authoring for Semantic Ontology Morphology
 
 A growing attack-signature corpus should teach meaningful changes, including benign alternatives and missing evidence. Reviewed scenario proposals support that purpose; generated stories alone cannot establish the situations people will encounter in the field.
@@ -107,3 +109,5 @@ The existing local experiments establish plumbing and expose limits: the first f
 ## 7. First scenario milestone
 
 The first versioned representation, validators, explicit rule comparator and provisional scenario fixtures are available in [Tutorial 11](scenarios.md). They have not received independent domain review or training admission. The next milestone is to review the semantic model/policy and targets, author separate evaluation families, then compare the rule baseline, an unadapted model and a trained model, with reviewed Colibri branches where useful. Maintain a trace from each assessment back to observations and ontology rules. Keep phone conversion and device/field qualification as separate later gates.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

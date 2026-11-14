@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 1: your first semantic curriculum
 
 Start by making meaning and evidence inspectable before asking an AI to interpret them. This first local exercise introduces the reusable foundation for teaching models to support informed decisions with explanations grounded in observations.
@@ -7,7 +9,9 @@ Start by making meaning and evidence inspectable before asking an AI to interpre
 ## 1. Check the environment
 
 ```powershell
-Set-Location C:\workspace\Notella
+# Run from the project root selected in Tutorial 0.
+# Windows: replace python with .\.venv\Scripts\python.exe
+# macOS/Linux: replace python with ./.venv/bin/python
 python --version
 python -m unittest discover -s tests -v
 ```
@@ -112,3 +116,7 @@ print(saved['examples'][0]['messages'])
 Retrieval verifies the stored content hash. Inspect the system prompt, user observation and assistant target. The assistant answer is retained for supervised training, but an inference application must send only the preceding messages.
 
 Next: [repeat this workflow over HTTP](http-tutorial.md), or [design a curriculum for your own domain](curricula.md).
+
+---
+
+[Previous: Tutorial 0 — Set up your environment](setup.md) · [Next: Tutorial 2 — Use the HTTP API](http-tutorial.md)

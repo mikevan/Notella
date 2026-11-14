@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 3: design a useful curriculum
 
 A curriculum serves people only if it teaches distinctions that matter to their decisions. For the LayerTime use case, that means recognizing developing danger while keeping uncertainty visible. Define the meaning and the evaluation before multiplying examples.
@@ -78,3 +80,7 @@ Write criteria before reviewing outputs: correct identity comparison, correct te
 ## 7. Version changes
 
 Change ontology.version when the meaning or intended contract changes. The content hash changes automatically even if a version label is accidentally reused. Keep a human change note explaining why the definition or label changed. A new hash supplies traceability, not proof that the new interpretation is better.
+
+---
+
+[Previous: Tutorial 2 — Use the HTTP API](http-tutorial.md) · [Next: Tutorial 4 — Run and inspect real training](training.md)

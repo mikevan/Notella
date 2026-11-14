@@ -23,19 +23,23 @@ Notella exists to teach that distinction. The camp-protection scenario illustrat
 </tr>
 </table>
 
+**Learn:** [Tutorial 0: environment setup](docs/setup.md) · [Tutorial index](docs/index.md)
+
+**Follow the AI work:** [How we use and train AI](docs/how-we-use-ai.md) · [Iteration history: successes and mistakes](docs/ai-iteration-history.md)
+
 ## How we pursue that purpose
 
 We make the meaning, evidence relationships, and changes over time explicit before teaching a model to interpret them. Reviewed examples, reproducible experiments, and visible failures let us test understanding rather than mistake fluent output for reliable judgement. The reusable training core remains independent of this first application.
 
 **The ontology represents the semantic model. The intended AI captures changes in that model over time (morphology) and interprets them. The trainer defines the semantic model and how it is represented as an ontology before authoring examples or adapting weights.**
 
-Our intended approach is **Semantic Ontology Morphology–guided LoRA training**: use existing language-model capabilities to interpret an explicit system model, its evidence relationships and their evolution. The [method and node-edge reasoning](docs/semantic-ontology-morphology.md) describe the intended behavior; the [Colibri scenario workflow](docs/scenario-authoring.md) explains how a local teacher will propose new scenario branches for review. The first [scenario contract and tutorial](docs/scenarios.md) now provide versioned prefix states, graph/evidence validation, a rule baseline and seven provisional teaching branches. Neural scenario interpretation, live state maintenance and independent scenario evaluation remain unimplemented; earlier model experiments concern compact single-observation decisions.
+Our intended approach is **Semantic Ontology Morphology–guided LoRA training**: use existing language-model capabilities to interpret an explicit system model, its evidence relationships and their evolution. The [method and node-edge reasoning](docs/semantic-ontology-morphology.md) describe the intended behavior; the [Colibri scenario workflow](docs/scenario-authoring.md) explains how a local teacher will propose new scenario branches for review. The first [scenario contract and tutorial](docs/scenarios.md) now provide versioned prefix states, graph/evidence validation, a rule baseline and seven provisional teaching branches. Neural scenario interpretation, live state maintenance and independent scenario evaluation remain unimplemented; earlier model experiments concern compact single-observation decisions. [Start with environment setup](docs/setup.md).
 
 ## What Notella provides
 
 Notella provides a reusable Python API and a versioned local HTTP API for ontology-guided semantic LoRA training. LayerTime is its first profile, not a dependency of the core API. Version 0.1 is a working developer foundation, not a hosted service or qualified threat-detection product.
 
-**Start with the [guided documentation and tutorials](docs/index.md).** The [first tutorial](docs/tutorial.md) runs without a GPU; the [training tutorial](docs/training.md) explains exactly when real training starts. Other applications can use `from notella import Client` or the authenticated OpenAPI description at `/v1/openapi.json`.
+**Start with the [guided documentation and tutorials](docs/index.md).** The [first tutorial](docs/tutorial.md) runs without a GPU; the [training tutorial](docs/training.md) explains exactly when real training starts. Other applications can use `from notella import Client` or the authenticated OpenAPI description at `/v1/openapi.json`. [Start with environment setup](docs/setup.md).
 
 ## Development results
 
@@ -43,7 +47,7 @@ The [0.6B student diagnostic](experiments/student-v1-teacher-augmentation/RESULT
 
 Earlier, the [v6 typed-observation experiment](experiments/warning-v6-typed-training/RESULTS.md) completed 90 applied updates and matched all ten new synthetic development controls, versus five for the matched base. It also passes 19 known-template regressions; 18 of those inputs equal normalized training inputs and are explicitly not held-out evidence. Two unsupported input specimens are deferred before generation. No phone installation or field qualification follows.
 
-[Input/output contract tutorial](docs/input-output-contracts.md) explains payload exclusion, explicit provenance roots, output rejection without repair, and why caller assertions are not source authentication. The software suite currently has 108 passing checks.
+[Input/output contract tutorial](docs/input-output-contracts.md) explains payload exclusion, explicit provenance roots, output rejection without repair, and why caller assertions are not source authentication. The software suite currently has 108 passing checks. [Start with environment setup](docs/setup.md).
 
 ## Quick start
 
@@ -120,7 +124,7 @@ See [temporal evidence design](docs/temporal-evidence.md) and [development resul
 
 ## Local teacher experiment
 
-The optional teacher Python API and [Tutorial 10](docs/teachers.md) connect a loopback Colibri/OpenAI-compatible server to ontology-scoped candidate drafting, exact request/response receipts and explicit review boundaries. It does not admit candidates or start student training.
+The optional teacher Python API and [Tutorial 10](docs/teachers.md) connect a loopback Colibri/OpenAI-compatible server to ontology-scoped candidate drafting, exact request/response receipts and explicit review boundaries. It does not admit candidates or start student training. [Start with environment setup](docs/setup.md).
 
 The [first live teacher results](experiments/colibri-teacher-v1/RESULTS.md) are negative for automatic label generation: the configured untuned 35B teacher matched 5/10 existing synthetic development controls, versus the unchanged trained 4B adapter's prior 10/10 on the same case IDs. All five wrong replies were rejected by evidence checks. Its first free-form draft also failed review. These are different model/runtime conditions, not an engine benchmark or independent field accuracy measurement. That first experiment admitted no examples; no compression, training speed or phone improvement was established. Core/provider checks at that checkpoint: 81 passing.
 
@@ -130,7 +134,7 @@ A [constrained teacher task](experiments/colibri-teacher-v2-constrained/RESULTS.
 
 ## Semantic morphology comparison and streaming reference
 
-The [completed matched 4B scenario comparison](experiments/scenario-model-v3/RESULTS.md) improved schema validity (3/10 to 8/10) but not criticality agreement (3/10 for both). The adapter remains unsuitable for deployment. Exact evidence, semantic failure analysis and a curriculum correction plan are preserved with the results. [Tutorial 15](docs/semantic-failure-diagnosis.md) explains the diagnosis.
+The [completed matched 4B scenario comparison](experiments/scenario-model-v3/RESULTS.md) improved schema validity (3/10 to 8/10) but not criticality agreement (3/10 for both). The adapter remains unsuitable for deployment. Exact evidence, semantic failure analysis and a curriculum correction plan are preserved with the results. [Tutorial 15](docs/semantic-failure-diagnosis.md) explains the diagnosis. [Start with environment setup](docs/setup.md).
 
 [Rolling windows](docs/rolling-windows.md) and [focused monitoring](docs/focused-monitoring.md) implement and demonstrate broad ten-second monitoring advancing every second, explicit focused incidents, retained evidence and continued background collection. The synthetic replay does not call an AI. These are runtime primitives, separate from the full-prefix model comparison; delta-model and phone integration remain unqualified. Checks at that checkpoint: 138 core tests and 4 optional training-loss tests passing.
 
@@ -138,7 +142,7 @@ The [completed matched 4B scenario comparison](experiments/scenario-model-v3/RES
 
 The [controlled curriculum rerun](experiments/scenario-model-v4/RESULTS.md) holds the model/training settings and twenty-row/eighty-update budget fixed. Known criticality agreement improves from 3/10 to 6/10; fresh agreement is 5/8 versus base 4/8. Retraction/scope errors and repetitive incomplete output remain. [Interpretation and next target](experiments/scenario-model-v4/INTERPRETATION.md). The adapter remains unqualified for deployment.
 
-[Tutorial 16](docs/warning-continuity.md) demonstrates configurable output budgets, bounded retries, retained validated assessments/focused incidents, and warning-state callbacks before inference. It uses a simulated backend, with real-provider/phone delivery integration still required. Token exhaustion must not silently clear or discard warnings. Current core checks: 154 passing; the unchanged optional training-loss checks passed separately.
+[Tutorial 16](docs/warning-continuity.md) demonstrates configurable output budgets, bounded retries, retained validated assessments/focused incidents, and warning-state callbacks before inference. It uses a simulated backend, with real-provider/phone delivery integration still required. Token exhaustion must not silently clear or discard warnings. Current core checks: 154 passing; the unchanged optional training-loss checks passed separately. [Start with environment setup](docs/setup.md).
 
 ## Failure checkpoint and next direction
 

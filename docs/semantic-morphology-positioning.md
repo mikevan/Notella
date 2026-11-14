@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Meaning is more than a query
 
 ## The PRS purpose
@@ -102,3 +104,5 @@ SQL, schemas and governed metrics remain useful infrastructure. The additional c
 - [S4 — W3C: OWL 2 document overview](https://www.w3.org/TR/owl2-overview/)
 
 Project evidence: `experiments/scenario-model-v5/RESULTS.md`, `docs/morphology-failure-report.md`, `docs/teacher-student-roadmap.md` and `docs/warning-continuity.md`. Research, example illustrations, implemented code and validated product behavior are distinct claims.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

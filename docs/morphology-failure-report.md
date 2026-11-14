@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Semantic morphology failure report
 
 The controlled 4B experiments did not produce a reliable deployable semantic-morphology model. Training completion and valid formatting were insufficient evidence of semantic correctness. No candidate was installed on a phone or qualified for operational warnings.
@@ -39,3 +41,5 @@ Before additional retraining, run the discriminating tests in [the hypothesis pl
 [Latest exact results](../experiments/scenario-model-v5/RESULTS.md), [root investigation](../experiments/retraction-diagnosis-v1/DIAGNOSIS.md), and [interface audit](../experiments/retraction-diagnosis-v1/interface-audit.json) preserve detailed evidence. The checkpoint archive preserves all collected runtime documents, training records and source snapshots byte-for-byte, with hashes and original paths. Model weights and optimizer binaries remain local with a separate hash inventory.
 
 Broad ten-second monitoring, one-second advancement, focus retention and bounded warning-continuity components are implemented and tutorialized. Real-provider/phone integration and notification delivery remain untested. Incomplete generation must not clear an incident or silently suppress a validated warning. Ordinary pending monitoring must not invent a threat alert.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

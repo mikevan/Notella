@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Semantic Ontology Morphology: the training method
 
 People need to understand a developing situation while they can still choose a response. Our approach makes evidence and its changing relationships explicit, then evaluates whether a model interprets those changes faithfully.
@@ -133,3 +135,5 @@ Implemented: ontology/curriculum APIs, local LoRA training, typed single-observa
 Not yet demonstrated by a trained model: interpreting a multi-step attack scenario, maintaining/revising semantic state across evidence updates, learning supported morphology transitions, or selecting criticality reliably across independently reviewed scenarios. There is no proof that the current models internally represent the ontology graph.
 
 The [small-student diagnostic](../experiments/student-v1-teacher-augmentation/RESULTS.md) favored direct ontology-guided training over six extra teacher labels. It supports retaining a direct baseline and testing the value of teacher-generated scenario diversity, rather than assuming a larger teacher improves training. Phone performance and field qualification remain unestablished.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

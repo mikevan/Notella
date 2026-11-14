@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 10: use a local teacher without admitting its answers
 
 A teaching model can propose useful material, but it cannot certify its own truth. Reviewable proposals and explicit admission decisions protect the learning process from unsupported claims entering the corpus.
@@ -95,3 +97,7 @@ See the constrained teacher v2 results for a completed six-case diagnostic and t
 ## Smaller-student experiment
 
 The [constrained teaching diagnostic](../experiments/colibri-teacher-v2-constrained/RESULTS.md) and [0.6B student comparison](../experiments/student-v1-teacher-augmentation/RESULTS.md) show the full path from preserved candidate to agent review, explicit scoped admission, sequential training and exact-output evaluation. The direct student performed better in this diagnostic; teacher generation is not automatically useful. Both cohorts are related synthetic development cases, and no phone performance claim follows from them.
+
+---
+
+[Previous: Tutorial 9 — Bind trusted input and output contracts](input-output-contracts.md) · [Next: Tutorial 11 — Represent an evolving scenario](scenarios.md)

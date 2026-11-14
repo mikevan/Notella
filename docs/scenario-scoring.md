@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 12: test interpretation of changing scenario states
 
 Warnings must be judged against the evidence available at each moment. Score evolving scenarios without rewarding hindsight or unsupported certainty, and retain the failures that show where the approach needs work.
@@ -46,3 +48,7 @@ The rule reference defines these initial policy targets, so its agreement is a c
 Questions to review after generation include whether a new observation really supports escalation, whether benign evidence improperly erased separate compromise, whether a correction withdrew every duplicate, and whether an unrelated asset acquired a false link. Keep exact explanations for agent/domain review and record review identity truthfully.
 
 This stage establishes whether the working implementation follows the semantic model as its evidence changes. Broader proof of representational advantage, independent studies, phone measurements and alternative architectures are outside this milestone unless requested.
+
+---
+
+[Previous: Tutorial 11 — Represent an evolving scenario](scenarios.md) · [Next: Tutorial 13 — Preserve rolling windows and semantic deltas](rolling-windows.md)

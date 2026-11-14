@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 11: represent and validate an evolving semantic scenario
 
 Recognizing danger requires relating observations over time. These controlled scenarios make that intended understanding testable as we develop tools for local awareness and informed decisions; they are not substitutes for field evidence.
@@ -142,3 +144,7 @@ New public APIs and records use `notella.scenarios`, `notella.scenario.v1`, `not
 The scenario profile is a new version with a new ontology identity, policy name and source references. It delegates the unchanged reference policy behavior to the retained legacy profile. The tutorial records both facade/reference and compatibility-backend source hashes. Original `profiles/network_episodes` files and historical experiment receipts are preserved. No old training/evaluation result is relabelled as a new run, and no semantic improvement follows from this naming change.
 
 See [Tutorial 13: Rolling windows and semantic deltas](rolling-windows.md) for the ten-second window advancing every second. This runtime design is separate from the full-prefix training comparison.
+
+---
+
+[Previous: Tutorial 10 — Use a local teacher without admitting its answers](teachers.md) · [Next: Tutorial 12 — Score changing scenario states](scenario-scoring.md)

@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 15: Diagnose a semantic training failure
 
 This walkthrough uses the completed [scenario comparison](../experiments/scenario-model-v3/RESULTS.md). Run the read-only reports from the project directory:
@@ -28,3 +30,7 @@ Do not copy the inspected development cases or their answers into training. Writ
 First change the curriculum while holding model, optimizer settings and update budget fixed. Retain exact failed outputs and compare rule handling, decision revisions, evidence support and graph contracts again. A larger step budget, changed loss weighting and delta representation are separate experiments. Loss reduction is not a replacement for generated-answer evaluation; this run's low loss coexisted with wrong decisions and repetitive generation.
 
 For deployment, validate proposed updates before replacing an incident's accepted state. Reject unsupported clearing and reuse of retracted support, retain the last validated state, and mark uncertain proposals for review. Permit justified de-escalation after a valid correction. This consistency gate is a required integration step, not an already implemented detector or proof that the model understands the ontology.
+
+---
+
+[Previous: Tutorial 14 — Focus while broad monitoring continues](focused-monitoring.md) · [Next: Tutorial 16 — Preserve warnings through incomplete output](warning-continuity.md)

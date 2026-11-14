@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 9: bind a semantic task to trusted input and output contracts
 
 People need findings anchored to evidence rather than instructions hidden inside captured material. Explicit input and output boundaries help keep tools for self-protection accountable without treating an untrusted payload as authority.
@@ -92,3 +94,7 @@ A captured-text invariance pass means the decision view does not change when exc
 The frozen inputs and compatibility diagnostic are in experiments/warning-v5-contracts. The typed training profile, new controls and protocol are in experiments/warning-v6-typed-training. The latter's profile.json reproduces its exact ontology, curriculum and plan through prepare_profile.
 
 Keep raw agreement, schema compliance, contract passes, accepted-wrong, rejected-correct and input deferrals separate. Neither rejection nor deferral increases model accuracy. Model weights and runtime outputs remain local; no result here is a phone-installation or field-release qualification.
+
+---
+
+[Previous: Tutorial 8 — Supply measured temporal facts](temporal-features.md) · [Next: Tutorial 10 — Use a local teacher without admitting its answers](teachers.md)

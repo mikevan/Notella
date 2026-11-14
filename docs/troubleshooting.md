@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Troubleshooting by symptom
 
 A failed development component must remain distinguishable from a successful assessment. Use these checks to diagnose the workflow without erasing evidence or interpreting missing output as safety.
@@ -57,3 +59,5 @@ ExactTargetMatch compares canonical JSON values, including text strings. Correct
 ## Where to collect an issue report
 
 Include the Notella version, artifact IDs, ontology and curriculum versions, job ID, relevant logs, runtime/package manifest, applied-update and weight-integrity summaries, and exact generated output hashes. Remove tokens, private observations and model weights from a public report. Describe the observed failure and expected interpretation with a minimal reproducible example.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

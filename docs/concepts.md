@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # The method, explained
 
 Useful explanations need to stay grounded in what actually changed. This method makes the relationships and evidence behind an interpretation explicit before asking a model to learn them.
@@ -47,3 +49,5 @@ The first two-update integration probe established tool plumbing. The 742-update
 ## Walk through the actual LayerTime ontology
 
 The [LayerTime ontology walkthrough](layertime-ontology.md) explains all nine concepts, the four relationships, the proposed warning policy, ten output combinations and a runnable uncertainty-interval example. It distinguishes ontology meaning, policy choices, input assertions and demonstrated model behavior.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

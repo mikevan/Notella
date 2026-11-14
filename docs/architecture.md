@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Architecture and extension guide
 
 Portable analysis needs to work across phones and domains. These boundaries keep Notella reusable while the LayerTime profile explores awareness and local evidence interpretation. The architecture separates evidence definitions, teaching, and execution so each can be inspected independently.
@@ -108,3 +110,5 @@ An scenario reference target is not authoritative because it passed the generic 
 ## Scenario naming compatibility
 
 The public `notella.scenarios` interface delegates graph validation to the preserved `notella.episodes` implementation. New profile/record names use scenario terminology; the retained episode module, profile JSON and historical receipts remain valid. The new profile wrapper preserves policy behavior and exposes the terminology/version change explicitly. See [scenario compatibility](scenarios.md#compatibility-and-preserved-evidence).
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

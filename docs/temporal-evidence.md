@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Temporal evidence and precautionary posture
 
 People need to know whether a finding is supported now, supported only in the past, or unresolved. Explicit evidence time and provenance keep a developing-threat interpretation from turning stale observations into current certainty.
@@ -35,3 +37,5 @@ The synthetic policy uses a 120-second example window. It is an adjustable polic
 [NIST SP 800-94](https://csrc.nist.gov/pubs/sp/800/94/final) describes intrusion-detection limitations, including false positives and negatives. [CDC causal-analysis guidance](https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html) discusses temporal sequence, alternative evidence and causal interpretation. [CDC intervention guidance](https://www.cdc.gov/field-epi-manual/php/chapters/interventions.html) separates the weight of evidence from the consequences of acting or delaying.
 
 The CDC material supplies general reasoning principles from epidemiology; applying those principles to RF/drone warnings is a project design inference, not validation of this use case. These sources do not establish that the proposed disruption/drone sequence predicts an attack.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

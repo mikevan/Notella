@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 4: run and inspect a real training job
 
 The purpose of training is better evidence-grounded understanding, not a completed run. Reproduce the preparation, preserve failures, and judge the resulting model separately before considering any warning application.
@@ -17,7 +19,7 @@ The code currently uses FP16 compute with NF4 double quantization, rank/alpha Lo
 The local machine already has a compatible environment and base model:
 
 ```powershell
-Set-Location C:\workspace\Notella
+# Run from the project root selected in Tutorial 0.
 $env:NOTELLA_API_TOKEN = python -c "import secrets; print(secrets.token_urlsafe(32))"
 python -m notella serve --store data --engine training_engine --python C:\workspace\TUltra-Project\LayerTime\tools\ai-training\.venv\Scripts\python.exe --model qwen3-4b=C:\workspace\TUltra-Project\LayerTime\tools\ai-training\models\qwen3-4b-instruct-2507
 ```
@@ -104,3 +106,7 @@ The first scenario run retained full GPU vocabulary-logit/loss buffers for long 
 The current --cpu-frozen-layers path keeps the frozen output projection and its large logits on CPU, computes token-mean cross entropy in checkpointed chunks there, and transfers the scalar loss back to CUDA. Prompt masking and target shift are unchanged. Optional training-environment tests compare loss/gradient values and exercise differentiable CPU-logit/GPU-loss transfer. A two-update check on the longest scenario training example completed with zero skips and finite weights before the fresh full run. Actual source/device/precision choices are recorded per job; numerical equivalence within the tested tolerance is not a claim of bitwise identity.
 
 Colibri is a local teacher inference engine in this workflow. It can propose scenarios but is not the student optimizer or an automatic remedy for training activation/loss memory. No other applications are stopped to make the model fit. Do not combine discarded partial-run updates or the two-update hardware check with a fresh adapter's applied-update count.
+
+---
+
+[Previous: Tutorial 3 — Design a useful curriculum](curricula.md) · [Next: Tutorial 5 — Record interpretation reviews](semantic-reviews.md)

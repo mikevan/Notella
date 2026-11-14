@@ -1,5 +1,7 @@
 # Change log
 
+For tutorials, begin with [Tutorial 0: environment setup](docs/setup.md) and [the tutorial index](docs/index.md). [The AI iteration history](docs/ai-iteration-history.md) connects the changes to measured outcomes and preserved failures.
+
 ## Unreleased
 
 - Added a typed decision-task boundary, explicit caller-supplied source-lineage summaries and output-state/evidence consistency checks. Captured payloads remain in source artifacts but are excluded from this task's model view; rejected answers are not repaired.

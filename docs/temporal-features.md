@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 8: supply measured temporal facts without inventing a warning
 
 Changing radio observations are useful only when their timing and limits remain clear. These features provide inspectable inputs for interpretation; they do not independently establish an attack or an operator's intent.
@@ -51,3 +53,7 @@ The runner refuses existing output logs to preserve completed results. Use a new
 On the selected authored development cases, adding measured time facts moved the adapter from 7/10 to 9/10 full primary-case matches and from 3/6 to 4/6 robustness matches. The base remained at 1/10 and 3/6 respectively. The measurements helped the selected temporal failures but introduced a wrong reason code on the benign case. Instruction-like captured text and source-lineage aliases still fail.
 
 These are post-hoc development observations, not independent field accuracy or proof that the adapter learned arithmetic. The full report and exact outputs are preserved in experiments/warning-v4-expanded/RESULTS.md and runtime/warning-v4-temporal-facts. The profile needs stronger input boundaries, explicit source lineage and output consistency checks before deployment can be considered.
+
+---
+
+[Previous: Tutorial 7 — Score decisions separately from formatting](decision-scoring.md) · [Next: Tutorial 9 — Bind trusted input and output contracts](input-output-contracts.md)

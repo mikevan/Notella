@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 16: Output limits must not silently discard warnings
 
 A long or incomplete explanation must not erase an already validated warning. Preserve the evidence and current warning state independently so output limits cannot silently undermine a person's ability to respond.
@@ -49,3 +51,7 @@ This is assessment validation, not rewriting the model's input history. If combi
 
 
 The runner is synchronous. Call it from an inference worker, separately from collection, window advancement and the UI event loop. The state callback must dispatch promptly to the application's warning path. Token bounds do not enforce a wall-clock deadline or guarantee display, background execution, cancellation or delivery; the real backend needs measured deadlines/cancellation and a supervised worker. These integrations remain required before operational use.
+
+---
+
+[Previous: Tutorial 15 — Diagnose semantic training failures](semantic-failure-diagnosis.md) · [Next: tutorial index — end of the current sequence](index.md)

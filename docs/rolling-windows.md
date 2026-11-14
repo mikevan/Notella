@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 13: Rolling intercept windows and semantic deltas
 
 Continuous observation must retain meaningful changes without repeatedly treating old evidence as new support. This procedural foundation preserves the slices needed to investigate developing danger before deciding whether AI analysis is warranted.
@@ -35,3 +37,7 @@ These reusable primitives and their tests run without a model. They do not yet c
 A one-second window cadence does not establish one-second LLM inference. Benchmark model latency, throughput, memory, thermal behavior and missed-event handling on the target phone before setting its inference cadence. Keep collection and deterministic semantic updates running independently of slower inference.
 
 See [Tutorial 14: Focused monitoring](focused-monitoring.md) for the explicit transition when something interesting appears, retained evidence and resolution.
+
+---
+
+[Previous: Tutorial 12 — Score changing scenario states](scenario-scoring.md) · [Next: Tutorial 14 — Focus while broad monitoring continues](focused-monitoring.md)

@@ -1,75 +1,54 @@
 # Learn Notella
 
-People need explanations they can understand and check against the evidence. These guides show how Notella makes domain meaning, evidence, and evaluation explicit to support that goal. Start with the purpose, follow the method, then reproduce the working components and their limits.
+Notella makes domain meaning, evidence, and evaluation explicit so models can be taught and tested against inspectable claims. Begin with **[Tutorial 0: set up your environment](setup.md)**. Choose [Windows](setup-windows.md) or [macOS/Linux](setup-macos-linux.md); no existing workspace is assumed.
 
-Notella turns explicit concepts, relationships and reviewed teaching examples into versioned training curricula. Its first implementation adapts local language models through LoRA. These guides explain both the intended meaning and the actual behavior of version 0.1.
+## Before you run anything
 
-## Intended method: Semantic Ontology Morphology
+[How we use and train AI](how-we-use-ai.md) explains where procedural work ends and learned interpretation begins. [Our iteration history](ai-iteration-history.md) links the successes, mistakes, regressions, and decisions behind the current research.
 
-**The ontology represents the semantic model; morphology is its change over time; the AI interprets those changes. The trainer defines the model and its ontology representation first.** Start with [the method and node-edge reasoning](semantic-ontology-morphology.md), then [how Colibri will propose new scenarios](scenario-authoring.md). Both guides distinguish implemented tooling from planned scenario/state capabilities. [Tutorial 11: scenario contracts and teaching branches](scenarios.md) now runs the first seven provisional branches without a model.
+The [method](semantic-ontology-morphology.md) explains the intended Semantic Ontology Morphology approach: define the semantic model and its ontology representation, preserve evidence-backed changes, and evaluate interpretation over time. Reference components and synthetic fixtures do not establish a qualified field-warning system.
 
-## A suggested learning path
+## Tutorial sequence
 
-1. [Understand the method](concepts.md): ontology, semantics, LoRA, provenance and the difference between completion and success.
-2. [Complete the first tutorial](tutorial.md): create a small ontology, compile examples, plan training and inspect a fixture evaluation without a GPU.
-3. [Use the HTTP API](http-tutorial.md): run a server and repeat the workflow from another application.
-4. [Run real training](training.md): configure local weights, submit a job, read numeric evidence and handle interruptions.
-5. [Design curricula and evaluations](curricula.md): keep meaningful contrasts, split families and document source rights.
-6. [Consult the API reference](api-reference.md): fields, routes, responses and failure examples.
-7. [Record interpretation reviews](semantic-reviews.md): bind reviewer judgments to exact outputs and criteria.
-8. [Understand implementation and limits](architecture.md): storage, job lifecycle, package boundaries and extension points.
-9. [Troubleshoot](troubleshooting.md): common errors and the evidence to inspect.
+Follow the numbered sequence or choose a topic after completing Tutorial 0. Each tutorial links back here at the top and to its neighbours at the bottom. Tutorial 16 is the current end of the sequence.
 
-For the first application, start with the [LayerTime ontology walkthrough](layertime-ontology.md), then read [temporal evidence](temporal-evidence.md), [development results](results.md) and the profile files in `examples/layertime.*.json`. The [project README](../README.md) supplies a compact start and route summary.
+| Tutorial | Topic | Environment and work performed |
+| --- | --- | --- |
+| 0 | [Set up your environment](setup.md) | Choose Windows or Mac/Linux; no GPU |
+| 1 | [Your first semantic curriculum](tutorial.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 2 | [Use the HTTP API](http-tutorial.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 3 | [Design a useful curriculum](curricula.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 4 | [Run and inspect real training](training.md) | Compatible CUDA environment and local model weights; starts training only when requested |
+| 5 | [Record interpretation reviews](semantic-reviews.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 6 | [Package a reproducible profile](portable-profiles.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 7 | [Score decisions separately from formatting](decision-scoring.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 8 | [Supply measured temporal facts](temporal-features.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 9 | [Bind trusted input and output contracts](input-output-contracts.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 10 | [Use a local teacher without admitting its answers](teachers.md) | Optional local teacher server; no student training |
+| 11 | [Represent an evolving scenario](scenarios.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 12 | [Score changing scenario states](scenario-scoring.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 13 | [Preserve rolling windows and semantic deltas](rolling-windows.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 14 | [Focus while broad monitoring continues](focused-monitoring.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 15 | [Diagnose semantic training failures](semantic-failure-diagnosis.md) | Core environment; no GPU required for the documented fixture/report exercise |
+| 16 | [Preserve warnings through incomplete output](warning-continuity.md) | Core environment; no GPU required for the documented fixture/report exercise |
 
-## What you need
+Run commands from the project root you chose during setup. Whenever a guide says `python`, use your project interpreter from Tutorial 0. Most shell examples use PowerShell; the Mac/Linux setup explains the shell differences. Python snippets are portable unless a guide states an additional dependency. Training uses a separate compatible environment; do not install GPU packages merely to complete the core exercises.
 
-Core tutorials: Python 3.11 or later, a writable local folder, and the Notella source. No GPU, model downloads or network access are required. Training tutorials additionally require a compatible CUDA setup, installed training dependencies and locally present model weights that you are permitted to use.
+When sharing a Notella tutorial outside the source code, include [Tutorial 0: environment setup](https://github.com/mikevan/Notella/blob/main/docs/setup.md) beside the tutorial link so readers have a clear starting point.
 
-Run all commands from `C:\workspace\Notella` unless a guide explicitly says otherwise. Shell examples use PowerShell. Python examples use the public API rather than private helper functions.
+## Concepts and supporting guides
 
-## How to read results
+- [Concepts](concepts.md), [LayerTime ontology walkthrough](layertime-ontology.md), and [temporal evidence](temporal-evidence.md).
+- [Scenario authoring](scenario-authoring.md) and [the large-teacher/small-student roadmap](teacher-student-roadmap.md).
+- [API reference](api-reference.md), [architecture](architecture.md), and [troubleshooting](troubleshooting.md).
+- [Project overview](../README.md) and [semantic positioning](semantic-morphology-positioning.md).
 
-A tutorial can prove that an interface works without proving that a model understands anything. A saved adapter can prove that training updated weights without proving that those updates improved behavior. A correct JSON response can still make a false claim. Each guide names exactly what its checks establish.
+## Results you can inspect
 
-Examples, proposed warning policies, benchmark fixtures and observations from the field are different kinds of evidence. Keep their labels and provenance intact when building on this project.
+- [Initial development results](results.md) and [typed-observation v6 results](../experiments/warning-v6-typed-training/RESULTS.md).
+- [First smaller-student comparison, including negative teacher augmentation](../experiments/student-v1-teacher-augmentation/RESULTS.md).
+- [Full-state v3 comparison](../experiments/scenario-model-v3/RESULTS.md), [v4 curriculum-only rerun](../experiments/scenario-model-v4/RESULTS.md), and [its interpretation](../experiments/scenario-model-v4/INTERPRETATION.md).
+- [Latest v5 retraction/repetition comparison](../experiments/scenario-model-v5/RESULTS.md), [consolidated failure report](morphology-failure-report.md), and [root-cause hypotheses](../experiments/retraction-diagnosis-v1/HYPOTHESES.md).
+- [Checkpoint archive](../archive/morphology-v1/README.md) and [the illustrated development story](infographics/semantic-morphology-evolution.html).
 
-## Portable profile packs
-
-[Tutorial 6: package a reproducible profile](portable-profiles.md) shows how to pin ontology files, examples and training settings by hash, recreate artifact IDs on another installation, and detect changed or escaping input files. Preparation never launches training.
-
-## Decision agreement and output compliance
-
-[Tutorial 7: score declared decision fields](decision-scoring.md) keeps formatting, decision agreement and interpretation review separate, with examples of malformed JSON and correct decisions that violate a length limit.
-
-## Measured temporal features
-
-[Tutorial 8: derive time relations](temporal-features.md) shows the LayerTime adapter, shared-clock assumptions, provenance receipts and the separate no-training inference diagnostic.
-
-## Trusted decision-task contracts
-
-[Tutorial 9: input boundaries and output consistency](input-output-contracts.md) covers explicit source lineage, payload exclusion, allowed output states, review deferrals and honest evaluation after normalization. The latest [typed-training results](../experiments/warning-v6-typed-training/RESULTS.md) separate new controls from known-template regressions.
-
-## Local teacher candidates
-
-[Tutorial 10: draft and preserve local teacher candidates](teachers.md) covers the optional Python provider, restart behavior, review boundaries and teacher/student evaluation gates.
-
-The [first smaller-student comparison](../experiments/student-v1-teacher-augmentation/RESULTS.md) records the direct 0.6B development candidate and negative teacher-augmentation result, with exact outputs and limits.
-
-- [Tutorial 13: Rolling windows and semantic deltas](rolling-windows.md)
-- [Tutorial 14: Focused monitoring and connected replay](focused-monitoring.md)
-- [Tutorial 15: Diagnose semantic training failures](semantic-failure-diagnosis.md)
-- [Completed 4B morphology comparison and correction plan](../experiments/scenario-model-v3/RESULTS.md)
-
-- [Tutorial 16: Warning continuity and configurable output budgets](warning-continuity.md)
-
-- [Curriculum-only rerun results and exact evidence](../experiments/scenario-model-v4/RESULTS.md)
-- [Interpretation of the repaired curriculum and next target](../experiments/scenario-model-v4/INTERPRETATION.md)
-
-- [Consolidated semantic morphology failure report](morphology-failure-report.md)
-- [Five root-cause hypotheses and planned tests](../experiments/retraction-diagnosis-v1/HYPOTHESES.md)
-- [Large-teacher/small-student evolution roadmap](teacher-student-roadmap.md)
-- [Latest retraction/repetition comparison](../experiments/scenario-model-v5/RESULTS.md)
-- [Complete runtime-document checkpoint archive](../archive/morphology-v1/README.md)
-
-- [Scrollable infographic: from evidence to evolving meaning](infographics/semantic-morphology-evolution.html)
+A tutorial can verify an interface without proving model understanding. Applied updates, finite weights, valid JSON, correct evidence interpretation, and operational warning delivery are distinct results. Each record keeps its own task, cohort, review provenance, and limits.

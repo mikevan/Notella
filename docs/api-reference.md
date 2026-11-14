@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # API reference — v1
 
 The Python service and HTTP transport share the same artifact model. Core functions raise ValidationError for invalid data and FileNotFoundError for a missing artifact. The HTTP transport maps these to JSON errors. The small Client wrapper raises standard urllib HTTP errors.
@@ -144,3 +146,5 @@ The optional `notella.teacher_reviews.record_teacher_review` Python API binds cr
 ## Scenario Python API
 
 `notella.scenarios.scenario_output_schema(concepts)`, `validate_scenario(ontology, scenario)`, `validate_scenario_set(ontology, scenarios)`, `evidence_counts(evidence_by_id, refs)` and `compile_scenario_examples(ontology, scenarios)` provide the first assessment-scenario contract. Validation receipts identify what was checked and keep semantic correctness/source authenticity false. Export does not grant admission or start training. See [Tutorial 11](scenarios.md) for runnable examples, fields and failures. No new scenario HTTP route is implemented.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

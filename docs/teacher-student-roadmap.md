@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Evolving toward a small semantic-morphology warning model
 
 Local interpretation should be available on equipment people can carry and control. This research path tests whether reviewed teaching can transfer useful understanding to smaller models without equating compression or training completion with dependable warning.
@@ -14,3 +16,5 @@ Training and deployment have separate resource constraints. Train and assess a c
 6. Test missed warnings, incorrect clearances, false alarms, evidence support, offline latency, memory, thermal and battery behavior. Feed reviewed failures back into centrally authored scenarios and versioned releases. Field observations update application state, not model weights automatically.
 
 The immediate milestone is a teacher that reliably interprets a small, defined set of semantic changes. Then determine how small its student can become while retaining that capability. Model size alone, average agreement and finite tensors are insufficient acceptance criteria. Real provider integration, phone warning delivery and representative operational testing remain required.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

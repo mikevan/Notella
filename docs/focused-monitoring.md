@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 14: Monitor broadly until something warrants focus
 
 Signs of developing danger need to remain available after the original capture window expires. Preserve the evidence that warrants attention while ordinary collection continues; this tutorial demonstrates that procedural boundary before model integration.
@@ -57,3 +59,7 @@ This replay connects the real rolling-window, semantic-delta and focus APIs. Its
 An overlapping pair produces one new edge and one trigger, rather than a new trigger every second. New reports at a focused site are retained. Related entity selection is deliberately explicit: cross-site links, shared sources, corrected reports, uncertain clocks and independent-support analysis need domain policy beyond this demonstration. Existing scenario validators remain separate and unchanged.
 
 The replay emits every tick and retained incident as JSON. It is synthetic software verification, not model inference, training data admission or evidence of field performance. Its synchronous orchestration illustrates integration; durable incident storage, asynchronous AI scheduling, trigger validation and phone ingestion are still application work. In particular, the frozen training evaluation continues to measure full-prefix reconstruction and does not yet test this delta-input runtime.
+
+---
+
+[Previous: Tutorial 13 — Preserve rolling windows and semantic deltas](rolling-windows.md) · [Next: Tutorial 15 — Diagnose semantic training failures](semantic-failure-diagnosis.md)

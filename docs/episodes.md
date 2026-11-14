@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Legacy episode terminology
 
 For current terminology, APIs and runnable commands, use [Tutorial 11: scenarios](scenarios.md). This retained guide describes the earlier episode API and preserves its reproduction instructions.
@@ -128,3 +130,7 @@ All source fixtures have `trainingAllowed=false`. The tutorial intentionally att
 Before training, review the ontology/policy and prefix targets, preserve corrections and reviewer identity, freeze separately authored evaluation families, and explicitly admit intended training material. Keep every branch and prefix from one original family in one split; new names or timestamps do not establish independence. Exact shared-prefix checking helps detect relabelling but cannot certify source-family independence or detect every semantic duplicate.
 
 Next compare the explicit rule baseline, an unadapted model and an ontology-guided model on reviewed episodes. Measure supported/false links, assessment revision, escalation/de-escalation, uncertainty, correction handling and evidence/rationale consistency. Retain the prior 0.6B results as static-task evidence, not evidence of this new behavior.
+
+---
+
+[Previous: Tutorial 10 — local teachers](teachers.md) · [Current Tutorial 11: scenarios](scenarios.md) · [Next: Tutorial 12 — scenario scoring](scenario-scoring.md)

@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 2: use Notella from another application
 
 The training workflow should be usable by other tools without binding the purpose to one interface. This tutorial exposes the same inspectable local workflow through HTTP; it is a development component, not a deployed protection service.
@@ -9,7 +11,7 @@ The training workflow should be usable by other tools without binding the purpos
 In a PowerShell window:
 
 ```powershell
-Set-Location C:\workspace\Notella
+# Run from the project root selected in Tutorial 0.
 $env:NOTELLA_API_TOKEN = python -c "import secrets; print(secrets.token_urlsafe(32))"
 # Copy the token into your second local client's environment through your normal secret-handling process.
 python -m notella serve --store runtime/http-tutorial --port 8765
@@ -30,7 +32,7 @@ Expect product=Notella, apiVersion=v1 and status=ok. Health is the only unauthen
 Set `NOTELLA_API_TOKEN` in the client window to the same token, using your preferred secret mechanism. Then:
 
 ```powershell
-Set-Location C:\workspace\Notella
+# Run from the project root selected in Tutorial 0.
 python -m examples.http_tutorial
 ```
 
@@ -81,3 +83,7 @@ Expect 30 training, two validation and three test examples. They are synthetic e
 Registering identical canonical artifact content is idempotent: the same content returns the same ID. Submitting a training job is different: it requests a new run. Do not automatically retry POST /v1/jobs after a network timeout without checking the store and existing job state. A GPU lock prevents a second concurrent job in that store, but it is not a general idempotency key.
 
 Stop the server with Ctrl+C after the tutorial. For real jobs, keep it running until the child has finished and the completed/failed state has been saved. See [training](training.md) for recovery limitations.
+
+---
+
+[Previous: Tutorial 1 — Your first semantic curriculum](tutorial.md) · [Next: Tutorial 3 — Design a useful curriculum](curricula.md)

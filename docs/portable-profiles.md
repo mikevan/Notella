@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 6: package a reproducible training profile
 
 Work toward self-protection should be reproducible beyond one developer's machine. Portable profiles preserve the definitions, examples, and settings needed to inspect and repeat a training preparation without claiming that reproducibility proves correctness.
@@ -92,3 +94,7 @@ UTF-8 manifests and component files with or without a BOM are accepted, includin
 ## What the pack does not prove
 
 Hash verification does not establish that a source is correct, permission is genuine, an ontology is logically consistent, a label is independently reviewed, or the resulting model understands the domain. It makes the exact inputs and intended settings portable and reviewable so those questions can be investigated.
+
+---
+
+[Previous: Tutorial 5 — Record interpretation reviews](semantic-reviews.md) · [Next: Tutorial 7 — Score decisions separately from formatting](decision-scoring.md)

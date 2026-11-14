@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Walkthrough: the LayerTime ontology
 
 Interpreting a developing threat starts with stating what observations can and cannot support. This walkthrough makes those meanings inspectable in the LayerTime training profile before any model is trusted with them.
@@ -111,3 +113,5 @@ python -c "import json; from pathlib import Path; o=json.loads(Path('experiments
 ```
 
 Expect the name and version above, followed by `9 4 10`. This verifies the artifact's declared structure, not its scientific validity. The current evaluations use related synthetic policy cases; they do not establish field accuracy, sensor classification capability or causation.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

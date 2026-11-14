@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Development results — November 12, 2026
 
 ## Actual LayerTime training
@@ -27,3 +29,5 @@ All candidates remain development-only. Neither the phone nor the LayerTime repo
 All three generated answers passed the compact JSON/reference checks. The critical case nevertheless failed: the model stated that the combined trigger was not established even though the supplied credible local sequence met the proposed policy. Its missing-clock answer maintained high concern but did not explain the timestamp limitation. Its benign-operations answer recognized scheduled maintenance but introduced an unsupported statement that neither disruption nor drone identity was independently corroborated.
 
 These are agent-authored interpretation observations of three selected synthetic outputs, not independent expert scores or a field accuracy estimate. Generation took approximately 27.1, 20.4 and 14.3 seconds on the desktop GPU. No matched fresh-base comparison or full frozen acceptance reevaluation was performed for this adapter. No improvement claim is supported. The failure is preserved rather than hidden behind the three schema passes.
+
+[Tutorial index](index.md) · [Start with environment setup](setup.md)

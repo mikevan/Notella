@@ -1,3 +1,5 @@
+[Tutorial index](index.md) · [Tutorial 0: environment setup](setup.md)
+
 # Tutorial 7: separate decision agreement from formatting
 
 A plausible answer is not enough when someone may act on a warning. Separate semantic correctness from formatting so failures remain visible and improvements reflect understanding rather than cleaner JSON.
@@ -69,3 +71,7 @@ The original output string is not edited or repaired. Retain it and its hash in 
 Field agreement is useful when the target is a reviewed policy label. It is not proof that the policy itself is valid or that a model's explanation is grounded. Use the separate [interpretation-review record](semantic-reviews.md) for justified judgments about exact outputs.
 
 In the expanded warning experiment, posture, combinedTrigger and evidenceClass are all scored. The proposed policy, synthetic labels, family relationships and replay counts remain explicit. Development agreement must not be reported as independent field accuracy.
+
+---
+
+[Previous: Tutorial 6 — Package a reproducible profile](portable-profiles.md) · [Next: Tutorial 8 — Supply measured temporal facts](temporal-features.md)
