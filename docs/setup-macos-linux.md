@@ -25,10 +25,10 @@ Run `python3 --version` again. If your suitable interpreter has a versioned name
 
 Open the [Notella repository](https://github.com/mikevan/Notella) in your browser. Sign in if access is required, choose **Code → Download ZIP**, and extract the archive with your file manager. If you cannot access it, obtain access or a source ZIP from the project maintainer before continuing.
 
-Create a folder named `Notella` inside your home folder and place the extracted project contents there. It should directly contain `docs`, `examples`, `notella`, `tests`, and `pyproject.toml`, without an extra nested `Notella-main` directory.
+Create a folder named `notella-tutorials` inside a `workspace` folder in your home folder and place the extracted project contents there. It should directly contain `docs`, `examples`, `notella`, `tests`, and `pyproject.toml`, without an extra nested `Notella-main` directory.
 
 ```sh
-cd "$HOME/Notella"
+cd "$HOME/workspace/notella-tutorials"
 ls
 ```
 
@@ -42,7 +42,7 @@ python3 -m venv .venv
 ./.venv/bin/python -c 'import sys; print(sys.executable)'
 ```
 
-The last command should print a path inside `Notella/.venv/bin`. This environment keeps project packages separate; see Python's [virtual environment documentation](https://docs.python.org/3/library/venv.html). If Linux reports that `venv` or `ensurepip` is unavailable, install the virtual-environment package matching your interpreter and retry.
+The last command should print a path inside `notella-tutorials/.venv/bin`. This environment keeps project packages separate; see Python's [virtual environment documentation](https://docs.python.org/3/library/venv.html). If Linux reports that `venv` or `ensurepip` is unavailable, install the virtual-environment package matching your interpreter and retry.
 
 No activation is required when using this explicit interpreter path. The core runs from the project root without a package installation or dependency download.
 

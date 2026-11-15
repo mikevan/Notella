@@ -66,7 +66,7 @@ Use the existing [teacher tutorial](teachers.md) to call `LocalTeacher` and `tea
 
 The current teacher provider is a reusable Python interface for a loopback server. No new `/scenarios` or `/scenarios` HTTP endpoint is implemented by this documentation.
 
-For a first single-step runnable candidate, from `C:\workspace\Notella`, with the verified bounded local teacher server already running:
+For a first single-step runnable candidate, from `C:\workspace\notella-tutorials`, with the verified bounded local teacher server already running:
 
 ```powershell
 $python = 'C:\workspace\TUltra-Project\LayerTime\tools\ai-training\.venv\Scripts\python.exe'

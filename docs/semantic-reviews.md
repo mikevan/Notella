@@ -14,7 +14,7 @@ Interpretation reviews therefore need a separate record tied to the exact prompt
 
 ## Run the demonstration
 
-From C:\workspace\Notella:
+From C:\workspace\notella-tutorials:
 
 ```powershell
 python -m examples.review_tutorial --store runtime/review-tutorial

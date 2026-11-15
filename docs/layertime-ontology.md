@@ -64,7 +64,7 @@ Suppose a synthetic observation supplies:
 - The same area, ongoing threat, and two drone reports with different reviewed provenance roots.
 - A shared time basis and a linking window of 120,000 ms.
 
-The possible delay is **17,000 to 23,000 ms**. The drone observation is later and entirely inside the configured window. From `C:\workspace\Notella`, run:
+The possible delay is **17,000 to 23,000 ms**. The drone observation is later and entirely inside the configured window. From `C:\workspace\notella-tutorials`, run:
 
 ```powershell
 python -c "from notella.correlation import temporal_link; import json; print(json.dumps(temporal_link(100000,120000,1000,2000,120000),indent=2))"

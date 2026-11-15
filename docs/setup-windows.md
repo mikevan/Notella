@@ -4,7 +4,7 @@
 
 **Outcome:** a local copy of Notella, an isolated Python environment, and a successful first curriculum run. Start here even if you have never used Python. These steps prepare the core tutorials; model training has additional requirements.
 
-You need a Windows computer, an internet connection for the initial downloads, permission to install Python, and a writable folder in your user account. No GPU, model weights, API key, paid account, or existing dataset is needed. Once Python and the source are present, the core tutorial runs offline.
+You need a Windows computer, an internet connection for the initial downloads, permission to install Python, and write access to `C:\workspace`. No GPU, model weights, API key, paid account, or existing dataset is needed. Once Python and the source are present, the core tutorial runs offline.
 
 ## 1. Install Python
 
@@ -20,18 +20,28 @@ Expect `Python 3.11` or a newer version. If `py` is unavailable, try `python --v
 
 ## 2. Get the Notella source
 
-Open the [Notella repository](https://github.com/mikevan/Notella) in your browser. Sign in if your copy requires repository access. Choose **Code → Download ZIP**, then use File Explorer's **Extract All** command. If you cannot access the repository, obtain access or a source ZIP from the project maintainer before continuing.
+The tutorial checkout lives at **`C:\workspace\notella-tutorials`**. This is separate from any development checkout you already have.
 
-Create a folder named `Notella` inside your user folder and put the extracted project contents there. The result should include `docs`, `examples`, `notella`, `tests`, and `pyproject.toml` directly inside `Notella`; avoid an extra nested `Notella-main` folder. Your user folder is usually `C:\Users\your-name` and is available from File Explorer's address bar as `%USERPROFILE%`.
-
-In PowerShell, enter:
+Check that Git is available:
 
 ```powershell
-Set-Location "$env:USERPROFILE\Notella"
+git --version
+```
+
+If the command is unavailable, install [Git for Windows](https://git-scm.com/downloads/win), then reopen PowerShell. In PowerShell, run:
+
+```powershell
+New-Item -ItemType Directory -Path C:\workspace -Force | Out-Null
+git clone https://github.com/mikevan/Notella.git C:\workspace\notella-tutorials
+Set-Location C:\workspace\notella-tutorials
 Get-ChildItem
 ```
 
-Confirm that the files and folders listed above appear. If you chose a different location, use its full path in quotes instead. This folder is the **project root**: run the tutorial commands here.
+Run the clone command only for the first checkout. If `C:\workspace\notella-tutorials` already contains your tutorial copy, use `Set-Location C:\workspace\notella-tutorials` to return to it; do not overwrite or delete an existing checkout.
+
+If you prefer a ZIP, open the [Notella repository](https://github.com/mikevan/Notella), choose **Code → Download ZIP**, and extract its contents into `C:\workspace\notella-tutorials`. The folders `docs`, `examples`, `notella`, and `tests`, plus `pyproject.toml`, must be directly inside that folder, without an extra nested `Notella-main` directory.
+
+This folder is the **project root**: run the tutorial commands here. If creating `C:\workspace` is denied, ask the computer's administrator to provide write access before continuing.
 
 ## 3. Create a separate Python environment
 
@@ -41,7 +51,7 @@ py -m venv .venv
 .\.venv\Scripts\python.exe -c "import sys; print(sys.executable)"
 ```
 
-The last command should print a path ending in `Notella\.venv\Scripts\python.exe`. This environment belongs to this project and keeps its Python packages separate. See Python's [virtual environment documentation](https://docs.python.org/3/library/venv.html).
+The last command should print a path ending in `C:\workspace\notella-tutorials\.venv\Scripts\python.exe`. This environment belongs to this project and keeps its Python packages separate. See Python's [virtual environment documentation](https://docs.python.org/3/library/venv.html).
 
 Use the explicit environment path shown here. Activation is optional, so no PowerShell execution-policy change is needed. The core runs directly from the project root without a package installation or dependency download.
 
@@ -87,13 +97,13 @@ For its Python snippets, open Notepad or another plain-text editor. Create `tuto
 
 Make sure the filename ends in `.py`, not `.py.txt`. PowerShell blocks are terminal commands; Python blocks go in the script. The Python snippets share variables, so keep them together and in order.
 
-When returning later, open PowerShell, change to your project folder again, and use the same `.venv` interpreter. You do not need to recreate it.
+When returning later, open PowerShell, run `Set-Location C:\workspace\notella-tutorials` again, and use the same `.venv` interpreter. You do not need to recreate it.
 
 ## If a check fails
 
 - **Python opens the Microsoft Store or is not found:** finish installing a Python runtime, reopen PowerShell, and try `py --version` again.
 - **No module named `notella` or `examples`:** check that you are in the folder containing both directories, rather than its parent or `docs`.
-- **Access denied:** use a folder owned by your user account; avoid `Program Files` or other protected locations.
+- **Access denied:** check that your account has write access to `C:\workspace\notella-tutorials`; ask the computer's administrator if it does not.
 - **A test fails:** retain the error output and resolve it before proceeding. See [troubleshooting](troubleshooting.md).
 
 ---

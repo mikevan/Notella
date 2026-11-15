@@ -19,7 +19,7 @@ Training is a separate environment. [Tutorial 4](training.md) describes the curr
 
 ## Read commands in the right place
 
-Run commands from the project root: the folder containing `notella`, `examples`, `tests`, and `pyproject.toml`. Your chosen folder replaces example locations such as `C:\workspace\Notella`; you do not need the author's directory layout.
+Run commands from the project root: the folder containing `notella`, `examples`, `tests`, and `pyproject.toml`. The Windows tutorial checkout is `C:\workspace\notella-tutorials`. Use that path consistently in PowerShell examples. The Mac/Linux guide uses `$HOME/workspace/notella-tutorials` because those systems do not have a `C:` drive.
 
 Use the interpreter created by your platform guide whenever a tutorial says `python`:
 

@@ -10,7 +10,7 @@ The ontology represents the semantic model. A scenario supplies evolving evidenc
 
 ## Run a no-model check
 
-From C:\workspace\Notella:
+From C:\workspace\notella-tutorials:
 
 ```powershell
 python -m examples.scenario_scoring_tutorial

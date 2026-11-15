@@ -6,7 +6,7 @@ Changing radio observations are useful only when their timing and limits remain 
 
 **Outcome:** derive a clock-aware time relation from the LayerTime profile's observation and retain a provenance receipt. This source-checkout adapter does not compute posture, drone identity, source independence or attack probability.
 
-Run from C:\workspace\Notella, or add that folder to your Python path. The domain-specific adapter lives in profiles/layertime; the general interval calculator remains in notella.correlation. It is an example profile extension, not a separately installed core package.
+Run from C:\workspace\notella-tutorials, or add that folder to your Python path. The domain-specific adapter lives in profiles/layertime; the general interval calculator remains in notella.correlation. It is an example profile extension, not a separately installed core package.
 
 ## Derive a relation
 

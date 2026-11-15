@@ -9,7 +9,7 @@ Start by making meaning and evidence inspectable before asking an AI to interpre
 ## 1. Check the environment
 
 ```powershell
-# Run from the project root selected in Tutorial 0.
+Set-Location C:\workspace\notella-tutorials
 # Windows: replace python with .\.venv\Scripts\python.exe
 # macOS/Linux: replace python with ./.venv/bin/python
 python --version

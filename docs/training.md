@@ -19,7 +19,7 @@ The code currently uses FP16 compute with NF4 double quantization, rank/alpha Lo
 The local machine already has a compatible environment and base model:
 
 ```powershell
-# Run from the project root selected in Tutorial 0.
+Set-Location C:\workspace\notella-tutorials
 $env:NOTELLA_API_TOKEN = python -c "import secrets; print(secrets.token_urlsafe(32))"
 python -m notella serve --store data --engine training_engine --python C:\workspace\TUltra-Project\LayerTime\tools\ai-training\.venv\Scripts\python.exe --model qwen3-4b=C:\workspace\TUltra-Project\LayerTime\tools\ai-training\models\qwen3-4b-instruct-2507
 ```

@@ -15,7 +15,7 @@ Use a running teacher on loopback and obtain its exact model ID from its `/v1/mo
 ```powershell
 $python = 'C:\workspace\TUltra-Project\LayerTime\tools\ai-training\.venv\Scripts\python.exe'
 Invoke-RestMethod http://127.0.0.1:8000/v1/models
-& $python C:\workspace\Notella\examples\teacher_tutorial.py --model YOUR_SERVED_MODEL_ID --output C:\workspace\Notella\runtime\teacher-draft-001
+& $python C:\workspace\notella-tutorials\examples\teacher_tutorial.py --model YOUR_SERVED_MODEL_ID --output C:\workspace\notella-tutorials\runtime\teacher-draft-001
 ```
 
 The LayerTime example hashes its actual ontology file, selects named concepts and asks for two contrasting synthetic scenarios. It does not read evaluation examples or expected evaluation answers. The ontology includes the proposed policy, which is a teaching specification, not an independently validated threat model.
@@ -65,7 +65,7 @@ Each new request also records the teacher provider source SHA-256. A provider-so
 After completing and verifying the public model intake, `C:\workspace\colibri\Start-NotellaTeacher.ps1` starts the bounded local server. It requires the verified receipt and engine hash, and records serve-settings.json. The --vram launcher flag is CUDA-only on this engine; the script uses Vulkan-specific caps instead. The prebuilt engine is recorded by hash and is not claimed to be built from the extracted fork source.
 
 ```powershell
-& $python C:\workspace\Notella\examples\teacher_tutorial.py --model notella-teacher-qwen36 --base-url http://127.0.0.1:8877/v1 --output C:\workspace\Notella\runtime\teacher-draft-NEW
+& $python C:\workspace\notella-tutorials\examples\teacher_tutorial.py --model notella-teacher-qwen36 --base-url http://127.0.0.1:8877/v1 --output C:\workspace\notella-tutorials\runtime\teacher-draft-NEW
 ```
 
 This run is described in the experiment results. Keep the exact draft and its separate review, including rejected answers. Use a new directory for a new or explicitly retried request.

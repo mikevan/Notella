@@ -12,7 +12,7 @@ The ontology represents the semantic model. A prefix state represents what is su
 
 ## 1. Run the tutorial
 
-From `C:\workspace\Notella`, using Python 3.11 or later:
+From `C:\workspace\notella-tutorials`, using Python 3.11 or later:
 
 ```powershell
 python -m examples.episode_tutorial --output runtime/episode-tutorial-NEW

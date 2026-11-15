@@ -11,7 +11,7 @@ The training workflow should be usable by other tools without binding the purpos
 In a PowerShell window:
 
 ```powershell
-# Run from the project root selected in Tutorial 0.
+Set-Location C:\workspace\notella-tutorials
 $env:NOTELLA_API_TOKEN = python -c "import secrets; print(secrets.token_urlsafe(32))"
 # Copy the token into your second local client's environment through your normal secret-handling process.
 python -m notella serve --store runtime/http-tutorial --port 8765
@@ -32,7 +32,7 @@ Expect product=Notella, apiVersion=v1 and status=ok. Health is the only unauthen
 Set `NOTELLA_API_TOKEN` in the client window to the same token, using your preferred secret mechanism. Then:
 
 ```powershell
-# Run from the project root selected in Tutorial 0.
+Set-Location C:\workspace\notella-tutorials
 python -m examples.http_tutorial
 ```
 

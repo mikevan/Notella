@@ -8,7 +8,7 @@ People need findings anchored to evidence rather than instructions hidden inside
 
 ## Run the working example
 
-From C:\workspace\Notella:
+From C:\workspace\notella-tutorials:
 
 ```powershell
 python -m examples.decision_contract_tutorial

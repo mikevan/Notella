@@ -32,7 +32,7 @@ Follow the numbered sequence or choose a topic after completing Tutorial 0. Each
 | 15 | [Diagnose semantic training failures](semantic-failure-diagnosis.md) | Core environment; no GPU required for the documented fixture/report exercise |
 | 16 | [Preserve warnings through incomplete output](warning-continuity.md) | Core environment; no GPU required for the documented fixture/report exercise |
 
-Run commands from the project root you chose during setup. Whenever a guide says `python`, use your project interpreter from Tutorial 0. Most shell examples use PowerShell; the Mac/Linux setup explains the shell differences. Python snippets are portable unless a guide states an additional dependency. Training uses a separate compatible environment; do not install GPU packages merely to complete the core exercises.
+On Windows, run commands from `C:\workspace\notella-tutorials`, the checkout created in Tutorial 0. On macOS/Linux, use `$HOME/workspace/notella-tutorials`. Whenever a guide says `python`, use your project interpreter from Tutorial 0. Most shell examples use PowerShell; the Mac/Linux setup explains the shell differences. Python snippets are portable unless a guide states an additional dependency. Training uses a separate compatible environment; do not install GPU packages merely to complete the core exercises.
 
 When sharing a Notella tutorial outside the source code, include [Tutorial 0: environment setup](https://github.com/mikevan/Notella/blob/main/docs/setup.md) beside the tutorial link so readers have a clear starting point.
 

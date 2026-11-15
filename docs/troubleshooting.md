@@ -6,7 +6,7 @@ A failed development component must remain distinguishable from a successful ass
 
 ## “No module named notella”
 
-Run from C:\workspace\Notella, or install the core into the intended environment with `python -m pip install -e C:\workspace\Notella`. Check which Python executable your application is using. The API interpreter and training interpreter can differ; configure --python explicitly for training.
+Run from C:\workspace\notella-tutorials, or install the core into the intended environment with `python -m pip install -e C:\workspace\notella-tutorials`. Check which Python executable your application is using. The API interpreter and training interpreter can differ; configure --python explicitly for training.
 
 ## The server rejects its token or will not start
 

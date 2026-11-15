@@ -17,7 +17,7 @@ This usage aligns with scenario-based simulation terminology; LLM evaluation fra
 
 ## 1. Run the tutorial
 
-From `C:\workspace\Notella`, using Python 3.11 or later:
+From `C:\workspace\notella-tutorials`, using Python 3.11 or later:
 
 ```powershell
 python -m examples.scenario_tutorial --output runtime/scenario-tutorial-NEW
