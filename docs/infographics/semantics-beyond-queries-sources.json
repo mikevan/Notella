@@ -1,0 +1,29 @@
+{
+  "checkedDate": "2026-11-13",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Snowflake: Overview of semantic views",
+      "url": "https://docs.snowflake.com/en/user-guide/views-semantic/overview"
+    },
+    {
+      "id": "S2",
+      "title": "dbt: Semantic models",
+      "url": "https://docs.getdbt.com/docs/build/semantic-models"
+    },
+    {
+      "id": "S3",
+      "title": "Palantir: The Ontology system",
+      "url": "https://www.palantir.com/docs/foundry/architecture-center/ontology-system"
+    },
+    {
+      "id": "S4",
+      "title": "W3C: OWL 2 overview",
+      "url": "https://www.w3.org/TR/owl2-overview/"
+    }
+  ],
+  "projectEvidence": "experiments\\scenario-model-v5\\evidence\\comparison.json",
+  "projectEvidenceSha256": "6e775c93157e1170a2b36d0d14e86345e078908ed7606ef3a708f10fe8188c6e",
+  "claimBoundary": "PRS purpose and model distinguished from unvalidated AI/student/phone outcomes; no universal claim about vendor ignorance; no unrelated historical case used as proof",
+  "gridEdgeInterpretation": "Node-edge semantic representation executed on edge devices; distributed-grid topology is not asserted"
+}
